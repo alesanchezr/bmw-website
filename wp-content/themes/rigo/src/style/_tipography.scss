@@ -1,0 +1,17 @@
+/*
+*   Modules dependencies
+*/
+@import url('https://fonts.googleapis.com/css?family=Rufina:400,700&subset=latin-ext');
+
+$font-text:  'Rufina', serif;
+body{
+    font-family: $font-text;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $font-text;
+}
+h1{ font-size: 34px; }
+h2{ font-size: 22px; margin-bottom: 0; }
+
+.h7{font-size: 25px !important;} //Personalizada
+.h8{font-size: 22px !important;} //Personalizada

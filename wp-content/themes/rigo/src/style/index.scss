@@ -1,0 +1,442 @@
+/*
+*   Modules dependencies
+*/
+@import "~bootstrap/scss/bootstrap";
+@import "colors";
+@import "custom";
+@import "tipography";
+@import "button";
+@import "display";
+@import "views/home";
+@import "views/request";
+@import "img-svg";
+@import "logo";
+@import "modal";
+
+// TAGS
+body {
+	background-color: $color-background-light;
+}
+a{
+	color: $color-text-light;
+}
+input{
+	border-radius: 0 !important;
+}
+// CLASS
+.center-vertical-div{
+	margin: auto 0;
+	width: 100%;
+}
+//
+.center-div{
+	margin: 0 auto;
+	width: 100%;
+}
+//
+.padding-all{
+	padding: 20px 0 20px 0;
+	&.l{
+		padding: 40px 0 40px 0;
+	}
+}
+//
+.social-media-bar{
+	background-color: $color-navbar;
+	// height: 100px;
+	font-size:12px;
+	.social-media-logos{
+		font-size:2em !important;
+		color:$color-text-dark;
+	}
+	input {
+		width: 350px !important;
+		height:30px;
+		font-size:12px;
+		border-radius: 0;
+		border: none;
+	}
+	.btw-s{
+		width: 250px;
+	}
+}
+//
+.submit{
+	font-size: 12px;
+	padding-left: 150px;
+	input{
+		height:30px;
+		font-size:10px;
+		border-radius: 0;
+	}
+}
+//
+.card{
+	border: none;
+	background: none;
+	&.small{
+		margin: 0;
+		flex: none;
+	}
+	&.bg-1{
+		background-color: $color-background-light;
+	}
+	&.bg-2{
+		background-color: $color-navbar;
+	}
+	.card-img-top{
+		background-size: cover;
+		&.logo-costumer{
+			height: 120px;
+			width: 100px;;
+		}
+		&.logo-costumer-h{
+			margin-top: 35px;
+			height: 50px;
+			width: 95px;
+		}
+	}
+	.card-body{
+		background-color: $color-background-light;
+		font-size: 15px;
+
+	}
+	.card-footer{
+		background-color: $color-background-light !important;
+		border: none !important;
+	}
+}
+//
+.card-block{
+	margin-bottom: 10px;
+	.card-text{
+		font-size: 13.4px;
+		height: auto !important;
+	}
+}
+//
+.image-div{
+	margin: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+//
+.img-center{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+//
+.img-content{
+	position: relative;
+	height: 150px;
+	padding: 0;
+	.card-img-top{
+		width: 50%;
+	}
+}
+//
+.bifor{
+	position: relative;
+	height: 100%;
+}
+//
+.awards-recognition{
+	background-color: #595a5c;;
+	color: $color-text-light;
+	display: flex;
+	justify-content: center;
+	a{
+		font-size: 12px;
+	}
+	p{
+		font-size: 14px;
+	}
+	span{
+		max-height: 150px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&.page{
+
+		.card-body{	background-color: #595a5c;;}
+	}
+}
+//
+.rounded-circle{
+	width: 12%;
+}
+//
+.jumbotron{
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $color-text-light;
+	&.jb-xlarge{
+		background-repeat: no-repeat;
+		// background-position-y: 15%;
+		background-size: cover;
+		height: 500px;
+	}
+	&.jb-large{
+		background-repeat: no-repeat;
+		background-position-y: 15%;
+		background-size: cover;
+		padding: 0;
+		margin: 0;
+	}
+	&.jb-medium{
+		background-repeat: no-repeat;
+		background-position-y: 45%;
+		background-size: cover;
+	}
+	.jb-button{
+		margin-top: 14em;
+	}
+	&.jb-award{
+		color: $color-text-dark;
+		padding: 0;
+		p{
+			font-size: 15px;
+		}
+	}
+	span{
+		outline-color: invert;
+	}
+	.m{
+		width: 70% !important;
+	}
+	.jb-text{
+		p{
+			font-size: 17px;
+		}
+		a{
+			font-size: 15px;
+		}
+	}
+}
+//
+.floating-half{
+	width: 50%;
+	float: left;
+}
+//
+.mobile-footer{
+	font-size: 15.3px;
+}
+//
+.fa-star,.fa-star-half{
+	font-size:1em;
+	color:$color-stars;
+}
+//
+.subtitle-bar{
+	background-color: $color-navbar;
+	color: $color-text-dark;
+	&.dark{
+		background-color: $color-background-dark;
+		color: $color-text-light;
+	}
+	&.light{
+		background-color: $color-background-light;
+		color: $color-text-dark;
+	}
+	p{
+		font-size: 14px;
+	}
+}
+//
+.photo-person{
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.label{
+		width: 100%;
+		font-size: 14px;
+		background-color:rgba(193,150,195,0.57);
+		position:absolute;
+		bottom:0px;
+		color: $color-text-light;
+	}
+}
+//
+.testimonial-client{
+	.media-body{
+		font-size: 15px;
+	}
+}
+//
+.foot-client{
+	font-size: 12px;
+	margin: 0;
+}
+//
+.buttonCard{
+	margin-top: -80px;
+	position: relative;
+	color: $color-text-light;
+}
+//
+.row-fluid{
+	&.awardsRecognition{
+		margin-top: 90px;
+	}
+}
+//
+.form-group {
+	display: flex;
+	align-items: center;
+}
+//
+.click-here{
+	text-decoration: underline;
+	color: $color-button;
+	font-weight: normal;
+	&:hover{
+		color:grey;
+	}
+	&.color-light{
+		color: $color-text-light !important;
+	}
+	&.color-dark{
+		color: $color-text-dark !important;
+	}
+}
+.color-dark{
+		color: $color-text-dark !important;
+	}
+//
+.rounded{
+	margin-right: 30px;
+	margin-top: 10px;
+}
+//
+.row{
+	margin-right: 0px;
+}
+//
+.lead{
+	color: $color-text-dark;
+	font-size: 14px;
+	&.title{
+		font-size: 20px;
+		line-height: 1.5em;
+	}
+}
+//
+.p-5 {
+	padding: 2rem !important;
+}
+//
+.form-group {
+	display: flex;
+	align-items: center;
+}
+.text-purple{
+	color:$color-button;
+}
+ //
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.jumbotron{
+		background-size: 100% 100% ;
+		background-position:center;
+	}
+	.mobile-footer{
+		display: none;
+		padding: 0;
+	}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.jumbotronHome1{
+		background-size: 110% 100% ;
+		background-position:center;
+	}
+	.form-group,.group-images,.text-testimonial,.principal-footer{
+		display: none;
+	}
+	.jumbobot{
+		padding-top: 2rem;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.jumbobot{
+		padding-top: 3rem;
+	}
+	.jumbotron{
+		height: 350px;
+		background-repeat: no-repeat;
+		&.jumbotron-standard{
+			background-size: 150% ;
+			background-position: center;
+		}
+		&.jumbotron-cover{
+			background-size: cover;
+			color: $color-text-light;
+		}
+	}
+
+	.buttonCard{
+		margin-top: 10px;
+		color: $color-text-dark;
+	}
+	.row-fluid{
+		&.awardsRecognition{
+			margin-top: 0px;
+		}
+	}
+	.awardsRecognition {
+		height: 400px;
+	}
+
+	.card-text{
+		margin-top: 20px;
+	}
+	.img-group-1{
+		margin-top: 20px;
+	}
+	.form-group,.group-images,.text-testimonial,.principal-footer{
+		display: none;
+	}
+	.mr-3{
+		float: left;
+	}
+	.media-body{
+		text-align: left;
+	}
+	.jumbotron{
+		.jb-button{
+			margin-top: 9em;
+		}
+	}
+	.home{
+
+	    .card-middle-button{
+	      margin-top: 0px;
+	      color: $color-text-dark;
+	    }
+	}
+	.subtitle-bar{
+	background-color: $color-background-light;
+	}
+	.footer-mobile{
+		background-color:$color-button;
+	}
+	.rounded-circle{
+	width:100%;
+	}
+	.card{
+
+		&.bg-2{
+			background-color: $color-background-light;
+		}
+	}
+	.tab-content{
+	background-color:$color-background-light;
+	}
+
+}

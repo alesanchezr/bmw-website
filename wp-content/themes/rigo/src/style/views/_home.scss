@@ -1,0 +1,14 @@
+.home{
+    .card .img{
+    	padding: 0px;
+    	margin: 0px;
+    	height: 300px;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    }
+    .card-middle-button{
+      margin-top: -95px;
+      position: relative;
+      color: $color-text-light;
+    }
+}

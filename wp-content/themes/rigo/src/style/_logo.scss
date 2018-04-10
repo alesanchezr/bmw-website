@@ -1,0 +1,41 @@
+  .logo{
+    &.large{
+      width: 70% !important;
+    }
+    &.medium{
+      width: 35% !important;
+    }
+    &.medium-client{
+      width: 25% !important;
+    }
+    &.medium-dark{
+      width: 60% !important;
+    }
+    &.small{
+      width: 10% !important;
+    }
+    &.xsmall{
+      width: 3% !important;
+    }
+    &.awards{
+    max-height: 80px;
+    // filter: invert(100%);
+      &.large{
+         max-height: 110px;
+      }
+    }
+    &.partners{
+    max-height: 48px !important;
+    // filter: invert(100%);
+      &.width{
+         width: 13% !important;
+      }
+    }
+    &.costumers{
+    max-height: 50px !important;
+    // filter: invert(100%);
+      &.width{
+         width: 30% !important;
+      }
+    }
+  }

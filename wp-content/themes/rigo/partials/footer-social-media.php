@@ -1,0 +1,50 @@
+<div class="containter text-center text-purple  d-sm-none d-block">
+      <a onClick="topFunction()"><i  class="fas fa-caret-up fa-2x"></i></a>
+    </div>
+<!-- SOCIALS -->
+<div class="social-media-bar d-none d-sm-block">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-6">
+        <br>
+        <a href="https://www.instagram.com/bestmiamiweddings/" class="p-1 click-here color-dark"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/bestmiaweddings" class="p-1 click-here color-dark"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.facebook.com/BestMiamiWeddings/" class="p-1 click-here color-dark"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.youtube.com/channel/UCgv-DOYllKT1ihDbKli8NzQ" class="p-1 click-here color-dark"><i class="fab fa-youtube-square fa-2x"></i></a>
+        <a href="https://www.pinterest.com/bestmiaweddings/" class="p-1 click-here color-dark"><i class="fab fa-pinterest fa-2x"></i></a>
+      </div>
+
+      <div class="col-md-6">
+       <form class="form-inline">
+          <div class="col-md-12">
+            <p class="m-0 pl-3 pb-1"> Sing Up to our newsletter</p>
+          </div>
+
+          <div class="form-group col-md-9 mb-2">
+
+            <input type="password" class="form-control"  placeholder="Type your Email">
+          </div>
+          <div class="form-group col-md-3 mb-2 p-0">
+
+            <button type="submit" class="btn btw-s">Suscribe!</button>
+          </div>
+
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<div class=" footer-mobile d-sm-none d-block text-center">
+<div class="p-4">
+        <a href="https://www.instagram.com/bestmiamiweddings/" class="p-1 click-here color-light"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/bestmiaweddings" class="p-1 click-here color-light"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.facebook.com/BestMiamiWeddings/" class="p-1 click-here color-light"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.youtube.com/channel/UCgv-DOYllKT1ihDbKli8NzQ" class="p-1 click-here color-light"><i class="fab fa-youtube-square fa-2x"></i></a>
+        <a href="https://www.pinterest.com/bestmiaweddings/" class="p-1 click-here color-light"><i class="fab fa-pinterest fa-2x"></i></a>
+      </div>
+</div>
+<!--END SOCIALS-->

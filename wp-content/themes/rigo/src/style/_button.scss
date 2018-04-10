@@ -1,0 +1,65 @@
+.btn{
+  color: $color-text-light;
+  background-color: $color-button;
+  border-radius: 22.5px 22.5px;
+  border: 0px;
+  font-family: $font-text;
+  font-weight: bold;
+  vertical-align: middle;
+  &:hover{
+    background-color: $color-background-dark;
+    color: white;
+  }
+  &:focus{
+    background-color: $color-button;
+  }
+  &:active{
+    background-color: $color-background-light;
+  }
+  &.form-control{
+    &:hover{
+      background-color: $color-background-light;
+      color: Black;
+    }
+  }
+}
+.btw-l{
+  width: 193px;
+  height: 45px;
+  font-size: 14px;
+}
+.btw-m{
+  width: 252px;
+  height: 45px;
+  font-size: 13px;
+}
+.btw-s{
+  width: 118px;
+  height: 27px;
+  font-size: 10px;
+  border-radius: 13px 13px;
+  font-weight: none;
+}
+.btw-xl{
+  width: 450px;
+  height: 45px;
+  font-size: 13px;
+  border-radius: 50px 50px;
+}
+.btn-navbar{
+  color: $color-text-dark;
+  background-color: $color-navbar;
+  border: 0px;
+  &:hover{
+    background-color:  $color-navbar;
+    border: 0px;
+  }
+  &:focus{
+    background-color:  $color-navbar ;
+    border: 0px;
+  }
+  &:active{
+    background-color:  $color-navbar;
+    border: 0px;
+  }
+}
