@@ -1,0 +1,37 @@
+{
+  "name": "BMW",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "html-template-engine": "0.0.4",
+    "jquery": "^3.3.1",
+    "mpm": "0.0.1",
+    "npm": "^5.8.0",
+    "popper.js": "^1.14.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-manifest-plugin": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development",
+    "start:dev": "webpack-dev-server --mode development --hot",
+    "c9": "webpack-dev-server --mode development --hot --open --host $IP --port $PORT"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

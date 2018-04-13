@@ -27,7 +27,10 @@
 
 # ignore all files starting with .
 .*
-
+# track this file .gitignore (i.e. do NOT ignore it)
+!composer.json
+!package.json
+!webpack.config.js
 # track this file .gitignore (i.e. do NOT ignore it)
 !.gitignore
 
