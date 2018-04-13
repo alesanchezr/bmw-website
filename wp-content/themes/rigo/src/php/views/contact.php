@@ -182,11 +182,7 @@
     </div>
   </div>
 </section>
-
-
 <!-- FOOTER FULL -->
-<span require-file="./components/footer-social-media.html"></span>
-<span require-file="./components/footer-our-customers.html"></span>
-<span require-file="./components/footer-menu.html"></span>
-
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer','social-media'); ?>
+  <?php get_template_part('partials/footer','our-social-media'); ?>
+  <?php get_footer(); ?>

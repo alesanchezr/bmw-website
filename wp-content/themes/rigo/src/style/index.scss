@@ -24,6 +24,11 @@ input{
 	border-radius: 0 !important;
 }
 // CLASS
+.element{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
 .center-vertical-div{
 	margin: auto 0;
 	width: 100%;
@@ -394,7 +399,7 @@ input{
 	}
 
 	.card-text{
-		margin-top: 20px;
+
 	}
 	.img-group-1{
 		margin-top: 20px;
@@ -437,6 +442,22 @@ input{
 	}
 	.tab-content{
 	background-color:$color-background-light;
+	}
+	.center-vertical-div {
+
+	    margin-top: 0;
+	}
+	.body-request {
+
+    margin-top: 0;
+    background-image: none!important;
+    color: $color-text-dark;
+	}
+	.body-request {
+		font-size: 16px;
+		.info {
+		    padding-top: 0 !important;
+		}
 	}
 
 }

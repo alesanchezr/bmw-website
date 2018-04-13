@@ -1,9 +1,9 @@
-  <!-- MENU -->
-  <span require-file="./components/menu.html"></span>
-  <!-- END MENU -->
+<?php get_header(); ?>
+<!--MENU MOBILE-->
+<?php get_template_part('partials/menu','others'); ?>
   <!-- JUMBOTROM -->
   <div class="parent">
-    <div class="jumbotron text-center pt-4 pb-5 my-0 " style="background-image: url('./public/img/package-banner-1.jpg');">
+    <div class="jumbotron text-center pt-4 pb-5 my-0 " style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/package-banner-1.jpg');">
       <div class="card logo medium mx-auto">
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
@@ -38,8 +38,8 @@
   </div>
 </section>
 <!-- AWARDA RECOGNITION -->
-<span require-file="./components/awards-recognition.html"></span>
-<!-- END AWARDA RECOGNITION -->
+  <?php get_template_part('partials/awards','recognition'); ?>
+<!--  -->
 <div class="row subtitle-bar py-3">
   <div class="col-md-12 text-center padding-all">
     <h2>Our Team</h2>
@@ -184,10 +184,9 @@
     </div>
   </div>
 </section>
-
-
 <!-- FOOTER FULL -->
-<span require-file="./components/footer-social-media.html"></span>
-<span require-file="./components/footer-our-customers.html"></span>
-<span require-file="./components/footer-menu.html"></span>
-<?php get_footer(); ?>
+  <?php get_template_part('partials/footer','social-media'); ?>
+  <?php get_template_part('partials/footer','our-customers'); ?>
+  <?php get_template_part('partials/footer','menu'); ?>
+<!-- END FOOTER FULL -->
+  <?php get_footer(); ?>

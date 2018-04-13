@@ -53,11 +53,11 @@
       <div class="col-md-3 p-0 text-center">
         <span class="card-img-top mx-auto d-none d-md-block" id="bmw-logo"></span>
         <p class="my-2 py-0">Work with the best, our reputation precede us</p>
-          <span class=" fa fa-star checked fa-xs" aria-hidden="true"></span>
-          <span class=" fa fa-star checked fa-xs"></span>
-          <span class=" fa fa-star checked fa-xs"></span>
-          <span class=" fa fa-star fa-xs"></span>
-          <span class=" fa fa-star-half fa-xs"></span>
+          <span class="svg-inline--fa fa-star" id="star"></span>
+          <span class="svg-inline--fa fa-star" id="star"></span>
+          <span class="svg-inline--fa fa-star" id="star"></span>
+          <span class="svg-inline--fa fa-star" id="star"></span>
+          <span class="svg-inline--fa fa-star" id="star-half"></span>
         <p class="my-2 py-0 mini-text">Average 4.8 rating within all avaiavle review systems, <a class="click-here color-light mini-text"href="">Learn more</a> </p>
       </div>
     </div>

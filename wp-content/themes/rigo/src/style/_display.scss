@@ -115,10 +115,30 @@ li {
 	background-color: #595a5c;
 }
 .logo-mobile-white{
-	width: 60px;
+	width: 20px;
 }
 .navbar-light {
-	.navbar-toggler{
-		color:$color-text-light
+	&.navbar-toggler{
+		color: $color-text-light;
 	}
+}
+.navbar{
+&.navbar-expand-lg{
+	&.navbar-light{
+		button span {
+	    /*overwriting*/
+	    color: white;
+	    font-size: 25px;
+	}
+}
+}
+}
+.logo-mid{
+	    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 20px;
+    top: 4px;
 }

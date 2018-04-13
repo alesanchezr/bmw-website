@@ -17,6 +17,9 @@
     &.xsmall{
       width: 3% !important;
     }
+    &.social{
+      width: 5.5% !important;
+    }
     &.awards{
     max-height: 80px;
     // filter: invert(100%);
@@ -39,3 +42,18 @@
       }
     }
   }
+  .svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;}
+
+  .fa-star{
+      font-size: 1em;
+      color: #ff9933;
+  }
+
+  .checked {
+    color: orange;
+}
