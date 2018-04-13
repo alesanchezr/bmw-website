@@ -39,7 +39,7 @@ $args = wpas_get_view_data();
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
       <div class="jb-text d-block">
-        <h1 class="my-0"><?php echo $args["wp_query"]->post_title; ?></h1>
+        <h1 class="my-0"><?php echo $args["wp_query"]["post_title"]; ?></h1>
         <p class="p-2 mb-0">Start customizing your wedding by choosing one of our wedding packages</p>
         <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Get a fast a quote</button><br>
         <h2 class="p-2" style="color:#993399;">or call now! 305 662 7442</h2>
@@ -60,7 +60,7 @@ $args = wpas_get_view_data();
               <hr>
             </div>
 
-            <p class="card-text">The Bath Club is a hidden gem located on the beach in the beautiful City of Miami Beach and is is the ideal setting for a romantic and memorable wedding. With over 26,000 square feet of event space, your guests will experience a different era as they enter our unique and charismatic rooms. From a simple yet distinctive cocktail to an 8-course sit-down meal, The Bath Club offers the ideal rental venue for an unforgettable event.</p>
+            <p class="card-text"><?php echo $args["wp_query"]["venue-description"]; ?></p>
           </div>
 
         </div>
