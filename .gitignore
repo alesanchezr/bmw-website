@@ -36,6 +36,8 @@
 
 # track this file .gitignore (i.e. do NOT ignore it)
 !composer.json
+!package.json
+!webpack.config.js
 
 # track .editorconfig file (i.e. do NOT ignore it)
 !.editorconfig
@@ -84,13 +86,13 @@ Thumbs.db
 # ignore everything in the "wp-content" directory, except:
 # "plugins" directory
 # and the whole "themes" directory
-wp-content/*
 wp-content/plugins/*
 !wp-content/themes/
 
 # ignore these plugins
 wp-content/plugins/hello.php
 wp-content/plugins/akismet
+!wp-content/plugins/gm-virtual-pages
 
 
 # ignore specific themes
