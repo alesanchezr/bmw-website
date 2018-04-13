@@ -36,10 +36,10 @@ $config = new ThemeConfig();
         'minify-html' => false,
         'styles' => [
             "page" => [ "all" => 'main.css' ],
+            "custom-post" => [ "all" => 'main.css' ]
         ],
         'scripts' => [
-            "page" => [
-                "all" => ['main.js']
-                ]
+                "page" => [ "all" => ['main.js'] ],
+                "custom-post" => [ "all" => ['main.js'] ]
             ]
         ]);
