@@ -1,3 +1,8 @@
+<?php  
+$args = wpas_get_view_data();
+// debug($args);
+// debug(wp_get_attachment_image_src( $args['wp_query']['venue-img-layout']));
+?>
 <div class="container py-md-4">
   <div class="row">
     <div class="card-group text-center testimonial-client">
@@ -44,3 +49,4 @@
       </div>
     </div>
 </div>
+

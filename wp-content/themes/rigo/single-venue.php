@@ -1,6 +1,6 @@
 <?php  
 $args = wpas_get_view_data();
-//debug($args);
+debug($args);
 ?>
 <?php get_header(); ?>
 <!--MENU MOBILE-->
@@ -20,7 +20,7 @@ $args = wpas_get_view_data();
   <!-- JUMBOTROM -->
   </div>
   <div class="parent d-none d-sm-block">
-    <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg')">
+    <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['wp_query']['venue-img-banner'])[0] ?>')">
       <div class="card logo medium mx-auto">
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
@@ -80,7 +80,6 @@ $args = wpas_get_view_data();
           </div>
         </div>
       </div>
-
       <!--  -->
       <div class="card bg-1 d-none d-sm-block">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="0">
@@ -93,30 +92,29 @@ $args = wpas_get_view_data();
             <div class="carousel-item active">
               <div class="row">
                 <div class= "col-4 px-0">
-                  <img class="d-block w-100 px-0" src="<?php echo get_template_directory_uri(); ?>/public/img/card1.jpg" alt="First slide">
+                  <img class="d-block w-100 px-0" src="<?php echo wp_get_attachment_image_src( $args['wp_query']['venue-img-carousel-1'])[0] ?>" alt="First slide">
                 </div>
                 <div class= "col-4 px-0">
-                  <img class="d-block w-100 px-0" src="<?php echo get_template_directory_uri(); ?>/public/img/card2.jpg" alt="First slide">
+                  <img class="d-block w-100 px-0" src="<?php echo wp_get_attachment_image_src( $args['wp_query']['venue-img-carousel-2'])[0] ?>" alt="First slide">
                 </div>
                 <div class= "col-4 px-0">
-                  <img class="d-block w-100 px-0" src="<?php echo get_template_directory_uri(); ?>/public/img/card6.jpg" alt="First slide">
+                  <img class="d-block w-100 px-0" src="<?php echo wp_get_attachment_image_src( $args['wp_query']['venue-img-carousel-3'])[0] ?>" alt="First slide">
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row">
                 <div class= "col-4 px-0">
-                  <img class="d-block w-100 px-0" src="<?php echo get_template_directory_uri(); ?>/public/img/card7.jpg" alt="First slide">
+                  <img class="d-block w-100 px-0" src="<?php echo wp_get_attachment_image_src( $args['wp_query']['venue-img-carousel-2'])[0] ?>" alt="First slide">
                 </div>
                 <div class= "col-4 px-0">
-                  <img class="d-block w-100 px-0" src="<?php echo get_template_directory_uri(); ?>/public/img/card4.jpg" alt="First slide">
+                  <img class="d-block w-100 px-0" src="<?php echo wp_get_attachment_image_src( $args['wp_query']['venue-img-carousel-3'])[0] ?>" alt="First slide">
                 </div>
                 <div class= "col-4 px-0">
-                  <img class="d-block w-100 px-0" src="<?php echo get_template_directory_uri(); ?>/public/img/card2.jpg" alt="First slide">
+                  <img class="d-block w-100 px-0" src="<?php echo wp_get_attachment_image_src( $args['wp_query']['venue-img-carousel-1'])[0] ?>" alt="First slide">
                 </div>
               </div>
             </div>
-
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -139,7 +137,7 @@ $args = wpas_get_view_data();
             </div>
           </div>
           <div class="col-md-6 col-12 image-div p-0"  style="min-height:200px;">
-            <div id="map" style="width:100%;height:100%;"></div>
+            <div id="map" style=""><?php echo $args["wp_query"]["venue-google-maps"]; ?></div>
           </div>
         </div>
       </div>
@@ -199,13 +197,13 @@ $args = wpas_get_view_data();
               <i class="fas fa-comments text-purple fa-2x"></i>
             </div>
             <div class="col-10">
-              <p>   Aggregated score 4.4</p>
+              <p>   Aggregated score <?php echo $args["wp_query"]["venue-score-point"]; ?></p>
             </div>
           </div>
           <hr>
           <div class="text-center">
             <h2><?php echo $args["wp_query"]["post_title"]; ?></h2>
-            <p>The Bath Club is a hidden gem located on the beach in the beautful City of Miami Beach and is the ideal setting for a romantic and memorable wedding. With over 26.000 square of feet of event space, your guests will experience a different era as they enter our unique and charismatic rooms. <br> From a simple yet distinctive cocktail to an 8-course sit-down meal, The Bath Club Offers the ideal rental venue for an unforgettable event.</p>
+            <p><?php echo $args["wp_query"]["venue-score-description"]; ?></p>
           </div>
         </div>
       </div>
@@ -214,7 +212,7 @@ $args = wpas_get_view_data();
           <div class="col-md-6 p-5 l mb-md-auto mt-md-5 pt-md-5 text-center">
             <span class="logo small px-1 pb-1 pb-md-4" id="bmw-logo-white-alone"></span>
             <p class="h8 card-title pb-md-5">Layout for <?php echo $args["wp_query"]["post_title"]; ?></p>
-            <img class="mx-auto" src="<?php echo get_template_directory_uri(); ?><?php echo $args["wp_query"]["venue-img-layout"]; ?>" alt="Generic placeholder image">
+            <img class="mx-auto" src="<?php echo wp_get_attachment_image_src( $args['wp_query']['venue-img-layout'])[0] ?>" alt="Generic placeholder image">
           </div>
           <div class="col-md-6  p-sm-5 l">
             <div class="p-5 text-center">
@@ -223,7 +221,7 @@ $args = wpas_get_view_data();
           </div>
         </div>
       </div>
-      <!-- CLIENT REVIEW -->
+      <!-- CLIENT SCORE -->
         <div class="card bg-1 d-none d-sm-block">
           <div class="row ">
             <div class="col-md-12 px-4 p-sm-5 l p-0 p-sm-3">
@@ -232,11 +230,13 @@ $args = wpas_get_view_data();
                 <h5> <strong></strong> </h5>
                 <p class="mb-0">Agregated Score</p>
                 <p class="mb-0"><?php echo $args["wp_query"]["venue-score-point"]; ?></p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star-half"></span>
+                <!--imprimir estrellas -->
+                <?php  echo $args['wp_query']['printStars'](); ?>
+                <!--<span class="fa fa-star checked"></span>-->
+                <!--<span class="fa fa-star checked"></span>-->
+                <!--<span class="fa fa-star checked"></span>-->
+                <!--<span class="fa fa-star"></span>-->
+                <!--<span class="fa fa-star-half"></span>-->
                 <p><?php echo $args["wp_query"]["venue-score-description"]; ?>, <a  href="" class="click-here color-dark">contact us</a>!</p>
               </div>
             </div>

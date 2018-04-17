@@ -1,3 +1,7 @@
+<?php  
+$args = wpas_get_view_data();
+//debug($args);
+?>
 <?php get_header(); ?>
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
