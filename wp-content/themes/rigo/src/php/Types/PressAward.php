@@ -3,7 +3,7 @@ namespace Rigo\Types;
     
 use WPAS\Types\BasePostType;
 
-class PressAwards extends BasePostType{
+class PressAward extends BasePostType{
     
 }
 ?>

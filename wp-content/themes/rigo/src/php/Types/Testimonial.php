@@ -3,7 +3,7 @@ namespace Rigo\Types;
     
 use WPAS\Types\BasePostType;
 
-class Testimonials extends BasePostType{
+class Testimonial extends BasePostType{
     
 }
 ?>

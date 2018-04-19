@@ -3,25 +3,71 @@ namespace Rigo\Controller;
 use Rigo\Types\Course;
 class VenueController{
     
-        function printStars($decimalPoints){
-    	$decimalPoints = floatval($decimalPoints);
-    	$resultStr = '';
-    	$integerPoints = floor( $decimalPoints );
+
     
-    	for($i = 0; $i<$integerPoints; $i++){
-    		$resultStr .= '<i class="fa fa-star" aria-hidden="true"></i>';
-    	}
+    public function getSingleVenueState(){
+        
+        $args = [];
+        $args['venue'] = (array) get_queried_object();
+        // debug($args);
+        $args['venue']['venue-description'] = get_field('venue-description', $args['venue']['ID']);
+        $args['venue']['venue-capacity'] = get_field('venue-capacity', $args['venue']['ID']);
+        $args['venue']['venue-time'] = get_field('venue-time', $args['venue']['ID']);
+        $args['venue']['venue-address'] = get_field('venue-address', $args['venue']['ID']);
+        $args['venue']['venue-acommodations'] = get_field('venue-acommodations', $args['venue']['ID']);
+        $args['venue']['venue-parking'] = get_field('venue-parking', $args['venue']['ID']);
+        $args['venue']['venue-transportation'] = get_field('venue-transportation', $args['venue']['ID']);
+        $args['venue']['venue-layout-description'] = get_field('venue-layout-description', $args['venue']['ID']);
+        $args['venue']['venue-score-point'] = get_field('venue-score-point', $args['venue']['ID']);
+        $args['venue']['venue-score-description'] = get_field('venue-score-description', $args['venue']['ID']);
+        $args['venue']['venue-pros'] = get_field('venue-pros', $args['venue']['ID']);
+        $args['venue']['venue-cons'] = get_field('venue-cons', $args['venue']['ID']);
+        $args['venue']['venue-bottom-half'] = get_field('venue-bottom-half', $args['venue']['ID']);
+        $args['venue']['venue-google-maps'] = get_field('venue-google-maps', $args['venue']['ID']);
+        $args['venue']['facebook-score'] = get_field('facebook-score', $args['venue']['ID']);
+        $args['venue']['google-score'] = get_field('google-score', $args['venue']['ID']);
+        $args['venue']['yelp-score'] = get_field('yelp-score', $args['venue']['ID']);
+        $args['venue']['weddingwire-score'] = get_field('weddingwire-score', $args['venue']['ID']);
+        $args['venue']['theknot-score'] = get_field('theknot-score', $args['venue']['ID']);
+        $args['venue']['venue-score-point'] = $this -> getReviewAverage([
+            $args['venue']['facebook-score'],
+            $args['venue']['google-score'],
+            $args['venue']['yelp-score'],
+            $args['venue']['weddingwire-score'],
+            $args['venue']['theknot-score']
+            ]);
+        $args['venue']['printStars'] = function ($decimalPoints){
+            $decimalPoints = floatval($decimalPoints);
+        	$resultStr = '';
+        	$integerPoints = floor( $decimalPoints );
     
-    	if($decimalPoints != $integerPoints) $resultStr .= '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+    	    for($i = 0; $i<$integerPoints; $i++){
+    		    $resultStr .= '<span class="svg-inline--fa fa-star" id="star"></span>';
+    	    }
     
-    	for($i = 0; $i<5-ceil($decimalPoints); $i++){
-    		$resultStr .= '<i class="fa fa-star-o" aria-hidden="true"></i>';
-    	}
+        	if($decimalPoints != $integerPoints) $resultStr .= '<span class="svg-inline--fa fa-star" id="star-half"></span>';
+        
+        	for($i = 0; $i<5-ceil($decimalPoints); $i++){
+        		$resultStr .= '<span class="svg-inline--fa fa-star" id="star-o"></span>';
+        	}
+        
+        	return $resultStr;
+        };
+        
+        // IMAGES
+        $args['venue']['venue-img-layout'] = get_field('venue-img-layout', $args['venue']['ID']);
+            $args['venue']['venue-img-banner'] = get_field('venue-img-banner', $args['venue']['ID']);
+        $args['venue']['venue-img-carousel-1'] = get_field('venue-img-carousel-1', $args['venue']['ID']);
+        $args['venue']['venue-img-carousel-2'] = get_field('venue-img-carousel-2', $args['venue']['ID']);
+        $args['venue']['venue-img-carousel-3'] = get_field('venue-img-carousel-3', $args['venue']['ID']);
+        $args['venue']['venue-post-gallery'] = $this -> getPostGalley($args['venue']['ID']);
+       
+        return $args;
     
-    	return $resultStr;
     }
     
     function getReviewAverage($arrayOfReviews){
+        // debug($arrayOfReviews);
         $reviewSum = 0;
     	$cont = 0;
     	foreach ($arrayOfReviews as $review) {
@@ -34,48 +80,22 @@ class VenueController{
     	return round($reviewSum / $cont,1);
     }
     
-    public function getSingleVenueState(){
-        $args = [];
-        $args['wp_query'] = (array) get_queried_object();
-        // debug($args);
-        $args['wp_query']['venue-description'] = get_field('venue-description', $args['wp_query']['ID']);
-        $args['wp_query']['venue-capacity'] = get_field('venue-capacity', $args['wp_query']['ID']);
-        $args['wp_query']['venue-time'] = get_field('venue-time', $args['wp_query']['ID']);
-        $args['wp_query']['venue-address'] = get_field('venue-address', $args['wp_query']['ID']);
-        $args['wp_query']['venue-acommodations'] = get_field('venue-acommodations', $args['wp_query']['ID']);
-        $args['wp_query']['venue-parking'] = get_field('venue-parking', $args['wp_query']['ID']);
-        $args['wp_query']['venue-transportation'] = get_field('venue-transportation', $args['wp_query']['ID']);
-        $args['wp_query']['venue-layout-description'] = get_field('venue-layout-description', $args['wp_query']['ID']);
-        $args['wp_query']['venue-score-point'] = get_field('venue-score-point', $args['wp_query']['ID']);
-        $args['wp_query']['venue-score-description'] = get_field('venue-score-description', $args['wp_query']['ID']);
-        $args['wp_query']['venue-pros'] = get_field('venue-pros', $args['wp_query']['ID']);
-        $args['wp_query']['venue-cons'] = get_field('venue-cons', $args['wp_query']['ID']);
-        $args['wp_query']['venue-bottom-half'] = get_field('venue-bottom-half', $args['wp_query']['ID']);
-        $args['wp_query']['venue-google-maps'] = get_field('venue-google-maps', $args['wp_query']['ID']);
+    function getPostGalley( $venueId ){
+        $imgs = [];
+        $gallery = get_post_gallery($venueId,false);
+        $ids = explode( ",", $gallery['ids'] );
+        foreach( $ids as $id ) {
+            $newImg = array(
+                'id' => $id, 
+                'thumbnail' => wp_get_attachment_image_src( $id ,'thumbnail')[0], 
+                'default' => wp_get_attachment_image_src( $id, 'full')[0], 
+                );
+            $imgs[] = $newImg;
+        } 
         
-        $facebookScore = $args['wp_query']['facebookScore'] = get_field('facebookScore', $args['wp_query']['ID']);
-        $args['wp_query']['googleScore'] = get_field('googleScore', $args['wp_query']['ID']);
-        $args['wp_query']['yelpScore'] = get_field('yelpScore', $args['wp_query']['ID']);
-        $args['wp_query']['weddingwireScore'] = get_field('weddingwireScore', $args['wp_query']['ID']);
-        $args['wp_query']['theknotScore'] = get_field('theknotScore', $args['wp_query']['ID']);
-        
-        
-        $args['wp_query']['venue-score-point'] = $this -> getReviewAverage(['1','3']);
-        // $args['wp_query']['printStars'] = $this -> printStars;
-        // IMG
-        $args['wp_query']['venue-img-layout'] = get_field('venue-img-layout', $args['wp_query']['ID']);
-        $args['wp_query']['venue-img-banner'] = get_field('venue-img-banner', $args['wp_query']['ID']);
-        $args['wp_query']['venue-img-carousel-1'] = get_field('venue-img-carousel-1', $args['wp_query']['ID']);
-        $args['wp_query']['venue-img-carousel-2'] = get_field('venue-img-carousel-2', $args['wp_query']['ID']);
-        $args['wp_query']['venue-img-carousel-3'] = get_field('venue-img-carousel-3', $args['wp_query']['ID']);
-        
-        return $args;
-   
-    
-
-    
+        return $imgs;
     }
-    
-}?>
+}
+?>
 
 
