@@ -10,7 +10,8 @@
         "wpackagist-plugin/advanced-custom-fields": "*",
         "alesanchezr\/wpas-wordpress-dash": "dev-master",
         "wp-cli\/wp-cli": "~0.22",
-        "psy\/psysh": "~0.6"
+        "psy\/psysh": "~0.6",
+        "wpackagist-plugin/svg-support": "^2.3"
     },
     "autoload": {
         "psr-4": {
