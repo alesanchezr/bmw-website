@@ -6422,7 +6422,7 @@ li {
   background-color: #fce6f7 !important; }
 
 .mounted-image {
-  margin-top: -70px;
+  margin-top: -60px;
   max-width: 70px;
   width: 70px;
   height: 70px;
@@ -6441,13 +6441,8 @@ li {
 .logo-mobile-white {
   width: 20px; }
 
-.navbar-light.navbar-toggler {
+.navbar-light .navbar-toggler {
   color: #ffffff; }
-
-.navbar.navbar-expand-lg.navbar-light button span {
-  /*overwriting*/
-  color: white;
-  font-size: 25px; }
 
 .logo-mid {
   position: absolute;
@@ -6704,6 +6699,18 @@ a {
 input {
   border-radius: 0 !important; }
 
+@media (min-width: 34em) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; } }
+
+@media (min-width: 48em) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; } }
+
 .element {
   position: relative;
   top: 50%;
@@ -6817,7 +6824,7 @@ input {
     background-color: #595a5c; }
 
 .rounded-circle {
-  width: 12%; }
+  width: 100%; }
 
 .jumbotron {
   background-repeat: no-repeat;

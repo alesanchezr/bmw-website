@@ -8,7 +8,6 @@ class VenueController{
     
     $args = [];
     $args['venue'] = (array) get_queried_object();
-    // debug($args);
     $args['venue']['venue-description'] = get_field('venue-description', $args['venue']['ID']);
     $args['venue']['venue-capacity'] = get_field('venue-capacity', $args['venue']['ID']);
     $args['venue']['venue-time'] = get_field('venue-time', $args['venue']['ID']);
@@ -97,20 +96,21 @@ class VenueController{
   public function renderPageWeddingVenue(){
     
     $args =[];
+    $args['page'] = (array) get_queried_object();
     $query = Venue::all();
     $args['venue_list'] = $query -> posts;
     
-    $newArrayVenues = array_map( function($venue){ 
-      // debug($venue);
+    $args['new_array_venue'] = array_map( function($venue){ 
       return [
-      'id' => $venue -> ID, $venue -> ID,
-      'post_title' => $venue -> post_title, $venue -> ID,
+      'id' => $venue -> ID,
+      'post_title' => $venue -> post_title,
       'thumbnail' =>  wp_get_attachment_image_src( get_field('venue-img-banner', $venue -> ID),'full')[0], 
       'address' =>  get_field('venue-address', $venue -> ID),
       ];
     }, $args['venue_list']);
-    //  debug($args['venue_list'] );
-    return $newArrayVenues;
+    
+    // debug($newArrayVenues);
+    return $args;
     
   }
   

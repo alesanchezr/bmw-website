@@ -24,6 +24,22 @@ input{
 	border-radius: 0 !important;
 }
 // CLASS
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
 .element{
 	position: relative;
 	top: 50%;
@@ -171,7 +187,7 @@ input{
 }
 //
 .rounded-circle{
-	width: 12%;
+	width: 100%;
 }
 //
 .jumbotron{

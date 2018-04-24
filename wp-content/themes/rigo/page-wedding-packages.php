@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php  
+/* Template Name: Wedding Packages */
+$args = wpas_get_view_data();
+get_header();
+?>
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
@@ -21,20 +25,12 @@
     <h4>305 662 7442</h4>
     <hr>
     <ul class="nav nav-tabs  large navbar-nav  ">
-
-      <li class="nav-item p-2 ">
-        <a class="nav-link" href="<?php echo get_template_directory_uri(); ?>/bmw-package-selected.html"><h4 >Merric</h4></a>
-        <hr class="m-0">
-      </li>
-      <li class="nav-item p-2 ">
-        <a class="nav-link" href="<?php echo get_template_directory_uri(); ?>/bmw-package-selected.html"><h4 >Rivera</h4></a>
-        <hr class="m-0">
-      </li>
-      <li class="nav-item p-2 ">
-        <a class="nav-link" href="<?php echo get_template_directory_uri(); ?>/bmw-package-selected.html"><h4 >Gala</h4></a>
-        <hr class="m-0">
-      </li>
-
+      <?php for( $i= 0; $i< count($args['new_array_package']); $i++){ ?>
+        <li class="nav-item p-2 ">
+          <a class="nav-link" href="<?php echo get_permalink( $args['new_array_package'][$i]["id"] )?>"><h4 ><?php echo $args['new_array_package'][$i]["post_title"]; ?></h4></a>
+          <hr class="m-0">
+        </li>
+      <?php } ?>
     </ul>
 
   </div>
@@ -49,36 +45,19 @@
     </div>
     <!-- CARGROUP -->
       <div class="card-group">
-        <div class="card">
-          <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/public/img/package-card-1.jpg" alt="Card image cap">
-          <div class="card-body max-h text-center pt-4">
-            <p class=" h8 card-title"><b>Merrick</b></p>
-            <p class="card-text">Have it all, the perfect place, the perfect flowers, the perfect menu...no detail has been overlooked. The Merrick Package offers just the right ampount of options and just right amount of choicess.</p>
-          </div>
-            <div class="card-footer text-center pb-3 pt-0">
-              <a href="./bmw-package-selected.html"><small class=" click-here">Read more</small></a>
+        <?php for( $j= 0; $j< count($args['new_array_package']); $j++){ ?>
+          <div class="card">
+            <img class="card-img-top" src="<?php echo $args['new_array_package'][$j]['thumbnail'] ?>" alt="Card image cap">
+            <div class="card-body max-h text-center pt-4">
+              <p class=" h8 card-title"><b><?php echo $args['new_array_package'][$j]["post_title"]; ?></b></p>
+              <p class="card-text"><?php echo $args['new_array_package'][$j]["description"]; ?>.</p>
             </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/public/img/package-card-2.jpg" alt="Card image cap">
-          <div class="card-body max-h text-center pt-4">
-            <p class=" h8 card-title"><b>Riviera</b></p>
-            <p class="card-text">When simplicity not enough, and what you seek is an extravagant affair, the name says it all. Look no further, the Riviera Wedding Package will leave you breathless.</p>
+              <div class="card-footer text-center pb-3 pt-0">
+                <a href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>"><small class=" click-here">Read more</small></a>
+              </div>
           </div>
-          <div class="card-footer text-center pb-3 pt-0">
-            <a href="./bmw-package-selected.html"><small class=" click-here">Read more</small></a>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/public/img/package-card-1.jpg" alt="Card image cap">
-          <div class="card-body max-h text-center pt-4">
-            <p class=" h8 card-title"><b>Gala</b></p>
-            <p class="card-text">Our simplest packages, but still maintianing the great Best Miami Award Winning Quality. Sit back, relax, and enjoy the ride.</p>
-          </div>
-          <div class="card-footer text-center pb-3 pt-0">
-            <a href="./bmw-package-selected.html"><small class=" click-here">Read more</small></a>
-          </div>
-        </div>
+          
+        <?php } ?>
       </div>
 <!-- AWARDA RECOGNITION -->
   <?php get_template_part('partials/awards','recognition'); ?>
@@ -112,8 +91,4 @@
     <!-- END JUMBOTROM -->
   </div>
 <!-- FOOTER FULL -->
-  <?php get_template_part('partials/footer','social-media'); ?>
-  <?php get_template_part('partials/footer','our-customers'); ?>
-  <?php get_template_part('partials/footer','menu'); ?>
-<!-- END FOOTER FULL -->
   <?php get_footer(); ?>

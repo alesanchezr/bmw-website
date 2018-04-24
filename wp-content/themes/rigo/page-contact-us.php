@@ -1,9 +1,13 @@
-<?php get_header(); ?>
+<?php 
+/* Template Name: Wedding Contact Us */
+$args = wpas_get_view_data();
+get_header('small'); 
+?>
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
     <div class="parent">
-      <div class="jumbotron text-center pt-4 pb-3 my-0 " style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/package-banner-1.jpg');">
+      <div class="jumbotron text-center pt-4 pb-3 my-0 " style="background-image: url('<?php echo wp_get_attachment_image_src( $args['contact']['contact-img-banner'],'full')[0] ?>');">
         <div class="card logo medium mx-auto">
           <span class="card-img-top mx-auto" id="bmw-logo"></span>
         </div>
@@ -51,8 +55,4 @@
       </div>
     </div>
  <!-- FOOTER FULL -->
-  <?php get_template_part('partials/footer','social-media'); ?>
-  <?php get_template_part('partials/footer','our-customers'); ?>
-  <?php get_template_part('partials/footer','menu'); ?>
-<!-- END FOOTER FULL -->
   <?php get_footer(); ?>

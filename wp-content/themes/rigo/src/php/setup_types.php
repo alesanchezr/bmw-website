@@ -12,3 +12,4 @@ $typeManager->newType(['type' => 'venue', 'class' => 'Venue'])->register();
 $typeManager->newType(['type' => 'wedding-package', 'class' => 'WeddingPackage'])->register();
 $typeManager->newType(['type' => 'press-award', 'class' => 'PressAward'])->register();
 $typeManager->newType(['type' => 'testimonial', 'class' => 'Testimonial'])->register();
+$typeManager->newType(['type' => 'about-us', 'class' => 'AboutUs'])->register();

@@ -1,8 +1,13 @@
- <?php get_header(); ?>
- <?php get_template_part('partials/menu','home'); ?>
+<?php 
+ /* Template Name: Wedding Home */
+ $args = wpas_get_view_data();
+ debug($args);
+ get_header('small'); 
+ ?>
+<?php get_template_part('partials/menu-home','others'); ?>
   <!-- JUMBOTROM -->
   <div class="parent">
-    <div class="jumbotron jb-large text-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/home-banner-1.jpg');">
+    <div class="jumbotron jb-large text-center" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-banner'],'full')[0] ?>');">
       <div class="card logo medium mx-auto">
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
@@ -21,7 +26,7 @@
   <!-- CARD GROUP -->
   <div class="home card-group">
     <div class="card">
-      <div class="img mx-md-0 mx-3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/home-card-1.jpg');"></div>
+      <div class="img mx-md-0 mx-3" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-venues'],'full')[0] ?>;"></div>
       <div class="card-body text-center">
         <div class="card-middle-button">
           <p class="card-title h7">Wedding Venues</p>
@@ -33,7 +38,7 @@
       </div>
     </div>
     <div class="card">
-      <div class="img mx-md-0 mx-3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/home-card-2.jpg');"></div>
+      <div class="img mx-md-0 mx-3" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-packages'],'full')[0] ?>"></div>
       <div class="card-body text-center">
         <div class="card-middle-button">
           <p class="card-title h7">Wedding Packages</p>
@@ -51,7 +56,7 @@
   <!-- AWARDA RECOGNITION -->
   <?php get_template_part('partials/awards','recognition'); ?>
   <!-- JUMBOTROM -->
-  <div class="jumbotron jb-award jumbotron-cover d-none d-sm-block py-4 px-auto mb-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/home-banner-2.jpg');">
+  <div class="jumbotron jb-award jumbotron-cover d-none d-sm-block py-4 px-auto mb-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-banner-2'],'full')[0] ?>');">
     <div class="col-md-6 text-center ">
       <span class="logo medium-dark my-auto" id="bmw-logo-dark"></span>
       <p class=" col-md-10 my-0 mx-auto px-sm-5 pb-sm-3">This is your opportunity to trusly share and celebrate the beginningfo your journey. Let us take the work out of wedding planning and put the fun into your life...for a lifetime of memories.</p>
@@ -71,10 +76,6 @@
   </div>
   <!-- CLIENT TESTIMONIALS -->
   <?php get_template_part('partials/client','testimonial'); ?>
-  <!-- FOOTER FULL -->
-  <?php get_template_part('partials/footer','social-media'); ?>
-  <?php get_template_part('partials/footer','our-customers'); ?>
-  <?php get_template_part('partials/footer','menu'); ?>
   <!-- MODAL -->
   <div id="openModal" class="modalDialog d-none">
     <div class="body-request p-5" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/request-2.jpg')">
@@ -123,6 +124,6 @@
       </div>
     </div>
   </div>
-  
+<!-- FOOTER FULL -->
   <?php get_footer(); ?>
   </html>

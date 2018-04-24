@@ -1,6 +1,5 @@
 <?php
 /* Template Name: Wedding Venues and Location */
-$newArrayVenues = wpas_get_view_data();
 $args = wpas_get_view_data();
 get_header();
 ?>
@@ -31,21 +30,21 @@ get_header();
 </div>
 <!-- CARD -->
   <div class="card-deck text-sm-center"> 
-    <?php for ($x=0; $x< count($newArrayVenues); $x++){ ?>
+    <?php for ($x=0; $x< count($args['new_array_venue']); $x++){ ?>
       <div class="row col-md-4  mx-auto ">
         <div class="col-md-12 col-4 p-0 p-sm-2 center-vertical-div">
-          <img class="card-img-top" src="<?php echo $newArrayVenues[$x]['thumbnail'] ?>" alt="Card image cap">
+          <img class="card-img-top" src="<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>" alt="Card image cap">
         </div>
         <a class="color-dark" href="">
           <div class="col-md-12 col-8">
             <div class="card text-sm-center">
               <div class="card-body px-0 px-sm-2 ">
-                <h5 class="card-title"><?php echo $newArrayVenues[$x]["post_title"]; ?></h5>
-                <p class="card-text"><?php echo $newArrayVenues[$x]["address"]; ?></p>
+                <h5 class="card-title"><?php echo $args['new_array_venue'][$x]["post_title"]; ?></h5>
+                <p class="card-text"><?php echo (empty($args['new_array_venue'][$x]["address"])) ? '': $args['new_array_venue'][$x]["address"]; ?></p>
                 <hr class="d-sm-none d-block">
               </div>
               <div class="card-footer d-none d-sm-block">
-                <a href="<?php echo get_permalink( $newArrayVenues[$x]["id"] )?>"><small class=" click-here">Read more</small></a>
+                <a href="<?php echo get_permalink( $args['new_array_venue'][$x]["id"] )?>"><small class=" click-here">Read more</small></a>
               </div>
             </div>
           </div>
@@ -54,18 +53,8 @@ get_header();
     
     <?php  }; ?>
   </div>
-
-
-  
   <!--    -->
-</div>
-<!--  -->
-</div>
 <!-- AWARDA RECOGNITION -->
 <?php get_template_part('partials/awards','recognition'); ?>
 <!-- FOOTER FULL -->
-<?php get_template_part('partials/footer','social-media'); ?>
-<?php get_template_part('partials/footer','our-customers'); ?>
-<?php get_template_part('partials/footer','menu'); ?>
-<!-- END FOOTER FULL -->
 <?php get_footer(); ?>

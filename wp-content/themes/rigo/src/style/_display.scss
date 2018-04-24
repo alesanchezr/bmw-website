@@ -95,7 +95,7 @@ li {
 }
 //
 .mounted-image{
-	margin-top:-70px;
+	margin-top:-60px;
 	max-width:70px;
 	width:70px;
 	height:70px;
@@ -118,20 +118,9 @@ li {
 	width: 20px;
 }
 .navbar-light {
-	&.navbar-toggler{
-		color: $color-text-light;
+	.navbar-toggler{
+		color:$color-text-light
 	}
-}
-.navbar{
-&.navbar-expand-lg{
-	&.navbar-light{
-		button span {
-	    /*overwriting*/
-	    color: white;
-	    font-size: 25px;
-	}
-}
-}
 }
 .logo-mid{
 	    position: absolute;

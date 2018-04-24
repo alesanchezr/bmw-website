@@ -1,7 +1,7 @@
 <div class="men-mobile d-sm-none d-block">
 <nav class="navbar navbar-expand-lg navbar-light  mx-auto p-0"  >
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".homeMenu" aria-controls="homeMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <i class="fas fa-bars"></i>
   </button>
   <button class="navbar-toggler collapse homeMenu" type="button" data-toggle="collapse" data-target=".homeMenu" aria-controls="homeMenu" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-times"></i>
