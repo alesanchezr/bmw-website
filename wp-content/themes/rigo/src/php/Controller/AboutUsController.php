@@ -2,6 +2,7 @@
 namespace Rigo\Controller;
 use Rigo\Types\Course;
 use Rigo\Types\AboutUs;
+use Rigo\Types\Testimonial;
 class AboutUsController{
 
   public function getSingleAboutUsState(){
@@ -24,6 +25,13 @@ class AboutUsController{
     $args['about_us']['experience'] = get_field('experience', $args['about_us']['ID']);
     $args['about_us']['description'] = get_field('description', $args['about_us']['ID']);
     
+    $aux = get_queried_object();
+    $testimonials = get_field('testimonials', $aux -> ID);
+    $args['testimonials'] = Testimonial::getTestimonials($testimonials);
+    $args['testimonials'] = array_map(function($testimonial) { 
+          return Testimonial::extendTestimonials((array)$testimonial);},
+          $args['testimonials'] );
+          
     $query = AboutUs::all();
     $args['about_us_team'] = $query -> posts;
     $args['new_array_about_us'] = array_map( function($about_us){ 

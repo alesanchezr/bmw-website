@@ -69,53 +69,8 @@ get_header();
     <h2>What our clients say about Fetes & Events</h2>
   </div>
 </div>
-
 <!-- CLIENT TESTIMONIALS -->
-<div class="row subtitle-bar light">
-  <div class="col-md-12 text-center pt-4 pb-3">
-    <h2>Client's Testimonials</h2>
-  </div>
-</div>
-<div class="container pb-4 pt-0">
-  <div class="row">
-    <div class="card-group text-center testimonial-client">
-    <div class="row col-md-6  mx-auto ">
-      <div class="col-md-12 col-6 ">
-        <div class="card text-center">
-          <div class="card-body">
-            <p class="card-text media-body">
-              "Words cannot express how amazing our wedding day was. Vicky and the rest of the Best Miami Weddings staff was amazing! EVERYONE has made it a point to tell me how wonderful the night was, how much fun they had, and how incredible the venue was. The food was spectacular too!"
-            </p>
-          </div>
-          <div class="card-footer py-0">
-            <p class="media-body">Kristen</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--    -->
-    <div class="row col-md-6  mx-auto ">
-      <div class="col-md-12 col-6 ">
-        <div class="card text-center">
-          <div class="card-body">
-            <p class="card-text media-body">
-              "I can not give enough praise to the ladies at Best Miami Weddings. They were there for me every step of the way! Without Karla and Yanel i would not have made it through the wedding planning process. They answered every call text and email no matter the day or time! I'm almost sad that it's over because they really did become as close as friends to me!"
-            </p>
-          </div>
-          <div class="card-footer py-0">
-            <p class="media-body">Christie</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-  <div class="row">
-      <div class="col-md-12 text-center">
-        <p class="foot-client">Read more testimonial by <a class="click-here color-dark" href="https://www.w3schools.com"> clickng here </a></p>
-      </div>
-    </div>
-</div>
+  <?php get_template_part('partials/client','testimonial-small'); ?>
 <!--  -->
 <div class="row subtitle-bar py-3">
   <div class="col-md-12 text-center padding-all">

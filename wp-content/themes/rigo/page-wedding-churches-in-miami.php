@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Wedding Church */
+/* Template Name: Wedding Churches in Miami */
 $args = wpas_get_view_data();
 get_header();
 ?>
@@ -12,7 +12,7 @@ get_header();
       <span class="card-img-top mx-auto" id="bmw-logo"></span>
     </div>
     <div class="">
-      <h1 class="mb-5">Miami Wedding Venues</h1>
+      <h1 class="mb-5">Miami Wedding Churches</h1>
       <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Request a quote</button><br>
       <h2 class="p-2" style="color:#993399;">or call now! 305 662 7442</h2>
     </div>
@@ -21,30 +21,30 @@ get_header();
 <!-- END JUMBOTROM -->
 <div class="row subtitle-bar light ">
   <div class="col-md-12 text-center py-5 d-none d-sm-block">
-    <h2>Wow your guests, you need a venue that will make you shine!</h2>
+    <h2 class= "px-5">Allow us to assist you in selecting church of your dreams, a selection of all the churches for wedding ceremonies, that are sure to wow you and your guest.</h2>
   </div>
 </div>
 
 <div class="d-sm-none d-block text-center">
-  <h1>Wedding Venues</h1>
+  <h1>Miami Wedding Churches</h1>
 </div>
 <!-- CARD -->
   <div class="card-deck text-sm-center"> 
-    <?php for ($x=0; $x< count($args['new_array_venue']); $x++){ ?>
+    <?php for ($x=0; $x< count($args['new_array_church']); $x++){ ?>
       <div class="row col-md-4  mx-auto ">
         <div class="col-md-12 col-4 p-0 p-sm-2 center-vertical-div">
-          <img class="card-img-top" src="<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>" alt="Card image cap">
+          <img class="card-img-top" src="<?php echo $args['new_array_church'][$x]['thumbnail'] ?>" alt="Card image cap">
         </div>
         <a class="color-dark" href="">
           <div class="col-md-12 col-8">
             <div class="card text-sm-center">
               <div class="card-body px-0 px-sm-2 ">
-                <h5 class="card-title"><?php echo $args['new_array_venue'][$x]["post_title"]; ?></h5>
-                <p class="card-text"><?php echo (empty($args['new_array_venue'][$x]["address"])) ? '': $args['new_array_venue'][$x]["address"]; ?></p>
+                <h5 class="card-title"><?php echo $args['new_array_church'][$x]["post_title"]; ?></h5>
+                <p class="card-text"><?php echo (empty($args['new_array_church'][$x]["address"])) ? '': $args['new_array_church'][$x]["address"]; ?></p>
                 <hr class="d-sm-none d-block">
               </div>
               <div class="card-footer d-none d-sm-block">
-                <a href="<?php echo get_permalink( $args['new_array_venue'][$x]["id"] )?>"><small class=" click-here">Read more</small></a>
+                <a href="<?php echo get_permalink( $args['new_array_church'][$x]["id"] )?>"><small class=" click-here">Read more</small></a>
               </div>
             </div>
           </div>

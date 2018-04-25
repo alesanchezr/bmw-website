@@ -34,8 +34,6 @@ class TestimonialController{
     
     $args =[];
     $args['testimonial_list'] = $query -> posts;
-    // debug($query);
-    
     $args['new_array_testimonial'] = array_map( function($testimonial){ 
       return [
       'post_title' => $testimonial -> post_title,
@@ -55,7 +53,7 @@ class TestimonialController{
           
           return round($reviewSum / $cont,1);
         },
-      'printStars' => function ($decimalPoints){
+        'printStars' => function ($decimalPoints){
           $decimalPoints = floatval($decimalPoints);
           $resultStr = '';
           $integerPoints = floor( $decimalPoints );
@@ -74,7 +72,6 @@ class TestimonialController{
         }
       ];
     }, $args['testimonial_list']);
-      // debug( $args['new_array_testimonial'] );
     return $args;
     
   }

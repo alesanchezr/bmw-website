@@ -18,6 +18,13 @@ class PackageController{
         $args['package']['package-img-card-3'] = get_field('package-img-card-3', $args['package']['ID']);
         $args['package']['package-card-4'] = get_field('package-card-4', $args['package']['ID']);
         $args['package']['package-img-card-4'] = get_field('package-img-card-4', $args['package']['ID']);
+        
+        $aux = get_queried_object();
+        $testimonials = get_field('testimonials', $aux -> ID);
+        $args['testimonials'] = Testimonial::getTestimonials($testimonials);
+        $args['testimonials'] = array_map(function($testimonial) { 
+            return Testimonial::extendTestimonials((array)$testimonial);},
+            $args['testimonials'] );
   
         return $args;
         
@@ -29,10 +36,9 @@ class PackageController{
         $aux = get_queried_object();
         $testimonials = get_field('testimonials', $aux -> ID);
         $args['testimonials'] = Testimonial::getTestimonials($testimonials);
-        
         $args['testimonials'] = array_map(function($testimonial) { 
-            return Testimonial::extendTestimonials((array)$testimonial);
-        }, $args['testimonials'] );
+            return Testimonial::extendTestimonials((array)$testimonial);},
+            $args['testimonials'] );
         // debug($aux);
         // debug($args['testimonials']);
         $query = WeddingPackage::all();

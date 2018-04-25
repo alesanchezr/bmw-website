@@ -20,6 +20,7 @@ $controller->route([ 'slug' => 'Single:about-us', 'controller' => 'AboutUsContro
 $controller->route([ 'slug' => 'Single:wedding-package', 'controller' => 'PackageController:getSinglePackageState' ]);  
 $controller->route([ 'slug' => 'Single:testimonial', 'controller' => 'TestimonialController:getSingleTestimonialState' ]);  
 $controller->route([ 'slug' => 'Single:press-award', 'controller' => 'PressAwardController:getSinglePressAwardState' ]);  
+$controller->route([ 'slug' => 'Single:church', 'controller' => 'ChurchController:getSingleChurchState' ]);  
 $controller->route([ 'slug' => 'home', 'controller' => 'SampleController:getHomeData' ]);  
 
 use \GM\VirtualPages\Page;
