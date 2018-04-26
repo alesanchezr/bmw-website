@@ -111,10 +111,9 @@ if [ -f "./wp-config.php" ];
 fi
 
 # parse the current directory name
-wp core install --url=$SITE_URL --title=$SITE_NAME --admin_user=$SITE_USER --admin_password=$SITE_PASS --admin_email=$SITE_EMAIL
+wp core install --url="$SITE_URL" --title="$SITE_NAME" --admin_user="$SITE_USER" --admin_password="$SITE_PASS" --admin_email="$SITE_EMAIL"
 
-# create database, and install WordPress
-
+if [ $? -ne 0 ]; then exit 0 fi
 # discourage search engines
 wp option update blog_public 0
 
