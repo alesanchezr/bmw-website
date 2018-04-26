@@ -7,6 +7,7 @@
 @import "tipography";
 @import "button";
 @import "display";
+@import "navbar";
 @import "views/home";
 @import "views/request";
 @import "img-svg";
@@ -169,6 +170,7 @@ input{
 	color: $color-text-light;
 	display: flex;
 	justify-content: center;
+	padding: 55px;
 	a{
 		font-size: 12px;
 	}

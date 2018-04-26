@@ -26,7 +26,7 @@ print_question () {
     echo -e "$bgCyan input>\e[0m $cyan $1 \e[0m" 
 }
 
-if [ -d "./.env" ]; 
+if [ -f ".env" ]; 
     then
         print_info "Loading environment file"
         source ./.env
@@ -42,6 +42,15 @@ if [ $GIT_IS_AVAILABLE -eq 0 ];
     else 
         print_error "Git is required, but not installed" 
         exit 1
+fi
+
+mysql-ctl status > /dev/null
+IS_AVAILABLE=$?
+if [ $IS_AVAILABLE -eq 0 ]; 
+    then echo "" 
+    else 
+        mysql-ctl start
+        print_info "Starting mysql" 
 fi
 
 composer --version > /dev/null
@@ -139,8 +148,11 @@ wp plugin delete hello
 wp theme activate rigo
 wp plugin activate advanced-custom-fields
 
+phpmyadmin-ctl install > /dev/null
+
 echo "================================================================="
 echo "Installation is complete."
 echo "================================================================="
 
 exit 0
+fi

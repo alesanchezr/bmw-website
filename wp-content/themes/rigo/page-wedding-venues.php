@@ -31,8 +31,8 @@ get_header();
 <!-- CARD -->
   <div class="card-deck text-sm-center"> 
     <?php for ($x=0; $x< count($args['new_array_venue']); $x++){ ?>
-      <div class="row col-md-4  mx-auto ">
-        <div class="col-md-12 col-4 p-0 p-sm-2 center-vertical-div">
+      <div class="row col-md-4  mx-auto p-1">
+        <div class="col-md-12 col-4 p-0 m-0 center-vertical-div">
           <img class="card-img-top" src="<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>" alt="Card image cap">
         </div>
         <a class="color-dark" href="">
