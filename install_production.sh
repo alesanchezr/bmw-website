@@ -30,7 +30,18 @@ git --version > /dev/null
 GIT_IS_AVAILABLE=$?
 if [ $GIT_IS_AVAILABLE -eq 0 ]; 
     then echo "" 
-    else print_error "No wordpress installation found" 
+    else 
+        print_error "Git is required, but not installed" 
+        exit 1
+fi
+
+composer --version > /dev/null
+COMPOSER_IS_AVAILABLE=$?
+if [ $COMPOSER_IS_AVAILABLE -eq 0 ]; 
+    then echo "" 
+    else 
+        print_error "Composer is required, but not installed"
+        exit 1
 fi
 
 if [ -d "./wp-content" ]; 
@@ -46,11 +57,11 @@ fi
 echo "" 
 if [ -d "./vendor" ]; 
     then
-        echo "Composer was found, proceeding with the installation..."
+        echo "/vendor folder found, udating packages..."
+        composer update
     else 
-        print_error "You need to install the composer packages first"
-        print_hint "Run: $ composer install\e[0m"
-        exit 1
+        echo "NO /vendor folder found, installing packages from scratch..."
+        composer install
 fi
 
 wp --info > /dev/null
