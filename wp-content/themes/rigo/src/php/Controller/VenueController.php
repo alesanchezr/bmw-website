@@ -96,6 +96,10 @@ class VenueController{
   public function renderPageWeddingVenue(){
     
     $args =[];
+    $args['venue'] = (array) get_queried_object();
+    $args['venue']['venue-img-banner'] = get_field('venue-img-banner', $args['venue']['ID']);
+    
+    $args =[];
     $args['page'] = (array) get_queried_object();
     $query = Venue::all();
     $args['venue_list'] = $query -> posts;

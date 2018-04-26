@@ -1,6 +1,7 @@
 <?php
 namespace Rigo\Controller;
 use Rigo\Types\Course;
+use Rigo\Types\Church;
 class ChurchController{
 
   public function getSingleChurchState(){
@@ -17,7 +18,6 @@ class ChurchController{
     $args['church']['church-bottom-half'] = get_field('church-bottom-half', $args['church']['ID']);
 // IMAGES
     $args['church']['church-img-banner'] = get_field('church-img-banner', $args['church']['ID']);
-
     return $args;
   }
   
@@ -37,7 +37,7 @@ class ChurchController{
       ];
     }, $args['church_list']);
     
-    debug($args['new_array_church']);
+    // debug($args['new_array_church']);
     return $args;
     
   }

@@ -6925,6 +6925,11 @@ input {
     color: #ffffff !important; }
   .click-here.color-dark {
     color: #000000 !important; }
+  .click-here.menu-hover {
+    text-decoration: none !important; }
+    .click-here.menu-hover:hover {
+      font-weight: bold;
+      text-decoration: underline !important; }
 
 .color-dark {
   color: #000000 !important; }
