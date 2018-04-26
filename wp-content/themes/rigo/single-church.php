@@ -1,6 +1,5 @@
 <?php  
 $args = wpas_get_view_data();
-// debug($args);
 ?>
 <?php get_header(); ?>
 <!--MENU MOBILE-->
@@ -25,7 +24,7 @@ $args = wpas_get_view_data();
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
       <div class="jb-text d-block">
-        <h1 class="my-0"><?php echo $args["church"]["post_title"]; ?></h1>
+        <h1 class="mt-0 mb-4"><?php echo $args["church"]["post_title"]; ?></h1>
         <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Get a fast a quote</button><br>
         <h2 class="p-2" style="color:#993399;">or call now! 305 662 7442</h2>
       </div>

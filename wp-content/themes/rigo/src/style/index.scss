@@ -324,6 +324,13 @@ input{
 	&.color-dark{
 		color: $color-text-dark !important;
 	}
+	&.menu-hover{
+		text-decoration: none !important;
+		&:hover{
+			font-weight:bold;
+			text-decoration:underline !important;;
+		}
+	}
 }
 .color-dark{
 		color: $color-text-dark !important;

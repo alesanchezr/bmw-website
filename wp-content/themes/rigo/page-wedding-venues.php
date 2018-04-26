@@ -7,7 +7,7 @@ get_header();
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
 <div class="parent d-none d-sm-block">
-  <div class="jumbotron text-center my-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/banner1.jpg');">
+  <div class="jumbotron text-center my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>');">
     <div class="card logo medium mx-auto">
       <span class="card-img-top mx-auto" id="bmw-logo"></span>
     </div>

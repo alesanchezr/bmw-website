@@ -14,13 +14,16 @@ $controller->route([ 'slug' => 'Page:wedding-miami', 'controller' => 'HomeContro
 $controller->route([ 'slug' => 'Page:press-awards', 'controller' => 'PressAwardController:renderPagePressAward' ]);  
 $controller->route([ 'slug' => 'Page:testimonials', 'controller' => 'TestimonialController:renderPageTestimonial' ]);  
 $controller->route([ 'slug' => 'Page:wedding-packages', 'controller' => 'PackageController:renderPageWeddingPackage' ]);  
-$controller->route([ 'slug' => 'Page:wedding-venues-locations', 'controller' => 'VenueController:renderPageWeddingVenue' ]);  
+$controller->route([ 'slug' => 'Page:wedding-venues-locations', 'controller' => 'VenueController:renderPageWeddingVenue' ]);
+$controller->route([ 'slug' => 'Page:wedding-churches-in-miami', 'controller' => 'ChurchController:renderPageChurch' ]);
+
 $controller->route([ 'slug' => 'Single:venue', 'controller' => 'VenueController:getSingleVenueState' ]);  
 $controller->route([ 'slug' => 'Single:about-us', 'controller' => 'AboutUsController:getSingleAboutUsState' ]);  
 $controller->route([ 'slug' => 'Single:wedding-package', 'controller' => 'PackageController:getSinglePackageState' ]);  
 $controller->route([ 'slug' => 'Single:testimonial', 'controller' => 'TestimonialController:getSingleTestimonialState' ]);  
 $controller->route([ 'slug' => 'Single:press-award', 'controller' => 'PressAwardController:getSinglePressAwardState' ]);  
 $controller->route([ 'slug' => 'Single:church', 'controller' => 'ChurchController:getSingleChurchState' ]);  
+
 $controller->route([ 'slug' => 'home', 'controller' => 'SampleController:getHomeData' ]);  
 
 use \GM\VirtualPages\Page;
