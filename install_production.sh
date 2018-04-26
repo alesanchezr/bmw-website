@@ -11,7 +11,7 @@ fullpath=${PWD}
 baseSiteDirectory=$(echo $fullpath | sed 's/.*workspace//g')
 
 echo "================================================================="
-echo -e "$blue 4Geeks Academy\e[0m WordPress Installer!!"
+echo -e "$blue \e[0m WordPress Installer!!"
 echo "================================================================="
 print_error () { 
     echo -e "$bgRed Error!\e[0m $red $1\e[0m" 
@@ -76,8 +76,12 @@ if [ $WP_IS_AVAILABLE -eq 0 ];
 fi
 
 if [ -d "./wp-includes" ]; then
-    print_error "WordPress is already installed"
-    exit 1
+    if [ "$1" == "--force" ]; then
+            print_info "WordPress is already installed, proceeding with the rest of the installation..."
+	    else
+            print_info "WordPress is already installed"
+            exit 1
+    fi
 fi
 
 
@@ -89,6 +93,15 @@ wp core config --dbname=$DB_NAME --dbuser=$DB_USER --dbpass=$DB_PASS --extra-php
 define( 'WP_DEBUG', true );
 define( 'DISALLOW_FILE_EDIT', true );
 PHP
+
+echo "" 
+if [ -d "./wp-config.php" ]; 
+    then
+        echo "wp-config.php successfully created..."
+    else 
+        echo "NO wp-config.php was found"
+        exit 1
+fi
 
 # parse the current directory name
 wp core install --url=$SITE_URL --title=$SITE_NAME --admin_user=$SITE_USER --admin_password=$SITE_PASS --admin_email=$SITE_EMAIL
