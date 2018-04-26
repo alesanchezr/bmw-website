@@ -26,8 +26,7 @@ print_question () {
     echo -e "$bgCyan input>\e[0m $cyan $1 \e[0m" 
 }
 
-if [ -d "./.env" ]; 
-    then
+if [ -f ./.env ]; then 
         print_info "Loading environment file"
         source ./.env
     else 
@@ -103,7 +102,7 @@ define( 'DISALLOW_FILE_EDIT', true );
 PHP
 
 echo "" 
-if [ -d "./wp-config.php" ]; 
+if [ -f "./wp-config.php" ]; 
     then
         echo "wp-config.php successfully created..."
     else 
