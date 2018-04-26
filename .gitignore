@@ -46,7 +46,8 @@
 !README.md
 
 # track installation script
-!install.sh
+!install_c9.sh
+!install_production.sh
 
 # ignore all files that start with ~
 ~*
