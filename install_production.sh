@@ -26,6 +26,15 @@ print_question () {
     echo -e "$bgCyan input>\e[0m $cyan $1 \e[0m" 
 }
 
+if [ -d "./.env" ]; 
+    then
+        print_info "Loading environment file"
+        source ./.env
+    else 
+        print_error "No .env file was found"
+        exit 1
+fi
+
 git --version > /dev/null
 GIT_IS_AVAILABLE=$?
 if [ $GIT_IS_AVAILABLE -eq 0 ]; 
@@ -76,17 +85,16 @@ if [ $WP_IS_AVAILABLE -eq 0 ];
 fi
 
 if [ -d "./wp-includes" ]; then
-    if [ "$1" == "--force" ]; then
-            print_info "WordPress is already installed, proceeding with the rest of the installation..."
-	    else
-            print_info "WordPress is already installed"
-            exit 1
-    fi
+        if [ "$1" == "--force" ]; then
+                print_info "WordPress is already installed, proceeding with the rest of the installation..."
+    	    else
+                print_info "WordPress is already installed"
+                exit 1
+        fi
+    else
+        # download the WordPress core files
+        wp core download
 fi
-
-
-# download the WordPress core files
-wp core download
 
 # create the wp-config file with our standard setup
 wp core config --dbname=$DB_NAME --dbuser=$DB_USER --dbpass=$DB_PASS --extra-php <<PHP
