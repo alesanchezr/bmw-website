@@ -48,7 +48,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @-ms-viewport {
   width: device-width; }
@@ -6274,7 +6274,8 @@ a.text-dark:hover, a.text-dark:focus {
 *   Modules dependencies
 */
 body {
-  font-family: "Rufina", serif; }
+  font-family: "Rufina", serif;
+  letter-spacing: 0.5px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Rufina", serif; }
@@ -6287,10 +6288,12 @@ h2 {
   margin-bottom: 0; }
 
 .h7 {
-  font-size: 25px !important; }
+  font-size: 25px !important;
+  letter-spacing: 1px; }
 
 .h8 {
-  font-size: 22px !important; }
+  font-size: 22px !important;
+  letter-spacing: 1px; }
 
 .btn {
   color: #ffffff;
@@ -6299,7 +6302,8 @@ h2 {
   border: 0px;
   font-family: "Rufina", serif;
   font-weight: bold;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding: 13px 55px; }
   .btn:hover {
     background-color: #666666;
     color: white; }
@@ -6312,24 +6316,20 @@ h2 {
     color: Black; }
 
 .btw-l {
-  width: 193px;
   height: 45px;
   font-size: 14px; }
 
 .btw-m {
-  width: 252px;
   height: 45px;
   font-size: 13px; }
 
 .btw-s {
-  width: 118px;
   height: 27px;
   font-size: 10px;
   border-radius: 13px 13px;
   font-weight: none; }
 
 .btw-xl {
-  width: 450px;
   height: 45px;
   font-size: 13px;
   border-radius: 50px 50px; }
@@ -6433,7 +6433,7 @@ li {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
-  border-color: transparent; }
+  border-color: rgba(0, 0, 0, 0); }
 
 .footer-mobile {
   background-color: #595a5c; }
@@ -6452,6 +6452,16 @@ li {
   right: 0;
   width: 20px;
   top: 4px; }
+
+.navbar .nav-link {
+  letter-spacing: 1.1px; }
+
+.subnavbar h5 {
+  letter-spacing: 0.8px;
+  line-height: 26px; }
+
+.subnavbar .click-here {
+  line-height: 28px; }
 
 .home .card .img {
   padding: 0px;
@@ -6621,7 +6631,7 @@ li {
   width: 5.5% !important; }
 
 .logo.awards {
-  max-height: 80px; }
+  max-height: 100px; }
   .logo.awards.large {
     max-height: 110px; }
 
@@ -6811,7 +6821,8 @@ input {
   background-color: #595a5c;
   color: #ffffff;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 55px; }
   .awards-recognition a {
     font-size: 12px; }
   .awards-recognition p {

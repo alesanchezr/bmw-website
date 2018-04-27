@@ -6,6 +6,7 @@
   font-family: $font-text;
   font-weight: bold;
   vertical-align: middle;
+  padding: 13px 55px;
   &:hover{
     background-color: $color-background-dark;
     color: white;
@@ -24,24 +25,20 @@
   }
 }
 .btw-l{
-  width: 193px;
   height: 45px;
   font-size: 14px;
 }
 .btw-m{
-  width: 252px;
   height: 45px;
   font-size: 13px;
 }
 .btw-s{
-  width: 118px;
   height: 27px;
   font-size: 10px;
   border-radius: 13px 13px;
   font-weight: none;
 }
 .btw-xl{
-  width: 450px;
   height: 45px;
   font-size: 13px;
   border-radius: 50px 50px;

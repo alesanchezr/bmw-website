@@ -26,7 +26,7 @@
     </div>
   </nav>
   
-  <div class="tab-content" id="myTabContent">
+  <div class="tab-content subnavbar" id="myTabContent">
     <div class="tab-pane menu-content fade container text-center " id="home" role="tabpanel" aria-labelledby="home-tab">
       <div class="row">
         <div class="p-4 col-md-8 offset-md-2">
