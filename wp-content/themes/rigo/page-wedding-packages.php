@@ -46,7 +46,7 @@ get_header();
     <!-- CARGROUP -->
       <div class="card-group">
         <?php for( $j= 0; $j< count($args['new_array_package']); $j++){ ?>
-          <div class="card">
+          <div class="card p-1">
             <img class="card-img-top" src="<?php echo $args['new_array_package'][$j]['thumbnail'] ?>" alt="Card image cap">
             <div class="card-body max-h text-center pt-4">
               <p class=" h8 card-title"><b><?php echo $args['new_array_package'][$j]["post_title"]; ?></b></p>

@@ -33,7 +33,7 @@ get_header();
                 <?php 
                   }; 
               }; ?>
-              <div class=" col-md-6 card text-center awards-recognition page py-4">
+              <div class=" col-md-6 card text-center awards-recognition page py-4 mx-auto">
                 <h2> Other Awards</h2>
               <?php for ($x=0; $x< count($args['new_array_press_award']); $x++){ 
                 // acomodar condicion

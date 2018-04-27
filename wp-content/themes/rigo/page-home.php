@@ -30,7 +30,7 @@
       <div class="card-body text-center">
         <div class="card-middle-button">
           <p class="card-title h7">Wedding Venues</p>
-          <a href="./bmw-wedding-veneus.html"><button src="./bmw-wedding-veneus.html" type="button" class="btn btw-m">Tour the venues</button></a>
+          <a href="./bmw-wedding-veneus.html"><button src="<?php echo get_permalink( get_page_by_path( 'wedding-venues-locations' ) ); ?>" type="button" class="btn btw-m">Tour the venues</button></a>
         </div>
         <div class="col-md-8 mx-auto text-center">
           <p class="card-text pt-md-4 pb-md-5">Picking date should be the first step of every wedding, that's why the first things you should do is booking your venue on a specific date. We have a selection of more then 25 spectacular locations.</p>
@@ -42,7 +42,7 @@
       <div class="card-body text-center">
         <div class="card-middle-button">
           <p class="card-title h7">Wedding Packages</p>
-          <a href="./bmw-wedding-packages.html"><button type="button" class="btn btw-m">Review our wedding packages</button></a>
+          <a href="<?php echo get_permalink( get_page_by_path('wedding-packages' ) ); ?>"><button type="button" class="btn btw-m">Review our wedding packages</button></a>
         </div>
         <div class="col-md-8 mx-auto text-center">
           <p class="card-text pt-md-4 pb-md-5">Choosing a wedding packages is the best way to get an aproximate budget, once you have a budget you can start customizing everythings to make it your way.</p>
@@ -58,12 +58,12 @@
   <!-- JUMBOTROM -->
   <div class="jumbotron jb-award jumbotron-cover d-none d-sm-block py-4 px-auto mb-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-banner-2'],'full')[0] ?>');">
     <div class="col-md-6 text-center ">
-      <span class="logo medium-dark my-auto" id="bmw-logo-dark"></span>
+      <span class="logo medium-dark my-auto p-5" id="bmw-logo-dark"></span>
       <p class=" col-md-10 my-0 mx-auto px-sm-5 pb-sm-3">This is your opportunity to trusly share and celebrate the beginningfo your journey. Let us take the work out of wedding planning and put the fun into your life...for a lifetime of memories.</p>
       <div class="col-md-12 mt-3">
-        <span class="logo small" id="wedding-wire-point-b"></span>
-        <span class="logo small" id="lwpi-b"></span>
-        <span class="logo small" id="wedding-wire-awards-b"></span>
+        <span class="logo small mx-2" id="wedding-wire-point-b"></span>
+        <span class="logo small mx-2" id="lwpi-b"></span>
+        <span class="logo small mx-2" id="wedding-wire-awards-b"></span>
       </div>
     </div>
   </div>

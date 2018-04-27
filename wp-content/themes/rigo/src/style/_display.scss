@@ -24,7 +24,7 @@ li {
 }
 //
 .sub-menu{
-	background-color: $color-background-dark;
+	background-color: $color-footer-dark;
 	&a{
 		color:blue;
 	}
@@ -74,12 +74,13 @@ li {
 }
 //
 .footer-black{
-	background-color: #595a5c!important;
+	background-color: $color-footer-dark !important;
 	color: $color-text-light;
 	display: flex;
 	justify-content: center;
+	.card-img-top{margin-top: 27px;}
 	a{
-		font-size: 12px;
+		font-size: 15px;
 	}
 	a:hover { color: #fff !important; }
 	p{
@@ -112,7 +113,7 @@ li {
 	}
 }
 .footer-mobile{
-	background-color: #595a5c;
+	background-color: $color-footer-dark;
 }
 .logo-mobile-white{
 	width: 20px;

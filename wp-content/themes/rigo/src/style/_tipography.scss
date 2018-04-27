@@ -7,12 +7,18 @@ $font-text:  'Rufina', serif;
 body{
     font-family: $font-text;
     letter-spacing: 0.5px;
+    input{letter-spacing: 0.5px;}
 }
 h1,h2,h3,h4,h5,h6{
     font-family: $font-text;
 }
-h1{ font-size: 34px; }
-h2{ font-size: 22px; margin-bottom: 0; }
+h1{ 
+    font-size: 26px; 
+    @media (max-width: 1324px) {
+        font-size: 20px; 
+    }
+}
+h2{ font-size: 22px; margin-bottom: 0; line-height: 30px;}
 
 .h7{font-size: 25px !important; letter-spacing: 1px; } //Personalizada
 .h8{font-size: 22px !important; letter-spacing: 1px;} //Personalizada

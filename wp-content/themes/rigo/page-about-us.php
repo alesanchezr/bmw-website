@@ -7,7 +7,7 @@ get_header();
 <?php get_template_part('partials/menu','others'); ?>
   <!-- JUMBOTROM -->
   <div class="parent">
-    <div class="jumbotron text-center pt-4 pb-5 my-0 " style="background-image: url('<?php echo wp_get_attachment_image_src( $args['about_us']['about_us-img-banner'],'full')[0] ?>');">
+    <div class="jumbotron text-center my-0 " style="background-image: url('<?php echo wp_get_attachment_image_src( $args['about_us']['about_us-img-banner'],'full')[0] ?>');">
       <div class="card logo medium mx-auto">
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
@@ -21,16 +21,16 @@ get_header();
   <!-- END JUMBOTROM -->
 <div class="row subtitle-bar justify-content-md-center py-3">
   <div class="col-md-2 text-center">
-    <h2><?php echo $args["about_us"]["events_planned"]; ?>+</h2>
-    <p class="py-0">Events Planned</p>
+    <h2 class="mb-2"><?php echo $args["about_us"]["events_planned"]; ?>+</h2>
+    <p class="py-0 mb-0">Events Planned</p>
   </div>
   <div class="col-md-2 text-center">
-    <h2><?php echo $args["about_us"]["satisfied_brides"]; ?></h2>
-    <p class="py-0">Satisfied Brides</p>
+    <h2 class="mb-2"><?php echo $args["about_us"]["satisfied_brides"]; ?></h2>
+    <p class="py-0 mb-0">Satisfied Brides</p>
   </div>
   <div class="col-md-2 text-center">
-    <h2><?php echo $args["about_us"]["experience"]; ?> years</h2>
-    <p class="py-0">Of experience</p>
+    <h2 class="mb-2"><?php echo $args["about_us"]["experience"]; ?> years</h2>
+    <p class="py-0 mb-0">Of experience</p>
   </div>
 </div>
 
@@ -80,7 +80,7 @@ get_header();
 <!--  -->
 <section class="awards-recognition text-center px-2 pb-2 d-none d-md-block">
   <div class="row-fluid  d-none d-sm-inline">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-12 my-5">
           <span class="logo partners  px-2" id="teachlr"></span>

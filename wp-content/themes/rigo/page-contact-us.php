@@ -12,8 +12,8 @@ get_header('small');
           <span class="card-img-top mx-auto" id="bmw-logo"></span>
         </div>
         <div class="jb-text d-block">
-          <div class="container px-5 mx-5">
-            <h1 class="my-0 px-5 mx-5">Responsiveness is one of our main values, we guarantee you a response in less than 10min</h1>
+          <div class="container mx-auto">
+            <h1 class="my-0 px-5 mx-5 mb-3">Responsiveness is one of our main values,<br/> we guarantee you a response in less than 10min</h1>
           </div>
         </div>
       </div>
@@ -21,12 +21,12 @@ get_header('small');
     <!-- END JUMBOTROM -->
     <div class="container-fluid px-0">
       <div class="row body-request contact m-5 p-5">
-        <div class="col-md-6 text-center align-top">
+        <div class="col-lg-3 col-md-5 text-center align-top ml-auto">
           <h5 class="h8" >Call now! </h5>
           <h5 class="h7">  305-662-4742</h5>
         </div>
         <!-- FORM -->
-        <div class="col-md-6 pr-5 body-request mt-1">
+        <div class="col-lg-5 col-md-7 pr-5 body-request mt-1 mr-auto">
           <form>
             <div class="form-inline-block">
               <label class="mb-0" for="fullName">Full Name</label>
