@@ -35,7 +35,7 @@
           <div class="col-md-4 col-sm-4 p-2">
             <h2 class="pb-3">Our services</h2>
 
-            <p><a class=""href="../bmw-wedding-veneus.html">Venues and Locations</a></p>
+            <p><a class=""href="<?php echo get_permalink( get_page_by_path( 'wedding-venues-locations' ) ); ?>">Venues and Locations</a></p>
 
             <p><a href="../bmw-wedding-packages.html">Miami Wedding Packages</a></p>
 
@@ -52,7 +52,7 @@
       </div>
       <div class="col-md-3 p-0 text-center">
         <span class="card-img-top mx-auto d-none d-md-block" id="bmw-logo"></span>
-        <p class="my-2 py-0">Work with the best, our reputation precede us</p>
+        <p class="my-2 py-0">Work with the best,<br /> our reputation precede us</p>
           <span class="svg-inline--fa fa-star" id="star"></span>
           <span class="svg-inline--fa fa-star" id="star"></span>
           <span class="svg-inline--fa fa-star" id="star"></span>

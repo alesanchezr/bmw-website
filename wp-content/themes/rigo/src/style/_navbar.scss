@@ -1,0 +1,53 @@
+.navbar{
+    .nav-link{
+        letter-spacing: 1.6px;
+    }
+    .nav-item{
+        padding: 0px 30px;
+    }
+    #contact-tab, #about-tab{
+        margin-top: -10px;
+        padding: 25px 20px 25px 20px;
+    }
+    #contact-tab.active, #about-tab.active{
+        background: $color-footer-dark;
+        color: $color-background-light !important;
+    }
+    
+    #about.active{
+        background: $color-footer-dark;
+    }
+}
+.sub-menu{
+    .nav-link{
+        letter-spacing: 1.6px;
+        @media (max-width: 1224px) {
+            &:not(:first-child){
+                letter-spacing: 1.3px;
+            }
+        }
+    }
+    .nav-item{
+        padding: 0px 10px;
+        @media (max-width: 1224px) {
+            &:not(:first-child){
+                padding: 0px 5px;
+            }
+        }
+        &:hover{
+            background: $color-background-light;
+            a{
+                color: $color-footer-dark !important;
+            }
+        }
+    }
+}
+.subnavbar{
+    h5{
+        letter-spacing: 0.8px;
+        line-height: 26px;
+    }
+    .click-here{
+        line-height: 28px;
+    }
+}

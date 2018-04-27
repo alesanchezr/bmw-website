@@ -4,29 +4,28 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="nav nav-tabs container text-uppercase large navbar-nav  " id="myTab" role="tablist">
-        
-        <li class="nav-item ">
+      <ul class="nav nav-tabs container text-uppercase large navbar-nav" id="myTab" role="tablist">
+        <li class="nav-item m-3">
           <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Pick your venue</a>
         </li>
-        <li class="hidden-md-up">
+        <li class="hidden-md-upp-3 m-3">
           <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Plan you Wedding</a>
         </li>
-        <li class="nav-item  d-lg-none ">
-          <a class="nav-link " id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Get inspired</a>
+        <li class="nav-item d-lg-none mt-2">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Get inspired</a>
         </li>
-        <li class="nav-item ml-auto d-none d-lg-block" >
-          <a class="nav-link " id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Get inspired</a>
+        <li class="nav-item ml-auto d-none d-lg-block mt-2" >
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Get inspired</a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link " id="about-tab " data-toggle="tab" href="#about" role="tab" aria-controls="about"aria-selected="false">About us</a>
+        <li class="nav-item mt-2">
+          <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about"aria-selected="false">About us</a>
         </li>
         
       </ul>
     </div>
   </nav>
   
-  <div class="tab-content" id="myTabContent">
+  <div class="tab-content subnavbar" id="myTabContent">
     <div class="tab-pane menu-content fade container text-center " id="home" role="tabpanel" aria-labelledby="home-tab">
       <div class="row">
         <div class="p-4 col-md-8 offset-md-2">
@@ -83,8 +82,8 @@
         </div>
         <div class="col-md-3 mt-3">
           <h5><strong> Much more</strong></h5>
-          <a class="click-here color-dark menu-hover" href=""> <li>Top Wedding Churches</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Amazing Wedding Planners</li></a>
+          <a class="click-here color-dark menu-hover" href="">   <li>Top Wedding Churches</li></a>
+          <a class="click-here color-dark menu-hover" href="">   <li>Amazing Wedding Planners</li></a>
         </div>
         <div class="col-md-12">
           <div class="p-5">
@@ -98,10 +97,10 @@
       <div class="row sub-menu" >
         <div class="container">
           <ul class="nav  container text-uppercase large "  role="tablist">
-            <li class="nav-item ">
+            <li class="nav-item d-none d-md-inline-block" style="margin-left: 20px;">
               <a class="nav-link" href="" >From our weddings...</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-md-inline-block">
               <a class="nav-link" href="">|</a>
             </li>
             <li class="nav-item">
@@ -160,19 +159,23 @@
       </div>
     </div>
       
-    <div class="tab-pane menu-content fade text-center container" id="about" role="tabpanel" aria-labelledby="about-tab">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="p-5"><button class="btn btw-l align-text-bottom" href="bmw-wedding-veneus.html" role="button">About us</button><br></div>
-        </div>
-        <div class="col-md-3">
-          <div class="p-5"><button class="btn btw-l align-text-bottom" href="bmw-wedding-veneus.html" role="button">Press & Awards</button><br></div>
-        </div>
-        <div class="col-md-3 ">
-          <div class="p-5"><button class="btn btw-l align-text-bottom" href="bmw-wedding-veneus.html" role="button">Testimonials</button><br></div>
-        </div>
-        <div class="col-md-3">
-          <div class="p-5"><button class="btn btw-l align-text-bottom" href="bmw-wedding-veneus.html" role="button">Contact Us</button><br></div>
+    <div class="tab-pane menu-content fade text-center show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+      <div class="row sub-menu" >
+        <div class="container">
+          <ul class="nav container text-uppercase large "  role="tablist">
+            <li class="nav-item" style="margin-left: 20px;">
+              <a class="nav-link" href="">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Press & Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -48,7 +48,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @-ms-viewport {
   width: device-width; }
@@ -6274,23 +6274,32 @@ a.text-dark:hover, a.text-dark:focus {
 *   Modules dependencies
 */
 body {
-  font-family: "Rufina", serif; }
+  font-family: "Rufina", serif;
+  letter-spacing: 0.5px; }
+  body input {
+    letter-spacing: 0.5px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Rufina", serif; }
 
 h1 {
-  font-size: 34px; }
+  font-size: 26px; }
+  @media (max-width: 1324px) {
+    h1 {
+      font-size: 20px; } }
 
 h2 {
   font-size: 22px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  line-height: 30px; }
 
 .h7 {
-  font-size: 25px !important; }
+  font-size: 25px !important;
+  letter-spacing: 1px; }
 
 .h8 {
-  font-size: 22px !important; }
+  font-size: 22px !important;
+  letter-spacing: 1px; }
 
 .btn {
   color: #ffffff;
@@ -6299,37 +6308,34 @@ h2 {
   border: 0px;
   font-family: "Rufina", serif;
   font-weight: bold;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding: 13px 55px; }
   .btn:hover {
-    background-color: #666666;
+    background-color: #F1DBEA;
     color: white; }
   .btn:focus {
     background-color: #993399; }
   .btn:active {
-    background-color: #ffccff; }
+    background-color: #fce6f7; }
   .btn.form-control:hover {
-    background-color: #ffccff;
+    background-color: #fce6f7;
     color: Black; }
 
 .btw-l {
-  width: 193px;
   height: 45px;
   font-size: 14px; }
 
 .btw-m {
-  width: 252px;
   height: 45px;
   font-size: 13px; }
 
 .btw-s {
-  width: 118px;
-  height: 27px;
+  padding: 6px 45px;
   font-size: 10px;
   border-radius: 13px 13px;
   font-weight: none; }
 
 .btw-xl {
-  width: 450px;
   height: 45px;
   font-size: 13px;
   border-radius: 50px 50px; }
@@ -6363,7 +6369,7 @@ li {
     background-color: #fce6f7; }
 
 .sub-menu {
-  background-color: #666666; }
+  background-color: #58595b; }
   .sub-menua {
     color: blue; }
   .sub-menu a:hover {
@@ -6405,12 +6411,14 @@ li {
   opacity: 1; }
 
 .footer-black {
-  background-color: #595a5c !important;
+  background-color: #58595b !important;
   color: #ffffff;
   display: flex;
   justify-content: center; }
+  .footer-black .card-img-top {
+    margin-top: 27px; }
   .footer-black a {
-    font-size: 12px; }
+    font-size: 15px; }
   .footer-black a:hover {
     color: #fff !important; }
   .footer-black p {
@@ -6433,10 +6441,10 @@ li {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
-  border-color: transparent; }
+  border-color: rgba(0, 0, 0, 0); }
 
 .footer-mobile {
-  background-color: #595a5c; }
+  background-color: #58595b; }
 
 .logo-mobile-white {
   width: 20px; }
@@ -6453,12 +6461,56 @@ li {
   width: 20px;
   top: 4px; }
 
+.navbar .nav-link {
+  letter-spacing: 1.6px; }
+
+.navbar .nav-item {
+  padding: 0px 30px; }
+
+.navbar #contact-tab, .navbar #about-tab {
+  margin-top: -10px;
+  padding: 25px 20px 25px 20px; }
+
+.navbar #contact-tab.active, .navbar #about-tab.active {
+  background: #58595b;
+  color: #fce6f7 !important; }
+
+.navbar #about.active {
+  background: #58595b; }
+
+.sub-menu .nav-link {
+  letter-spacing: 1.6px; }
+  @media (max-width: 1224px) {
+    .sub-menu .nav-link:not(:first-child) {
+      letter-spacing: 1.3px; } }
+
+.sub-menu .nav-item {
+  padding: 0px 10px; }
+  @media (max-width: 1224px) {
+    .sub-menu .nav-item:not(:first-child) {
+      padding: 0px 5px; } }
+  .sub-menu .nav-item:hover {
+    background: #fce6f7; }
+    .sub-menu .nav-item:hover a {
+      color: #58595b !important; }
+
+.subnavbar h5 {
+  letter-spacing: 0.8px;
+  line-height: 26px; }
+
+.subnavbar .click-here {
+  line-height: 28px; }
+
 .home .card .img {
   padding: 0px;
   margin: 0px;
-  height: 300px;
+  height: 450px;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
+  @media (max-width: 1024px) {
+    .home .card .img {
+      height: 350px; } }
 
 .home .card-middle-button {
   margin-top: -95px;
@@ -6472,7 +6524,7 @@ li {
   margin-top: 60px;
   font-size: 12px; }
   .body-request.contact {
-    background-color: #666666;
+    background-color: #58595b;
     margin: 0px !important;
     padding: 10px; }
   .body-request input {
@@ -6511,6 +6563,9 @@ li {
 
 #twitter {
   content: url(/wp-content/themes/rigo/public/0729c42ac6c88ea12311c6989df785d6.svg); }
+
+#youtube {
+  content: url(/wp-content/themes/rigo/public/4c5eae12982ed1372fb422e998b6f122.svg); }
 
 #bacardi {
   content: url(/wp-content/themes/rigo/public/74d18f31cdacd079ad95d2428a43215e.svg); }
@@ -6552,7 +6607,8 @@ li {
   content: url(/wp-content/themes/rigo/public/a8af6fb5b7d771650af03d288f860aca.svg); }
 
 #lwpi-b {
-  content: url(/wp-content/themes/rigo/public/949123d251ac57d7934e54d7c3f93ddf.svg); }
+  content: url(/wp-content/themes/rigo/public/949123d251ac57d7934e54d7c3f93ddf.svg);
+  width: 11.5% !important; }
 
 #wedding-wire-awards {
   content: url(/wp-content/themes/rigo/public/485f5c6c95ac64fdf5d351f53bd18d00.svg); }
@@ -6588,13 +6644,16 @@ li {
   content: url(/wp-content/themes/rigo/public/ac890e08c914f7aef1b788949dd2577c.svg); }
 
 #arrow-down {
-  content: url(/wp-content/themes/rigo/public/a097d53d24ab4893898e72f57c7ebdff.svg); }
+  content: url(/wp-content/themes/rigo/public/a097d53d24ab4893898e72f57c7ebdff.svg);
+  width: 1.5% !important; }
 
 #star {
-  content: url(/wp-content/themes/rigo/public/6b856baf713c79730ec823a91a1d9e4d.svg); }
+  content: url(/wp-content/themes/rigo/public/6b856baf713c79730ec823a91a1d9e4d.svg);
+  font-size: 12px; }
 
 #star-half {
-  content: url(/wp-content/themes/rigo/public/2a48090fe3fee08133dee6282d02e05a.svg); }
+  content: url(/wp-content/themes/rigo/public/2a48090fe3fee08133dee6282d02e05a.svg);
+  font-size: 12px; }
 
 #star-o {
   content: url(/wp-content/themes/rigo/public/0cbcfb0f58ba2c83c756224329b267a2.svg); }
@@ -6603,7 +6662,7 @@ li {
   width: 70% !important; }
 
 .logo.medium {
-  width: 35% !important; }
+  width: 28% !important; }
 
 .logo.medium-client {
   width: 25% !important; }
@@ -6621,7 +6680,7 @@ li {
   width: 5.5% !important; }
 
 .logo.awards {
-  max-height: 80px; }
+  max-height: 100px; }
   .logo.awards.large {
     max-height: 110px; }
 
@@ -6688,10 +6747,10 @@ li {
   width: 24px;
   text-decoration: none; }
   .close:hover {
-    color: #666666; }
+    color: #F1DBEA; }
 
 body {
-  background-color: #ffccff; }
+  background-color: #fce6f7; }
 
 a {
   color: #ffffff; }
@@ -6735,14 +6794,16 @@ input {
   .social-media-bar .social-media-logos {
     font-size: 2em !important;
     color: #000000; }
+  .social-media-bar .footer-socialmedia {
+    padding-top: 11px; }
+    .social-media-bar .footer-socialmedia a {
+      margin-right: 10px; }
   .social-media-bar input {
     width: 350px !important;
     height: 30px;
     font-size: 12px;
     border-radius: 0;
     border: none; }
-  .social-media-bar .btw-s {
-    width: 250px; }
 
 .submit {
   font-size: 12px;
@@ -6759,7 +6820,7 @@ input {
     margin: 0;
     flex: none; }
   .card.bg-1 {
-    background-color: #ffccff; }
+    background-color: #fce6f7; }
   .card.bg-2 {
     background-color: #e8daeb; }
   .card .card-img-top {
@@ -6772,10 +6833,10 @@ input {
       height: 50px;
       width: 95px; }
   .card .card-body {
-    background-color: #ffccff;
+    background-color: #fce6f7;
     font-size: 15px; }
   .card .card-footer {
-    background-color: #ffccff !important;
+    background-color: #fce6f7 !important;
     border: none !important; }
 
 .card-block {
@@ -6808,10 +6869,11 @@ input {
   height: 100%; }
 
 .awards-recognition {
-  background-color: #595a5c;
+  background-color: #58595b;
   color: #ffffff;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 55px; }
   .awards-recognition a {
     font-size: 12px; }
   .awards-recognition p {
@@ -6821,7 +6883,7 @@ input {
     padding-left: 0;
     padding-right: 0; }
   .awards-recognition.page .card-body {
-    background-color: #595a5c; }
+    background-color: #58595b; }
 
 .rounded-circle {
   width: 100%; }
@@ -6829,7 +6891,10 @@ input {
 .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff; }
+  background-position: center;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px; }
   .jumbotron.jb-xlarge {
     background-repeat: no-repeat;
     background-size: cover;
@@ -6875,10 +6940,10 @@ input {
   background-color: #e8daeb;
   color: #000000; }
   .subtitle-bar.dark {
-    background-color: #666666;
+    background-color: #F1DBEA;
     color: #ffffff; }
   .subtitle-bar.light {
-    background-color: #ffccff;
+    background-color: #fce6f7;
     color: #000000; }
   .subtitle-bar p {
     font-size: 14px; }
@@ -6898,6 +6963,8 @@ input {
 
 .testimonial-client .media-body {
   font-size: 15px; }
+  .testimonial-client .media-body.card-text {
+    height: 180px; }
 
 .foot-client {
   font-size: 12px;
@@ -7011,15 +7078,15 @@ input {
     margin-top: 0px;
     color: #000000; }
   .subtitle-bar {
-    background-color: #ffccff; }
+    background-color: #fce6f7; }
   .footer-mobile {
     background-color: #993399; }
   .rounded-circle {
     width: 100%; }
   .card.bg-2 {
-    background-color: #ffccff; }
+    background-color: #fce6f7; }
   .tab-content {
-    background-color: #ffccff; }
+    background-color: #fce6f7; }
   .center-vertical-div {
     margin-top: 0; }
   .body-request {
