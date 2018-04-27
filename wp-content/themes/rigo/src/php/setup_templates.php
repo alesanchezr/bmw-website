@@ -25,7 +25,7 @@ $controller->route([ 'slug' => 'Single:press-award', 'controller' => 'PressAward
 $controller->route([ 'slug' => 'Single:church', 'controller' => 'ChurchController:getSingleChurchState' ]);  
 
 $controller->route([ 'slug' => 'Page:home', 'controller' => 'HomeController:getSingleHomeState' ]);  
-// $controller->route([ 'slug' => 'home', 'controller' => 'SampleController:getHomeData' ]);  
+$controller->route([ 'slug' => 'home', 'controller' => 'SampleController:getHomeData' ]);  
 
 use \GM\VirtualPages\Page;
 add_action( 'gm_virtual_pages', function( $controller ) {
