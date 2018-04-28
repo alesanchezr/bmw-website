@@ -48,7 +48,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 @-ms-viewport {
   width: device-width; }
@@ -6433,7 +6433,7 @@ li {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0); }
+  border-color: transparent; }
 
 .footer-mobile {
   background-color: #595a5c; }
@@ -6686,19 +6686,6 @@ li {
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in; }
-
-.close {
-  font-family: 'Glyphicons Halflings';
-  color: #FFFFFF;
-  line-height: 25px;
-  position: absolute;
-  right: 20px;
-  text-align: center;
-  top: 10px;
-  width: 24px;
-  text-decoration: none; }
-  .close:hover {
-    color: #666666; }
 
 body {
   background-color: #ffccff; }

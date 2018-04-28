@@ -99,11 +99,9 @@ class VenueController{
     $args['venue'] = (array) get_queried_object();
     $args['venue']['venue-img-banner'] = get_field('venue-img-banner', $args['venue']['ID']);
     
-    $args =[];
     $args['page'] = (array) get_queried_object();
     $query = Venue::all();
     $args['venue_list'] = $query -> posts;
-    
     $args['new_array_venue'] = array_map( function($venue){ 
       return [
       'id' => $venue -> ID,
@@ -113,7 +111,7 @@ class VenueController{
       ];
     }, $args['venue_list']);
     
-    // debug($newArrayVenues);
+    // debug($args);
     return $args;
     
   }

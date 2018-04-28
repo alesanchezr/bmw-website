@@ -27,7 +27,7 @@ $args = wpas_get_view_data();
       <div class="jb-text d-block">
         <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
         <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Get a fast a quote</button><br>
-        <h2 class="p-2" style="color:#993399;">or call now! 305 662 7442</h2>
+        <a class="p-2" style="color:#993399;" href="tel:+1305 662 7442" >or call now! 305 662 7442</a>
       </div>
 
     </div>

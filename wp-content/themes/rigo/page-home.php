@@ -12,7 +12,32 @@
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
       <div class="jb-button py-5">
-        <a href="#openModal"><button class="btn btw-l align-text-bottom d-block mx-auto mb-4" role="button">Request a quote</button></a>
+        <button class="btn btw-l align-text-bottom d-block mx-auto mb-4" role="button" data-toggle="modal" data-target="#openModal">Request a quote</button>
+          
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Launch demo modal
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                <div class="modal-body">
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+      </div>
+
+        
+        
         <a class="d-none d-sm-block" href="#services"><span class="logo xsmall" id="arrow-down"></span></a>
       </div>
     </div>
@@ -77,7 +102,7 @@
   <!-- CLIENT TESTIMONIALS -->
   <?php get_template_part('partials/client','testimonial'); ?>
   <!-- MODAL -->
-  <div id="openModal" class="modalDialog d-none">
+  <div id="openModal" class="modalDialog">
     <div class="body-request p-5" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/request-2.jpg')">
       <a href="#close" title="Close" class="close"><i class="fas fa-times " style="color:#ffffff;"></i></a>
       <div class="container">
