@@ -60,13 +60,13 @@ class TestimonialController{
           $integerPoints = floor( $decimalPoints );
           
           for($i = 0; $i<$integerPoints; $i++){
-            $resultStr .= '<span class="svg-inline--fa fa-star" id="star"></span>';
+            $resultStr .= '<span class="svg-inline--fa fa-star mx-2" id="star"></span>';
           }
           
-          if($decimalPoints != $integerPoints) $resultStr .= '<span class="svg-inline--fa fa-star" id="star-half"></span>';
+          if($decimalPoints != $integerPoints) $resultStr .= '<span class="svg-inline--fa fa-star mx-2" id="star-half"></span>';
           
           for($i = 0; $i<5-ceil($decimalPoints); $i++){
-            $resultStr .= '<span class="svg-inline--fa fa-star" id="star-o"></span>';
+            $resultStr .= '<span class="svg-inline--fa fa-star mx-2" id="star-o"></span>';
           }
           
           return $resultStr;

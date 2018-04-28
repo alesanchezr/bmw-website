@@ -13,7 +13,7 @@ get_header(); ?>
         </div>
         <div class="jb-text d-block text-center">
           <div class="container px-5 mx-auto w-75">
-            <h1 class="my-0 px-5 mx-5">Work with the best, our reputation precede us</h1>
+            <h2 class="my-0 px-5 mx-5">Work with the best, our reputation precede us</h2>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@ get_header(); ?>
           $printStar = $args['new_array_testimonial'][0]['printStars'];
           echo $printStar($scorePrint); 
         ?>
-      <p >Average <?php echo $scorePrint; ?> rating within all avaiavle review systems, <a class="click-here color-dark"href="">Learn more</a> </p>
+      <p class="mt-2">Average <?php echo $scorePrint; ?> rating within all available review systems, <a class="click-here color-dark"href="">Learn more</a> </p>
     </div>
   </div>
   <div class="container p-3">
@@ -40,7 +40,7 @@ get_header(); ?>
         for ($i = 0; $i < count($args['new_array_testimonial']); $i++){ ?>
           <div class="card p-5">
             <div class="card-body text-center card-content">
-              <img class=" img-fluid mounted-image" src="<?php echo $args['new_array_testimonial'][$i]['thumbnail'] ?>" alt="card image">
+              <img class=" img-fluid mounted-image mb-4" src="<?php echo $args['new_array_testimonial'][$i]['thumbnail'] ?>" alt="card image">
               <p class="card-text"><?php echo $args['new_array_testimonial'][$i]['testimonial'] ?></p>
               <p><?php echo $args['new_array_testimonial'][$i]["post_title"]; ?></p>
             </div>

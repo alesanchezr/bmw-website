@@ -1,6 +1,7 @@
 <!-- OUR COSTUMERS -->
 <section class="text-center px-2 py-4 d-none d-sm-block">
-  <div class="row-fluid  d-none d-sm-inline">
+  <div class="container">
+    <div class="row-fluid  d-none d-sm-inline">
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-5 px-0">
@@ -18,5 +19,6 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </section>

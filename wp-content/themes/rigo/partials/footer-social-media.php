@@ -5,7 +5,7 @@
 <div class="social-media-bar d-none d-sm-block">
   <div class="container p-4">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 footer-socialmedia">
         <br>
         <a href="https://www.instagram.com/bestmiamiweddings/" class="p-1 click-here color-dark"><span class="logo social" id="instagram"></span></a>
         <a href="https://twitter.com/bestmiaweddings" class="p-1 click-here color-dark"><span class="logo social" id="twitter"></span></a>
@@ -16,7 +16,7 @@
       <div class="col-md-6">
        <form class="form-inline">
           <div class="col-md-12">
-            <p class="m-0 pl-3 pb-1"> Sing Up to our newsletter</p>
+            <p class="m-0" style="padding: 6px 12px;"> Sing Up to our newsletter</p>
           </div>
           <div class="form-group col-md-9 mb-2">
             <input type="password" class="form-control"  placeholder="Type your Email">
