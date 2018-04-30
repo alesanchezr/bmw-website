@@ -12,7 +12,7 @@
           <div class="jumbotron text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/package-banner-1.jpg');"> </div>
          <br>
             <h2>Call now! </h2>
-            <h1><a href="tel:+3056624742">305-662-4742</a></h1>
+            <h1><a style="text-decoration: none !important;"href="tel:+3056624742">305-662-4742</a></h1>
             <h5> to request more information and pricing</h5>
             <h5>or fill the following form: </h5>
       </div>

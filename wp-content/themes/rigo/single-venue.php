@@ -17,8 +17,8 @@ $args = wpas_get_view_data();
         <a class=" p-2" href="">weddings</a>
       </ul>
     </div>
-  <!-- JUMBOTROM -->
   </div>
+  <!-- JUMBOTROM -->
   <div class="parent d-none d-sm-block">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
       <div class="card logo medium mx-auto">
@@ -27,9 +27,8 @@ $args = wpas_get_view_data();
       <div class="jb-text d-block">
         <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
         <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Get a fast a quote</button><br>
-        <a class="p-2" style="color:#993399;" href="tel:+1305 662 7442" >or call now! 305 662 7442</a>
+        <a style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" ><p class="py-3 h2" >or call now! 305 662 7442</p></a>
       </div>
-
     </div>
   </div>
   <!-- HORIZONTAL CARD -->

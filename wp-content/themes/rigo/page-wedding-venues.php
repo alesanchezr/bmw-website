@@ -14,7 +14,7 @@ get_header();
     <div class="">
       <h1 class="mb-5">Miami Wedding Venues</h1>
       <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Request a quote</button><br>
-      <h2 class="p-2" style="color:#993399;">or call now! 305 662 7442</h2>
+      <a style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" ><p class="py-3 h2" >or call now! 305 662 7442</p></a>
     </div>
   </div>
 </div>

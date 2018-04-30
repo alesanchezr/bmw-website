@@ -54,3 +54,20 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+function updateVenueCPT( $args, $post_type ) {
+	// If not Products CPT, bail.
+	if ( 'venue' !== $post_type ) {
+		return $args;
+	}
+	// Add additional Products CPT options.
+	$venueArgs = array(
+		'taxonomies' => array( 'category' )
+	);
+	
+	
+	$args = array_merge( $args, $venueArgs );
+	// Merge args together.
+	return $args;
+}
+add_filter( 'register_post_type_args', 'updateVenueCPT', 10, 2 );

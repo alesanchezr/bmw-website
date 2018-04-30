@@ -6301,6 +6301,11 @@ h2 {
   font-size: 22px !important;
   letter-spacing: 1px; }
 
+.h2 {
+  font-size: 22px !important;
+  line-height: 30px;
+  text-decoration: none !important; }
+
 .btn {
   color: #ffffff;
   background-color: #993399;
@@ -6467,13 +6472,17 @@ li {
 .navbar .nav-item {
   padding: 0px 30px; }
 
-.navbar #contact-tab, .navbar #about-tab {
+.navbar #contact-tab, .navbar #about-tab, .navbar #home-tab, .navbar #profile-tab {
   margin-top: -10px;
   padding: 25px 20px 25px 20px; }
 
 .navbar #contact-tab.active, .navbar #about-tab.active {
   background: #58595b;
   color: #fce6f7 !important; }
+
+.navbar #home-tab.active, .navbar #profile-tab.active {
+  background: #fce6f7;
+  color: black !important; }
 
 .navbar #about.active {
   background: #58595b; }
