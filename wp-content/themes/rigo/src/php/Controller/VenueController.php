@@ -99,6 +99,11 @@ class VenueController{
     $args['venue'] = (array) get_queried_object();
     $args['venue']['venue-img-banner'] = get_field('venue-img-banner', $args['venue']['ID']);
     
+    $args['menu-venues']['garden'] = Venue::getByCategory(4);
+    $args['menu-venues']['historical'] = Venue::getByCategory(5);
+    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    // debug( $args['menu-venues']);
+    
     $args['page'] = (array) get_queried_object();
     $query = Venue::all();
     $args['venue_list'] = $query -> posts;

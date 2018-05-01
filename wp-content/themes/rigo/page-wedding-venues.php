@@ -13,8 +13,8 @@ get_header();
     </div>
     <div class="">
       <h1 class="mb-5">Miami Wedding Venues</h1>
-      <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Request a quote</button><br>
-      <h2 class="p-2" style="color:#993399;">or call now! 305 662 7442</h2>
+      <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" href="./page.html" role="button">Request a quote</button></a><br>
+      <a style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" ><p class="py-3 h2" >or call now! 305 662 7442</p></a>
     </div>
   </div>
 </div>
@@ -33,7 +33,9 @@ get_header();
     <?php for ($x=0; $x< count($args['new_array_venue']); $x++){ ?>
       <div class="row col-md-4  mx-auto p-1">
         <div class="col-md-12 col-4 p-0 m-0 center-vertical-div">
-          <img class="card-img-top" src="<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>" alt="Card image cap">
+          <a href="<?php echo get_permalink( $args['new_array_venue'][$x]["id"] )?>">
+            <img class="card-img-top" src="<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>" alt="Card image cap">
+          </a>
         </div>
         <a class="color-dark" href="">
           <div class="col-md-12 col-8">

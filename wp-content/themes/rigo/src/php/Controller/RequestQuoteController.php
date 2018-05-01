@@ -1,9 +1,9 @@
 <?php
 namespace Rigo\Controller;
 use Rigo\Types\Course;
-class RequestController{
+class RequestQuoteController{
 
-  public function getSingleRequestState(){
+  public function getSingleRequestQuoteState(){
     
     $args = [];
     $args['request'] = (array) get_queried_object();

@@ -7,21 +7,21 @@ get_header();
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
 <div class="parent d-none d-sm-block">
-  <div class="jumbotron text-center my-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/banner1.jpg');">
+  <div class="jumbotron text-center my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['church']['church-img-banner'],'full')[0] ?>');">
     <div class="card logo medium mx-auto">
       <span class="card-img-top mx-auto" id="bmw-logo"></span>
     </div>
     <div class="">
       <h1 class="mb-5">Miami Wedding Churches</h1>
       <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Request a quote</button><br>
-      <h2 class="p-2" style="color:#993399;">or call now! 305 662 7442</h2>
+      <a style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" ><p class="py-3 h2" >or call now! 305 662 7442</p></a>
     </div>
   </div>
 </div>
 <!-- END JUMBOTROM -->
 <div class="row subtitle-bar light ">
   <div class="col-md-12 text-center py-5 d-none d-sm-block">
-    <h2 class= "px-5">Allow us to assist you in selecting church of your dreams, a selection of all the churches for wedding ceremonies, that are sure to wow you and your guest.</h2>
+    <h2 class= "px-5"><?php echo $args['church']['church-description'] ?>.</h2>
   </div>
 </div>
 
