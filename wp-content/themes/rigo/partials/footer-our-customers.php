@@ -13,9 +13,9 @@
           <h2>Our customers</h2>
         </div>
         <div class="col-md-5 px-0">
-          <span class="logo costumers width px-1" id="best-doctor"></span>
-          <span class="logo costumers w-25 px-1 w-20" id="curtain-wall"></span>
-          <span class="logo costumers w-25 px-1 w-25" id="first-bank"></span>
+          <span class="logo costumers width px-3 mt-3" id="best-doctor"></span>
+          <span class="logo costumers width px-3 mt-3" id="curtain-wall"></span>
+          <span class="logo costumers width px-3 mt-3" id="first-bank"></span>
         </div>
       </div>
     </div>
