@@ -24,7 +24,6 @@ class AboutUsController{
     $args['about_us']['satisfied_brides'] = get_field('satisfied_brides', $args['about_us']['ID']);
     $args['about_us']['experience'] = get_field('experience', $args['about_us']['ID']);
     $args['about_us']['description'] = get_field('description', $args['about_us']['ID']);
-    
     $aux = get_queried_object();
     $testimonials = get_field('testimonials', $aux -> ID);
     $args['testimonials'] = Testimonial::getTestimonials($testimonials);

@@ -6303,8 +6303,7 @@ h2 {
 
 .h2 {
   font-size: 22px !important;
-  line-height: 30px;
-  text-decoration: none !important; }
+  line-height: 30px; }
 
 .btn {
   color: #ffffff;
@@ -6474,6 +6473,10 @@ li {
 
 .navbar #contact-tab, .navbar #about-tab, .navbar #home-tab, .navbar #profile-tab {
   margin-top: -10px;
+  padding: 25px 20px 25px 20px; }
+
+.navbar #contact-tabc, .navbar #home-tabc, .navbar #profile-tabc {
+  margin-top: 0px;
   padding: 25px 20px 25px 20px; }
 
 .navbar #contact-tab.active, .navbar #about-tab.active {

@@ -7,7 +7,7 @@ get_header();
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
 <div class="parent d-none d-sm-block">
-  <div class="jumbotron text-center my-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/banner1.jpg');">
+  <div class="jumbotron text-center my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['church']['church-img-banner'],'full')[0] ?>');">
     <div class="card logo medium mx-auto">
       <span class="card-img-top mx-auto" id="bmw-logo"></span>
     </div>
@@ -21,7 +21,7 @@ get_header();
 <!-- END JUMBOTROM -->
 <div class="row subtitle-bar light ">
   <div class="col-md-12 text-center py-5 d-none d-sm-block">
-    <h2 class= "px-5">Allow us to assist you in selecting church of your dreams, a selection of all the churches for wedding ceremonies, that are sure to wow you and your guest.</h2>
+    <h2 class= "px-5"><?php echo $args['church']['church-description'] ?>.</h2>
   </div>
 </div>
 

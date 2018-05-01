@@ -16,6 +16,8 @@ $controller->route([ 'slug' => 'Page:testimonials', 'controller' => 'Testimonial
 $controller->route([ 'slug' => 'Page:wedding-packages', 'controller' => 'PackageController:renderPageWeddingPackage' ]);  
 $controller->route([ 'slug' => 'Page:wedding-venues-locations', 'controller' => 'VenueController:renderPageWeddingVenue' ]);
 $controller->route([ 'slug' => 'Page:wedding-churches-in-miami', 'controller' => 'ChurchController:renderPageChurch' ]);
+$controller->route([ 'slug' => 'Page:request-quote', 'controller' => 'RequestQuoteController:getSingleRequestQuoteState' ]);
+$controller->route([ 'slug' => 'Page:wedding-catering-menu', 'controller' => 'CateringController:getSingleCateringState' ]);
 
 $controller->route([ 'slug' => 'Single:venue', 'controller' => 'VenueController:getSingleVenueState' ]);  
 $controller->route([ 'slug' => 'Single:about-us', 'controller' => 'AboutUsController:getSingleAboutUsState' ]);  
@@ -30,10 +32,4 @@ $controller->route([ 'slug' => 'home', 'controller' => 'SampleController:getHome
 use \GM\VirtualPages\Page;
 add_action( 'gm_virtual_pages', function( $controller ) {
 
-   // $controller->addPage(new Page( "/home" ))->setTemplate('src/php/pages/home.php');
-   $controller->addPage(new Page( "/request-quote" ))->setTemplate('src/php/pages/request-quote.php');
-   // $controller->addPage(new Page( "/about-us" ))->setTemplate('src/php/pages/about-us.php');
-   // $controller->addPage(new Page( "/contact-us" ))->setTemplate('src/php/pages/contact-us.php');
-   $controller->addPage(new Page( "/wedding-catering" ))->setTemplate('src/php/pages/wedding-catering.php');
-   
 } );

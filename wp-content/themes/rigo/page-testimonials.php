@@ -7,7 +7,7 @@ get_header(); ?>
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
     <div class="parent">
-      <div class="jumbotron text-center pt-4 pb-3 my-0 justify-content-md-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/package-banner-1.jpg');">
+      <div class="jumbotron text-center py-5 my-0 justify-content-md-center" style="background-image: url('<?php echo wp_get_attachment_image_src($args['testimonials']['testimonial-img-banner'],'full')[0] ?>">
         <div class="card logo medium mx-auto">
           <span class="card-img-top mx-auto" id="bmw-logo"></span>
         </div>
@@ -20,7 +20,6 @@ get_header(); ?>
     </div>
     <!-- END JUMBOTROM -->
     <?php 
-      /*falta un forr que llene un nuevo arreglo solo con los valores de puntaje*/
       $testimonialScore = [4.8];
       $scoreTestimonial = $args['new_array_testimonial'][0]['score_point'];
       $scorePrint = $scoreTestimonial($testimonialScore);

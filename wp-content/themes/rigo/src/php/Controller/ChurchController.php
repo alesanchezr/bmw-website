@@ -24,6 +24,11 @@ class ChurchController{
   public function renderPageChurch(){
     
     $args =[];
+    $args['church'] = (array) get_queried_object();
+    $args['church']['church-img-banner'] = get_field('church-img-banner', $args['church']['ID']);
+    $args['church']['church-description'] = get_field('church-description', $args['church']['ID']);
+    
+    
     $args['page'] = (array) get_queried_object();
     $query = Church::all();
     $args['church_list'] = $query -> posts;

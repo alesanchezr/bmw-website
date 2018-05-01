@@ -159,7 +159,7 @@
       </div>
     </div>
       
-    <div class="tab-pane menu-content fade text-center show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+    <div class="tab-pane menu-content fade text-center show " id="about" role="tabpanel" aria-labelledby="about-tab">
       <div class="row sub-menu" >
         <div class="container">
           <ul class="nav container text-uppercase large "  role="tablist">

@@ -9,6 +9,10 @@
         margin-top: -10px;
         padding: 25px 20px 25px 20px;
     }
+    #contact-tabc,#home-tabc, #profile-tabc{
+        margin-top: 0px;
+        padding: 25px 20px 25px 20px;
+    }
     #contact-tab.active, #about-tab.active{
         background: $color-footer-dark;
         color: $color-background-light !important;
