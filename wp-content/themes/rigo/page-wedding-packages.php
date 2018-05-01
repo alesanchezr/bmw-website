@@ -7,22 +7,24 @@ get_header();
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
   <div class="parent p-3 p-sm-0">
-      <div class="jumbotron text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/package-banner-1.jpg');">
+      <div class="jumbotron text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['package']['packages-img-banner'],'full')[0] ?>');">
           <div class="card logo medium mx-auto d-none d-sm-block">
               <span class="card-img-top mx-auto" id="bmw-logo"></span>
           </div>
           <div class="jb-text d-none d-sm-block">
-            <h1 class="my-0">Wedding Miami Packages for Miami</h1>
+            <h1 class="my-0 pb-3">Wedding Miami Packages for Miami</h1>
             <p class="p-2 mb-0">Pick a packages and start customizing your own wedding</p>
-            <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Get a fast a quote</button><br>
-            <h2 class="p-2" style="color:#993399;">or call now! 305 662 7442</h2>
+            <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
+            <a style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" ><p class="py-3 h2" >or call now! 305 662 7442</p></a>
           </div>
       </div>
   </div>
   <div class="container-fluid d-sm-none d-block">
     <h1 class="my-0">Wedding Miami Packages for Miami</h1>
-    <h5>Call now</h5>
-    <h4>305 662 7442</h4>
+    <a class='click-here color-dark' style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" >
+      <h5>Call now</h5>
+      <h4>305 662 7442</h4>
+    </a>
     <hr>
     <ul class="nav nav-tabs  large navbar-nav  ">
       <?php for( $i= 0; $i< count($args['new_array_package']); $i++){ ?>
@@ -39,7 +41,7 @@ get_header();
     <div class="container-fluid">
       <div class="row text-center px-auto py-5">
         <div class="col-md-12 col-sm-12">
-          <p class="h8 my-0">We've put together some popular packages that may help identify<br> you what's possible and what works for you. Take your time to browser.<br>These are only starting points and can be esaly customized to your needs and desires.</p>
+          <p class="h8 my-0"> <?php echo $args["package"]["packages-description"]; ?>.</p>
         </div>
       </div>
     </div>
@@ -47,7 +49,9 @@ get_header();
       <div class="card-group">
         <?php for( $j= 0; $j< count($args['new_array_package']); $j++){ ?>
           <div class="card p-1">
-            <img class="card-img-top" src="<?php echo $args['new_array_package'][$j]['thumbnail'] ?>" alt="Card image cap">
+            <a href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>">
+              <img class="card-img-top" src="<?php echo $args['new_array_package'][$j]['thumbnail'] ?>" alt="Card image cap">
+            </a>
             <div class="card-body max-h text-center pt-4">
               <p class=" h8 card-title"><b><?php echo $args['new_array_package'][$j]["post_title"]; ?></b></p>
               <p class="card-text"><?php echo $args['new_array_package'][$j]["description"]; ?>.</p>
@@ -62,30 +66,30 @@ get_header();
 <!-- AWARDA RECOGNITION -->
   <?php get_template_part('partials/awards','recognition'); ?>
   <!---->
-    <div class="row subtitle-bar py-3">
+    <div class="row subtitle-bar py-3 d-none d-md-block">
       <div class="col-md-12 text-center padding-all">
         <h2>Client's Testimonials</h2>
       </div>
     </div>
   </div>
   <!-- CLIENT TESTIMONIALS -->
+  <div class='d-none d-md-block'>
   <?php get_template_part('partials/client','testimonial'); ?>
+    
+  </div>
     <!-- END CLIENT TESTIMONIALS -->
-    <div class="row subtitle-bar py-3">
+    <div class="row subtitle-bar py-3 d-none d-md-block">
       <div class="col-md-12 text-center padding-all">
         <h5>Why Best Miami Weddings</h5>
       </div>
     </div>
     <!-- JUMBOTROM -->
-      <div class="jumbotron text-dark jb-medium p-3 my-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/package-banner-2.jpg');">
+      <div class="jumbotron text-dark jb-medium p-3 my-0 d-none d-md-block" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['package']['packages-img-banner-2'],'full')[0] ?>');">
         <div class="container text-center px-5 py-0">
-          <span class="logo small" id="wedding-wire-black"></span>
-          <p class="lead title px-5 mx-5">Its not just our name, we offer the most comprehensive wedding services and specialize in helping you create a uniquely, perfect wedding experience. Some of the many benefist of working with our Miami wedding planners:</p>
-          <p class="lead">-Several wedding package available to help as a starting point.</p>
-          <p class="lead">-Certified wedding planners with years of experiencie i wedding design.</p>
-          <p class="lead">-5-start catering and chef on staff offering a wide variety of delicious manus.</p>
-          <p class="lead">-Expert knowledge and partnerships with many of the top beneus in South Florida.</p>
-          <p class="lead">-Award winning company an 4.8 rating average through all the reviewing site.</p>
+          <!--<img class="logo small" id="wedding-wire-black"></span>-->
+          <img class="logo small" src="<?php echo wp_get_attachment_image_src($args['package']['packages-logo'],'full')[0] ?>" alt="First slide"> </img>
+          <?php echo $args['package']['packages-description-2'] ?>
+         
         </div>
       </div>
     <!-- END JUMBOTROM -->

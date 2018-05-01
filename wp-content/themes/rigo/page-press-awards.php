@@ -7,7 +7,7 @@ get_header();
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
   <div class="parent">
-    <div class="jumbotron jb-xlarge text-center pt-4 pb-3 my-0 " style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/package-banner-1.jpg');">
+    <div class="jumbotron jb-xlarge text-center pt-4 pb-3 my-0 " style="background-image: url('<?php echo wp_get_attachment_image_src($args['press_award']['press_award-img-banner'],'full')[0] ?>');">
       <div class="card logo medium mx-auto">
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
@@ -16,7 +16,7 @@ get_header();
       </div>
     </div>
   </div>
-  <!-- END JUMBOTROM -->
+  <!---->
   <div class="awards-recognition container-fluid">
       <div class="container p-5">
         <div class="row">
@@ -50,4 +50,3 @@ get_header();
   <!-- FOOTER FULL -->
   <?php get_footer('small'); ?>
   <!-- FOOTER FULL -->
-  

@@ -25,22 +25,49 @@ require('src/php/ThemeConfig.php');
 $config = new ThemeConfig();
 
 
-    use WPAS\Performance\WPASAsyncLoader;
-    //$publicPath = parse_url( get_stylesheet_directory_uri(), PHP_URL_PATH );
-    $publicPath = get_stylesheet_directory_uri();
-    
-    $asyncLoader = new WPASAsyncLoader([
-        'manifest-url' => $publicPath.'/public/manifest.json',
-        'debug' => true,
-        'force-jquery' => true,
-        'minify-html' => false,
-        'styles' => [
-            "page" => [ "all" => 'main.css' ],
-            "custom-post" => [ "all" => 'main.css' ]
-        ],
-        'scripts' => [
-                "page" => [ "all" => ['main.js'] ],
-                "custom-post" => [ "all" => ['main.js'] ]
-            ]
-        ]);
-        
+use WPAS\Performance\WPASAsyncLoader;
+//$publicPath = parse_url( get_stylesheet_directory_uri(), PHP_URL_PATH );
+$publicPath = get_stylesheet_directory_uri();
+
+$asyncLoader = new WPASAsyncLoader([
+    'manifest-url' => $publicPath.'/public/manifest.json',
+    'debug' => true,
+    'force-jquery' => true,
+    'minify-html' => false,
+    'styles' => [
+        "page" => [ "all" => 'main.css' ],
+        "custom-post" => [ "all" => 'main.css' ]
+    ],
+    'scripts' => [
+            "page" => [ "all" => ['main.js'] ],
+            "custom-post" => [ "all" => ['main.js'] ]
+        ]
+    ]);
+     
+// MENU
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'menu' => __( 'Menu' ),
+    //   'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+function updateVenueCPT( $args, $post_type ) {
+	// If not Products CPT, bail.
+	if ( 'venue' !== $post_type ) {
+		return $args;
+	}
+	// Add additional Products CPT options.
+	$venueArgs = array(
+		'taxonomies' => array( 'category' )
+	);
+	
+	
+	$args = array_merge( $args, $venueArgs );
+	// Merge args together.
+	return $args;
+}
+add_filter( 'register_post_type_args', 'updateVenueCPT', 10, 2 );

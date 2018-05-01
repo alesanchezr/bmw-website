@@ -14,3 +14,4 @@ $typeManager->newType(['type' => 'press-award', 'class' => 'PressAward'])->regis
 $typeManager->newType(['type' => 'testimonial', 'class' => 'Testimonial'])->register();
 $typeManager->newType(['type' => 'about-us', 'class' => 'AboutUs'])->register();
 $typeManager->newType(['type' => 'church', 'class' => 'Church'])->register();
+$typeManager->newType(['type' => 'planner', 'class' => 'Planner'])->register();

@@ -33,14 +33,18 @@ class PackageController{
     public function renderPageWeddingPackage(){ 
 
         $args =[];
+        $args['package'] = (array) get_queried_object();
+        $args['package']['packages-img-banner'] = get_field('packages-img-banner', $args['package']['ID']);
+        $args['package']['packages-description'] = get_field('packages-description', $args['package']['ID']);
+        $args['package']['packages-logo'] = get_field('packages-logo', $args['package']['ID']);
+        $args['package']['packages-img-banner-2'] = get_field('packages-img-banner-2', $args['package']['ID']);
+        $args['package']['packages-description-2'] = get_field('packages-description-2', $args['package']['ID']);
         $aux = get_queried_object();
         $testimonials = get_field('testimonials', $aux -> ID);
         $args['testimonials'] = Testimonial::getTestimonials($testimonials);
         $args['testimonials'] = array_map(function($testimonial) { 
             return Testimonial::extendTestimonials((array)$testimonial);},
             $args['testimonials'] );
-        // debug($aux);
-        // debug($args['testimonials']);
         $query = WeddingPackage::all();
         $args['weddingPackage_list'] = $query -> posts;
         $args['new_array_package'] = array_map( function($package){ 

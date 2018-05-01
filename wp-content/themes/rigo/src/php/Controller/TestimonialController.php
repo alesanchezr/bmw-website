@@ -33,6 +33,8 @@ class TestimonialController{
   public function renderPageTestimonial(){
     
     $args =[];
+    $args['testimonials'] = (array) get_queried_object();
+    $args['testimonials']['testimonial-img-banner'] = get_field('testimonial-img-banner', $args['testimonials']['ID']);
     $query = Testimonial::all();
     $args['testimonial_list'] = $query -> posts;
     $args['new_array_testimonial'] = array_map( function($testimonial){ 

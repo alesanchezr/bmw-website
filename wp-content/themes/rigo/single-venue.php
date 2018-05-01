@@ -17,8 +17,8 @@ $args = wpas_get_view_data();
         <a class=" p-2" href="">weddings</a>
       </ul>
     </div>
-  <!-- JUMBOTROM -->
   </div>
+  <!-- JUMBOTROM -->
   <div class="parent d-none d-sm-block">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
       <div class="card logo medium mx-auto">
@@ -26,10 +26,9 @@ $args = wpas_get_view_data();
       </div>
       <div class="jb-text d-block">
         <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
-        <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Get a fast a quote</button><br>
-        <h2 class="p-2" style="color:#993399;">or call now! 305 662 7442</h2>
+        <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
+        <a style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" ><p class="py-3 h2" >or call now! 305 662 7442</p></a>
       </div>
-
     </div>
   </div>
   <!-- HORIZONTAL CARD -->
@@ -40,8 +39,10 @@ $args = wpas_get_view_data();
           <div class="p-0 p-sm-3 max-h text-sm-right text-center pt-4">
             <h1 class="d-sm-none d-block pb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
             <div class="d-sm-none d-block text-left">
-              <p class="px-3">Call now</p>
-              <h2 class="d-sm-none d-block px-3">305 662 7442</h2>
+              <a  class='click-here color-dark' style="text-decoration: none !important;"href="tel:+3056624742">
+                <p class="px-3">Call now</p>
+                <h2 class="d-sm-none d-block px-3">305 662 7442</h2>
+              </a>
               <hr>
             </div>
 
@@ -203,6 +204,8 @@ $args = wpas_get_view_data();
               </div>
             </div>
             <div class="col-md-6 image-div p-0" >
+              <!--google maps-->
+              
               <div id="map" style="width:100%;height:100%;"></div>
             </div>
           </div>

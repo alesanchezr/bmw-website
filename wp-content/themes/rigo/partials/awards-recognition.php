@@ -13,5 +13,5 @@
     </div>
   </div>
   <p class="mt-2 mb-3"> Best Miami Wedding is proud to be recognized by some of the most important and influential publications and reorganizations around the wolrd.</p>
-  <a class="click-here color-light" href="../bmw-press-awards.html">Click here to learn more about our awards.</a>
+  <a class="click-here color-light" href="<?php echo get_permalink( get_page_by_path('press-awards' ) ); ?>">Click here to learn more about our awards.</a>
 </section>
