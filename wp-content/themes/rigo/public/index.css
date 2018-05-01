@@ -48,7 +48,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @-ms-viewport {
   width: device-width; }
@@ -6441,7 +6441,7 @@ li {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
-  border-color: transparent; }
+  border-color: rgba(0, 0, 0, 0); }
 
 .footer-mobile {
   background-color: #58595b; }
@@ -6598,7 +6598,8 @@ li {
   content: url(/wp-content/themes/rigo/public/2c380709050c4062ccf85f6121778f81.svg); }
 
 #wedding-wire-black {
-  content: url(/wp-content/themes/rigo/public/6dff43adde9d36df1ffdaad2688a58ab.svg); }
+  content: url(/wp-content/themes/rigo/public/6dff43adde9d36df1ffdaad2688a58ab.svg);
+  width: 16% !important; }
 
 #wedding-wire-point {
   content: url(/wp-content/themes/rigo/public/c1a4c7522cf865121f2a4532bb8c222a.svg); }

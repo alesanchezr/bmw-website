@@ -13,9 +13,9 @@
           <h2>Our customers</h2>
         </div>
         <div class="col-md-5 px-0">
-          <span class="logo costumers width px-1" id="siplik-b"></span>
-          <span class="logo costumers w-25 px-1 w-20" id="taima-b"></span>
-          <span class="logo costumers w-25 px-1 w-25" id="vikua-b"></span>
+          <span class="logo costumers width px-1" id="best-doctor"></span>
+          <span class="logo costumers w-25 px-1 w-20" id="curtain-wall"></span>
+          <span class="logo costumers w-25 px-1 w-25" id="first-bank"></span>
         </div>
       </div>
     </div>
