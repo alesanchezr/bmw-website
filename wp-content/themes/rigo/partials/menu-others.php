@@ -1,3 +1,7 @@
+<?php 
+$args = wpas_get_view_data();
+// debug($args);
+?>
 <div class="men-mobile d-sm-none d-block">
 <nav class="navbar navbar-expand-lg navbar-light  mx-auto p-0"  >
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".homeMenu" aria-controls="homeMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,23 +27,23 @@
      <ul class="nav nav-tabs container text-uppercase large navbar-nav  " id="myTab" role="tablist">
 
       <li class="nav-item p-2 ">
-        <a class="nav-link"  href="bmw-home.html">Home</a>
+        <a class="nav-link"  href="<?php echo get_permalink( get_page_by_path('home' ) ); ?>">Home</a>
         <hr class="m-0">
       </li>
       <li class="nav-item p-2">
-        <a class="nav-link" href="bmw-wedding-veneus.html">Miami Wedding Venue </a>
+        <a class="nav-link" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>">Miami Wedding Venue </a>
 
         <hr class="m-0">
 
       </li>
       <li class="nav-item p-2 " >
-        <a class="nav-link " href="bmw-wedding-packages.html">Miami Wedding Packages</a>
+        <a class="nav-link " href="<?php echo get_permalink( get_page_by_path('wedding-packages' ) ); ?>">Miami Wedding Packages</a>
         <hr class="m-0">
 
       </li>
 
       <li class="nav-item p-2 ">
-        <a class="nav-link ">The Wedding Blog</a>
+        <a class="nav-link" href="https://blog.bestmiamiweddings.com/">The Wedding Blog</a>
         <hr class="m-0">
 
       </li>
