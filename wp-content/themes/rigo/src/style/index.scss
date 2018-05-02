@@ -9,11 +9,12 @@
 @import "display";
 @import "navbar";
 @import "gallery";
-@import "views/home";
-@import "views/request";
 @import "img-svg";
 @import "logo";
 @import "modal";
+@import "views/home";
+@import "views/request";
+@import "views/single-venue";
 
 // TAGS
 body {
@@ -189,6 +190,9 @@ input{
 	&.page{
 
 		.card-body{	background-color: $color-footer-dark;}
+	}
+	&.inverted{
+		.logo{ filter: invert(100%);}
 	}
 }
 //
