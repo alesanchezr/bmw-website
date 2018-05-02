@@ -11,7 +11,10 @@
         "alesanchezr\/wpas-wordpress-dash": "dev-master",
         "wp-cli\/wp-cli": "~0.22",
         "psy\/psysh": "~0.6",
-        "wpackagist-plugin/svg-support": "^2.3"
+        "wpackagist-plugin/svg-support": "^2.3",
+        "wpackagist-plugin/intuitive-custom-post-order": "^3.1",
+        "wpackagist-plugin/wordpress-seo": "^7.4",
+        "wpackagist-plugin/tiny-compress-images": "^2.2"
     },
     "autoload": {
         "psr-4": {
