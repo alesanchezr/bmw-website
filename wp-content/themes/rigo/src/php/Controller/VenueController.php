@@ -85,7 +85,7 @@ class VenueController{
     foreach( $ids as $id ) {
       $newImg = array(
       'id' => $id, 
-      'thumbnail' => wp_get_attachment_image_src( $id ,'thumbnail')[0], 
+      'thumbnail' => wp_get_attachment_image_src( $id ,'medium_large')[0], 
       'default' => wp_get_attachment_image_src( $id, 'full')[0], 
       'alt' => get_post_meta( $id, '_wp_attachment_image_alt', true)
       );
