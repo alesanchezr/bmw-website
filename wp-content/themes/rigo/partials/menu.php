@@ -1,3 +1,7 @@
+<?php 
+ $args = wpas_get_view_data();
+// debug($args);
+?>
 <div class="men d-none d-sm-block">
   <nav class="navbar navbar-expand-lg menu-color navbar-light  mx-auto p-0"  >
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +36,15 @@
           <h5> <strong>Pick from the most beautiful venue selection in Miami, classic and modern wedding venues appoved by Best Miami Weddings</strong> </h5>
         </div>
         <div class="col-md-4 mt-3">
-          <h5><strong>Unique Venues</strong>  </h5>
-          <a class="click-here color-dark menu-hover" href=""> <li>The Club Of Knights</li> </a>
-          <a class="click-here color-dark menu-hover" href=""> <li>The Rooftop on Ponce</li> </a>
-          <a class="click-here color-dark menu-hover" href=""> <li>The Bath Club</li> </a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Cruz Building</li> </a>
-          <a class="click-here color-dark menu-hover" href=""> <li>The Temple House</li> </a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Alfred I. Dupont Building</li> </a>
+          <h5><strong>Unique Venues</strong></h5>
+          <?php for ($x=0; $x< 1; $x++){ ?>
+            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['unique'][$x]["id"] )?>"> <li><?php echo $args['menu-venues']['unique'][$x]['post_title'] ?></li> </a>
+          <?php } ?>
+          <!--<a class="click-here color-dark menu-hover" href=""> <li>The Rooftop on Ponce</li> </a>-->
+          <!--<a class="click-here color-dark menu-hover" href=""> <li>The Bath Club</li> </a>-->
+          <!--<a class="click-here color-dark menu-hover" href=""> <li>Cruz Building</li> </a>-->
+          <!--<a class="click-here color-dark menu-hover" href=""> <li>The Temple House</li> </a>-->
+          <!--<a class="click-here color-dark menu-hover" href=""> <li>Alfred I. Dupont Building</li> </a>-->
         </div>
         
         <div class="col-md-4 mt-3">
@@ -62,7 +68,7 @@
         </div>
         <div class="col-md-12">
           <div class="p-5">
-            <button class="btn btw-l align-text-bottom" href="bmw-wedding-veneus.html" role="button">View all venues</button><br>
+            <button class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</button><br>
           </div>
         </div>
       </div>
