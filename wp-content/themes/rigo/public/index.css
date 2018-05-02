@@ -7146,4 +7146,10 @@ input {
     .body-request .info {
       padding-top: 0 !important; } }
 
+.footer-listul {
+  padding: 0; }
+  .footer-listulli {
+    list-style-type: none;
+    margin-bottom: 5%; }
+
 /*# sourceMappingURL=index.css.map*/
