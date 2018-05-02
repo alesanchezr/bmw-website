@@ -111,7 +111,7 @@ class VenueController{
       return [
       'id' => $venue -> ID,
       'post_title' => $venue -> post_title,
-      'thumbnail' =>  wp_get_attachment_image_src( get_field('venue-img-banner', $venue -> ID),'full')[0], 
+      'thumbnail' =>  wp_get_attachment_image_src( get_field('venue-thumbnail', $venue -> ID),'medium_large')[0], 
       'address' =>  get_field('venue-address', $venue -> ID),
       ];
     }, $args['venue_list']);

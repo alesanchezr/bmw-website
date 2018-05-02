@@ -51,7 +51,7 @@ class PackageController{
             return [
             'id' => $package -> ID,
             'post_title' => $package -> post_title,
-            'thumbnail' =>  wp_get_attachment_image_src( get_field('package-img-banner', $package -> ID),'full')[0], 
+            'thumbnail' =>  wp_get_attachment_image_src( get_field('package-thumbnail', $package -> ID),'medium')[0], 
             'description' =>  get_field('package-description', $package -> ID),
             ];
         }, $args['weddingPackage_list']);
