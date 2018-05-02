@@ -45,15 +45,16 @@ $asyncLoader = new WPASAsyncLoader([
     ]);
      
 // MENU
-function register_my_menus() {
-  register_nav_menus(
-    array(
-      'menu' => __( 'Menu' ),
-    //   'extra-menu' => __( 'Extra Menu' )
-    )
-  );
-}
-add_action( 'init', 'register_my_menus' );
+  function register_my_menus() {
+    register_nav_menus(
+      array(
+        'footer_company' => __( 'The Company' ),
+        'footer_gallery' => __( 'Wedding Gallery' ),
+        'footer_services' => __( 'Our services' )
+      )
+    );
+  }
+  add_action( 'init', 'register_my_menus' );
 
 function updateVenueCPT( $args, $post_type ) {
 	// If not Products CPT, bail.

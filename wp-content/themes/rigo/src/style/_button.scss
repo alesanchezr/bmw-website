@@ -18,11 +18,19 @@
     background-color: $color-background-light;
   }
   &.form-control{
-    &:hover{
-      background-color: $color-background-light;
-      color: Black;
+      &:hover{
+        background-color: $color-background-light;
+        color: Black;
+      }
+      &.light-background{
+        font-size: 14px;
+        text-decoration: none !important;
+        &:hover{
+          background-color: $color-background-dark;
+          color: white;
+        }
+      }
     }
-  }
 }
 .btw-l{
   height: 45px;

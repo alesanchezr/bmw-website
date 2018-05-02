@@ -5,46 +5,16 @@
       <div class="col-md-9 col-sm-12  px-0">
         <div class="row p-5">
           <div class="col-md-4 col-sm-4 p-2">
-            <h2 class="pb-3">The Company</h2>
-            <p><a class=""href="../bmw-about-us.html">About Us</a></p>
-
-            <p><a href="../bmw-contact-us.html">Contact Us</a></p>
-
-            <p><a href="../bmw--press-award.html">Press & Awards</a></p>
-
-            <p><a href="../bmw-about-us.html">Our Blog</a></p>
-
-            <p><a href="../index.html">Become A Trusted Vendor</a></p>
-
-            <p><a href="../index.html">Refer a Bride</a></p>
+            <h2 class="pb-3 footer-list">The Company</h2>
+              <?php wp_nav_menu( array('footer-menu' => 'The Company') ); ?>
           </div>
-          <div class="col-md-4 col-sm-4 p-2 ">
+          <div class="col-md-4 col-sm-4 p-2 footer-list">
             <h2 class="pb-3">Wedding Gallery</h2>
-
-            <p><a class=""href="../about-us.html">Venues</a></p>
-
-            <p><a href="../about-us.html">Dress</a></p>
-
-            <p><a href="../about-us.html">Decor</a></p>
-
-            <p><a href="../about-us.html">Cuisine</a></p>
-
-            <p><a href="../about-us.html">Weddings</a></p>
-
+              <?php wp_nav_menu( array('footer-menu' => 'Wedding Gallery') ); ?>
           </div>
           <div class="col-md-4 col-sm-4 p-2">
             <h2 class="pb-3">Our services</h2>
-
-            <p><a class=""href="<?php echo get_permalink( get_page_by_path( 'wedding-venues-locations' ) ); ?>">Venues and Locations</a></p>
-
-            <p><a href="../bmw-wedding-packages.html">Miami Wedding Packages</a></p>
-
-            <p><a href="../bmw-.html">Wedding Catering Menu</a></p>
-
-            <p><a href="../index.html">Miami Wedding Churches</a></p>
-
-            <p><a href="../index.html">Trusted Wedding Planners</a></p>
-
+              <?php wp_nav_menu( array('footer-menu' => 'Our services') ); ?>
             <p><a href="https://new.bestmiamiweddings.com/">Go to the old website</a></p>
           </div>
 
