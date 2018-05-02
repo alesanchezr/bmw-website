@@ -37,7 +37,7 @@ get_header(); ?>
       <div class="card-columns">
         <?php 
         for ($i = 0; $i < count($args['new_array_testimonial']); $i++){ ?>
-          <div class="card p-5">
+          <div class="card p-5 testimonial">
             <div class="card-body text-center card-content">
               <img class=" img-fluid mounted-image mb-4" src="<?php echo $args['new_array_testimonial'][$i]['thumbnail'] ?>" alt="card image">
               <p class="card-text"><?php echo $args['new_array_testimonial'][$i]['testimonial'] ?></p>
