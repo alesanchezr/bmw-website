@@ -85,29 +85,30 @@ $args = wpas_get_view_data();
     
     <div class="tab-pane menu-content fade  menu-aditional" id="contact" role="tabpanel" aria-labelledby="contact-tab">
       <div class="row sub-menu" >
-        <div class="container">
+        <div class="container menu-list">
           <ul class="nav  container text-uppercase large "  role="tablist">
             <li class="nav-item d-none d-md-inline-block" style="margin-left: 20px;">
-              <a class="nav-link" href="" >From our weddings...</a>
+              <p class="nav-link" href="" >From our weddings...</p>
             </li>
             <li class="nav-item d-md-inline-block">
               <a class="nav-link" href="">|</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Venues</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Dress</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Decor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Cuisine</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Weddings</a>
-            </li>
+            <?php wp_nav_menu( array('theme_location' => 'submenu_inspired') ); ?>
+            <!--<li class="nav-item">-->
+            <!--  <a class="nav-link" href="">Venues</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--  <a class="nav-link" href="">Dress</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--  <a class="nav-link" href="">Decor</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--  <a class="nav-link" href="">Cuisine</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--  <a class="nav-link" href="">Weddings</a>-->
+            <!--</li>-->
           </ul>
         </div>
       </div>
@@ -153,18 +154,19 @@ $args = wpas_get_view_data();
       <div class="row sub-menu" >
         <div class="container">
           <ul class="nav container text-uppercase large "  role="tablist">
-            <li class="nav-item" style="margin-left: 20px;">
-              <a class="nav-link" href="">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Press & Awards</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Contact Us</a>
-            </li>
+              <?php wp_nav_menu( array('theme_location' => 'menu_about_us') ); ?>
+            <!--<li class="nav-item" style="margin-left: 20px;">-->
+            <!--  <a class="nav-link" href="">About Us</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--  <a class="nav-link" href="">Press & Awards</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--  <a class="nav-link" href="">Testimonials</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--  <a class="nav-link" href="">Contact Us</a>-->
+            <!--</li>-->
           </ul>
         </div>
       </div>
