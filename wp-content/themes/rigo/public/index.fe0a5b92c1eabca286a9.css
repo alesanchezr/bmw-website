@@ -6521,7 +6521,7 @@ li {
 
 .horizontal-gallery {
   max-height: 300px;
-  overflow-y: auto; }
+  overflow: hidden; }
 
 .home .card .img {
   padding: 0px;
@@ -7139,4 +7139,4 @@ input {
     list-style-type: none;
     margin-bottom: 5%; }
 
-/*# sourceMappingURL=index.24fc3cab01d6e5866072.css.map*/
+/*# sourceMappingURL=index.fe0a5b92c1eabca286a9.css.map*/
