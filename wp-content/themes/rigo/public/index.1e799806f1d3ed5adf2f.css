@@ -6324,6 +6324,12 @@ h2 {
   .btn.form-control:hover {
     background-color: #fce6f7;
     color: Black; }
+  .btn.form-control.light-background {
+    font-size: 14px;
+    text-decoration: none !important; }
+    .btn.form-control.light-background:hover {
+      background-color: #F1DBEA;
+      color: white; }
 
 .btw-l {
   height: 45px;
@@ -6513,41 +6519,9 @@ li {
 .subnavbar .click-here {
   line-height: 28px; }
 
-.home .card .img {
-  padding: 0px;
-  margin: 0px;
-  height: 450px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  @media (max-width: 1024px) {
-    .home .card .img {
-      height: 350px; } }
-
-.home .card-middle-button {
-  margin-top: -95px;
-  position: relative;
-  color: #ffffff; }
-
-.body-request {
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffffff;
-  margin-top: 60px;
-  font-size: 12px; }
-  .body-request.contact {
-    background-color: #58595b;
-    margin: 0px !important;
-    padding: 10px; }
-  .body-request input {
-    font-size: 10px; }
-  .body-request textarea {
-    height: 255px;
-    font-size: 10px;
-    resize: none;
-    border-radius: 0 !important; }
-  .body-request .info {
-    padding-top: 6rem !important; }
+.horizontal-gallery {
+  max-height: 300px;
+  overflow: hidden; }
 
 #bmw-logo {
   content: url(/wp-content/themes/rigo/public/b63730ff988b06dcdfb72557ec15b6d4.svg); }
@@ -6772,6 +6746,45 @@ li {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in; }
 
+.home .card .img {
+  padding: 0px;
+  margin: 0px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  @media (max-width: 1024px) {
+    .home .card .img {
+      height: 350px; } }
+
+.home .card-middle-button {
+  margin-top: -95px;
+  position: relative;
+  color: #ffffff; }
+
+.body-request {
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  margin-top: 60px;
+  font-size: 12px; }
+  .body-request.contact {
+    background-color: #58595b;
+    margin: 0px !important;
+    padding: 10px; }
+  .body-request input {
+    font-size: 10px; }
+  .body-request textarea {
+    height: 255px;
+    font-size: 10px;
+    resize: none;
+    border-radius: 0 !important; }
+  .body-request .info {
+    padding-top: 6rem !important; }
+
+.venue-layout img {
+  max-width: 100%; }
+
 body {
   background-color: #fce6f7; }
 
@@ -6907,6 +6920,8 @@ input {
     padding-right: 0; }
   .awards-recognition.page .card-body {
     background-color: #58595b; }
+  .awards-recognition.inverted .logo {
+    filter: invert(100%); }
 
 .rounded-circle {
   width: 100%; }
@@ -7110,6 +7125,8 @@ input {
     background-color: #fce6f7; }
   .tab-content {
     background-color: #fce6f7; }
+  .tab-content-dark {
+    background-color: #e8daeb; }
   .center-vertical-div {
     margin-top: 0; }
   .body-request {
@@ -7121,4 +7138,10 @@ input {
     .body-request .info {
       padding-top: 0 !important; } }
 
-/*# sourceMappingURL=index.8cbd9fb5b58f9919b5b4.css.map*/
+.footer-listul {
+  padding: 0; }
+  .footer-listulli {
+    list-style-type: none;
+    margin-bottom: 5%; }
+
+/*# sourceMappingURL=index.1e799806f1d3ed5adf2f.css.map*/

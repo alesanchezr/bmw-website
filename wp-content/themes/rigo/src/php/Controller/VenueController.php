@@ -79,6 +79,7 @@ class VenueController{
       } 
     }
     
+    if($cont==0) return 0;
     return round($reviewSum / $cont,1);
   }
   
@@ -89,8 +90,9 @@ class VenueController{
     foreach( $ids as $id ) {
       $newImg = array(
       'id' => $id, 
-      'thumbnail' => wp_get_attachment_image_src( $id ,'thumbnail')[0], 
+      'thumbnail' => wp_get_attachment_image_src( $id ,'medium_large')[0], 
       'default' => wp_get_attachment_image_src( $id, 'full')[0], 
+      'alt' => get_post_meta( $id, '_wp_attachment_image_alt', true)
       );
       $imgs[] = $newImg;
     } 
@@ -114,10 +116,10 @@ class VenueController{
     $args['venue_list'] = $query -> posts;
     $args['new_array_venue'] = array_map( function($venue){ 
       return [
-      'id' => $venue -> ID,
-      'post_title' => $venue -> post_title,
-      'thumbnail' =>  wp_get_attachment_image_src( get_field('venue-img-banner', $venue -> ID),'full')[0], 
-      'address' =>  get_field('venue-address', $venue -> ID),
+        'id' => $venue -> ID,
+        'post_title' => $venue -> post_title,
+        'thumbnail' =>  wp_get_attachment_image_src( get_field('venue-thumbnail', $venue -> ID),'medium_large')[0], 
+        'address' =>  get_field('venue-address', $venue -> ID),
       ];
     }, $args['venue_list']);
     
