@@ -82,12 +82,12 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <!--  -->
-      <div class="card bg-1 d-none d-sm-block">
-        <div class="row">
-          <?php for ($i=0; $i< count($args['venue']['venue-post-gallery']); $i++){  ?>
-            <div class= "col-4 px-0">
-              <img class="d-block w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="First slide">
-            </div>
+      <div class="bg-1 d-none d-sm-block horizontal-gallery">
+          <div class="card-deck">
+          <?php for ($i=0; $i< 4; $i++){  ?>
+            <a class="card img-slide p-0 m-0" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>">
+              <img class="d-block w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
+            </a>
           <?php } ?>
         </div>
       </div>
