@@ -78,21 +78,24 @@ get_header();
   </div>
 </div>
 <!--  -->
-<section class="awards-recognition text-center px-2 pb-2 d-none d-md-block">
-  <div class="row-fluid  d-none d-sm-inline">
+<section class="awards-recognition text-center px-2 d-none d-md-block inverted">
     <div class="container">
       <div class="row justify-content-md-center">
-        <div class="col-md-12 my-5">
-          <span class="logo partners  px-2" id="teachlr"></span>
-          <span class="logo partners width px-2" id="city"></span>
-          <span class="logo partners  px-2" id="intraffic"></span>
-          <span class="logo partners width px-2" id="siplik"></span>
-          <span class="logo partners width px-2" id="taima"></span>
-          <span class="logo partners width px-2" id="vikua"></span>
+        <div class="col-md-5 px-0">
+          <span class="logo costumers width px-1" id="bacardi"></span>
+          <span class="logo costumers width px-1" id="nbc"></span>
+          <span class="logo costumers width px-1" id="del-monte"></span>
+        </div>
+        <div class="col-md-2 center-vertical-div px-0">
+          <h2>Our customers</h2>
+        </div>
+        <div class="col-md-5 px-0">
+          <span class="logo costumers width px-3 mt-3" id="best-doctor"></span>
+          <span class="logo costumers width px-3 mt-3" id="curtain-wall"></span>
+          <span class="logo costumers width px-3 mt-3" id="first-bank"></span>
         </div>
       </div>
     </div>
-  </div>
 </section>
 <!-- FOOTER FULL -->
-  <?php get_footer(); ?>
+  <?php get_footer('small'); ?>
