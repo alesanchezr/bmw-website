@@ -143,7 +143,7 @@ $args = wpas_get_view_data();
           
           <div class="col-md-12">
             <div class="p-5">
-              <button class="btn btw-l align-text-bottom" href="bmw-wedding-veneus.html" role="button">View all venues</button><br>
+              <button class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</button><br>
             </div>
           </div>
         </div>
