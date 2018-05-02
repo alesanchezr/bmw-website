@@ -1,34 +1,28 @@
+/* global $ */
 import './style/index.scss';
 import TemplateManager from 'html-template-engine';
+import $ from 'jquery';
+import jQuery from 'jquery';
+window.$ = $;
+window.jQuery = jQuery;
 
 window.onload = function(){
-
     TemplateManager.start();
-    $(document).ready(function(){
-    	let tabselected=null;
-		$('#myTab a').hover( function (e) {
+};
 
-		  $(this).tab('show');
-
-		})
-		 $( ".men" ).mouseleave(function(){
-		 	$(".menu-content").removeClass('active show');
-		 	$('#myTab a').removeClass('active show');
-		 	console.log(1)
-		 });
-
-		 function topFunction() {
-		    document.body.scrollTop = 0; // For Safari
-		    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-	})
-
-
-// Gets the video src from the data-src on each button
-
-
-
-
-
-
-}
+$(document).ready(function(){
+	
+	require('lightgallery');
+	
+	$('#myTab a').hover( function (e) {
+		$(this).tab('show');
+	});
+	$( ".men" ).mouseleave(function(){
+		$(".menu-content").removeClass('active show');
+		$('#myTab a').removeClass('active show');
+	});
+	
+	$('.horizontal-gallery').lightGallery({
+		selector: '.img-slide'
+	});
+});

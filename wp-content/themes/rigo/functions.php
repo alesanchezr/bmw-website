@@ -36,7 +36,10 @@ $asyncLoader = new WPASAsyncLoader([
     'minify-html' => false,
     'styles' => [
         "page" => [ "all" => 'main.css' ],
-        "custom-post" => [ "all" => 'main.css' ]
+        "custom-post" => [ 
+          'venue'=> ['main.css', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.10/css/lightgallery.min.css'],
+          "all" => 'main.css', 
+        ]
     ],
     'scripts' => [
             "page" => [ "all" => ['main.js'] ],
