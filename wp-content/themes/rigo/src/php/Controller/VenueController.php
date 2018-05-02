@@ -74,6 +74,7 @@ class VenueController{
       } 
     }
     
+    if($cont==0) return 0;
     return round($reviewSum / $cont,1);
   }
   
