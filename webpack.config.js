@@ -37,6 +37,8 @@ module.exports = {
   	},
     plugins: [
       new ManifestPlugin(),
-      new ExtractTextPlugin("index.css")
+      new ExtractTextPlugin({
+      	filename: "index.[hash].css"
+      })
     ]
 };

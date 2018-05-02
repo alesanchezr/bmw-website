@@ -6324,12 +6324,6 @@ h2 {
   .btn.form-control:hover {
     background-color: #fce6f7;
     color: Black; }
-  .btn.form-control.light-background {
-    font-size: 14px;
-    text-decoration: none !important; }
-    .btn.form-control.light-background:hover {
-      background-color: #F1DBEA;
-      color: white; }
 
 .btw-l {
   height: 45px;
@@ -6969,7 +6963,7 @@ input {
   background-color: #e8daeb;
   color: #000000; }
   .subtitle-bar.dark {
-    background-color: #F1DBEA;
+    background-color: #58595b;
     color: #ffffff; }
   .subtitle-bar.light {
     background-color: #fce6f7;
@@ -7116,8 +7110,6 @@ input {
     background-color: #fce6f7; }
   .tab-content {
     background-color: #fce6f7; }
-  .tab-content-dark {
-    background-color: #e8daeb; }
   .center-vertical-div {
     margin-top: 0; }
   .body-request {
@@ -7129,10 +7121,4 @@ input {
     .body-request .info {
       padding-top: 0 !important; } }
 
-.footer-listul {
-  padding: 0; }
-  .footer-listulli {
-    list-style-type: none;
-    margin-bottom: 5%; }
-
-/*# sourceMappingURL=index.css.map*/
+/*# sourceMappingURL=index.8cbd9fb5b58f9919b5b4.css.map*/
