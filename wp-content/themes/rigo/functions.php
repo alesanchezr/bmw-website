@@ -56,6 +56,8 @@ $asyncLoader = new WPASAsyncLoader([
         'footer_services' => __( 'Our services' ),
         'menu_food_beverage' => __( 'Food & Beverage' ),
         'menu_much_more' => __( 'Much more' ),
+        'submenu_inspired' => __( 'Sub menu Get Inspired' ),
+        'menu_about_us' => __( 'About us' ),
       )
     );
   }
