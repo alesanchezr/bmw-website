@@ -53,7 +53,9 @@ $asyncLoader = new WPASAsyncLoader([
       array(
         'footer_company' => __( 'The Company' ),
         'footer_gallery' => __( 'Wedding Gallery' ),
-        'footer_services' => __( 'Our services' )
+        'footer_services' => __( 'Our services' ),
+        'menu_food_beverage' => __( 'Food & Beverage' ),
+        'menu_much_more' => __( 'Much more' ),
       )
     );
   }

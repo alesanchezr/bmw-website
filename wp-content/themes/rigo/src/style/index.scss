@@ -344,7 +344,7 @@ input{
 		text-decoration: none !important;
 		&:hover{
 			font-weight:bold;
-			text-decoration:underline !important;;
+			text-decoration:underline !important;
 		}
 	}
 }
@@ -481,9 +481,7 @@ input{
 	.tab-content{
 	background-color:$color-background-light;
 	}
-	.tab-content-dark{
-	background-color:$color-navbar;
-	}
+
 	.center-vertical-div {
 	    margin-top: 0;
 	}
@@ -503,11 +501,34 @@ input{
 }
 
 .footer-list{
-	&ul{
+	ul{
 		padding: 0;
-		&li{
+		margin: 0;
+		li{
 			list-style-type: none;
 			margin-bottom: 5%;
 		}
 	}
 }
+
+.menu-list{
+	ul{
+		padding: 0;
+		margin: 0;
+		text-decoration: none !important;
+		li{
+			list-style-type: none;
+			margin-bottom: 5%;
+			a{
+			 color: black !important;
+				&:hover{
+				font-weight:bold;
+				text-decoration:underline !important;
+				}
+			}
+		}
+	}
+}
+.tab-content-dark{
+	background-color:$color-navbar;
+	}

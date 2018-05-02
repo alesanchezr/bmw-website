@@ -3,6 +3,7 @@ namespace Rigo\Controller;
 use Rigo\Types\Course;
 use Rigo\Types\Planner;
 use Rigo\Types\Testimonial;
+use Rigo\Types\Venue;
 class PlannerController{
 
   public function getSinglePlannerState(){
@@ -22,6 +23,9 @@ class PlannerController{
     $args['planner']['planner-amount-from'] = get_field('planner-amount-from', $args['planner']['ID']);
     $args['planner']['planner-amount-to'] = get_field('planner-amount-to', $args['planner']['ID']);
     $args['planner']['planner-score-point'] = get_field('planner-score-point', $args['planner']['ID']);
+    $args['menu-venues']['garden'] = Venue::getByCategory(4);
+    $args['menu-venues']['historical'] = Venue::getByCategory(5);
+    $args['menu-venues']['unique'] = Venue::getByCategory(6);
     
     $args['planner']['printStars'] = function ($decimalPoints){
       $decimalPoints = floatval($decimalPoints);
@@ -58,6 +62,10 @@ class PlannerController{
     $args['planners']['planners-logo'] = get_field('planners-logo', $args['planners']['ID']);
     $args['planners']['planners-description'] = get_field('planners-description', $args['planners']['ID']);
     $args['planners']['planners-benefits'] = get_field('planners-benefits', $args['planners']['ID']);
+    
+    $args['menu-venues']['garden'] = Venue::getByCategory(4);
+    $args['menu-venues']['historical'] = Venue::getByCategory(5);
+    $args['menu-venues']['unique'] = Venue::getByCategory(6);
     
     $aux = get_queried_object();
     $testimonials = get_field('testimonials', $aux -> ID);

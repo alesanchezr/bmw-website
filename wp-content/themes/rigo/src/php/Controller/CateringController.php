@@ -1,6 +1,7 @@
 <?php
 namespace Rigo\Controller;
 use Rigo\Types\Course;
+use Rigo\Types\Venue;
 class CateringController{
 
   public function getSingleCateringState(){
@@ -14,6 +15,10 @@ class CateringController{
     $args['catering']['catering-main-right'] = get_field('catering-main-right', $args['catering']['ID']);
     $args['catering']['catering-sides-left'] = get_field('catering-sides-left', $args['catering']['ID']);
     $args['catering']['catering-sides-right'] = get_field('catering-sides-right', $args['catering']['ID']);
+    
+    $args['menu-venues']['garden'] = Venue::getByCategory(4);
+    $args['menu-venues']['historical'] = Venue::getByCategory(5);
+    $args['menu-venues']['unique'] = Venue::getByCategory(6);
     
     return $args;
   }

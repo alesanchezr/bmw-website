@@ -2,6 +2,7 @@
 namespace Rigo\Controller;
 use Rigo\Types\Course;
 use Rigo\Types\Testimonial;
+use Rigo\Types\Venue;
 class TestimonialController{
     
     public function getSingleTestimonialState(){
@@ -11,6 +12,10 @@ class TestimonialController{
         $args['testimonial']['testimonial-photo'] = get_field('testimonial-photo', $args['testimonial']['ID']);
         $args['testimonial']['testimonial-description'] = get_field('testimonial-description', $args['testimonial']['ID']);
         $args['testimonial']['testimonial-score'] = get_field('testimonial-score', $args['testimonial']['ID']);
+        
+        $args['menu-venues']['garden'] = Venue::getByCategory(4);
+        $args['menu-venues']['historical'] = Venue::getByCategory(5);
+        $args['menu-venues']['unique'] = Venue::getByCategory(6);
         
         return $args;
         
@@ -35,6 +40,11 @@ class TestimonialController{
     $args =[];
     $args['testimonials'] = (array) get_queried_object();
     $args['testimonials']['testimonial-img-banner'] = get_field('testimonial-img-banner', $args['testimonials']['ID']);
+    
+    $args['menu-venues']['garden'] = Venue::getByCategory(4);
+    $args['menu-venues']['historical'] = Venue::getByCategory(5);
+    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    
     $query = Testimonial::all();
     $args['testimonial_list'] = $query -> posts;
     $args['new_array_testimonial'] = array_map( function($testimonial){ 

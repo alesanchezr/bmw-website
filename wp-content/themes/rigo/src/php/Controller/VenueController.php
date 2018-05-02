@@ -34,6 +34,11 @@ class VenueController{
     $args['venue']['weddingwire-score'],
     $args['venue']['theknot-score']
     ]);
+    
+    $args['menu-venues']['garden'] = Venue::getByCategory(4);
+    $args['menu-venues']['historical'] = Venue::getByCategory(5);
+    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    
     $args['venue']['printStars'] = function ($decimalPoints){
       $decimalPoints = floatval($decimalPoints);
       $resultStr = '';
@@ -104,7 +109,6 @@ class VenueController{
     $args['menu-venues']['garden'] = Venue::getByCategory(4);
     $args['menu-venues']['historical'] = Venue::getByCategory(5);
     $args['menu-venues']['unique'] = Venue::getByCategory(6);
-    // debug( $args['menu-venues']);
     
     $args['page'] = (array) get_queried_object();
     

@@ -2,6 +2,7 @@
 namespace Rigo\Controller;
 use Rigo\Types\Course;
 use Rigo\Types\Testimonial;
+use Rigo\Types\Venue;
 class HomeController{
 
   public function getSingleHomeState(){
@@ -15,7 +16,12 @@ class HomeController{
     $args['home']['home-description-packages'] = get_field('home-description-packages', $args['home']['ID']);
     $args['home']['home-img-banner-2'] = get_field('home-img-banner-2', $args['home']['ID']);
     $args['home']['home-description-banner-2'] = get_field('home-description-packages', $args['home']['ID']);
-   $aux = get_queried_object();
+    
+    $args['menu-venues']['garden'] = Venue::getByCategory(4);
+    $args['menu-venues']['historical'] = Venue::getByCategory(5);
+    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    
+    $aux = get_queried_object();
         $testimonials = get_field('testimonials', $aux -> ID);
         $args['testimonials'] = Testimonial::getTestimonials($testimonials);
         $args['testimonials'] = array_map(function($testimonial) { 
