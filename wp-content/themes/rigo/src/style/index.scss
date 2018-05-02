@@ -469,7 +469,6 @@ input{
 	width:100%;
 	}
 	.card{
-
 		&.bg-2{
 			background-color: $color-background-light;
 		}
@@ -477,8 +476,10 @@ input{
 	.tab-content{
 	background-color:$color-background-light;
 	}
+	.tab-content-dark{
+	background-color:$color-navbar;
+	}
 	.center-vertical-div {
-
 	    margin-top: 0;
 	}
 	.body-request {

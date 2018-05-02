@@ -6324,6 +6324,12 @@ h2 {
   .btn.form-control:hover {
     background-color: #fce6f7;
     color: Black; }
+  .btn.form-control.light-background {
+    font-size: 14px;
+    text-decoration: none !important; }
+    .btn.form-control.light-background:hover {
+      background-color: #F1DBEA;
+      color: white; }
 
 .btw-l {
   height: 45px;
@@ -7127,6 +7133,8 @@ input {
     background-color: #fce6f7; }
   .tab-content {
     background-color: #fce6f7; }
+  .tab-content-dark {
+    background-color: #e8daeb; }
   .center-vertical-div {
     margin-top: 0; }
   .body-request {
