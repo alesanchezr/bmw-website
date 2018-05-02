@@ -37,7 +37,7 @@ get_header();
             <img class="card-img-top" src="<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>" alt="Card image cap">
           </a>
         </div>
-        <a class="color-dark" href="">
+        <a class="color-dark" href="<?php echo get_permalink( $args['new_array_venue'][$x]["id"] )?>">
           <div class="col-md-12 col-8">
             <div class="card text-sm-center">
               <div class="card-body px-0 px-sm-2 ">
