@@ -1,5 +1,5 @@
 <?php 
- $args = wpas_get_view_data();
+$args = wpas_get_view_data();
 // debug($args);
 ?>
 <div class="men d-none d-sm-block">
@@ -37,34 +37,22 @@
         </div>
         <div class="col-md-4 mt-3">
           <h5><strong>Unique Venues</strong></h5>
-          <?php for ($x=0; $x< 1; $x++){ ?>
-            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['unique'][$x]["id"] )?>"> <li><?php echo $args['menu-venues']['unique'][$x]['post_title'] ?></li> </a>
+          <?php for ($x=0; $x< count($args['menu-venues']['unique']); $x++){ ?>
+            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['unique'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['unique'][$x]->post_title ?></li> </a>
           <?php } ?>
-          <!--<a class="click-here color-dark menu-hover" href=""> <li>The Rooftop on Ponce</li> </a>-->
-          <!--<a class="click-here color-dark menu-hover" href=""> <li>The Bath Club</li> </a>-->
-          <!--<a class="click-here color-dark menu-hover" href=""> <li>Cruz Building</li> </a>-->
-          <!--<a class="click-here color-dark menu-hover" href=""> <li>The Temple House</li> </a>-->
-          <!--<a class="click-here color-dark menu-hover" href=""> <li>Alfred I. Dupont Building</li> </a>-->
         </div>
-        
         <div class="col-md-4 mt-3">
           <h5><strong>Garden Venues</strong> </h5>
-          <a class="click-here color-dark menu-hover" href=""> <li>The Miller Plantation</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Vuzcaya Museyn & Gardens</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Thalatta Estate</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Miami Beach Botanical Gardens</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Fairchild Tropical Botanic Garden</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Bonnet House</li></a>
+          <?php for ($x=0; $x< count($args['menu-venues']['garden']); $x++){ ?>
+            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['garden'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['garden'][$x]->post_title ?></li> </a>
+          <?php } ?>
         </div>
         
         <div class="col-md-4 mt-3">
           <h5><strong>Historical Venues</strong> </h5>
-          <a class="click-here color-dark menu-hover" href=""> <li>The Club Of Knights</li> </a>
-          <a class="click-here color-dark menu-hover" href=""> <li>The Miller Plantation</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Comber Hall </li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Vizcaya Museum & Gardens </li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Spanish Monastery</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>The Deering Estate</li></a>
+          <?php for ($x=0; $x< count($args['menu-venues']['historical']); $x++){ ?>
+            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['historical'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['historical'][$x]->post_title ?></li> </a>
+          <?php } ?>
         </div>
         <div class="col-md-12">
           <div class="p-5">
@@ -75,25 +63,21 @@
     </div>
     
     <div class="tab-pane menu-content fade text-center container" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <div class="row">
+      <div class="row menu-list">
         <div class="p-4 col-md-8 offset-md-2">
           <h5><strong>Wedding CateringGive only World-class to your guests, your weddinf will make you shine</strong> </h5>
         </div>
         <div class="col-md-3 offset-md-3 mt-3">
-          <h5><strong>Food& Beverage</strong> </h5>
-          <a class="click-here color-dark menu-hover" href=""> <li>Starters</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Main</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>Sides</li></a>
-          <a class="click-here color-dark menu-hover" href=""> <li>The Bar</li></a>
+          <h5><strong>Food & Beverage</strong> </h5>
+          <?php wp_nav_menu( array('theme_location' => 'menu_food_beverage') ); ?>
         </div>
         <div class="col-md-3 mt-3">
           <h5><strong> Much more</strong></h5>
-          <a class="click-here color-dark menu-hover" href="">   <li>Top Wedding Churches</li></a>
-          <a class="click-here color-dark menu-hover" href="">   <li>Amazing Wedding Planners</li></a>
+          <?php wp_nav_menu( array('theme_location' => 'menu_much_more') ); ?>
         </div>
         <div class="col-md-12">
           <div class="p-5">
-            <button class="btn btw-l align-text-bottom" href="bmw-wedding-veneus.html" role="button">View all venues</button><br>
+            <button class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</button><br>
           </div>
         </div>
       </div>

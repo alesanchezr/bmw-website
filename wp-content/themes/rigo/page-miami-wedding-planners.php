@@ -19,22 +19,22 @@ get_header();
           </div>
       </div>
   </div>
-  <!--<div class="container-fluid d-sm-none d-block">-->
-  <!--  <h1 class="my-0">Top Miami Wedding Planners</h1>-->
-  <!--  <a class='click-here color-dark' style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" >-->
-  <!--    <h5>Call now</h5>-->
-  <!--    <h4>305 662 7442</h4>-->
-  <!--  </a>-->
-  <!--  <hr>-->
-  <!--  <ul class="nav nav-tabs  large navbar-nav  ">-->
-  <!--    <?php /* for( $i= 0; $i< count($args['new_array_planner']); $i++){ ?>-->
-  <!--      <li class="nav-item p-2 ">-->
-  <!--        <a class="nav-link" href="<?php echo get_permalink( $args['new_array_planner'][$i]["id"] )?>"><h4 ><?php echo $args['new_array_planner'][$i]["post_title"]; ?></h4></a>-->
-  <!--        <hr class="m-0">-->
-  <!--      </li>-->
-  <!--    <?php } */?>-->
-  <!--  </ul>-->
-  <!--</div>-->
+  <div class="container-fluid d-sm-none d-block">
+    <h1 class="my-0">Top Miami Wedding Planners</h1>
+    <a class='click-here color-dark' style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" >
+      <h5>Call now</h5>
+      <h4>305 662 7442</h4>
+    </a>
+    <hr>
+    <ul class="nav nav-tabs  large navbar-nav  ">
+      <?php  for( $i= 0; $i< count($args['new_array_planner']); $i++){ ?>
+        <li class="nav-item p-2 ">
+          <a class="nav-link" href="<?php echo get_permalink( $args['new_array_planner'][$j]["id"] )?>"><h4 ><?php echo $args['new_array_planner'][$i]["post_title"]; ?></h4></a>
+          <hr class="m-0">
+        </li>
+      <?php } ?>
+    </ul>
+  </div>
   <!---->
     <div class="row subtitle-bar py-3 d-none d-md-block">
       <div class="col-md-12 text-center padding-all">

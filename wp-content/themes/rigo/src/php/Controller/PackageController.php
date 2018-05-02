@@ -3,6 +3,7 @@ namespace Rigo\Controller;
 use Rigo\Types\Course;
 use Rigo\Types\WeddingPackage;
 use Rigo\Types\Testimonial;
+use Rigo\Types\Venue;
 class PackageController{
     
     public function getSinglePackageState(){
@@ -18,6 +19,10 @@ class PackageController{
         $args['package']['package-img-card-3'] = get_field('package-img-card-3', $args['package']['ID']);
         $args['package']['package-card-4'] = get_field('package-card-4', $args['package']['ID']);
         $args['package']['package-img-card-4'] = get_field('package-img-card-4', $args['package']['ID']);
+        
+        $args['menu-venues']['garden'] = Venue::getByCategory(4);
+        $args['menu-venues']['historical'] = Venue::getByCategory(5);
+        $args['menu-venues']['unique'] = Venue::getByCategory(6);
         
         $aux = get_queried_object();
         $testimonials = get_field('testimonials', $aux -> ID);
@@ -39,6 +44,11 @@ class PackageController{
         $args['package']['packages-logo'] = get_field('packages-logo', $args['package']['ID']);
         $args['package']['packages-img-banner-2'] = get_field('packages-img-banner-2', $args['package']['ID']);
         $args['package']['packages-description-2'] = get_field('packages-description-2', $args['package']['ID']);
+        
+        $args['menu-venues']['garden'] = Venue::getByCategory(4);
+        $args['menu-venues']['historical'] = Venue::getByCategory(5);
+        $args['menu-venues']['unique'] = Venue::getByCategory(6);
+        
         $aux = get_queried_object();
         $testimonials = get_field('testimonials', $aux -> ID);
         $args['testimonials'] = Testimonial::getTestimonials($testimonials);

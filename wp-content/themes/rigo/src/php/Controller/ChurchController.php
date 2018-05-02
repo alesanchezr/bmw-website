@@ -2,6 +2,7 @@
 namespace Rigo\Controller;
 use Rigo\Types\Course;
 use Rigo\Types\Church;
+use Rigo\Types\Venue;
 class ChurchController{
 
   public function getSingleChurchState(){
@@ -16,6 +17,10 @@ class ChurchController{
     $args['church']['church-transportation'] = get_field('church-transportation', $args['church']['ID']);
     $args['church']['church-layout-description'] = get_field('church-layout-description', $args['church']['ID']);
     $args['church']['church-bottom-half'] = get_field('church-bottom-half', $args['church']['ID']);
+    
+    $args['menu-venues']['garden'] = Venue::getByCategory(4);
+    $args['menu-venues']['historical'] = Venue::getByCategory(5);
+    $args['menu-venues']['unique'] = Venue::getByCategory(6);
 // IMAGES
     $args['church']['church-img-banner'] = get_field('church-img-banner', $args['church']['ID']);
     return $args;
@@ -27,6 +32,10 @@ class ChurchController{
     $args['church'] = (array) get_queried_object();
     $args['church']['church-img-banner'] = get_field('church-img-banner', $args['church']['ID']);
     $args['church']['church-description'] = get_field('church-description', $args['church']['ID']);
+    
+    $args['menu-venues']['garden'] = Venue::getByCategory(4);
+    $args['menu-venues']['historical'] = Venue::getByCategory(5);
+    $args['menu-venues']['unique'] = Venue::getByCategory(6);
     
     
     $args['page'] = (array) get_queried_object();
