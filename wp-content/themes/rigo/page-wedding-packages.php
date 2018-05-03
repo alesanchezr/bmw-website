@@ -85,7 +85,7 @@ get_header();
     </div>
     <!-- JUMBOTROM -->
       <div class="jumbotron text-dark jb-medium p-3 my-0 d-none d-md-block" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['package']['packages-img-banner-2'],'full')[0] ?>');">
-        <div class="container text-center px-5 py-5">
+        <div class="container text-center px-5 py-3">
           <!--<img class="logo small" id="wedding-wire-black"></span>-->
           <img class="logo small why-bmw" src="<?php echo wp_get_attachment_image_src($args['package']['packages-logo'],'full')[0] ?>" alt="First slide"> </img>
           <?php echo $args['package']['packages-description-2'] ?>
