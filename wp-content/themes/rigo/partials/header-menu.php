@@ -85,31 +85,33 @@ $args = wpas_get_view_data();
     
     <div class="tab-pane menu-content fade  menu-aditional" id="contact" role="tabpanel" aria-labelledby="contact-tab">
       <div class="row sub-menu" >
-        <div class="container menu-list">
-          <ul class="nav  container text-uppercase large "  role="tablist">
-            <li class="nav-item d-none d-md-inline-block" style="margin-left: 20px;">
-              <p class="nav-link" href="" >From our weddings...</p>
+        <div class="container sub-menu-wp">
+          <ul class="nav container text-uppercase large "  role="tablist">
+            <li class="inactiveLink nav-item d-none d-md-inline-block" style="margin-left: 20px;">
+              <a class="" href="" >From our weddings...</a>
             </li>
-            <li class="nav-item d-md-inline-block">
-              <a class="nav-link" href="">|</a>
+            <li class="inactiveLink d-none d-md-inline-block">
+              <a class=" nohover" href="">|</a>
             </li>
-            <?php wp_nav_menu( array('theme_location' => 'submenu_inspired') ); ?>
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Venues</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Dress</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Decor</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Cuisine</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Weddings</a>-->
-            <!--</li>-->
-          </ul>
+          
+            <?php wp_nav_menu( array('theme_location' => 'submenu_inspired', 'menu_class'=> 'nav',) ); ?>
+          <!--  <li class="nav-item">-->
+          <!--    <a class="nav-link" href="">Venues</a>-->
+          <!--  </li>-->
+          <!--  <li class="nav-item">-->
+          <!--    <a class="nav-link" href="">Dress</a>-->
+          <!--  </li>-->
+          <!--  <li class="nav-item">-->
+          <!--    <a class="nav-link" href="">Decor</a>-->
+          <!--  </li>-->
+          <!--  <li class="nav-item">-->
+          <!--    <a class="nav-link" href="">Cuisine</a>-->
+          <!--  </li>-->
+          <!--  <li class="nav-item">-->
+          <!--    <a class="nav-link" href="">Weddings</a>-->
+          <!--  </li>-->
+          <!--</ul>-->
+          
         </div>
       </div>
       <div class="container">
@@ -150,14 +152,19 @@ $args = wpas_get_view_data();
       </div>
     </div>
       
-    <div class="tab-pane menu-content fade text-center show " id="about" role="tabpanel" aria-labelledby="about-tab">
+    <div class="tab-pane menu-content fade text-center" id="about" role="tabpanel" aria-labelledby="about-tab">
       <div class="row sub-menu" >
-        <div class="container">
-          <ul class="nav container text-uppercase large "  role="tablist">
-              <?php wp_nav_menu( array('theme_location' => 'menu_about_us') ); ?>
-            <!--<li class="nav-item" style="margin-left: 20px;">-->
-            <!--  <a class="nav-link" href="">About Us</a>-->
-            <!--</li>-->
+        <div class="container text-uppercase large sub-menu-wp" style="margin-left: 20px">
+        <?php  wp_nav_menu( array(
+          'theme_location' => 'menu_about_us',
+          'menu_class'=> 'nav',
+        // 'items_wrap'=>'<ul>%3$s</ul>',
+         )); ?>
+          <!--<ul class=" nav "  role="tablist">-->
+              
+          <!--  <li class="nav-item" style="margin-left: 20px;">-->
+          <!--    <a class="nav-link" href="">About Us</a>-->
+          <!--  </li>-->
             <!--<li class="nav-item">-->
             <!--  <a class="nav-link" href="">Press & Awards</a>-->
             <!--</li>-->
@@ -167,7 +174,7 @@ $args = wpas_get_view_data();
             <!--<li class="nav-item">-->
             <!--  <a class="nav-link" href="">Contact Us</a>-->
             <!--</li>-->
-          </ul>
+          <!--</ul>-->
         </div>
       </div>
     </div>
