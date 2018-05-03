@@ -6,15 +6,15 @@ $args = wpas_get_view_data();
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
 <!-- MENU VENUE-->
-  <div class="row sub-menu d-none d-sm-block" >
+  <div class="row sub-menu d-none d-sm-block venue-menu" >
     <div class="container">
-      <ul class="p-2 container text-uppercase large text-center m-auto"  role="tablist">
-        <a class=" p-2" href="" >General Info</a>
-        <a class=" p-2" href="">Venues areas</a>
-        <a class=" p-2" href="">360 tour</a>
-        <a class=" p-2" href="">Gallery</a>
-        <a class=" p-2" href="">Location</a>
-        <a class=" p-2" href="">weddings</a>
+      <ul class="container text-uppercase large text-center mx-auto"  role="tablist">
+        <a href="" >General Info</a>
+        <a href="">Venues areas</a>
+        <a href="">360 tour</a>
+        <a href="">Gallery</a>
+        <a href="">Location</a>
+        <a href="">weddings</a>
       </ul>
     </div>
   </div>
@@ -27,7 +27,7 @@ $args = wpas_get_view_data();
       <div class="jb-text d-block">
         <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
         <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
-        <a style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" ><p class="py-3 h2" >or call now! 305 662 7442</p></a>
+        <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
       </div>
     </div>
   </div>

@@ -14,7 +14,7 @@ get_header();
     <div class="">
       <h1 class="mb-5">Miami Wedding Venues</h1>
       <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" href="./page.html" role="button">Request a quote</button></a><br>
-      <a style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" ><p class="py-3 h2" >or call now! 305 662 7442</p></a>
+      <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
     </div>
   </div>
 </div>
