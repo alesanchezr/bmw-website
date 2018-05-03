@@ -3,3 +3,21 @@
         max-width: 100%;
     }
 }
+.venue-menu{
+    ul{
+        background: $color-footer-dark;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        a{
+            letter-spacing: 2.6px;
+            padding: 17px 16px;
+            text-decoration: none;
+        }
+        a:hover{
+            background: $color-background-light;
+            color: $color-footer-dark !important;
+        }
+    }
+}
