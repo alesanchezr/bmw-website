@@ -34,7 +34,7 @@ get_header();
       <div class="row col-md-4  mx-auto p-1">
         <div class="col-md-12 col-4 p-0 m-0 center-vertical-div">
           <a href="<?php echo get_permalink( $args['new_array_venue'][$x]["id"] )?>">
-            <img class="card-img-top" src="<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>" alt="Card image cap">
+            <div class="card-img-top venue-thumb" style="background-image: url(<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>);"></div>
           </a>
         </div>
         <a class="color-dark" href="<?php echo get_permalink( $args['new_array_venue'][$x]["id"] )?>">
