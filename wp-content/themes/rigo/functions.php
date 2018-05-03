@@ -62,6 +62,15 @@ $asyncLoader = new WPASAsyncLoader([
     );
   }
   add_action( 'init', 'register_my_menus' );
+  
+  function add_classes_on_li($classes, $item, $args) {
+  $classes[] = 'nav-item';
+  // debug($classes);
+  return $classes;
+  }
+  add_filter('nav_menu_css_class','add_classes_on_li',1,3);
+  
+
 
 function updateVenueCPT( $args, $post_type ) {
 	// If not Products CPT, bail.
@@ -79,3 +88,4 @@ function updateVenueCPT( $args, $post_type ) {
 	return $args;
 }
 add_filter( 'register_post_type_args', 'updateVenueCPT', 10, 2 );
+

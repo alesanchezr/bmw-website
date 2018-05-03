@@ -21,26 +21,19 @@
         background: $color-menu-princial;
         color: black !important;
     }
-    
     #about.active{
         background: $color-footer-dark;
     }
 }
+// 
 .sub-menu{
-    .nav-link{
-        letter-spacing: 1.6px;
-        @media (max-width: 1224px) {
-            &:not(:first-child){
-                letter-spacing: 1.3px;
-            }
-        }
-    }
     .nav-item{
-        padding: 0px 10px;
+        padding: 10px 30px;
         @media (max-width: 1224px) {
-            &:not(:first-child){
+            // &:not(:first-child){
                 padding: 0px 5px;
-            }
+            // }
+            
         }
         &:hover{
             background: $color-background-light;
@@ -49,7 +42,16 @@
             }
         }
     }
+    .nav-link{
+        letter-spacing: 1.6px;
+        @media (max-width: 1224px) {
+            &:not(:first-child){
+                letter-spacing: 1.3px;
+            }
+        }
+    }
 }
+// 
 .subnavbar{
     h5{
         letter-spacing: 0.8px;
@@ -58,4 +60,33 @@
     .click-here{
         line-height: 28px;
     }
+}
+
+.sub-menu-wp{
+   .nav{
+        li{
+        padding: 10px 30px;
+        // @media (max-width: 1224px) {
+        //     &:not(:first-child){
+        //         padding: 0px 5px;
+            }
+        }
+            a{
+			    text-decoration:none !important;
+        &:hover{
+            background: $color-background-light;
+            color: $color-footer-dark !important;
+                font-weight:bold;
+                
+            }
+        }
+//     }
+//   }
+}
+.inactiveLink {
+   pointer-events: none;
+   cursor: default !important;
+    &:hover{background: $color-footer-dark!important;
+            color: white !important;
+                }
 }
