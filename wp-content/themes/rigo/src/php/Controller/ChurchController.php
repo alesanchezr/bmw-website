@@ -33,20 +33,15 @@ class ChurchController{
     $args['church']['church-img-banner'] = get_field('church-img-banner', $args['church']['ID']);
     $args['church']['church-description'] = get_field('church-description', $args['church']['ID']);
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
-    
-    
     $args['page'] = (array) get_queried_object();
-    $query = Church::all();
+    $query = Church::all(['posts_per_page' => 15]);
     $args['church_list'] = $query -> posts;
     
     $args['new_array_church'] = array_map( function($church){ 
       return [
       'id' => $church -> ID,
       'post_title' => $church -> post_title,
-      'thumbnail' =>  wp_get_attachment_image_src( get_field('church-img-banner', $church -> ID),'full')[0], 
+      'thumbnail' =>  wp_get_attachment_image_src( get_field('church-img-banner', $church -> ID),'medium_large')[0], 
       'address' =>  get_field('church-address', $church -> ID),
       ];
     }, $args['church_list']);
