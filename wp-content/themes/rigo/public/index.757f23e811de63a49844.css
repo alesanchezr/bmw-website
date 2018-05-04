@@ -6294,9 +6294,6 @@ h2 {
   margin-bottom: 0;
   line-height: 30px; }
 
-a {
-  color: black; }
-
 .h7 {
   font-size: 25px !important;
   letter-spacing: 1px; }
@@ -6432,8 +6429,9 @@ li {
   justify-content: center; }
   .footer-black .card-img-top {
     margin-top: 27px; }
-  .footer-black a {
-    font-size: 15px; }
+  .footer-black .menu-item a {
+    font-size: 15px;
+    color: white; }
   .footer-black a:hover {
     color: #fff !important; }
   .footer-black p {
@@ -6913,6 +6911,8 @@ input {
 .card {
   border: none;
   background: none; }
+  .card a {
+    color: black; }
   .card.small {
     margin: 0;
     flex: none; }
@@ -6945,7 +6945,8 @@ input {
 .image-div {
   margin: 0px;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .img-center {
   margin: 0;
@@ -7217,6 +7218,6 @@ input {
   background-color: #e8daeb; }
 
 .galleryImg {
-  height: 250px; }
+  height: 250px !important; }
 
-/*# sourceMappingURL=index.f9e0a85e259a5fa313d0.css.map*/
+/*# sourceMappingURL=index.757f23e811de63a49844.css.map*/
