@@ -80,8 +80,9 @@ li {
 	display: flex;
 	justify-content: center;
 	.card-img-top{margin-top: 27px;}
-	a{
+	.menu-item a{
 		font-size: 15px;
+		color: white;
 	}
 	a:hover { color: #fff !important; }
 	p{
