@@ -6,7 +6,7 @@ get_header();
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
   <div class="parent">
-    <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['gallery']['gallery-img-banner'],'full')[0]?>')">
+    <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['gallery']['gallery-img-banner'],'full')[0] ?>')">
       <div class="card logo medium mx-auto">
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
@@ -20,106 +20,35 @@ get_header();
   <!-- HORIZONTAL CARD -->
   <section>
     <div class="card bg-1">
-      <div class="container  p-4 gallery">
-        <div class="row">
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/home-card-1.jpg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/home-card-1.jpg"  data-target="#myModal" >
+      <div class="container  p-4 ">
+          <div class="row horizontal-gallery">
+            <?php for ($i=0; $i< count($args['gallery']['gallery-page-gallery']); $i++){  ?>
+              <div class="col-md-3 p-0">
+                <a class="card img-slide p-0 m-0" href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];  ?>">
+                  <img class=" galleryImg d-block w-100 px-0 w-100 h-100" src="<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['gallery']['gallery-page-gallery'][$i]['alt'];  ?>">
+                </a>
+              </div>
+            <?php } ?>
           </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100 " data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-
-
-
-        </div>
-        <div class="row">
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/home-card-1.jpg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/home-card-1.jpg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100 " data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-
-
-
-        </div>
-        <div class="row">
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/home-card-1.jpg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/home-card-1.jpg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100 " data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-
-
-
-        </div>
-        <div class="row">
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/home-card-1.jpg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/home-card-1.jpg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100 " data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-          <div class="col-md-3 p-0">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg" class="w-100 h-100" data-toggle="modal" data-bigimage="<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg"  data-target="#myModal" >
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-
-          <div class="modal-body">
-
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-
-            <img src="" alt="" id="image" class="img-fluid w-100 rounded mt-0">
-
-
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-
+    <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+    <!--  <div class="modal-dialog" role="document">-->
+    <!--    <div class="modal-content">-->
+    <!--      <div class="modal-body">-->
+    <!--        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+    <!--          <span aria-hidden="true">&times;</span>-->
+    <!--        </button>-->
+    <!--        <img src="" alt="" id="image" class="img-fluid w-100 rounded mt-0">-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
   </section>
     <?php get_template_part('partials/rating'); ?>
-<!-- FOOTER FULL -->
-  <?php get_template_part('partials/footer','social-media'); ?>
-  <?php get_template_part('partials/footer','our-customers'); ?>
-  <?php get_template_part('partials/footer','menu'); ?>
-  </body>
     <!-- END FOOTER FULL -->
     <?php get_footer(); ?>
+    
+    
   <script>
   var $imageSrc;
   $('.gallery img').click(function() {
