@@ -349,6 +349,10 @@ input{
 			text-decoration:underline !important;
 		}
 	}
+	&.img{
+		text-decoration: none;
+		font-weight: normal;
+	}
 }
 .color-dark{
 		color: $color-text-dark !important;

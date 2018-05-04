@@ -47,10 +47,11 @@ get_header();
     </div>
     <!-- CARGROUP -->
       <div class="card-group">
-        <a href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>">
         <?php for( $j= 0; $j< count($args['new_array_package']); $j++){ ?>
           <div class="card p-1">
-              <div class="card-img-top venue-thumb" style="background-image: url(<?php echo $args['new_array_package'][$j]['thumbnail'] ?>)"></div>
+              <a class="click-here img" href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>">
+                <div class="card-img-top venue-thumb" style="background-image: url(<?php echo $args['new_array_package'][$j]['thumbnail'] ?>)"></div>
+              </a>
             <div class="card-body max-h text-center pt-4">
               <p class=" h8 card-title"><b><?php echo $args['new_array_package'][$j]["post_title"]; ?></b></p>
               <p class="card-text"><?php echo $args['new_array_package'][$j]["description"]; ?>.</p>
@@ -60,7 +61,7 @@ get_header();
               </div>
           </div>
         <?php } ?>
-        </a>
+        
       </div>
 <!-- AWARDA RECOGNITION -->
   <?php get_template_part('partials/awards','recognition'); ?>
