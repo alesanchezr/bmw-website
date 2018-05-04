@@ -1,7 +1,7 @@
 <?php 
 /* Template Name: Wedding Contact Us */
 $args = wpas_get_view_data();
-get_header('small'); 
+get_header(); 
 ?>
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
