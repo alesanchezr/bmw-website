@@ -47,11 +47,10 @@ get_header();
     </div>
     <!-- CARGROUP -->
       <div class="card-group">
+        <a href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>">
         <?php for( $j= 0; $j< count($args['new_array_package']); $j++){ ?>
           <div class="card p-1">
-            <a href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>">
-              <img class="card-img-top" src="<?php echo $args['new_array_package'][$j]['thumbnail'] ?>" alt="Card image cap">
-            </a>
+              <div class="card-img-top venue-thumb" style="background-image: url(<?php echo $args['new_array_package'][$j]['thumbnail'] ?>)"></div>
             <div class="card-body max-h text-center pt-4">
               <p class=" h8 card-title"><b><?php echo $args['new_array_package'][$j]["post_title"]; ?></b></p>
               <p class="card-text"><?php echo $args['new_array_package'][$j]["description"]; ?>.</p>
@@ -60,8 +59,8 @@ get_header();
                 <a href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>"><small class=" click-here">Read more</small></a>
               </div>
           </div>
-          
         <?php } ?>
+        </a>
       </div>
 <!-- AWARDA RECOGNITION -->
   <?php get_template_part('partials/awards','recognition'); ?>

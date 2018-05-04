@@ -6283,7 +6283,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Rufina", serif; }
 
 h1 {
-  font-size: 26px; }
+  font-size: 26px;
+  letter-spacing: 0.7px; }
   @media (max-width: 1324px) {
     h1 {
       font-size: 20px; } }
@@ -6309,6 +6310,7 @@ h2 {
   color: #ffffff;
   background-color: #993399;
   border-radius: 22.5px 22.5px;
+  letter-spacing: 0.7px;
   border: 0px;
   font-family: "Rufina", serif;
   font-weight: bold;
@@ -6506,10 +6508,10 @@ li {
     .sub-menu .nav-item:hover a {
       color: #58595b !important; }
 
-.sub-menu .nav-link {
-  letter-spacing: 1.6px; }
+.sub-menu .nav-link, .sub-menu .submenu-nav li {
+  letter-spacing: 2.6px; }
   @media (max-width: 1224px) {
-    .sub-menu .nav-link:not(:first-child) {
+    .sub-menu .nav-link:not(:first-child), .sub-menu .submenu-nav li:not(:first-child) {
       letter-spacing: 1.3px; } }
 
 .subnavbar h5 {
@@ -6520,7 +6522,7 @@ li {
   line-height: 28px; }
 
 .sub-menu-wp .nav li {
-  padding: 10px 30px; }
+  padding: 20px 20px; }
 
 .sub-menu-wp a {
   text-decoration: none !important; }
@@ -6580,13 +6582,16 @@ li {
   content: url(/wp-content/themes/rigo/public/45e28eeb5b16a607d8253d8a682390ee.svg); }
 
 #first-bank {
-  content: url(/wp-content/themes/rigo/public/336640531f8066e1e99d1fe5b5817211.svg); }
+  content: url(/wp-content/themes/rigo/public/336640531f8066e1e99d1fe5b5817211.svg);
+  margin-bottom: 10px !important; }
 
 #curtain-wall {
-  content: url(/wp-content/themes/rigo/public/2227c4fd04e52b619a8d7b2880af827a.svg); }
+  content: url(/wp-content/themes/rigo/public/2227c4fd04e52b619a8d7b2880af827a.svg);
+  margin-bottom: 10px !important; }
 
 #best-doctor {
-  content: url(/wp-content/themes/rigo/public/227d3d5831c08637a71c51fbee664fd4.svg); }
+  content: url(/wp-content/themes/rigo/public/227d3d5831c08637a71c51fbee664fd4.svg);
+  margin-bottom: 10px !important; }
 
 #prodly-recognize {
   content: url(/wp-content/themes/rigo/public/be165c04f268d0250ba04e52aa81fcc8.svg); }
@@ -6679,6 +6684,12 @@ li {
   max-height: 50px !important; }
   .logo.costumers.width {
     width: 30% !important; }
+
+.logo.why-bmw {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 20% !important; }
 
 .svg-inline--fa {
   display: inline-block;
@@ -6802,6 +6813,20 @@ li {
 .venue-layout img {
   max-width: 100%; }
 
+.venue-menu ul {
+  background: #58595b;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .venue-menu ul a {
+    letter-spacing: 2.6px;
+    padding: 17px 16px;
+    text-decoration: none; }
+  .venue-menu ul a:hover {
+    background: #fce6f7;
+    color: #58595b !important; }
+
 .card-img-top.venue-thumb {
   width: 100%;
   height: 300px;
@@ -6820,6 +6845,12 @@ a {
 
 input {
   border-radius: 0 !important; }
+
+.call-now {
+  font-size: 21px; }
+  .call-now a.phone-numer {
+    font-size: 18px;
+    text-decoration: none; }
 
 @media (min-width: 34em) {
   .card-columns {
@@ -6879,6 +6910,8 @@ input {
 .card {
   border: none;
   background: none; }
+  .card a {
+    color: black; }
   .card.small {
     margin: 0;
     flex: none; }
@@ -6985,10 +7018,6 @@ input {
     outline-color: invert; }
   .jumbotron .m {
     width: 70% !important; }
-  .jumbotron .jb-text p {
-    font-size: 17px; }
-  .jumbotron .jb-text a {
-    font-size: 15px; }
 
 .floating-half {
   width: 50%;
@@ -7186,4 +7215,7 @@ input {
 .tab-content-dark {
   background-color: #e8daeb; }
 
-/*# sourceMappingURL=index.669ad590ffbfcd9fafa1.css.map*/
+.galleryImg {
+  height: 250px; }
+
+/*# sourceMappingURL=index.eeff8c5f10ca49ea7699.css.map*/

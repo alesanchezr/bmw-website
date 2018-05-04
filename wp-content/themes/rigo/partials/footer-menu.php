@@ -14,8 +14,7 @@
           </div>
           <div class="col-md-4 col-sm-4 p-2">
             <h2 class="pb-3">Our services</h2>
-              <?php wp_nav_menu( array('theme_location' => 'footer_services') ); ?>
-            <p><a href="https://new.bestmiamiweddings.com/">Go to the old website</a></p>
+            <?php wp_nav_menu( array('theme_location' => 'footer_services') ); ?>
           </div>
 
         </div>

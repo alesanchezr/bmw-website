@@ -187,7 +187,7 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <!-- CLIENT SCORE -->
-        <div class="card bg-1 d-none d-sm-block">
+        <div class="card bg-2 d-none d-sm-block">
           <div class="row ">
             <div class="col-md-12 px-4 p-sm-5 l p-0 p-sm-3">
               <div class="p-0 p-sm-3 max-h text-center">
