@@ -123,7 +123,7 @@ class VenueController{
       ];
     }, $args['venue_list']);
     
-    // debug($args);
+    debug($args);
     return $args;
     
   }
