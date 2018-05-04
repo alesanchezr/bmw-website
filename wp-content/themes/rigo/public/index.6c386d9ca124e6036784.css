@@ -48,7 +48,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 @-ms-viewport {
   width: device-width; }
@@ -6451,7 +6451,7 @@ li {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0); }
+  border-color: transparent; }
 
 .footer-mobile {
   background-color: #58595b; }
@@ -6496,21 +6496,21 @@ li {
 .navbar #about.active {
   background: #58595b; }
 
-.sub-menu .nav-link {
-  letter-spacing: 1.6px; }
-  @media (max-width: 1224px) {
-    .sub-menu .nav-link:not(:first-child) {
-      letter-spacing: 1.3px; } }
-
 .sub-menu .nav-item {
-  padding: 0px 10px; }
+  padding: 10px 30px; }
   @media (max-width: 1224px) {
-    .sub-menu .nav-item:not(:first-child) {
+    .sub-menu .nav-item {
       padding: 0px 5px; } }
   .sub-menu .nav-item:hover {
     background: #fce6f7; }
     .sub-menu .nav-item:hover a {
       color: #58595b !important; }
+
+.sub-menu .nav-link {
+  letter-spacing: 1.6px; }
+  @media (max-width: 1224px) {
+    .sub-menu .nav-link:not(:first-child) {
+      letter-spacing: 1.3px; } }
 
 .subnavbar h5 {
   letter-spacing: 0.8px;
@@ -6519,8 +6519,25 @@ li {
 .subnavbar .click-here {
   line-height: 28px; }
 
+.sub-menu-wp .nav li {
+  padding: 10px 30px; }
+
+.sub-menu-wp a {
+  text-decoration: none !important; }
+  .sub-menu-wp a:hover {
+    background: #fce6f7;
+    color: #58595b !important;
+    font-weight: bold; }
+
+.inactiveLink {
+  pointer-events: none;
+  cursor: default !important; }
+  .inactiveLink:hover {
+    background: #58595b !important;
+    color: white !important; }
+
 .horizontal-gallery {
-  max-height: 300px;
+  height: 170px;
   overflow: hidden; }
 
 #bmw-logo {
@@ -6784,6 +6801,10 @@ li {
 
 .venue-layout img {
   max-width: 100%; }
+
+.testimonial .card-body {
+  background-color: #e8daeb !important;
+  border-radius: 30px; }
 
 body {
   background-color: #fce6f7; }
@@ -7159,4 +7180,4 @@ input {
 .tab-content-dark {
   background-color: #e8daeb; }
 
-/*# sourceMappingURL=index.39066ed77a9debc5725d.css.map*/
+/*# sourceMappingURL=index.6c386d9ca124e6036784.css.map*/
