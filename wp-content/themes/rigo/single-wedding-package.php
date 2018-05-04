@@ -18,7 +18,40 @@ $args = wpas_get_view_data();
       </div>
   </div>
 <!-- CONTACT -->
-<span class="d-none d-sm-block" require-file="./components/contact.html"></span>
+  <!-- FORM -->
+  <div class="container-fluid body-request contact my-2 py-5">
+    <div class="row">
+      <div class="col-md-5 ml-5">
+        <div class="text-center ml-5 pl-5 pr-4">
+          <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+3056624742">
+            <h5 class="h8" >Call now! </h5>
+            <h5 class="h7">  305-662-4742</h5>
+          </a>
+          <p>to request more information and pricing or fill the follow form: </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class=" col-md-6 pl-1">
+        <form class="ml-5">
+          <div class="form-inline-block">
+            <label class="mb-0" for="fullName">Full Name</label>
+            <input type="fullName" class="form-control mt-0 mb-2" id="" placeholder="Full Name">
+          </div>
+          <div class="form-inline-block">
+            <label class=" mb-0" for="phoneNumber">Phone Number</label>
+            <input type="phoneNumber" class="form-control mt-0 mb-2" id="" placeholder="Phone number">
+          </div>
+          <div class="form-inline-block">
+            <label class=" mb-0" for="email">Email</label>
+            <input type="email" class="form-control mt-0 mb-1" id="" placeholder="Email">
+          </div>
+          <div class="form-inline-block pt-5">
+            <button  class="btn form-control light-background" type="button" name="button">Request Pricing and PDF</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 <!-- END CONTACT -->
 <div class="d-sm-none d-block px-3">
   <h1><?php echo $args["package"]["post_title"]; ?></h1>
