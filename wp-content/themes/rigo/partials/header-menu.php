@@ -87,14 +87,11 @@ $args = wpas_get_view_data();
       <div class="row sub-menu" >
         <div class="container sub-menu-wp">
           <ul class="nav container text-uppercase large "  role="tablist">
-            <li class="inactiveLink nav-item d-none d-md-inline-block" style="margin-left: 20px;">
-              <a class="" href="" >From our weddings...</a>
-            </li>
-            <li class="inactiveLink d-none d-md-inline-block">
-              <a class=" nohover" href="">|</a>
+            <li class="inactiveLink nav-item d-none d-md-inline-block pr-0">
+              <a class="" href="" style='letter-spacing: 2.6px;'>From our weddings...</a>
             </li>
           
-            <?php wp_nav_menu( array('theme_location' => 'submenu_inspired', 'menu_class'=> 'nav',) ); ?>
+            <?php wp_nav_menu( array('theme_location' => 'submenu_inspired', 'menu_class'=> 'nav submenu-nav',) ); ?>
           <!--  <li class="nav-item">-->
           <!--    <a class="nav-link" href="">Venues</a>-->
           <!--  </li>-->
@@ -154,10 +151,10 @@ $args = wpas_get_view_data();
       
     <div class="tab-pane menu-content fade text-center" id="about" role="tabpanel" aria-labelledby="about-tab">
       <div class="row sub-menu" >
-        <div class="container text-uppercase large sub-menu-wp" style="margin-left: 20px">
+        <div class="text-uppercase large sub-menu-wp mx-auto">
         <?php  wp_nav_menu( array(
           'theme_location' => 'menu_about_us',
-          'menu_class'=> 'nav',
+          'menu_class'=> 'nav submenu-nav',
         // 'items_wrap'=>'<ul>%3$s</ul>',
          )); ?>
           <!--<ul class=" nav "  role="tablist">-->

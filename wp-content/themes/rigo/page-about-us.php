@@ -84,14 +84,12 @@ get_header();
         <div class="col-md-5 px-0">
           <span class="logo costumers width px-1" id="bacardi"></span>
           <span class="logo costumers width px-1" id="nbc"></span>
-          <span class="logo costumers width px-1" id="del-monte"></span>
         </div>
         <div class="col-md-2 center-vertical-div px-0">
           <h2>Our customers</h2>
         </div>
         <div class="col-md-5 px-0">
-          <span class="logo costumers width px-3 mt-3" id="best-doctor"></span>
-          <span class="logo costumers width px-3 mt-3" id="curtain-wall"></span>
+          <span class="logo costumers width px-1" id="del-monte"></span>
           <span class="logo costumers width px-3 mt-3" id="first-bank"></span>
         </div>
       </div>
