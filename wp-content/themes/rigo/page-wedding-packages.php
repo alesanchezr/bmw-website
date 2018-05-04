@@ -15,7 +15,7 @@ get_header();
             <h1 class="my-0 pb-3">Wedding Miami Packages for Miami</h1>
             <p class="p-2 mb-0">Pick a packages and start customizing your own wedding</p>
             <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
-            <a style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" ><p class="py-3 h2" >or call now! 305 662 7442</p></a>
+            <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
           </div>
       </div>
   </div>
@@ -85,9 +85,9 @@ get_header();
     </div>
     <!-- JUMBOTROM -->
       <div class="jumbotron text-dark jb-medium p-3 my-0 d-none d-md-block" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['package']['packages-img-banner-2'],'full')[0] ?>');">
-        <div class="container text-center px-5 py-0">
+        <div class="container text-center px-5 py-3">
           <!--<img class="logo small" id="wedding-wire-black"></span>-->
-          <img class="logo small" src="<?php echo wp_get_attachment_image_src($args['package']['packages-logo'],'full')[0] ?>" alt="First slide"> </img>
+          <img class="logo small why-bmw" src="<?php echo wp_get_attachment_image_src($args['package']['packages-logo'],'full')[0] ?>" alt="First slide"> </img>
           <?php echo $args['package']['packages-description-2'] ?>
          
         </div>

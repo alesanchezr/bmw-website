@@ -112,7 +112,7 @@ class VenueController{
     
     $args['page'] = (array) get_queried_object();
     
-    $query = Venue::all();
+    $query = Venue::all(['posts_per_page' => 15]);
     $args['venue_list'] = $query -> posts;
     $args['new_array_venue'] = array_map( function($venue){ 
       return [
