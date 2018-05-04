@@ -1,9 +1,12 @@
-<?php get_header(); ?>
+<?php  
+/* Template Name: Wedding Gallery */
+$args = wpas_get_view_data();
+get_header();
+?>
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
-  <!-- JUMBOTROM -->
   <div class="parent">
-    <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/img/pexels-photo-265871.jpeg')">
+    <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['gallery']['gallery-img-banner'],'full')[0]?>')">
       <div class="card logo medium mx-auto">
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
