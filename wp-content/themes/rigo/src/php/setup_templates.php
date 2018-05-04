@@ -19,6 +19,7 @@ $controller->route([ 'slug' => 'Page:wedding-churches-in-miami', 'controller' =>
 $controller->route([ 'slug' => 'Page:request-quote', 'controller' => 'RequestQuoteController:getSingleRequestQuoteState' ]);
 $controller->route([ 'slug' => 'Page:wedding-catering-menu', 'controller' => 'CateringController:getSingleCateringState' ]);
 $controller->route([ 'slug' => 'Page:miami-wedding-planners', 'controller' => 'PlannerController:renderPagePlanner' ]);  
+$controller->route([ 'slug' => 'Page:gallery', 'controller' => 'GalleryController:getSingleGalleryState' ]);  
 
 $controller->route([ 'slug' => 'Single:venue', 'controller' => 'VenueController:getSingleVenueState' ]);  
 $controller->route([ 'slug' => 'Single:about-us', 'controller' => 'AboutUsController:getSingleAboutUsState' ]);  
