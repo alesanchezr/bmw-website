@@ -31,6 +31,7 @@ get_header(); ?>
           echo $printStar($scorePrint); 
         ?>
       <p class="mt-2">Average <?php echo $scorePrint; ?> rating within all available review systems, <a class="click-here color-dark"href="">Learn more</a> </p>
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
     </div>
   </div>
   <div class="container p-3">

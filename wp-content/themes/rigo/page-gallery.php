@@ -18,9 +18,9 @@ get_header();
   </div>
   <!-- HORIZONTAL CARD -->
   <section>
-    <div class="card bg-1">
-      <div class="container  p-4 ">
-          <div class="row horizontal-gallery">
+    <div class="card bg-1 mx-5">
+      <div class="container my-5 ">
+          <div class="row horizontal-gallery mx-5">
             <?php for ($i=0; $i< count($args['gallery']['gallery-page-gallery']); $i++){  ?>
               <div class="col-md-3 p-0">
                 <a class="card img-slide p-0 m-0" href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];  ?>">
