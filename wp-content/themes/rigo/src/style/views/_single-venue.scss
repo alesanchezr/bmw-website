@@ -3,6 +3,17 @@
         max-width: 100%;
     }
 }
+.horizontal-gallery{
+    .card.img-slide{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        img{
+            visibility: hidden;
+        }
+    }
+}
 .venue-menu{
     ul{
         background: $color-footer-dark;

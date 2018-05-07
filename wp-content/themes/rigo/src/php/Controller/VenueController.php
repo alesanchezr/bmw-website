@@ -35,9 +35,7 @@ class VenueController{
     $args['venue']['theknot-score']
     ]);
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    $args['menu-venues'] = Venue::getVenuesMenu();
     
     $args['venue']['printStars'] = function ($decimalPoints){
       $decimalPoints = floatval($decimalPoints);
@@ -106,21 +104,14 @@ class VenueController{
     $args['venue'] = (array) get_queried_object();
     $args['venue']['venue-img-banner'] = get_field('venue-img-banner', $args['venue']['ID']);
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    $args['menu-venues'] = Venue::getVenuesMenu();
     
     $args['page'] = (array) get_queried_object();
     
     $query = Venue::all(['posts_per_page' => 15]);
     $args['venue_list'] = $query -> posts;
     $args['new_array_venue'] = array_map( function($venue){ 
-      return [
-        'id' => $venue -> ID,
-        'post_title' => $venue -> post_title,
-        'thumbnail' =>  wp_get_attachment_image_src( get_field('venue-thumbnail', $venue -> ID),'medium_large')[0], 
-        'address' =>  get_field('venue-address', $venue -> ID),
-      ];
+      return Venue::serialize($venue, 'small');
     }, $args['venue_list']);
     
     // debug($args);

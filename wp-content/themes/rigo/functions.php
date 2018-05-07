@@ -35,6 +35,9 @@ $asyncLoader = new WPASAsyncLoader([
     'force-jquery' => true,
     'minify-html' => false,
     'styles' => [
+        "category" => [ 
+          "all" => 'main.css'
+        ],
         "page" => [ 
           "all" => 'main.css',
           'gallery'=> ['main.css', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.10/css/lightgallery.min.css'],
@@ -77,7 +80,7 @@ $asyncLoader = new WPASAsyncLoader([
 
 function updateVenueCPT( $args, $post_type ) {
 	// If not Products CPT, bail.
-	if ( 'venue' !== $post_type ) {
+	if ( 'venue' !== $post_type && 'wedding-package' !== $post_type ) {
 		return $args;
 	}
 	// Add additional Products CPT options.
