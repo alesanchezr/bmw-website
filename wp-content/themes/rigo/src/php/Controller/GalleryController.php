@@ -9,14 +9,13 @@ class GalleryController{
     $args = [];
     $args['gallery'] = (array) get_queried_object();
     $args['gallery']['gallery-img-banner'] = get_field('gallery-img-banner', $args['gallery']['ID']);
-    $args['gallery']['gallery-page-gallery'] = $this -> getPostGalley($args['gallery']['ID']);
+    $args['gallery']['gallery-page-gallery'] = $this -> getPostGalley($_GET['postId']);
     
     
     $args['menu-venues']['garden'] = Venue::getByCategory(4);
     $args['menu-venues']['historical'] = Venue::getByCategory(5);
     $args['menu-venues']['unique'] = Venue::getByCategory(6);
     
-    // debug($args);
     return $args;
   }
   

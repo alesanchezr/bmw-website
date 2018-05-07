@@ -12,9 +12,9 @@ $args = wpas_get_view_data();
         <a href="" >General Info</a>
         <a href="">Venues areas</a>
         <a href="">360 tour</a>
-        <a href="">Gallery</a>
+        <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php $args['venue']['ID']?> ">Gallery</a>
         <a href="">Location</a>
-        <a href="">weddings</a>
+        <a href="">Weddings</a>
       </ul>
     </div>
   </div>
@@ -88,7 +88,7 @@ $args = wpas_get_view_data();
             <a class="card img-slide p-0 m-0" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>">
               <img class=" galleryImg d-block w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
             </a>
-          <?php } ?>
+          <?php  } ?>
         </div>
       </div>
       <!--  -->
