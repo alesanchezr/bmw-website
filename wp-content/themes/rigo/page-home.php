@@ -4,7 +4,8 @@
  get_header(); 
 ?>
  <body>
-<?php get_template_part('partials/menu','home'); ?>
+<!--MENU MOBILE-->
+<?php get_template_part('partials/menu','others'); ?>
   <!-- JUMBOTROM -->
   <div class="parent">
     <div class="jumbotron jb-large text-center" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-banner'],'full')[0] ?>');">
