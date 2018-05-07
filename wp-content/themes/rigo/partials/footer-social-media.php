@@ -16,7 +16,7 @@
       <div class="col-md-6">
        <form class="form-inline">
           <div class="col-md-12">
-            <p class="m-0" style="padding: 6px 12px;"> Sing Up to our newsletter</p>
+            <p class="m-0" style="padding: 6px 12px;"> Sign Up to our newsletter</p>
           </div>
           <div class="form-group col-md-9 mb-2">
             <input type="password" class="form-control"  placeholder="Type your Email">

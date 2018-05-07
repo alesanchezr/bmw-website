@@ -12,9 +12,7 @@ class GalleryController{
     $args['gallery']['gallery-page-gallery'] = $this -> getPostGalley($_GET['postId']);
     
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    $args['menu-venues'] = Venue::getVenuesMenu();
     
     return $args;
   }

@@ -17,9 +17,7 @@ class HomeController{
     $args['home']['home-img-banner-2'] = get_field('home-img-banner-2', $args['home']['ID']);
     $args['home']['home-description-banner-2'] = get_field('home-description-packages', $args['home']['ID']);
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    $args['menu-venues'] = Venue::getVenuesMenu();
     
     $aux = get_queried_object();
         $testimonials = get_field('testimonials', $aux -> ID);

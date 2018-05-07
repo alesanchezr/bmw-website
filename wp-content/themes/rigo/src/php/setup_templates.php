@@ -28,6 +28,7 @@ $controller->route([ 'slug' => 'Single:testimonial', 'controller' => 'Testimonia
 $controller->route([ 'slug' => 'Single:press-award', 'controller' => 'PressAwardController:getSinglePressAwardState' ]);  
 $controller->route([ 'slug' => 'Single:church', 'controller' => 'ChurchController:getSingleChurchState' ]);  
 $controller->route([ 'slug' => 'Single:planner', 'controller' => 'PlannerController:getSinglePlannerState' ]);  
+$controller->route([ 'slug' => 'Category:all', 'controller' => 'CategoryController:renderCategory' ]);  
 
 $controller->route([ 'slug' => 'Page:home', 'controller' => 'HomeController:getSingleHomeState' ]);  
 $controller->route([ 'slug' => 'home', 'controller' => 'SampleController:getHomeData' ]);  

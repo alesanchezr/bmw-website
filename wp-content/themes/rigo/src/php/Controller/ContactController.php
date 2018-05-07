@@ -10,9 +10,7 @@ class ContactController{
     $args['contact'] = (array) get_queried_object();
     $args['contact']['contact-img-banner'] = get_field('contact-img-banner', $args['contact']['ID']);
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    $args['menu-venues'] = Venue::getVenuesMenu();
     
     return $args;
   }
