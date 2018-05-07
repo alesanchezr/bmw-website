@@ -7093,6 +7093,9 @@ input {
     .click-here.menu-hover:hover {
       font-weight: bold;
       text-decoration: underline !important; }
+  .click-here.img {
+    text-decoration: none;
+    font-weight: normal; }
 
 .color-dark {
   color: #000000 !important; }
@@ -7220,4 +7223,4 @@ input {
 .galleryImg {
   height: 250px !important; }
 
-/*# sourceMappingURL=index.757f23e811de63a49844.css.map*/
+/*# sourceMappingURL=index.66090b08273fbe23eb05.css.map*/

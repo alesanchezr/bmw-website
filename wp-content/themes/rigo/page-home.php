@@ -1,7 +1,7 @@
 <?php 
  /* Template Name: Wedding Home */
  $args = wpas_get_view_data();
- get_header('small'); 
+ get_header(); 
 ?>
  <body>
 <?php get_template_part('partials/menu','home'); ?>
