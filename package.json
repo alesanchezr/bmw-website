@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "html-template-engine": "0.0.4",
+    "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "lg-autoplay": "^1.0.4",
     "lg-fullscreen": "^1.0.1",

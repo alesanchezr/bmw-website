@@ -1,14 +1,11 @@
 /* global $ */
 import './style/index.scss';
-import TemplateManager from 'html-template-engine';
 import $ from 'jquery';
 import jQuery from 'jquery';
+import bootstrap from 'bootstrap';
+
 window.$ = $;
 window.jQuery = jQuery;
-
-window.onload = function(){
-    TemplateManager.start();
-};
 
 $(document).ready(function(){
 	
@@ -23,6 +20,16 @@ $(document).ready(function(){
 	});
 	
 	$('.horizontal-gallery').lightGallery({
-		selector: '.img-slide'
+		selector: '.img-slide',
+		thumbnail: true
 	});
+	
+	$('.mazonri-gallery').lightGallery({
+		selector: '.img-mazonri',
+		thumbnail: true
+	});
+	
+	$('[data-toggle="popover"]').popover();
+	
 });
+

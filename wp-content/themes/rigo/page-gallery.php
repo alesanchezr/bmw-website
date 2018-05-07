@@ -20,14 +20,14 @@ get_header();
   <section>
     <div class="card bg-1 mx-5">
       <div class="container my-5 ">
-          <div class="row horizontal-gallery mx-5">
+          <div class="row mazonri-gallery mx-5">
             <?php for ($i=0; $i< count($args['gallery']['gallery-page-gallery']); $i++){  ?>
               <div class="col-md-3 p-0">
-                <a class="card img-slide p-0 m-0" href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];  ?>">
-                  <img class=" galleryImg d-block w-100 px-0 w-100 h-100" src="<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['gallery']['gallery-page-gallery'][$i]['alt'];  ?>">
+                <a class="card img-mazonri p-0 m-0" href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];  ?>">
+                  <img class=" galleryImg d-block w-100 px-0" src="<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['gallery']['gallery-page-gallery'][$i]['alt']; ?>">
                 </a>
               </div>
-            <?php } ?>
+            <?php  } ?>
           </div>
     </div>
   </section>

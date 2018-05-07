@@ -538,8 +538,30 @@ input{
 }
 .tab-content-dark{
 	background-color:$color-navbar;
-	}
+}
 	
 .galleryImg{
 	height:250px !important;
 }
+
+.popoverText{font-size:16px};
+
+.review-source-icons {
+	img{
+		max-width:40px;
+		max-height:40px;
+		margin-top:10px
+	}
+	
+};
+
+.review-source-icons{
+	margin:0;
+	padding:0
+};
+
+.review-source-icons {
+	li{
+		list-style:none
+	}
+};
