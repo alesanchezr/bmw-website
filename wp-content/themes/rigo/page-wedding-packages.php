@@ -61,13 +61,8 @@ get_header();
                 <a href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>"><small class=" click-here">Read more</small></a>
               </div>
           </div>
-<<<<<<< HEAD
-        <?php } ?>
-        
-=======
         </a>
         <?php } ?>
->>>>>>> f416ba6bb1e2836f2ae1dbee4fc827d0e543bd88
       </div>
 <!-- AWARDA RECOGNITION -->
   <?php get_template_part('partials/awards','recognition'); ?>
