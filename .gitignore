@@ -94,6 +94,7 @@ wp-content/plugins/*
 wp-content/plugins/hello.php
 wp-content/plugins/akismet
 !wp-content/plugins/gm-virtual-pages
+!wp-content/plugins/gravityforms
 
 
 # ignore specific themes
