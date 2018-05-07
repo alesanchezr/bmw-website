@@ -92,3 +92,12 @@ function updateVenueCPT( $args, $post_type ) {
 }
 add_filter( 'register_post_type_args', 'updateVenueCPT', 10, 2 );
 
+function my_acf_google_map_api( $api ){
+	
+	$api['key'] = GOOGLE_MAPS_KEY;
+	
+	return $api;
+	
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

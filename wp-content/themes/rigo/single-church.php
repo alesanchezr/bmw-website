@@ -1,5 +1,6 @@
 <?php  
 $args = wpas_get_view_data();
+
 ?>
 <?php get_header(); ?>
 <!--MENU MOBILE-->
@@ -90,10 +91,18 @@ $args = wpas_get_view_data();
               <p><?php echo $args["church"]["church-address"]; ?></p>
             </div>
           </div>
-          <div class="col-md-6 col-12 image-div p-0"  style="min-height:200px;">
-            <div id="map" style=""><?php echo $args["church"]["church-google-maps"]; ?></div>
-          </div>
-        </div>
+          <!--<div class="col-md-6 col-12 image-div p-0"  style="min-height:200px;">-->
+            <!--<div id="map" style=""><?php /*echo $args["church"]["church-google-maps"]; */?></div>-->
+            <?php 
+              if( !empty($args["church"]["church-google-maps"]) ):
+              ?>
+              <div class="acf-map col-md-6 col-12 image-div p-0">
+              	<div class="marker" data-lat="<?php echo $args["church"]["church-google-maps"]['lat']; ?>" data-lng="<?php echo $args["church"]["church-google-maps"]['lng']; ?>"></div>
+              </div>
+              <?php endif; ?>
+            
+          <!--</div>-->
+        <!--</div>-->
       </div>
       <div class="card bg-1">
         <div class="row tab-content d-none d-sm-flex ">

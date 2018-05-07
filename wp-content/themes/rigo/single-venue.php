@@ -101,9 +101,15 @@ $args = wpas_get_view_data();
               <p><?php echo $args["venue"]["venue-address"]; ?></p>
             </div>
           </div>
-          <div class="col-md-6 col-12 image-div p-0"  style="min-height:200px;">
-            <div id="map" style=""><?php echo $args["venue"]["venue-google-maps"]; ?></div>
-          </div>
+          <!--<div class="col-md-6 col-12 image-div p-0"  style="min-height:200px;">-->
+            <?php 
+              if( !empty($args["venue"]["venue-google-maps"]) ):
+              ?>
+              <div class="acf-map col-md-6 col-12 image-div p-0">
+              	<div class="marker" data-lat="<?php echo $args["venue"]["venue-google-maps"]['lat']; ?>" data-lng="<?php echo $args["venue"]["venue-google-maps"]['lng']; ?>"></div>
+              </div>
+              <?php endif; ?>
+          <!--</div>-->
         </div>
       </div>
       <div class="card bg-1">
