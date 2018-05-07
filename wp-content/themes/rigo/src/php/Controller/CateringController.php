@@ -16,9 +16,7 @@ class CateringController{
     $args['catering']['catering-sides-left'] = get_field('catering-sides-left', $args['catering']['ID']);
     $args['catering']['catering-sides-right'] = get_field('catering-sides-right', $args['catering']['ID']);
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    $args['menu-venues'] = Venue::getVenuesMenu();
     
     return $args;
   }

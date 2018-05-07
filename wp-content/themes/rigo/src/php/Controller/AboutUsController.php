@@ -13,9 +13,7 @@ class AboutUsController{
     $args['about_us']['about_us-photo'] = get_field('about_us-photo', $args['about_us']['ID']);
     $args['about_us']['about_us-position'] = get_field('about_us-position', $args['about_us']['ID']);
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    $args['menu-venues'] = Venue::getVenuesMenu();
     
     return $args;
   }
@@ -30,9 +28,7 @@ class AboutUsController{
     $args['about_us']['experience'] = get_field('experience', $args['about_us']['ID']);
     $args['about_us']['description'] = get_field('description', $args['about_us']['ID']);
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    $args['menu-venues'] = Venue::getVenuesMenu();
     
     $aux = get_queried_object();
     $testimonials = get_field('testimonials', $aux -> ID);

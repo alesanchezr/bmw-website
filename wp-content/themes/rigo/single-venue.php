@@ -85,8 +85,9 @@ $args = wpas_get_view_data();
       <div class="bg-1 d-none d-sm-block horizontal-gallery">
           <div class="card-deck">
           <?php for ($i=0; $i< 4; $i++){  ?>
-            <a class="card img-slide p-0 m-0" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>">
-              <img class=" galleryImg d-block w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
+            <a class="card img-slide p-0 m-0" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>"
+                style="background-image: url(<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>)">
+                <img class=" galleryImg d-none w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
             </a>
           <?php  } ?>
         </div>

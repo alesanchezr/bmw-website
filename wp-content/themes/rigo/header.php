@@ -5,7 +5,7 @@ $args = wpas_get_view_data();
 <!DOCTYPE html>
 <html>
  <head>
- <title><?php echo $args["wp_query"]->post_title; ?></title>
+ <title><?php wp_title(''); ?></title>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <?php  wp_head(); ?>

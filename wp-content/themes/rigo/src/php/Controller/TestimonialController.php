@@ -41,9 +41,7 @@ class TestimonialController{
     $args['testimonials'] = (array) get_queried_object();
     $args['testimonials']['testimonial-img-banner'] = get_field('testimonial-img-banner', $args['testimonials']['ID']);
     
-    $args['menu-venues']['garden'] = Venue::getByCategory(4);
-    $args['menu-venues']['historical'] = Venue::getByCategory(5);
-    $args['menu-venues']['unique'] = Venue::getByCategory(6);
+    $args['menu-venues'] = Venue::getVenuesMenu();
     
     $query = Testimonial::all();
     $args['testimonial_list'] = $query -> posts;
