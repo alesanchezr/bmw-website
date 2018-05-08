@@ -6,6 +6,13 @@
 #bmw-logo-dark{ content: url("../img/bmw-logo/bmw-logo-dark.svg"); }
 // SOCIAL MEDIA
 #facebook{ content: url("../img/social-logo/facebook.svg"); }
+#watermark-awards{ 
+    background-image: url(../img/awards/awards-web.png); 
+    background-repeat: no-repeat; 
+    background-size: auto;
+    background-position: center 130px;
+    font-size: 17px;
+}
 #instagram{ content: url("../img/social-logo/instagram.svg"); }
 #pinterest{ content: url("../img/social-logo/pinterest.svg"); }
 #twitter{ content: url("../img/social-logo/twitter.svg"); }

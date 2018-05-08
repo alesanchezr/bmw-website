@@ -49,7 +49,7 @@ $args = wpas_get_view_data();
           </div>
 
         </div>
-        <div class="col-sm-5 px-4 p-sm-5">
+        <div class="col-sm-5 px-4 p-sm-5" id="watermark-awards">
           <div class="p-0 p-sm-3 max-h text-left text-sm-center p-0 p-sm-3 d-none d-sm-block">
             <p></p>
             <p class="card-text "><?php echo $args["venue"]["venue-capacity"]; ?></p>
@@ -83,10 +83,10 @@ $args = wpas_get_view_data();
       <!--  -->
       <div class="bg-1 d-none d-sm-block horizontal-gallery">
           <div class="card-deck">
-          <?php for ($i=0; $i< 4; $i++){  ?>
-            <div class="card p-0 m-0 hover-effect">
+          <?php for ($i=0; $i< count($args['venue']['venue-post-gallery']); $i++){  ?>
+            <div class="card p-0 m-0 hover-effect<?php if($i>2){ echo " d-none"; if($i<5) echo " d-xl-flex"; } ?>">
               <a class="img-slide" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>"
-                  style="background-image: url(<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>)">
+                  >
                   <img class=" galleryImg d-none w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
               </a>
             </div>
