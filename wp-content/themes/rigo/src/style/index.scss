@@ -572,7 +572,7 @@ input{
 	a.img-slide, .venue-thumb{
 		min-height: 300px;
 	    @media (max-width: 767px) {
-	        min-height: inherit;
+	        min-height: 200px;
 	    }
 	    -moz-transition: all .5s;
 	    -webkit-transition: all .5s;
