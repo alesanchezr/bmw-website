@@ -86,7 +86,8 @@ $args = wpas_get_view_data();
           <?php for ($i=0; $i< count($args['venue']['venue-post-gallery']); $i++){  ?>
             <div class="card p-0 m-0 hover-effect<?php if($i>2){ echo " d-none"; if($i<5) echo " d-xl-flex"; } ?>">
               <a class="img-slide" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>"
-                  >
+                style="background-image: url(<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>)"
+                >
                   <img class=" galleryImg d-none w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
               </a>
             </div>
