@@ -5,7 +5,19 @@ $args = wpas_get_view_data();
 <?php get_header(); ?>
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
-<!-- MENU VENUE-->
+  <!-- JUMBOTROM -->
+  <div class="parent d-none d-sm-block">
+    <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
+      <div class="card logo medium mx-auto" id="bmw-logo">
+      </div>
+      <div class="jb-text d-block">
+        <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
+        <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
+        <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
+      </div>
+    </div>
+  </div>
+  
   <div class="row sub-menu d-none d-sm-block venue-menu" >
     <div class="container">
       <ul class="container text-uppercase large text-center mx-auto"  role="tablist">
@@ -16,18 +28,6 @@ $args = wpas_get_view_data();
         <a href="">Location</a>
         <a href="">Weddings</a>
       </ul>
-    </div>
-  </div>
-  <!-- JUMBOTROM -->
-  <div class="parent d-none d-sm-block">
-    <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
-      <div class="card logo medium mx-auto">
-      </div>
-      <div class="jb-text d-block">
-        <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
-        <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
-        <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
-      </div>
     </div>
   </div>
   <!-- HORIZONTAL CARD -->

@@ -10,11 +10,21 @@
 #pinterest{ content: url("../img/social-logo/pinterest.svg"); }
 #twitter{ content: url("../img/social-logo/twitter.svg"); }
 #youtube{ content: url("../img/social-logo/youtube.svg"); }
+#phone-icon{
+    position: relative;
+    padding: 0px 18px;
+    &:before{ 
+        content: url("../img/social-logo/phone.svg"); 
+        font-size: 80%; width: 10px !important; filter: invert(100%);
+        position: absolute; top: 3px;
+        right: 0;
+    }
+}
 // OUR COSTUMERS LOGO
-#bacardi{ content: url("../img/our-costumers/bacardi_FIX.svg"); }
+#bacardi{ content: url("../img/our-costumers/bacardi_FIX.svg"); margin-bottom: -12px !important; width: 36% !important; }
 #del-monte{ content: url("../img/our-costumers/del-monte_FIX.svg"); }
 #nbc{ content: url("../img/our-costumers/nbc_FIX.svg"); }
-#first-bank{ content: url("../img/our-costumers/first-bank.svg"); margin-bottom: 10px !important; }
+#first-bank{ content: url("../img/our-costumers/first-bank.svg"); margin-bottom: 30px !important;  width: 36% !important; }
 #curtain-wall{ content: url("../img/our-costumers/curtain-wall.svg"); margin-bottom: 10px !important; }
 #best-doctor{ content: url("../img/our-costumers/best-doctor.svg"); margin-bottom: 10px !important; }
 // AWARDS
