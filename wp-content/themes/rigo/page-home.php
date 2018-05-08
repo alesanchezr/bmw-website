@@ -30,7 +30,9 @@
   <!-- CARD GROUP -->
   <div class="home card-group">
     <div class="card">
-      <div class="img mx-md-0 mx-3" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-venues'],'full')[0] ?>;"></div>
+      <a class="img mx-md-0 mx-3 hover-effect" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>">
+        <div class="venue-thumb" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-venues'],'full')[0] ?>;"></div>
+      </a> 
       <div class="card-body text-center">
         <div class="card-middle-button">
           <p class="card-title h7">Wedding Venues</p>
@@ -43,7 +45,9 @@
       </div>
     </div>
     <div class="card">
-      <div class="img mx-md-0 mx-3" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-packages'],'full')[0] ?>"></div>
+      <a class="img mx-md-0 mx-3 hover-effect" href="<?php echo get_permalink( get_page_by_path('wedding-packages' ) ); ?>">
+        <div class="venue-thumb" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-packages'],'full')[0] ?>;"></div>
+      </a> 
       <div class="card-body text-center">
         <div class="card-middle-button">
           <p class="card-title h7">Wedding Packages</p>

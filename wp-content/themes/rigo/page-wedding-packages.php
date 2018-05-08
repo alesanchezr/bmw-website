@@ -50,7 +50,7 @@ get_header();
         <?php for( $j= 0; $j< count($args['new_array_package']); $j++){ ?>
           <a href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>">
           <div class="card p-1">
-              <a class="click-here img" href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>">
+              <a class="click-here img hover-effect" href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>">
                 <div class="card-img-top venue-thumb" style="background-image: url(<?php echo $args['new_array_package'][$j]['thumbnail'] ?>)"></div>
               </a>
             <div class="card-body max-h text-center pt-4">

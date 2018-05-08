@@ -182,12 +182,12 @@ $args = wpas_get_view_data();
       </div>
       <div class="card separators awards-recognition d-none d-sm-block" >
         <div class="row ">
-          <div class="col-md-6 p-5 l mb-md-auto mt-md-5 pt-md-5 text-center venue-layout">
+          <div class="col-sm-12 col-md-5 col-lg-4 p-5 l mb-md-auto mt-md-5 pt-md-5 text-center venue-layout">
             <span class="logo small px-1 pb-1 pb-md-4" id="bmw-logo-white-alone"></span>
             <p class="h8 card-title pb-md-5">Layout for <?php echo $args["venue"]["post_title"]; ?></p>
             <img class="mx-auto" src="<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-layout'],'full')[0]?>" alt="Generic placeholder image">
           </div>
-          <div class="col-md-6  p-sm-5 l">
+          <div class="col-sm-12 col-md-7 col-lg-8 p-sm-5 l">
             <div class="p-5 text-center">
             <?php echo $args["venue"]["venue-layout-description"]; ?>
             </div>

@@ -42,10 +42,13 @@ get_header();
       </div>
     </div>
     <!-- CARGROUP -->
-      <div class="card-group">
+      <div class="card-group planners">
         <?php for( $j= 0; $j< count($args['new_array_planner']); $j++){ ?>
         <div class="card col-md-4 px-0">
-          <img class="card-img-top" src="<?php echo $args['new_array_planner'][$j]['thumbnail'] ?>" alt="Card image cap">
+          <a class="hover-effect" href="<?php echo get_permalink( $args['new_array_planner'][$j]["id"] )?>">
+            <div class="card-img-top venue-thumb" style="background-image:url(<?php echo $args['new_array_planner'][$j]['thumbnail'] ?>);" alt="Card image cap">
+            </div>
+          </a>
           <div class="subtitle-bar card-body max-h text-center p-2">
             <p class="h8 card-title m-0"><b><?php echo $args['new_array_planner'][$j]["post_title"]; ?></b></p>
             <p class="m-1"><?php echo $args['new_array_planner'][$j]["location"]; ?>.</p>
@@ -58,7 +61,7 @@ get_header();
             <p class="card-text text-center p-3 align-top"><?php echo $args['new_array_planner'][$j]["description"]; ?></p>
           </div>
             <div class="tab-content text-center pb-3 pt-0">
-              <a href="<?php echo get_permalink( $args['new_array_planner'][$j]["id"] )?>"><small class=" click-here">Read more</small></a>
+              <a href="<?php echo get_permalink( $args['new_array_planner'][$j]["id"] )?>"><small class="click-here">Read more</small></a>
             </div>
         </div>
         <?php } ?>
