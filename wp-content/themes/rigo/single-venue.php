@@ -12,7 +12,7 @@ $args = wpas_get_view_data();
         <a href="" >General Info</a>
         <a href="">Venues areas</a>
         <a href="">360 tour</a>
-        <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php $args['venue']['ID']?> ">Gallery</a>
+        <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php echo $args['venue']['ID'] ?>">Gallery</a>
         <a href="">Location</a>
         <a href="">Weddings</a>
       </ul>
