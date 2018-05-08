@@ -11,4 +11,18 @@ $args = wpas_get_view_data();
  <?php  wp_head(); ?>
 </head>
 <body>
+ <nav class="navbar navbar-dark mx-auto contact-navbar"  >
+    <div class="container">
+        <ul class="nav nav-tabs text-uppercase navbar-nav mr-auto">
+          <li class="nav-item p-0">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        </ul>          
+        <ul class="nav nav-tabs text-uppercase ml-auto navbar-nav">
+          <li class="nav-item p-0">
+            <a id="phone-icon" class="nav-link text-right" href="#home">+1 305.6624742</a>
+          </li>
+        </ul>          
+    </div>
+</nav>
  <?php get_template_part('partials/header','menu'); ?>

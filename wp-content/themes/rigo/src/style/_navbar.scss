@@ -6,10 +6,11 @@
         padding: 0px 30px;
     }
     #contact-tab, #about-tab,#home-tab, #profile-tab{
-        margin-top: -10px;
+        margin-top: -8px;
+        border-radius: 0px;
         padding: 25px 20px 25px 20px;
     }
-    #contact-tabc,#home-tabc, #profile-tabc{
+    #contact-tabc, #home-tabc, #profile-tabc{
         margin-top: 0px;
         padding: 25px 20px 25px 20px;
     }
@@ -23,6 +24,20 @@
     }
     #about.active{
         background: $color-footer-dark;
+    }
+    &.contact-navbar{
+        background: $color-footer-dark;
+        padding: 0px 0px;
+        .container{
+            padding: 0px 35px 0px 20px;
+        }
+        .nav-item{
+            padding: 0px ;
+            a{
+                color: $color-background-light !important;
+                font-size: 11px;
+            }
+        }
     }
 }
 // 
