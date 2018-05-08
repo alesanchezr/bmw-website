@@ -35,7 +35,9 @@
       }
     }
     &.costumers{
-    max-height: 50px !important;
+      max-height: 150px !important;
+      padding: 30px;
+      margin: 0 30px;
     // filter: invert(100%);
       &.width{
          width: 30% !important;

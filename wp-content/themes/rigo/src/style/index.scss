@@ -19,6 +19,7 @@
 @import "views/page-venues";
 @import "views/page-gallery";
 @import "views/page-testimonials";
+@import "views/page-planners";
 
 // TAGS
 body {
@@ -467,7 +468,6 @@ input{
 		}
 	}
 	.home{
-
 	    .card-middle-button{
 	      margin-top: 0px;
 	      color: $color-text-dark;
@@ -562,3 +562,35 @@ input{
 		list-style:none
 	}
 };
+
+.hover-effect{
+	overflow: hidden;
+	a.img-slide, .venue-thumb{
+		min-height: 300px;
+	    @media (max-width: 767px) {
+	        min-height: 200px;
+	    }
+	    -moz-transition: all .5s;
+	    -webkit-transition: all .5s;
+	    transition: all .5s;
+	    -moz-transform: scale(1,1);
+	    -webkit-transform: scale(1,1);
+	    transform: scale(1,1);
+	    background-position: center;
+	}
+} 
+
+.hover-effect a.img-slide:hover,.hover-effect .venue-thumb:hover{
+	&:before{
+		content: ' ';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.2);
+	}
+	-moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}

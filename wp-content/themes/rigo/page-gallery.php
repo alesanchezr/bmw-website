@@ -17,6 +17,7 @@ get_header();
     </div>
   </div>
   <!-- HORIZONTAL CARD -->
+<<<<<<< HEAD
 <section>
   <div class="card bg-1 m-5">
     <div class="container">
@@ -29,6 +30,19 @@ get_header();
                 src="<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];?>" 
                 alt="<?php echo $args['gallery']['gallery-page-gallery'][$i]['alt'];?>">
               </img>
+=======
+  <section>
+    <div class="card bg-1 mx-5">
+      <div class="container my-5 ">
+          <div class="row mazonri-gallery mx-5">
+            <?php for ($i=0; $i< count($args['gallery']['gallery-page-gallery']); $i++){  ?>
+              <div class="col-md-3 p-0 hover-effect">
+                <a class="card img-mazonri p-0 m-0" href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];  ?>">
+                  <img class=" galleryImg d-block w-100 px-0" src="<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['gallery']['gallery-page-gallery'][$i]['alt']; ?>">
+                </a>
+              </div>
+            <?php  } ?>
+>>>>>>> b6bd7a918d5ee43f59a8f7e4da77b9e94ea4185b
           </div>
         <?php } ?>
       </div>

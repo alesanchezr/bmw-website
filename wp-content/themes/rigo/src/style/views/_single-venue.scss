@@ -1,6 +1,7 @@
 .venue-layout{
     img{
         max-width: 100%;
+        max-height: 500px;
     }
 }
 .horizontal-gallery{
@@ -9,6 +10,9 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 300px;
+        @media (max-width: 767px) {
+            height: 200px;
+        }
         border-radius: 0;
         img{
             visibility: hidden;

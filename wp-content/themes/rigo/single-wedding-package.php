@@ -20,7 +20,7 @@ $args = wpas_get_view_data();
 <!-- CONTACT -->
   <!-- FORM -->
   <div class="container-fluid body-request contact my-2 py-5">
-    <div class="row">
+    <div class="row container mx-auto">
       <div class="col-md-5 ml-5">
         <div class="text-center ml-5 pl-5 pr-4">
           <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+3056624742">

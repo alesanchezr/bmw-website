@@ -10,7 +10,7 @@ $args = wpas_get_view_data();
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="nav nav-tabs container text-uppercase large navbar-nav" id="myTab" role="tablist">
         <li class="nav-item mt-2 p-0">
-          <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Pick your venue</a>
+          <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Pick your location</a>
         </li>
         <li class="nav-item hidden-md-upp-3 mt-2 p-0">
           <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Plan you Wedding</a>
@@ -56,7 +56,7 @@ $args = wpas_get_view_data();
         </div>
         <div class="col-md-12">
           <div class="p-5">
-            <button class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</button><br>
+            <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</a><br>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@ $args = wpas_get_view_data();
         </div>
         <div class="col-md-12">
           <div class="p-5">
-            <button class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</button><br>
+            <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</a><br>
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@ $args = wpas_get_view_data();
           
           <div class="col-md-12">
             <div class="p-5">
-              <button class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</button><br>
+              <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</a><br>
             </div>
           </div>
         </div>
