@@ -568,10 +568,12 @@ input{
 };
 
 .hover-effect{
-	min-height: 300px;
 	overflow: hidden;
 	a.img-slide, .venue-thumb{
 		min-height: 300px;
+	    @media (max-width: 767px) {
+	        min-height: inherit;
+	    }
 	    -moz-transition: all .5s;
 	    -webkit-transition: all .5s;
 	    transition: all .5s;

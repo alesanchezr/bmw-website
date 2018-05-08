@@ -56,7 +56,7 @@ $args = wpas_get_view_data();
         </div>
         <div class="col-md-12">
           <div class="p-5">
-            <button class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</button><br>
+            <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</a><br>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@ $args = wpas_get_view_data();
         </div>
         <div class="col-md-12">
           <div class="p-5">
-            <button class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</button><br>
+            <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</a><br>
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@ $args = wpas_get_view_data();
           
           <div class="col-md-12">
             <div class="p-5">
-              <button class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</button><br>
+              <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</a><br>
             </div>
           </div>
         </div>
