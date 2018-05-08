@@ -11,26 +11,30 @@ get_header();
         <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
       <div class="jb-text d-block">
-        <h1 class="my-0">The Bath Club</h1>
+        <h1 class="my-0"><?php echo get_the_title($_GET['postId']) ?></h1>
         <h1>Photos</h1>
       </div>
     </div>
   </div>
   <!-- HORIZONTAL CARD -->
-  <section>
-    <div class="card bg-1 mx-5">
-      <div class="container my-5 ">
-          <div class="row mazonri-gallery mx-5">
-            <?php for ($i=0; $i< count($args['gallery']['gallery-page-gallery']); $i++){  ?>
-              <div class="col-md-3 p-0">
-                <a class="card img-mazonri p-0 m-0" href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];  ?>">
-                  <img class=" galleryImg d-block w-100 px-0" src="<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['gallery']['gallery-page-gallery'][$i]['alt']; ?>">
-                </a>
-              </div>
-            <?php  } ?>
+<section>
+  <div class="card bg-1 m-5">
+    <div class="container">
+      <div class="row mazonri-gallery mx-5">
+        <?php for ($i=0; $i< count($args['gallery']['gallery-page-gallery']); $i++){  ?>
+          <div class="col-md-3 img-mazonri hover-effect p-0 m-0" style="background-image: url(<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];?>)"           
+              href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];?>">
+              <img class="" 
+                href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];?>"
+                src="<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];?>" 
+                alt="<?php echo $args['gallery']['gallery-page-gallery'][$i]['alt'];?>">
+              </img>
           </div>
+        <?php } ?>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
     <?php get_template_part('partials/rating'); ?>
     <!-- END FOOTER FULL -->
     <?php get_footer(); ?>

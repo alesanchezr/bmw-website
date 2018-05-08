@@ -87,7 +87,7 @@ $args = wpas_get_view_data();
           <?php for ($i=0; $i< 4; $i++){  ?>
             <a class="card img-slide p-0 m-0" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>"
                 style="background-image: url(<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>)">
-                <img class=" galleryImg d-none w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
+                <img class="d-none w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
             </a>
           <?php  } ?>
         </div>
@@ -118,7 +118,7 @@ $args = wpas_get_view_data();
           <div class="col-md-4 p-5  text-center tab-content">
             <h5> <strong>Acommodations</strong> </h5>
             <br>
-            <ul>
+            <ul class="p-0">
               <?php echo $args["venue"]["venue-acommodations"]; ?>
             </ul>
           </div>

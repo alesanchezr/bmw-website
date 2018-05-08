@@ -17,6 +17,7 @@
 @import "views/request";
 @import "views/single-venue";
 @import "views/page-venues";
+@import "views/page-gallery";
 @import "views/page-testimonials";
 
 // TAGS
@@ -540,11 +541,6 @@ input{
 .tab-content-dark{
 	background-color:$color-navbar;
 }
-	
-.galleryImg{
-	height:250px !important;
-}
-
 .popoverText{font-size:16px};
 
 .review-source-icons {

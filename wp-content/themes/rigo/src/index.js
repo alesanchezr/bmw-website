@@ -28,7 +28,9 @@ $(document).ready(function(){
 	
 	$('.mazonri-gallery').lightGallery({
 		selector: '.img-mazonri',
-		thumbnail: true
+		thumbnail: true,
+		animateThumb: false,
+	    showThumbByDefault: false
 	});
 	
 	$('[data-toggle="popover"]').popover();
