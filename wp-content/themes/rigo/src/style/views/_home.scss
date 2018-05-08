@@ -1,11 +1,13 @@
 .home{
     .card .img{
+      .venue-thumb{
+      	height: 450px;
+      	@media (max-width: 1024px) {
+      	  height: 350px;
+      	}
+      }
     	padding: 0px;
     	margin: 0px;
-    	height: 450px;
-    	@media (max-width: 1024px) {
-    	  height: 350px;
-    	}
     	background-repeat: no-repeat;
     	background-size: cover;
     	background-position: center center;

@@ -12,7 +12,7 @@ $args = wpas_get_view_data();
         <a href="" >General Info</a>
         <a href="">Venues areas</a>
         <a href="">360 tour</a>
-        <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php $args['venue']['ID']?> ">Gallery</a>
+        <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php echo $args['venue']['ID'] ?>">Gallery</a>
         <a href="">Location</a>
         <a href="">Weddings</a>
       </ul>
@@ -22,7 +22,6 @@ $args = wpas_get_view_data();
   <div class="parent d-none d-sm-block">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
       <div class="card logo medium mx-auto">
-        <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
       <div class="jb-text d-block">
         <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
@@ -34,7 +33,7 @@ $args = wpas_get_view_data();
   <!-- HORIZONTAL CARD -->
   <section>
     <div class="card bg-1">
-      <div class="row ">
+      <div class="row">
         <div class="col-md-7 px-4 p-sm-5 l">
           <div class="p-0 p-sm-3 max-h text-sm-right text-center pt-4">
             <h1 class="d-sm-none d-block pb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
@@ -85,10 +84,12 @@ $args = wpas_get_view_data();
       <div class="bg-1 d-none d-sm-block horizontal-gallery">
           <div class="card-deck">
           <?php for ($i=0; $i< 4; $i++){  ?>
-            <a class="card img-slide p-0 m-0" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>"
-                style="background-image: url(<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>)">
-                <img class=" galleryImg d-none w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
-            </a>
+            <div class="card p-0 m-0 hover-effect">
+              <a class="img-slide" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>"
+                  style="background-image: url(<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>)">
+                  <img class=" galleryImg d-none w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
+              </a>
+            </div>
           <?php  } ?>
         </div>
       </div>
@@ -114,7 +115,7 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <div class="card bg-1">
-        <div class="row tab-content d-none d-sm-flex ">
+        <div class="row tab-content d-none d-sm-flex">
           <div class="col-md-4 p-5  text-center tab-content">
             <h5> <strong>Acommodations</strong> </h5>
             <br>
@@ -181,12 +182,12 @@ $args = wpas_get_view_data();
       </div>
       <div class="card separators awards-recognition d-none d-sm-block" >
         <div class="row ">
-          <div class="col-md-6 p-5 l mb-md-auto mt-md-5 pt-md-5 text-center venue-layout">
+          <div class="col-sm-12 col-md-5 col-lg-4 p-5 l mb-md-auto mt-md-5 pt-md-5 text-center venue-layout">
             <span class="logo small px-1 pb-1 pb-md-4" id="bmw-logo-white-alone"></span>
             <p class="h8 card-title pb-md-5">Layout for <?php echo $args["venue"]["post_title"]; ?></p>
             <img class="mx-auto" src="<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-layout'],'full')[0]?>" alt="Generic placeholder image">
           </div>
-          <div class="col-md-6  p-sm-5 l">
+          <div class="col-sm-12 col-md-7 col-lg-8 p-sm-5 l">
             <div class="p-5 text-center">
             <?php echo $args["venue"]["venue-layout-description"]; ?>
             </div>

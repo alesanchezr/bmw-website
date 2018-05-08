@@ -28,7 +28,7 @@ $args = wpas_get_view_data();
     <div class="row">
       <div class="col-md-5 ml-5">
         <div class="text-center ml-5 pl-5 pr-4">
-          <a  class='click-here color-dark' style="text-decoration: none !important;"href="tel:+3056624742">
+          <a class='click-here color-dark' style="text-decoration: none !important;"href="tel:+3056624742">
             <h5 class="h8" >Call now! </h5>
             <h5 class="h7">  305-662-4742</h5>
           </a>

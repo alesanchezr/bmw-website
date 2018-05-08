@@ -22,7 +22,7 @@ get_header();
       <div class="container my-5 ">
           <div class="row mazonri-gallery mx-5">
             <?php for ($i=0; $i< count($args['gallery']['gallery-page-gallery']); $i++){  ?>
-              <div class="col-md-3 p-0">
+              <div class="col-md-3 p-0 hover-effect">
                 <a class="card img-mazonri p-0 m-0" href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];  ?>">
                   <img class=" galleryImg d-block w-100 px-0" src="<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['gallery']['gallery-page-gallery'][$i]['alt']; ?>">
                 </a>

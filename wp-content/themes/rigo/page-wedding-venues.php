@@ -32,7 +32,7 @@ get_header();
   <div class="card-deck text-sm-center"> 
     <?php for ($x=0; $x< count($args['new_array_venue']); $x++){ ?>
       <div class="row col-md-4  mx-auto p-1">
-        <div class="col-md-12 col-4 p-0 m-0 center-vertical-div">
+        <div class="col-md-12 col-4 p-0 m-0 center-vertical-div hover-effect">
           <a href="<?php echo get_permalink( $args['new_array_venue'][$x]["id"] )?>">
             <div class="card-img-top venue-thumb" style="background-image: url(<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>);"></div>
           </a>

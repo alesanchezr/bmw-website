@@ -6775,16 +6775,27 @@ li {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in; }
 
+.acf-map {
+  width: 100%;
+  height: 400px;
+  border: #ccc solid 1px;
+  margin: 20px 0; }
+
+/* fixes potential theme css conflict */
+.acf-map img {
+  max-width: inherit !important; }
+
 .home .card .img {
   padding: 0px;
   margin: 0px;
-  height: 450px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
-  @media (max-width: 1024px) {
-    .home .card .img {
-      height: 350px; } }
+  .home .card .img .venue-thumb {
+    height: 450px; }
+    @media (max-width: 1024px) {
+      .home .card .img .venue-thumb {
+        height: 350px; } }
 
 .home .card-middle-button {
   margin-top: -95px;
@@ -6816,7 +6827,12 @@ li {
 
 .horizontal-gallery .card.img-slide {
   background-position: center;
-  background-size: contain; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 0; }
+  .horizontal-gallery .card.img-slide img {
+    visibility: hidden; }
 
 .venue-menu ul {
   background: #58595b;
@@ -6841,6 +6857,11 @@ li {
 .testimonial .card-body {
   background-color: #e8daeb !important;
   border-radius: 30px; }
+
+.planners .card .card-body {
+  background: #F1DBEA; }
+  .planners .card .card-body .subtitle-bar p {
+    font-size: 80%; }
 
 body {
   background-color: #fce6f7; }
@@ -7242,4 +7263,30 @@ input {
 .review-source-icons li {
   list-style: none; }
 
-/*# sourceMappingURL=index.1d3f18e21df2aa848e83.css.map*/
+.hover-effect {
+  min-height: 300px;
+  overflow: hidden; }
+  .hover-effect a.img-slide, .hover-effect .venue-thumb {
+    min-height: 300px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    background-position: center; }
+
+.hover-effect a.img-slide:hover, .hover-effect .venue-thumb:hover {
+  -moz-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1); }
+  .hover-effect a.img-slide:hover:before, .hover-effect .venue-thumb:hover:before {
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2); }
+
+/*# sourceMappingURL=index.947d1b6582f18dd5edf3.css.map*/
