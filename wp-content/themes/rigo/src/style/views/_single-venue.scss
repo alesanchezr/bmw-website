@@ -9,6 +9,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 300px;
+        border-radius: 0;
         img{
             visibility: hidden;
         }
@@ -32,3 +33,7 @@
         }
     }
 }
+// .acf-map{
+//     -webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+//     filter: sepia(100%);
+// }
