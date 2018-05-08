@@ -33,7 +33,7 @@ $args = wpas_get_view_data();
   <!-- HORIZONTAL CARD -->
   <section>
     <div class="card bg-1">
-      <div class="row">
+      <div class="row container mx-auto my-5">
         <div class="col-md-7 px-4 p-sm-5 l">
           <div class="p-0 p-sm-3 max-h text-sm-right text-center pt-4">
             <h1 class="d-sm-none d-block pb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
@@ -49,7 +49,7 @@ $args = wpas_get_view_data();
           </div>
 
         </div>
-        <div class="col-md-5 px-4 p-sm-5 l">
+        <div class="col-sm-5 px-4 p-sm-5">
           <div class="p-0 p-sm-3 max-h text-left text-sm-center p-0 p-sm-3 d-none d-sm-block">
             <p></p>
             <p class="card-text "><?php echo $args["venue"]["venue-capacity"]; ?></p>
