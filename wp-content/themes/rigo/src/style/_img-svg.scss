@@ -12,6 +12,9 @@
     background-size: auto;
     background-position: center 130px;
     font-size: 17px;
+  	@media (max-width: 1024px) {
+  	  background-size: contain;
+  	}  
 }
 #instagram{ content: url("../img/social-logo/instagram.svg"); }
 #pinterest{ content: url("../img/social-logo/pinterest.svg"); }
