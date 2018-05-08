@@ -566,3 +566,33 @@ input{
 		list-style:none
 	}
 };
+
+.hover-effect{
+	min-height: 300px;
+	overflow: hidden;
+	a.img-slide{
+		min-height: 300px;
+	    -moz-transition: all .5s;
+	    -webkit-transition: all .5s;
+	    transition: all .5s;
+	    -moz-transform: scale(1,1);
+	    -webkit-transform: scale(1,1);
+	    transform: scale(1,1);
+	    background-position: center;
+	}
+} 
+
+.hover-effect a.img-slide:hover{
+	&:before{
+		content: ' ';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.2);
+	}
+	-moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}

@@ -22,7 +22,6 @@ $args = wpas_get_view_data();
   <div class="parent d-none d-sm-block">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
       <div class="card logo medium mx-auto">
-        <span class="card-img-top mx-auto" id="bmw-logo"></span>
       </div>
       <div class="jb-text d-block">
         <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
@@ -34,7 +33,7 @@ $args = wpas_get_view_data();
   <!-- HORIZONTAL CARD -->
   <section>
     <div class="card bg-1">
-      <div class="row ">
+      <div class="row">
         <div class="col-md-7 px-4 p-sm-5 l">
           <div class="p-0 p-sm-3 max-h text-sm-right text-center pt-4">
             <h1 class="d-sm-none d-block pb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
@@ -85,10 +84,12 @@ $args = wpas_get_view_data();
       <div class="bg-1 d-none d-sm-block horizontal-gallery">
           <div class="card-deck">
           <?php for ($i=0; $i< 4; $i++){  ?>
-            <a class="card img-slide p-0 m-0" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>"
-                style="background-image: url(<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>)">
-                <img class=" galleryImg d-none w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
-            </a>
+            <div class="card p-0 m-0 hover-effect">
+              <a class="img-slide" href="<?php echo $args['venue']['venue-post-gallery'][$i]['default'];  ?>"
+                  style="background-image: url(<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>)">
+                  <img class=" galleryImg d-none w-100 px-0" src="<?php echo $args['venue']['venue-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['venue']['venue-post-gallery'][$i]['alt'];  ?>">
+              </a>
+            </div>
           <?php  } ?>
         </div>
       </div>
@@ -114,7 +115,7 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <div class="card bg-1">
-        <div class="row tab-content d-none d-sm-flex ">
+        <div class="row tab-content d-none d-sm-flex">
           <div class="col-md-4 p-5  text-center tab-content">
             <h5> <strong>Acommodations</strong> </h5>
             <br>
