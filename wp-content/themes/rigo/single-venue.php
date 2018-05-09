@@ -167,7 +167,7 @@ $args = wpas_get_view_data();
               <i class="fas fa-bell text-purple fa-2x"></i>
             </div>
             <div class="col-10">
-              <ul>
+              <ul class="px-0">
                 <?php echo $args["venue"]["venue-acommodations"]; ?>
               </ul>
             </div>
