@@ -14,6 +14,7 @@ class GalleryController{
     
     $args['menu-venues'] = Venue::getVenuesMenu();
     
+    debug($_GET);
     return $args;
   }
   

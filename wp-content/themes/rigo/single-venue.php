@@ -24,7 +24,9 @@ $args = wpas_get_view_data();
       <ul class="container text-uppercase large text-center mx-auto"  role="tablist">
         <a href="#generalInfo" >General Info</a>
         <a href="#venuesAreas">Venues areas</a>
-        <a href="">360 tour</a>
+        <?php if($args['venue']['venue-google-360-field'] != null) {?>
+          <a id="a-360-tour" href="#animatedModal">360 tour</a>
+        <?php } ?>
         <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php echo $args['venue']['ID'] ?>">Gallery</a>
         <a href="#location">Location</a>
         <a href="">Weddings</a>
@@ -258,6 +260,21 @@ $args = wpas_get_view_data();
         <!-- END CLIENT REVIEW -->
         <?php get_template_part('partials/rating'); ?>
 </div>
+<!--MODAL-->
+  <div id="animatedModal">
+    <div class="col-md-12 modal-menu">
+      <div class="top-venue-menu">
+        <div class="close-animatedModal btn-close"> 
+          <span class="glyphicon glyphicon-remove" style="color:white"></span>
+          <i class="fas fa-times-circle"></i>
+        </div>
+      </div>
+    </div>
+    <div class="modal-content">
+      <iframe src=<?php echo $args['venue']['venue-google-360-field'] ?> width='100%' height='100%'></iframe>              
+    </div>
+  </div> 
+<!---->
       <!-- FOOTER FULL -->
       <!-- SCRIPT -->
       <script>

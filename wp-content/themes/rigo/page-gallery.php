@@ -1,6 +1,7 @@
 <?php  
 /* Template Name: Wedding Gallery */
 $args = wpas_get_view_data();
+// debug($args);
 get_header();
 ?>
 <!--MENU MOBILE-->
@@ -14,6 +15,21 @@ get_header();
         <h1 class="my-0"><?php echo get_the_title($_GET['postId']) ?></h1>
         <h1>Photos</h1>
       </div>
+    </div>
+  </div>
+  <!---->
+    <div class="row sub-menu d-none d-sm-block venue-menu" >
+    <div class="container">
+      <ul class="container text-uppercase large text-center mx-auto"  role="tablist">
+        <a href="<?php echo get_permalink( get_page_by_path( get_the_title($_GET['postId']) ) ); ?>#generalInfo" >General Info</a>
+        <a href="#venuesAreas">Venues areas</a>
+        <?php if($args['venue']['venue-google-360-field'] != null) {?>
+          <a id="a-360-tour" href="#animatedModal">360 tour</a>
+        <?php } ?>
+        <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php $_GET['postId']; ?>&is_event=false">Gallery</a>
+        <a href="#location">Location</a>
+        <a href="">Weddings</a>
+      </ul>
     </div>
   </div>
   <!-- HORIZONTAL CARD -->
@@ -35,6 +51,22 @@ get_header();
       </div>
     </div>
   </section>
+  <!--MODAL-->
+  <div id="animatedModal">
+    <div class="col-md-12 modal-menu">
+      <div class="top-venue-menu">
+        <div class="close-animatedModal btn-close"> 
+          <span class="glyphicon glyphicon-remove" style="color:white"></span>
+          <i class="fas fa-times-circle"></i>
+        </div>
+      </div>
+    </div>
+    <div class="modal-content">
+      <iframe src=<?php /*echo $args['venue']['venue-google-360-field'] */?> width='100%' height='100%'></iframe>              
+    </div>
+  </div> 
+<!---->
+  
   <?php get_template_part('partials/rating'); ?>
   <!-- END FOOTER FULL -->
   <?php get_footer(); ?>
