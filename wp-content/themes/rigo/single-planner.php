@@ -114,7 +114,8 @@ $args = wpas_get_view_data();
           <p ><?php echo $args["planner"]["post_title"]; ?>'s online reviews are still being procesed by our team, please come back in a few days. 
             <?php $printStar = $args["planner"]["printStars"];
                   echo $printStar($args["planner"]["planner-score-point"]); 
-            ?></p>
+            ?>
+          </p>
       </div>
     </div>    
 
