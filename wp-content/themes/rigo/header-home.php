@@ -12,3 +12,4 @@ $args = wpas_get_view_data();
 </head>
 <body>
  <?php get_template_part('partials/header','menu'); ?>
+ <?php get_template_part('partials/menu','home'); ?>

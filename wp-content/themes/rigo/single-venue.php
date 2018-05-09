@@ -6,6 +6,7 @@ $args = wpas_get_view_data();
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
   <!-- JUMBOTROM -->
+<div id="generalInfo">
   <div class="parent d-none d-sm-block">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
       <div class="card logo medium mx-auto" id="bmw-logo">
@@ -21,11 +22,11 @@ $args = wpas_get_view_data();
   <div class="row sub-menu d-none d-sm-block venue-menu" >
     <div class="container">
       <ul class="container text-uppercase large text-center mx-auto"  role="tablist">
-        <a href="" >General Info</a>
-        <a href="">Venues areas</a>
+        <a href="#generalInfo" >General Info</a>
+        <a href="#venuesAreas">Venues areas</a>
         <a href="">360 tour</a>
         <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php echo $args['venue']['ID'] ?>">Gallery</a>
-        <a href="">Location</a>
+        <a href="#location">Location</a>
         <a href="">Weddings</a>
       </ul>
     </div>
@@ -94,7 +95,7 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <!--  -->
-      <div class="card bg-2">
+      <div class="card bg-2" id="location">
         <div class="row ">
           <div class="col-md-6 px-4 p-sm-5 l p-0 p-sm-3 d-none d-sm-block">
             <div class="p-0 p-sm-3 max-h text-center">
@@ -107,11 +108,27 @@ $args = wpas_get_view_data();
             <?php 
               if( !empty($args["venue"]["venue-google-maps"]) ):
               ?>
-              <div class="acf-map col-md-6 col-12 image-div p-0">
+              <div class="acf-map col-md-6 col-12 image-div p-0 d-none d-sm-block">
               	<div class="marker" data-lat="<?php echo $args["venue"]["venue-google-maps"]['lat']; ?>" data-lng="<?php echo $args["venue"]["venue-google-maps"]['lng']; ?>"></div>
               </div>
               <?php endif; ?>
           <!--</div>-->
+          <!--MOVIL-->
+          <div class="col-12 px-0 d-block d-sm-none" style="background-color: white;">
+            <div class="py-0 px-2 text-center">
+              <p class="h8 card-title"><?php echo $args["venue"]["post_title"]; ?></p>
+              <h5> <strong></strong> </h5>
+              <p><?php echo $args["venue"]["venue-address"]; ?></p>
+            </div>
+             <?php 
+              if( !empty($args["venue"]["venue-google-maps"]) ):
+              ?>
+              <div class="acf-map image-div px-5">
+              	<div class="marker" data-lat="<?php echo $args["venue"]["venue-google-maps"]['lat']; ?>" data-lng="<?php echo $args["venue"]["venue-google-maps"]['lng']; ?>"></div>
+              </div>
+              <?php endif; ?>
+          </div>
+          <!---->
         </div>
       </div>
       <div class="card bg-1">
@@ -180,7 +197,7 @@ $args = wpas_get_view_data();
           </div>
         </div>
       </div>
-      <div class="card separators awards-recognition d-none d-sm-block" >
+      <div class="card separators awards-recognition d-none d-sm-block" id="venuesAreas" >
         <div class="row ">
           <div class="col-sm-12 col-md-5 col-lg-4 p-5 l mb-md-auto mt-md-5 pt-md-5 text-center venue-layout">
             <span class="logo small px-1 pb-1 pb-md-4" id="bmw-logo-white-alone"></span>
@@ -240,6 +257,7 @@ $args = wpas_get_view_data();
         </div>
         <!-- END CLIENT REVIEW -->
         <?php get_template_part('partials/rating'); ?>
+</div>
       <!-- FOOTER FULL -->
       <!-- SCRIPT -->
       <script>
