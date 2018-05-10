@@ -6,6 +6,8 @@ $args = wpas_get_view_data();
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
   <!-- JUMBOTROM -->
+
+
 <div id="generalInfo">
   <div class="parent d-none d-sm-block">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
@@ -29,7 +31,9 @@ $args = wpas_get_view_data();
         <?php } ?>
         <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php echo $args['venue']['ID'] ?>">Gallery</a>
         <a href="#location">Location</a>
-        <a href="">Weddings</a>
+        <?php if($args['venue']['venue-wedding']  != null) {?>
+          <a href="<?php echo $args['venue']['venue-wedding'] ?>">Weddings</a>
+        <?php } ?>
       </ul>
     </div>
   </div>
@@ -260,21 +264,21 @@ $args = wpas_get_view_data();
         <!-- END CLIENT REVIEW -->
         <?php get_template_part('partials/rating'); ?>
 </div>
-<!--MODAL-->
-  <div id="animatedModal">
-    <div class="col-md-12 modal-menu">
-      <div class="top-venue-menu">
-        <div class="close-animatedModal btn-close"> 
-          <span class="glyphicon glyphicon-remove" style="color:white"></span>
-          <i class="fas fa-times-circle"></i>
+    <!--MODAL-->
+      <div id="animatedModal">
+        <div class="col-md-12 modal-menu">
+          <div class="top-venue-menu">
+            <div class="close-animatedModal btn-close"> 
+              <span class="glyphicon glyphicon-remove" style="color:white"></span>
+              <i class="fas fa-times-circle"></i>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="modal-content">
-      <iframe src=<?php echo $args['venue']['venue-google-360-field'] ?> width='100%' height='100%'></iframe>              
-    </div>
-  </div> 
-<!---->
+        <div class="modal-content">
+          <iframe src=<?php echo $args['venue']['venue-google-360-field'] ?> width='100%' height='100%'></iframe>              
+        </div>
+      </div> 
+    <!---->
       <!-- FOOTER FULL -->
       <!-- SCRIPT -->
       <script>

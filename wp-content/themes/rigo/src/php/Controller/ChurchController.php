@@ -32,6 +32,8 @@ class ChurchController{
     $args['church']['church-img-banner'] = get_field('church-img-banner', $args['church']['ID']);
     $args['church']['church-description'] = get_field('church-description', $args['church']['ID']);
     
+    $args['menu-venues'] = Venue::getVenuesMenu();
+    
     $args['page'] = (array) get_queried_object();
     $query = Church::all(['posts_per_page' => 15]);
     $args['church_list'] = $query -> posts;

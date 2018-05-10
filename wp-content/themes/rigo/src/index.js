@@ -378,6 +378,7 @@ $('a[href*="#"]')
   .not('[href="#starters"]')
   .not('[href="#main"]')
   .not('[href="#sides"]')
+  .not('[href="#a-360-tour"]')
   .click(function(event) {
     // On-page links
     if (

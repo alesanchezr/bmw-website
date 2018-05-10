@@ -23,6 +23,7 @@ class VenueController{
     $args['venue']['venue-bottom-half'] = get_field('venue-bottom-half', $args['venue']['ID']);
     $args['venue']['venue-google-maps'] = get_field('venue-google-maps', $args['venue']['ID']);
     $args['venue']['venue-google-360-field'] = get_field('venue-google-360-field', $args['venue']['ID']);
+    $args['venue']['venue-wedding'] = get_field('venue-wedding', $args['venue']['ID']);
     $args['venue']['facebook-score'] = get_field('facebook-score', $args['venue']['ID']);
     $args['venue']['google-score'] = get_field('google-score', $args['venue']['ID']);
     $args['venue']['yelp-score'] = get_field('yelp-score', $args['venue']['ID']);

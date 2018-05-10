@@ -28,7 +28,9 @@ get_header();
         <?php } ?>
         <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php $_GET['postId']; ?>&is_event=false">Gallery</a>
         <a href="#location">Location</a>
-        <a href="">Weddings</a>
+        <?php /*if($args['venue']['venue-wedding']  != null) {*/?>
+          <a href="<?php /*echo $args['venue']['venue-wedding'] */?>">Weddings</a>
+        <?php /*}*/ ?>
       </ul>
     </div>
   </div>
@@ -66,7 +68,6 @@ get_header();
     </div>
   </div> 
 <!---->
-  
   <?php get_template_part('partials/rating'); ?>
   <!-- END FOOTER FULL -->
   <?php get_footer(); ?>
