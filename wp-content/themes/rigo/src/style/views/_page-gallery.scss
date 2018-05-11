@@ -1,0 +1,17 @@
+.mazonri-gallery{
+    .img-mazonri{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        border-radius: 0;
+            div{
+                height: 300px;
+            }
+            img{
+                visibility: hidden;
+            }
+            
+    }
+}
+

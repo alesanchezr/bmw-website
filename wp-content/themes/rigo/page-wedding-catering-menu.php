@@ -27,26 +27,28 @@ get_header();
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
      <ul class="nav nav-tabs container text-uppercase large navbar-nav   " id="tabContent" role="tablist">
       <li class="nav-item  ml-auto ">
-        <a class="nav-link active show" id="home-tabc" data-toggle="tab" href="#starters" role="tab" aria-controls="home" aria-selected="false">Starters</a>
+        <a class="nav-link active show" id="starters-tabc" data-toggle="tab" href="#starters" role="tab" aria-controls="starters" aria-selected="false">Starters</a>
       </li>
       <li class="nav-item m-0">
-        <a class="nav-link" id="profile-tabc" data-toggle="tab" href="#main" role="tab" aria-controls="profile" aria-selected="false">Main</a>
+        <a class="nav-link" id="main-tabc" data-toggle="tab" href="#main" role="tab" aria-controls="main" aria-selected="false">Main</a>
       </li>
       <li class="nav-item mr-auto">
-        <a class="nav-link " id="contact-tabc" data-toggle="tab" href="#sides" role="tab" aria-controls="contact" aria-selected="false">Sides</a>
+        <a class="nav-link " id="sides-tabc" data-toggle="tab" href="#sides" role="tab" aria-controls="sides" aria-selected="false">Sides</a>
       </li>
     </ul>
   </div>
 </nav>
 
   <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade container text-center active show" id="starters" role="tabpanel" aria-labelledby="home-tabc">
+    <!--starters-->
+      <div class="tab-pane fade container text-center active show" id="starters" role="tabpanel" aria-labelledby="starters-tabc">
         <div class="row p-4">
             <div class="col-md-6 mt-3"><?php echo $args['catering']['catering-starters-left'] ?></div>
             <div class="col-md-6 mt-3"><?php echo $args['catering']['catering-starters-right'] ?></div>
         </div>
       </div>
-      <div class="tab-pane fade text-center container" id="main" role="tabpanel" aria-labelledby="profile-tabc">
+      <!--main-->
+      <div class="tab-pane fade text-center container" id="main" role="tabpanel" aria-labelledby="main-tabc">
         <div class="row">
             <div class="col-md-6 mt-3"><?php echo $args['catering']['catering-main-left'] ?></div>
             <div class="col-md-6 mt-3"><?php echo $args['catering']['catering-main-right'] ?></div>
@@ -56,9 +58,9 @@ get_header();
                 </div>
             </div>
         </div>
-
       </div>
-      <div class="tab-pane fade  menu-aditional" id="sides" role="tabpanel" aria-labelledby="contact-tabc">
+      <!--sides-->
+      <div class="tab-pane fade  menu-aditional" id="sides" role="tabpanel" aria-labelledby="sides-tabc">
         <div class="container">
           <div class="row text-center">
                 <div class="col-md-6 mt-3"><?php echo $args['catering']['catering-sides-left'] ?></div>
@@ -66,6 +68,7 @@ get_header();
           </div>
         </div>
       </div>
+      <!---->
     </div>
 <!-- FOOTER FULL -->
   <?php get_footer('small'); ?>

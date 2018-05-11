@@ -37,8 +37,7 @@ get_header(); ?>
           data-toggle="popover"
           data-trigger="focus" 
           data-html="true"
-          data-placement="bottom"
-          placement="botom"
+          data-placement="right"
           data-content="<span class='popoverText'>The aggregated rating  was compiled from multiple sources (WeddingWire, Facebook, Yelp, Google, etc.), including merchants, third party aggregators, editorial sites and users. Collected from more than 250 reviews total across all sources.</span> <ul class='review-source-icons'><li><img src='https://new.bestmiamiweddings.com/wp-content/themes/html5blank-stable/img/icons/weddingwire-icon.png'><img src='https://new.bestmiamiweddings.com/wp-content/themes/html5blank-stable/img/icons/facebook-icon.png'><img src='https://new.bestmiamiweddings.com/wp-content/themes/html5blank-stable/img/icons/yelp-icon.png'><img src='https://new.bestmiamiweddings.com/wp-content/themes/html5blank-stable/img/icons/knot-icon.png'><img src='https://new.bestmiamiweddings.com/wp-content/themes/html5blank-stable/img/icons/google-icon.png'><img src='https://new.bestmiamiweddings.com/wp-content/themes/html5blank-stable/img/icons/bbb-icon.png'></li></ul>" 
           data-original-title="Review score">learn more.</a></p>
     </div>

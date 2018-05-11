@@ -90,25 +90,7 @@ $args = wpas_get_view_data();
             <li class="inactiveLink nav-item d-none d-md-inline-block pr-0">
               <a class="" href="" style='letter-spacing: 2.6px;'>From our weddings...</a>
             </li>
-          
             <?php wp_nav_menu( array('theme_location' => 'submenu_inspired', 'menu_class'=> 'nav submenu-nav',) ); ?>
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Venues</a>-->
-          <!--  </li>-->
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Dress</a>-->
-          <!--  </li>-->
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Decor</a>-->
-          <!--  </li>-->
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Cuisine</a>-->
-          <!--  </li>-->
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Weddings</a>-->
-          <!--  </li>-->
-          <!--</ul>-->
-          
         </div>
       </div>
       <div class="container">
@@ -118,26 +100,26 @@ $args = wpas_get_view_data();
           </div>
           <div class="col-md-4 mt-3">
             <h5><strong> Before the wedding</strong></h5>
-            <a class="click-here color-dark menu-hover" href=""> <li>Top Five Miami Wedding Venues</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>How tho Choose a Catering Menu of Your Weding in Miami</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Top 5 Christian Churches in Miami</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Find The Perfect Wedding Dress Color Just For You!</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/before-the-wedding/top-five-miami-wedding-venues/"> <li>Top Five Miami Wedding Venues</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/before-the-wedding/choose-catering-menu-for-wedding/"> <li>How tho Choose a Catering Menu of Your Weding in Miami</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/before-the-wedding/top-5-christian-churches-in-miami/"> <li>Top 5 Christian Churches in Miami</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/before-the-wedding/find-the-perfect-wedding-dress-color-just-for-you/"> <li>Find The Perfect Wedding Dress Color Just For You!</li></a>
           </div>
           
           <div class="col-md-4 mt-3">
             <h5><strong> During the wedding</strong></h5>
-            <a class="click-here color-dark menu-hover" href=""> <li>Aisle Runner: Messages Of Love</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Top 10 Songs To Play At Your Wedding</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Waffle Bar Party for a Wedding in Miami</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Why Every Miami Wedding Should Use A Water Cooler For The Alcohol</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/during-the-wedding/aisle-runner-messages-of-love/"> <li>Aisle Runner: Messages Of Love</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/during-the-wedding/top-10-songs-to-play-at-your-wedding-this-2016/"> <li>Top 10 Songs To Play At Your Wedding</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/during-the-wedding/waffle-bar-party-for-a-wedding-in-miami/"> <li>Waffle Bar Party for a Wedding in Miami</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/during-the-wedding/why-every-wedding-in-miami-should-use-a-water-cooler-to-dispense-your-alcohol/"> <li>Why Every Miami Wedding Should Use A Water Cooler For The Alcohol</li></a>
           </div>
           
           <div class="col-md-4 mt-3">
             <h5><strong> After the wedding</strong></h5>
-            <a class="click-here color-dark menu-hover" href=""> <li>Top 10 Honeymoon Destination</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Party planninf: Flip Cup After-Party</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Wedding Checklist: After Your Wedding Day</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Honewmoon Destinations on a Budget</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/top-10-honeymoon-destinations/"> <li>Top 10 Honeymoon Destination</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/wp-content/uploads/sites/2/2016/05/Madten.jpg"> <li>Party planninf: Flip Cup After-Party</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/wedding-checklist-after-your-wedding-day/"> <li>Wedding Checklist: After Your Wedding Day</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/the-best-honeymoon-destinations-for-the-next-year-on-a-budget/"> <li>Honewmoon Destinations on a Budget</li></a>
           </div>
           
           <div class="col-md-12">
@@ -155,23 +137,7 @@ $args = wpas_get_view_data();
         <?php  wp_nav_menu( array(
           'theme_location' => 'menu_about_us',
           'menu_class'=> 'nav submenu-nav',
-        // 'items_wrap'=>'<ul>%3$s</ul>',
          )); ?>
-          <!--<ul class=" nav "  role="tablist">-->
-              
-          <!--  <li class="nav-item" style="margin-left: 20px;">-->
-          <!--    <a class="nav-link" href="">About Us</a>-->
-          <!--  </li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Press & Awards</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Testimonials</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Contact Us</a>-->
-            <!--</li>-->
-          <!--</ul>-->
         </div>
       </div>
     </div>
