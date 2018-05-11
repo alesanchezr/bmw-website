@@ -10,6 +10,8 @@ window.jQuery = jQuery;
 $(document).ready(function(){
 	
 	require('lightgallery');
+	require('lg-thumbnail');
+	require('lg-zoom');
 	
 	$('#myTab a').hover( function (e) {
 		$(this).tab('show');
@@ -19,16 +21,11 @@ $(document).ready(function(){
 		$('#myTab a').removeClass('active show');
 	});
 	
-	$('.horizontal-gallery').lightGallery({
+	$('.horizontal-gallery, .mazonri-gallery').lightGallery({
 		selector: '.img-slide',
-	    thumbnail:true,
-	    animateThumb: false,
-	    showThumbByDefault: false
-	});
-	
-	$('.mazonri-gallery').lightGallery({
-		selector: '.img-mazonri',
-		thumbnail: true
+	    thumbnail: true,
+	    animateThumb: true,
+	    showThumbByDefault: true
 	});
 	
 	$('[data-toggle="popover"]').popover();
