@@ -8,9 +8,12 @@
 #facebook{ content: url("../img/social-logo/facebook.svg"); }
 #watermark-awards{ 
     background-image: url(../img/awards/awards-web.png); 
+  	@media (max-width: 500px) {
+        background-image: none; 
+  	}  
     background-repeat: no-repeat; 
-    background-size: auto;
-    background-position: center 130px;
+    background-size: contain;
+    background-position: center 150px;
     font-size: 17px;
   	@media (max-width: 1024px) {
   	  background-size: contain;
@@ -51,9 +54,19 @@
 #better-business-bureau{ content: url("../img/awards/better-business-bureau.svg"); }
 #glenview-award-2012{ content: url("../img/awards/glenview-award-2012.svg"); }
 #burgerliscios{ content: url("../img/awards/burgerliscios.svg"); }
+
+#menu-award{ content: url("../img/awards/award1.svg"); max-width: 120px !important; }
+#menu-award1{ 
+    content: url("../img/awards/award2.svg"); 
+    max-width: 120px !important; 
+    margin-bottom: 10px;
+}
+#menu-award2{ content: url("../img/awards/award3.svg"); max-width: 120px !important; }
+#menu-award3{ content: url("../img/awards/award4.svg"); max-width: 120px !important; }
 // SOME PARTNERS
 //
 #arrow-down{ content: url("../img/bmw-logo/arrow-down.svg"); width: 1.5% !important;}
 #star{ content: url("../img/social-logo/star.svg"); font-size: 12px; }
 #star-half{ content: url("../img/social-logo/star-half.svg"); font-size: 12px;}
 #star-o{ content: url("../img/social-logo/star-o.svg"); }
+// SOME PARTNERS

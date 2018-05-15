@@ -12,11 +12,14 @@
 @import "img-svg";
 @import "logo";
 @import "modal";
+@import "modal";
+@import "custom-modal";
 @import "google_maps";
 @import "views/home";
 @import "views/request";
 @import "views/single-venue";
 @import "views/page-venues";
+@import "views/page-gallery";
 @import "views/page-testimonials";
 @import "views/page-planners";
 
@@ -540,11 +543,6 @@ input{
 .tab-content-dark{
 	background-color:$color-navbar;
 }
-	
-.galleryImg{
-	height:250px !important;
-}
-
 .popoverText{font-size:16px};
 
 .review-source-icons {
@@ -569,8 +567,9 @@ input{
 
 .hover-effect{
 	overflow: hidden;
-	a.img-slide, .venue-thumb{
+	a.img-slide, .venue-thumb, a.img-mazonri{
 		min-height: 300px;
+		background-size: 130%;
 	    @media (max-width: 767px) {
 	        min-height: 200px;
 	    }
@@ -584,7 +583,7 @@ input{
 	}
 } 
 
-.hover-effect a.img-slide:hover,.hover-effect .venue-thumb:hover{
+.hover-effect a.img-slide:hover,.hover-effect .venue-thumb:hover, a.img-mazonri:hover{
 	&:before{
 		content: ' ';
 		height: 100%;

@@ -29,7 +29,11 @@ class PressAwardController{
           'description' =>  get_field('press_award-description', $press_award -> ID),
           ];
         }, $args['press_award_list']);
+        
+        $args['menu-venues'] = Venue::getVenuesMenu();
+        
         // debug($args['$press_award']);
+        
         return $args;
     }
     

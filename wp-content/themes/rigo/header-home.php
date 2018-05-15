@@ -4,11 +4,13 @@ $args = wpas_get_view_data();
 ?>
 <!DOCTYPE html>
 <html>
- <head>
- <title><?php wp_title(''); ?></title>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <?php  wp_head(); ?>
+<head>
+<title><?php wp_title(''); ?></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+<?php  wp_head(); ?>
 </head>
 <body>
- <?php get_template_part('partials/header','menu'); ?>
+<?php get_template_part('partials/header','menu'); ?>
+<?php get_template_part('partials/menu','home'); ?>

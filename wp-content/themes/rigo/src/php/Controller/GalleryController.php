@@ -11,9 +11,12 @@ class GalleryController{
     $args['gallery']['gallery-img-banner'] = get_field('gallery-img-banner', $args['gallery']['ID']);
     $args['gallery']['gallery-page-gallery'] = $this -> getPostGalley($_GET['postId']);
     
+    $args['venue'] = (array) Venue::get($_GET['postId']);
+    $args['venue']['venue-google-360-field'] = get_field('venue-google-360-field', $args['venue']['ID']);
     
     $args['menu-venues'] = Venue::getVenuesMenu();
     
+    //debug($_GET);
     return $args;
   }
   

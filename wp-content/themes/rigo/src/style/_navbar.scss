@@ -1,3 +1,7 @@
+.navbar + div{
+	background: url(../img/mozaic.jpg) repeat;
+	a{color: $color-footer-dark;}
+}
 .navbar{
     .nav-link{
         letter-spacing: 1.6px;

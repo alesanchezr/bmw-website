@@ -30,28 +30,34 @@ $args = wpas_get_view_data();
   </nav>
   
   <div class="tab-content subnavbar" id="myTabContent">
-    <div class="tab-pane menu-content fade container text-center " id="home" role="tabpanel" aria-labelledby="home-tab">
-      <div class="row">
-        <div class="p-4 col-md-8 offset-md-2">
+    <div class="tab-pane menu-content fade container text-center p-3" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="row m-4">
+        <div class="col-sm-5">
+          <span id="menu-award" class="logo d-inline-block"></span>
+          <span id="menu-award1" class="logo d-inline-block ml-2"></span>
+        </div>
+        <div class="col-sm-7">
           <h5> <strong>Pick from the most beautiful venue selection in Miami, classic and modern wedding venues appoved by Best Miami Weddings</strong> </h5>
         </div>
+      </div>
+      <div class="row">
         <div class="col-md-4 mt-3">
           <h5><strong>Unique Venues</strong></h5>
           <?php for ($x=0; $x< count($args['menu-venues']['unique']); $x++){ ?>
-            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['unique'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['unique'][$x]->post_title ?></li> </a>
+            <a class="click-here menu-hover" href="<?php echo get_permalink( $args['menu-venues']['unique'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['unique'][$x]->post_title ?></li> </a>
           <?php } ?>
         </div>
         <div class="col-md-4 mt-3">
           <h5><strong>Garden Venues</strong> </h5>
           <?php for ($x=0; $x< count($args['menu-venues']['garden']); $x++){ ?>
-            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['garden'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['garden'][$x]->post_title ?></li> </a>
+            <a class="click-here menu-hover" href="<?php echo get_permalink( $args['menu-venues']['garden'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['garden'][$x]->post_title ?></li> </a>
           <?php } ?>
         </div>
         
         <div class="col-md-4 mt-3">
           <h5><strong>Historical Venues</strong> </h5>
           <?php for ($x=0; $x< count($args['menu-venues']['historical']); $x++){ ?>
-            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['historical'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['historical'][$x]->post_title ?></li> </a>
+            <a class="click-here menu-hover" href="<?php echo get_permalink( $args['menu-venues']['historical'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['historical'][$x]->post_title ?></li> </a>
           <?php } ?>
         </div>
         <div class="col-md-12">
@@ -62,11 +68,17 @@ $args = wpas_get_view_data();
       </div>
     </div>
     
-    <div class="tab-pane menu-content fade text-center container" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <div class="row menu-list">
-        <div class="p-4 col-md-8 offset-md-2">
+    <div class="tab-pane menu-content fade text-center container px-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="row menu-list mt-5">
+        <div class="col-sm-5">
+          <span id="menu-award" class="logo d-inline-block"></span>
+          <span id="menu-award1" class="logo d-inline-block ml-2"></span>
+        </div>
+        <div class="col-sm-7">
           <h5><strong>Wedding CateringGive only World-class to your guests, your weddinf will make you shine</strong> </h5>
         </div>
+      </div>
+      <div class="row">
         <div class="col-md-3 offset-md-3 mt-3">
           <h5><strong>Food & Beverage</strong> </h5>
           <?php wp_nav_menu( array('theme_location' => 'menu_food_beverage') ); ?>
@@ -90,54 +102,36 @@ $args = wpas_get_view_data();
             <li class="inactiveLink nav-item d-none d-md-inline-block pr-0">
               <a class="" href="" style='letter-spacing: 2.6px;'>From our weddings...</a>
             </li>
-          
             <?php wp_nav_menu( array('theme_location' => 'submenu_inspired', 'menu_class'=> 'nav submenu-nav',) ); ?>
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Venues</a>-->
-          <!--  </li>-->
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Dress</a>-->
-          <!--  </li>-->
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Decor</a>-->
-          <!--  </li>-->
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Cuisine</a>-->
-          <!--  </li>-->
-          <!--  <li class="nav-item">-->
-          <!--    <a class="nav-link" href="">Weddings</a>-->
-          <!--  </li>-->
-          <!--</ul>-->
-          
         </div>
       </div>
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-center p-3">
           <div class="p-4 col-md-8 offset-md-2">
             <h5><strong>Have a #BestMiamiWedding inspired from our blog...</strong> </h5>
           </div>
           <div class="col-md-4 mt-3">
             <h5><strong> Before the wedding</strong></h5>
-            <a class="click-here color-dark menu-hover" href=""> <li>Top Five Miami Wedding Venues</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>How tho Choose a Catering Menu of Your Weding in Miami</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Top 5 Christian Churches in Miami</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Find The Perfect Wedding Dress Color Just For You!</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/before-the-wedding/top-five-miami-wedding-venues/"> <li>Top Five Miami Wedding Venues</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/before-the-wedding/choose-catering-menu-for-wedding/"> <li>How tho Choose a Catering Menu of Your Weding in Miami</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/before-the-wedding/top-5-christian-churches-in-miami/"> <li>Top 5 Christian Churches in Miami</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/before-the-wedding/find-the-perfect-wedding-dress-color-just-for-you/"> <li>Find The Perfect Wedding Dress Color Just For You!</li></a>
           </div>
           
           <div class="col-md-4 mt-3">
             <h5><strong> During the wedding</strong></h5>
-            <a class="click-here color-dark menu-hover" href=""> <li>Aisle Runner: Messages Of Love</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Top 10 Songs To Play At Your Wedding</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Waffle Bar Party for a Wedding in Miami</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Why Every Miami Wedding Should Use A Water Cooler For The Alcohol</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/during-the-wedding/aisle-runner-messages-of-love/"> <li>Aisle Runner: Messages Of Love</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/during-the-wedding/top-10-songs-to-play-at-your-wedding-this-2016/"> <li>Top 10 Songs To Play At Your Wedding</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/during-the-wedding/waffle-bar-party-for-a-wedding-in-miami/"> <li>Waffle Bar Party for a Wedding in Miami</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/during-the-wedding/why-every-wedding-in-miami-should-use-a-water-cooler-to-dispense-your-alcohol/"> <li>Why Every Miami Wedding Should Use A Water Cooler For The Alcohol</li></a>
           </div>
           
           <div class="col-md-4 mt-3">
             <h5><strong> After the wedding</strong></h5>
-            <a class="click-here color-dark menu-hover" href=""> <li>Top 10 Honeymoon Destination</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Party planninf: Flip Cup After-Party</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Wedding Checklist: After Your Wedding Day</li></a>
-            <a class="click-here color-dark menu-hover" href=""> <li>Honewmoon Destinations on a Budget</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/top-10-honeymoon-destinations/"> <li>Top 10 Honeymoon Destination</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/wp-content/uploads/sites/2/2016/05/Madten.jpg"> <li>Party planninf: Flip Cup After-Party</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/wedding-checklist-after-your-wedding-day/"> <li>Wedding Checklist: After Your Wedding Day</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/the-best-honeymoon-destinations-for-the-next-year-on-a-budget/"> <li>Honewmoon Destinations on a Budget</li></a>
           </div>
           
           <div class="col-md-12">
@@ -155,23 +149,7 @@ $args = wpas_get_view_data();
         <?php  wp_nav_menu( array(
           'theme_location' => 'menu_about_us',
           'menu_class'=> 'nav submenu-nav',
-        // 'items_wrap'=>'<ul>%3$s</ul>',
          )); ?>
-          <!--<ul class=" nav "  role="tablist">-->
-              
-          <!--  <li class="nav-item" style="margin-left: 20px;">-->
-          <!--    <a class="nav-link" href="">About Us</a>-->
-          <!--  </li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Press & Awards</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Testimonials</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-            <!--  <a class="nav-link" href="">Contact Us</a>-->
-            <!--</li>-->
-          <!--</ul>-->
         </div>
       </div>
     </div>
