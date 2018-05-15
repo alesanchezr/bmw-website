@@ -44,7 +44,8 @@
     </div>
     <div class="card">
       <a class="img mx-md-0 mx-3 hover-effect" href="<?php echo get_permalink( get_page_by_path('wedding-packages' ) ); ?>">
-        <div class="venue-thumb" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-packages'],'full')[0] ?>;"></div>
+        <div class="venue-thumb" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-packages'],'full')[0] ?>;"
+              style="background-size: 130%;"></div>
       </a> 
       <div class="card-body text-center">
         <div class="card-middle-button">
