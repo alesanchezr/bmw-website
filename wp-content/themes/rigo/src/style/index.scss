@@ -567,8 +567,9 @@ input{
 
 .hover-effect{
 	overflow: hidden;
-	a.img-slide, .venue-thumb{
+	a.img-slide, .venue-thumb, a.img-mazonri{
 		min-height: 300px;
+		background-size: 130%;
 	    @media (max-width: 767px) {
 	        min-height: 200px;
 	    }
@@ -582,7 +583,7 @@ input{
 	}
 } 
 
-.hover-effect a.img-slide:hover,.hover-effect .venue-thumb:hover{
+.hover-effect a.img-slide:hover,.hover-effect .venue-thumb:hover, a.img-mazonri:hover{
 	&:before{
 		content: ' ';
 		height: 100%;

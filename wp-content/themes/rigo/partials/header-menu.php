@@ -30,7 +30,7 @@ $args = wpas_get_view_data();
   </nav>
   
   <div class="tab-content subnavbar" id="myTabContent">
-    <div class="tab-pane menu-content fade container text-center p-3 show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="tab-pane menu-content fade container text-center p-3" id="home" role="tabpanel" aria-labelledby="home-tab">
       <div class="row m-4">
         <div class="col-sm-5">
           <span id="menu-award" class="logo d-inline-block"></span>

@@ -1,13 +1,15 @@
 .mazonri-gallery{
+    .hover-effect{
+        height: 300px;
+    }
     .img-mazonri{
+        display: inline-block;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 200px;
+        height: 100%;
+        width: 100%;
         border-radius: 0;
-            div{
-                height: 300px;
-            }
             img{
                 visibility: hidden;
             }

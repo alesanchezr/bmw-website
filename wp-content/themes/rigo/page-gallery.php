@@ -40,14 +40,16 @@ get_header();
       <div class="container">
         <div class="row mazonri-gallery mx-5">
           <?php for ($i=0; $i< count($args['gallery']['gallery-page-gallery']); $i++){  ?>
-            <div class="col-md-3 img-mazonri p-0 m-0 hover-effect" style="background-image: url(<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];?>)"           
+          <div class="hover-effect col-md-3 p-0 m-0">
+            <a class="img-mazonri" style="background-image: url(<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];?>)"           
                 href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];?>">
                 <img class="" 
                   href="<?php echo $args['gallery']['gallery-page-gallery'][$i]['default'];?>"
                   src="<?php echo $args['gallery']['gallery-page-gallery'][$i]['thumbnail'];?>" 
                   alt="<?php echo $args['gallery']['gallery-page-gallery'][$i]['alt'];?>">
                 </img>
-            </div>
+            </a>
+          </div>
           <?php } ?>
         </div>
       </div>
