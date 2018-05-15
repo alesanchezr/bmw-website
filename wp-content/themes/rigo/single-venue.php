@@ -29,7 +29,7 @@ $args = wpas_get_view_data();
         <?php if($args['venue']['venue-google-360-field'] != null) {?>
           <a id="a-360-tour" href="#animatedModal">360 tour</a>
         <?php } ?>
-        <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php echo $args['venue']['ID'] ?>">Gallery</a>
+        <a href="/gallery/?postId=<?php echo $args['venue']['ID'] ?>">Gallery</a>
         <a href="#location">Location</a>
         <?php if($args['venue']['venue-wedding']  != null) {?>
           <a href="<?php echo $args['venue']['venue-wedding'] ?>">Weddings</a>
@@ -56,9 +56,9 @@ $args = wpas_get_view_data();
           </div>
 
         </div>
-        <div class="col-sm-5 px-4 p-sm-5" id="watermark-awards">
+        <div class="col-12 col-md-5" id="watermark-awards">
           <div class="p-0 p-sm-3 max-h text-left text-sm-center p-0 p-sm-3 d-none d-sm-block">
-            <p></p>
+            <p>&nbsp;</p>
             <p class="card-text "><?php echo $args["venue"]["venue-capacity"]; ?></p>
             <p class="card-text"><?php echo $args["venue"]["venue-time"]; ?></p>
           </div>
@@ -203,12 +203,13 @@ $args = wpas_get_view_data();
           </div>
         </div>
       </div>
+      <?php if(!empty($args['venue']['venue-img-layout'])){ ?>
       <div class="card separators awards-recognition d-none d-sm-block" id="venuesAreas" >
         <div class="row ">
           <div class="col-sm-12 col-md-5 col-lg-4 p-5 l mb-md-auto mt-md-5 pt-md-5 text-center venue-layout">
             <span class="logo small px-1 pb-1 pb-md-4" id="bmw-logo-white-alone"></span>
             <p class="h8 card-title pb-md-5">Layout for <?php echo $args["venue"]["post_title"]; ?></p>
-            <img class="mx-auto" src="<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-layout'],'full')[0]?>" alt="Generic placeholder image">
+            <img class="mx-auto" src="<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-layout'],'full')[0] ?>" alt="Generic placeholder image">
           </div>
           <div class="col-sm-12 col-md-7 col-lg-8 p-sm-5 l">
             <div class="p-5 text-center">
@@ -217,6 +218,7 @@ $args = wpas_get_view_data();
           </div>
         </div>
       </div>
+      <?php } ?>
       <!-- CLIENT SCORE -->
         <div class="card bg-2 d-none d-sm-block">
           <div class="row ">

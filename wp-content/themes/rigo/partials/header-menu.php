@@ -30,28 +30,34 @@ $args = wpas_get_view_data();
   </nav>
   
   <div class="tab-content subnavbar" id="myTabContent">
-    <div class="tab-pane menu-content fade container text-center " id="home" role="tabpanel" aria-labelledby="home-tab">
-      <div class="row">
-        <div class="p-4 col-md-8 offset-md-2">
+    <div class="tab-pane menu-content fade container text-center p-3 show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="row m-4">
+        <div class="col-sm-5">
+          <span id="menu-award" class="logo d-inline-block"></span>
+          <span id="menu-award1" class="logo d-inline-block ml-2"></span>
+        </div>
+        <div class="col-sm-7">
           <h5> <strong>Pick from the most beautiful venue selection in Miami, classic and modern wedding venues appoved by Best Miami Weddings</strong> </h5>
         </div>
+      </div>
+      <div class="row">
         <div class="col-md-4 mt-3">
           <h5><strong>Unique Venues</strong></h5>
           <?php for ($x=0; $x< count($args['menu-venues']['unique']); $x++){ ?>
-            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['unique'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['unique'][$x]->post_title ?></li> </a>
+            <a class="click-here menu-hover" href="<?php echo get_permalink( $args['menu-venues']['unique'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['unique'][$x]->post_title ?></li> </a>
           <?php } ?>
         </div>
         <div class="col-md-4 mt-3">
           <h5><strong>Garden Venues</strong> </h5>
           <?php for ($x=0; $x< count($args['menu-venues']['garden']); $x++){ ?>
-            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['garden'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['garden'][$x]->post_title ?></li> </a>
+            <a class="click-here menu-hover" href="<?php echo get_permalink( $args['menu-venues']['garden'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['garden'][$x]->post_title ?></li> </a>
           <?php } ?>
         </div>
         
         <div class="col-md-4 mt-3">
           <h5><strong>Historical Venues</strong> </h5>
           <?php for ($x=0; $x< count($args['menu-venues']['historical']); $x++){ ?>
-            <a class="click-here color-dark menu-hover" href="<?php echo get_permalink( $args['menu-venues']['historical'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['historical'][$x]->post_title ?></li> </a>
+            <a class="click-here menu-hover" href="<?php echo get_permalink( $args['menu-venues']['historical'][$x]->ID )?>"> <li><?php echo $args['menu-venues']['historical'][$x]->post_title ?></li> </a>
           <?php } ?>
         </div>
         <div class="col-md-12">
@@ -62,11 +68,17 @@ $args = wpas_get_view_data();
       </div>
     </div>
     
-    <div class="tab-pane menu-content fade text-center container" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <div class="row menu-list">
-        <div class="p-4 col-md-8 offset-md-2">
+    <div class="tab-pane menu-content fade text-center container px-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="row menu-list mt-5">
+        <div class="col-sm-5">
+          <span id="menu-award" class="logo d-inline-block"></span>
+          <span id="menu-award1" class="logo d-inline-block ml-2"></span>
+        </div>
+        <div class="col-sm-7">
           <h5><strong>Wedding CateringGive only World-class to your guests, your weddinf will make you shine</strong> </h5>
         </div>
+      </div>
+      <div class="row">
         <div class="col-md-3 offset-md-3 mt-3">
           <h5><strong>Food & Beverage</strong> </h5>
           <?php wp_nav_menu( array('theme_location' => 'menu_food_beverage') ); ?>
@@ -94,7 +106,7 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-center p-3">
           <div class="p-4 col-md-8 offset-md-2">
             <h5><strong>Have a #BestMiamiWedding inspired from our blog...</strong> </h5>
           </div>

@@ -6307,7 +6307,7 @@ h2 {
   line-height: 30px; }
 
 .btn {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #993399;
   border-radius: 22.5px 22.5px;
   letter-spacing: 0.7px;
@@ -6474,6 +6474,11 @@ li {
   width: 20px;
   top: 4px; }
 
+.navbar + div {
+  background: url(/wp-content/themes/rigo/public/40e1254e595305b1093009609f984011.jpg) repeat; }
+  .navbar + div a {
+    color: #58595b; }
+
 .navbar .nav-link {
   letter-spacing: 1.6px; }
 
@@ -6576,9 +6581,12 @@ li {
 #watermark-awards {
   background-image: url(/wp-content/themes/rigo/public/2b2b6c4c06aed095dc3e6fbeaebb1c90.png);
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center 15px;
+  background-size: contain;
+  background-position: center 150px;
   font-size: 17px; }
+  @media (max-width: 400px) {
+    #watermark-awards {
+      background-image: none; } }
   @media (max-width: 1024px) {
     #watermark-awards {
       background-size: contain; } }
@@ -6671,6 +6679,23 @@ li {
 
 #burgerliscios {
   content: url(/wp-content/themes/rigo/public/9c7c9ae099975025c86fb15ce70eff89.svg); }
+
+#menu-award {
+  content: url(/wp-content/themes/rigo/public/7558844b05c7b99fb4e869196b1fd001.svg);
+  max-width: 120px !important; }
+
+#menu-award1 {
+  content: url(/wp-content/themes/rigo/public/bab9bf4e8acdc8dbff50b551003d47d7.svg);
+  max-width: 120px !important;
+  margin-bottom: 10px; }
+
+#menu-award2 {
+  content: url(/wp-content/themes/rigo/public/436697deeca43335f1c0ccf8ca6042c5.svg);
+  max-width: 120px !important; }
+
+#menu-award3 {
+  content: url(/wp-content/themes/rigo/public/0416ff83d9c0175cb1414a01e9ce73a5.svg);
+  max-width: 120px !important; }
 
 #arrow-down {
   content: url(/wp-content/themes/rigo/public/a097d53d24ab4893898e72f57c7ebdff.svg);
@@ -7489,4 +7514,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.201ac0ddb49aafb02b5c.css.map*/
+/*# sourceMappingURL=index.3971f5cde358d4d53377.css.map*/
