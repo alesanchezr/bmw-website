@@ -6474,9 +6474,9 @@ li {
   width: 20px;
   top: 4px; }
 
-.navbar + div {
+.tab-content {
   background: url(/wp-content/themes/rigo/public/40e1254e595305b1093009609f984011.jpg) repeat; }
-  .navbar + div a {
+  .tab-content a {
     color: #58595b; }
 
 .navbar .nav-link {
@@ -6521,6 +6521,8 @@ li {
   @media (max-width: 1224px) {
     .sub-menu .nav-item {
       padding: 0px 5px; } }
+  .sub-menu .nav-item a {
+    color: #fce6f7 !important; }
   .sub-menu .nav-item:hover {
     background: #fce6f7; }
     .sub-menu .nav-item:hover a {
@@ -7078,9 +7080,8 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  width: 100%;
   border-radius: 0; }
-  .mazonri-gallery .img-mazonri div {
-    height: 300px; }
   .mazonri-gallery .img-mazonri img {
     visibility: hidden; }
 
@@ -7492,7 +7493,7 @@ input {
 
 .hover-effect {
   overflow: hidden; }
-  .hover-effect a.img-slide, .hover-effect .venue-thumb {
+  .hover-effect a.img-slide, .hover-effect .venue-thumb, .hover-effect a.img-mazonri {
     min-height: 300px;
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
@@ -7502,14 +7503,14 @@ input {
     transform: scale(1, 1);
     background-position: center; }
     @media (max-width: 767px) {
-      .hover-effect a.img-slide, .hover-effect .venue-thumb {
+      .hover-effect a.img-slide, .hover-effect .venue-thumb, .hover-effect a.img-mazonri {
         min-height: 200px; } }
 
-.hover-effect a.img-slide:hover, .hover-effect .venue-thumb:hover, a.img-mazonri:hover, .hover-effect .venue-thumb:hover {
+.hover-effect a.img-slide:hover, .hover-effect .venue-thumb:hover, a.img-mazonri:hover {
   -moz-transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1); }
-  .hover-effect a.img-slide:hover:before, .hover-effect .venue-thumb:hover:before, a.img-mazonri:hover:before, .hover-effect .venue-thumb:hover:before {
+  .hover-effect a.img-slide:hover:before, .hover-effect .venue-thumb:hover:before, a.img-mazonri:hover:before {
     content: ' ';
     height: 100%;
     width: 100%;
@@ -7518,4 +7519,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.ebcd7b89a03a347d02fa.css.map*/
+/*# sourceMappingURL=index.1fd9431003aee0f9df6c.css.map*/
