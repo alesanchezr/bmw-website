@@ -31,6 +31,7 @@ $publicPath = get_stylesheet_directory_uri();
 
 $asyncLoader = new WPASAsyncLoader([
     'manifest-url' => $publicPath.'/public/manifest.json',
+    'version' => 2,
     'debug' => true,
     'force-jquery' => true,
     'minify-html' => false,
@@ -104,3 +105,13 @@ function my_acf_google_map_api( $api ){
 }
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+$gfManager = new WPAS\GravityForm\WPASGravityForm([
+    
+    // if true you can add CSS classes to the submit form
+    'submit-button-class' => true, 
+    
+    //if true it will prepare the inputs for boptstrap
+    'bootstrap4-styles' => true
+    
+]);

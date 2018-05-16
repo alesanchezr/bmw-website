@@ -1,0 +1,38 @@
+.gform_body{
+    .gform_fields{padding: 0px;}
+    .gfield_label{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .ginput_container{ 
+        width: 100%; 
+        input, textarea{
+            width: 100%; 
+            padding: 5px;
+        }
+    }
+}
+.gform_footer{
+    input[type=submit]{
+        color: #ffffff !important;
+        background-color: #993399;
+        border-radius: 22.5px 22.5px !important;
+        letter-spacing: 0.7px;
+        border: 0px;
+        font-family: "Rufina", serif;
+        font-weight: bold;
+        vertical-align: middle;
+        padding: 13px 55px;
+        font-size: 15px;
+        width: 100%;
+    }
+}
+.ui-datepicker{
+    font-size: inherit;
+    background: inherit;
+    padding: 10px;
+    select{ width: 50%; }
+    .ui-datepicker-prev{ cursor: pointer; text-decoration: underline;}
+    .ui-datepicker-next{ float: right; cursor: pointer; text-decoration: underline;}
+    .ui-datepicker-calendar a{color: $color-footer-dark;}
+}

@@ -381,6 +381,7 @@ $('a[href*="#"]')
   .not('[href="#main"]')
   .not('[href="#sides"]')
   .not('[href="#a-360-tour"]')
+  .not('[href="#quote-modal"]')
   .click(function(event) {
     // On-page links
     if (
@@ -432,5 +433,15 @@ $('a[href*="#"]')
 		},
 		afterClose: function(){
 			$(".modal-menu").css('display','none');
+		}
+ 	});
+	$(".request-quote").animatedModal({
+ 		animatedIn: 'bounceInUp',
+ 		animatedOut: 'bounceOutDown',
+ 		beforeOpen: function() {
+			$("#quote-modal").toggleClass("show");
+		},
+		afterClose: function(){
+			$("#quote-modal").toggleClass('show');
 		}
  	});

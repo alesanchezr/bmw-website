@@ -12,7 +12,7 @@
 @import "img-svg";
 @import "logo";
 @import "modal";
-@import "modal";
+@import "gravityforms";
 @import "custom-modal";
 @import "google_maps";
 @import "views/home";
@@ -497,10 +497,9 @@ input{
 	    margin-top: 0;
 	}
 	.body-request {
-
-    margin-top: 0;
-    background-image: none!important;
-    color: $color-text-dark;
+	    margin-top: 0;
+	    background-image: none!important;
+	    color: $color-text-dark;
 	}
 	.body-request {
 		font-size: 16px;

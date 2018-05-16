@@ -2,6 +2,7 @@
 namespace Rigo\Controller;
 use Rigo\Types\Course;
 use Rigo\Types\PressAward;
+use Rigo\Types\Venue;
 class PressAwardController{
     
     public function getSinglePressAwardState(){

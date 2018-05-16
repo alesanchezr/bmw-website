@@ -24,35 +24,21 @@ get_header();
         <div class="col-lg-3 col-md-5 text-center align-top ml-auto">
           <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+3056624742">
             <h5 class="h8" >Call now! </h5>
-            <h5 class="h7">  305-662-4742</h5>
+            <h5 class="h7"> 305-662-4742</h5>
           </a>
         </div>
         <!-- FORM -->
         <div class="col-lg-5 col-md-7 pr-5 body-request mt-1 mr-auto">
-          <form>
-            <div class="form-inline-block">
-              <label class="mb-0" for="fullName">Full Name</label>
-              <input type="fullName" class="form-control mt-0 mb-2" id="" placeholder="Full Name">
-            </div>
-            <div class="form-inline-block">
-              <label class=" mb-0" for="phoneNumber">Phone Number</label>
-              <input type="phoneNumber" class="form-control mt-0 mb-2" id="" placeholder="Phone number">
-            </div>
-            <div class="form-inline-block">
-              <label class=" mb-0" for="email">Email</label>
-              <input type="email" class="form-control mt-0 mb-2" id="" placeholder="Email">
-            </div>
-            <div class="form-inline-block">
-              <label class=" mb-0" for="dayEven">Day of event</label>
-              <input type="dayEven" class="form-control mt-0 mb-2" id="" placeholder="Day of event">
-            </div>
-            <div class="form-inline-block mb-4">
-              <label  class=" mb-0" for="observation">Observation</label>
-              <textarea class="form-control mt-0 mb-0" id="observation" placeholder="Observation" rows="6"></textarea>
-              <a>0 de 60 max character.</a>
-            </div>
-            <button  class="btn form-control" type="button" name="button">Send</button>
-          </form>
+          <?php gravity_form( 
+                  $id_or_title = 3, 
+                  $display_title = false, 
+                  $display_description = false,
+                  $display_inactive = false, 
+                  $field_values = null, 
+                  $ajax = false, 
+                  $tabindex = 1, 
+                  $echo = true 
+                ); ?>
         </div>
       </div>
     </div>
