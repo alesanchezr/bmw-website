@@ -5,6 +5,7 @@ $args = wpas_get_view_data();
 <!DOCTYPE html>
 <html>
 <head>
+<?php get_template_part('partials/script','tagmanager-head'); ?>
 <title><?php wp_title(''); ?></title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,5 +13,6 @@ $args = wpas_get_view_data();
 <?php  wp_head(); ?>
 </head>
 <body>
-<?php get_template_part('partials/header','menu'); ?>
-<?php get_template_part('partials/menu','home'); ?>
+    <?php get_template_part('partials/script','tagmanager-body'); ?>
+    <?php get_template_part('partials/header','menu'); ?>
+    <?php get_template_part('partials/menu','home'); ?>
