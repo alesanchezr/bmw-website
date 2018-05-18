@@ -14,7 +14,9 @@
         "wpackagist-plugin/svg-support": "^2.3",
         "wpackagist-plugin/intuitive-custom-post-order": "^3.1",
         "wpackagist-plugin/wordpress-seo": "^7.4",
-        "wpackagist-plugin/tiny-compress-images": "^2.2"
+        "wpackagist-plugin/tiny-compress-images": "*",
+        "wpackagist-plugin/enhanced-media-library": "*",
+        "wpackagist-plugin/redirection": "*"
     },
     "autoload": {
         "psr-4": {
