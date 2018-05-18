@@ -9,9 +9,7 @@ class VenueController{
     $args = [];
     $args['venue'] = (array) get_queried_object();
     $args['venue'] = Venue::serialize($args['venue'],'big');
-    
     $args['menu-venues'] = Venue::getVenuesMenu();
-    
     $args['venue']['printStars'] = function ($decimalPoints){
       $decimalPoints = floatval($decimalPoints);
       $resultStr = '';
@@ -43,8 +41,11 @@ class VenueController{
     
     $args['page'] = (array) get_queried_object();
     
-    $query = Venue::all(['posts_per_page' => 15]);
-    $args['venue_list'] = $query -> posts;
+    $showExtra = (isset($_GET['extra']) ? true : false);
+    $query = Venue::all([
+      'posts_per_page' => ($showExtra) ? -1 : 15,
+    ]);
+    $args['venue_list'] = array_slice($query -> posts, ($showExtra) ? 15:0);
     $args['new_array_venue'] = array_map( function($venue){ 
       return Venue::serialize($venue, 'small');
     }, $args['venue_list']);

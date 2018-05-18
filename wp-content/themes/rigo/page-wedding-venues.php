@@ -55,6 +55,11 @@ get_header();
     
     <?php  }; ?>
   </div>
+  <?php if(!isset($_GET['extra'])){ ?>
+  <div class="text-center bg-light p-4 pb-0">
+    <p class="m-0"><a class="click-here" href="?extra">Show some aditional venues</a></p>
+  </div>
+  <?php } ?>
   <!--    -->
 <!-- AWARDA RECOGNITION -->
 <?php get_template_part('partials/awards','recognition'); ?>
