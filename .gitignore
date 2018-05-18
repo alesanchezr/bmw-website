@@ -90,12 +90,15 @@ Thumbs.db
 wp-content/plugins/*
 !wp-content/themes/
 
+wp-content/uploads/*
+
 # ignore these plugins
 wp-content/plugins/hello.php
 wp-content/plugins/akismet
-!wp-content/plugins/gm-virtual-pages
 !wp-content/plugins/gravityforms
-
+!wp-content/plugins/gravityformsactivecampaign
+!wp-content/plugins/gravityformszapier
+!wp-content/plugins/js_composer
 
 # ignore specific themes
 wp-content/themes/twenty*/
