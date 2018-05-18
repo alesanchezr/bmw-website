@@ -68,11 +68,11 @@ $args = wpas_get_view_data();
       </div>
     </div>
     
-    <div class="tab-pane menu-content fade text-center container p-3 active show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="tab-pane menu-content fade text-center container p-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
       <div class="row menu-list mt-5">
         <div class="col-sm-5">
           <span id="menu-award" class="logo d-inline-block"></span>
-          <span id="menu-award1" class="logo d-inline-block ml-2"></span>
+          <span id="menu-award2" class="logo d-inline-block ml-2"></span>
         </div>
         <div class="col-sm-7">
           <h5><strong>Wedding CateringGive only World-class to your guests, your weddinf will make you shine</strong> </h5>

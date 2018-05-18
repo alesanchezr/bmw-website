@@ -2,6 +2,7 @@
 *   Modules dependencies
 */
 @import "~bootstrap/scss/bootstrap";
+@import "sizes";
 @import "colors";
 @import "custom";
 @import "tipography";
@@ -12,7 +13,7 @@
 @import "img-svg";
 @import "logo";
 @import "modal";
-@import "modal";
+@import "gravityforms";
 @import "custom-modal";
 @import "google_maps";
 @import "views/home";
@@ -40,6 +41,7 @@ input{
 		text-decoration: none;
 	}
 }
+.bg-dark{ background: $color-footer-dark; color: white; }
 // CLASS
 @media (min-width: 34em) {
     .card-columns {
@@ -93,23 +95,28 @@ input{
 			margin-right: 10px;
 		}
 	}
-	input {
-		width: 350px !important;
-		height:30px;
-		font-size:12px;
-		border-radius: 0;
-		border: none;
+	.gfield{
+		@media (min-width: $size-lg) {
+			width: 200px;
+		}
+		@media (min-width: $size-xl) {
+			width: 300px;
+		}
+    }
+	.gfield_description.validation_message{
+		display: none;
 	}
-}
-//
-.submit{
-	font-size: 12px;
-	padding-left: 150px;
-	input{
-		height:30px;
-		font-size:10px;
-		border-radius: 0;
-	}
+    .gform_footer{
+		input[type=submit]{
+			padding: 7px 20px !important;
+			@media (min-width: $size-md) {
+				padding: 7px 40px !important;
+			}
+			@media (min-width: $size-lg) {
+				padding: 7px 55px !important;
+			}
+		}
+    }
 }
 //
 .card{
@@ -162,6 +169,13 @@ input{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+.wedding-packages-list{
+	.image-div{
+	  	@media (max-width: $size-sm) {
+	  	  height: 100px;
+	  	} 
+	}
 }
 //
 .img-center{
@@ -219,6 +233,7 @@ input{
 .jumbotron{
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 0;
 	background-position: center;
 	color: $color-text-light;
 	padding-top: 50px;
@@ -232,6 +247,7 @@ input{
 	&.jb-large{
 		background-repeat: no-repeat;
 		background-position-y: 15%;
+		background-radius: 0;
 		background-size: cover;
 		padding: 0;
 		margin: 0;
@@ -497,10 +513,9 @@ input{
 	    margin-top: 0;
 	}
 	.body-request {
-
-    margin-top: 0;
-    background-image: none!important;
-    color: $color-text-dark;
+	    margin-top: 0;
+	    background-image: none!important;
+	    color: $color-text-dark;
 	}
 	.body-request {
 		font-size: 16px;
@@ -571,6 +586,9 @@ input{
 		min-height: 300px;
 	    @media (max-width: 767px) {
 	        min-height: 200px;
+	    }
+	    @media (max-width: 400px) {
+	        min-height: 100px;
 	    }
 	    -moz-transition: all .5s;
 	    -webkit-transition: all .5s;

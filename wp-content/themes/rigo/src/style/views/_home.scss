@@ -2,12 +2,6 @@
     .card .img{
       .venue-thumb{
       	height: 450px;
-      	@media (max-width: 767px) {
-      	  height: 200px;
-      	}    
-      	@media (max-width: 1024px) {
-      	  height: 350px;
-      	}    
       }
     	padding: 0px;
     	margin: 0px;

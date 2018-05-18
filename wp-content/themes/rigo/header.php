@@ -12,16 +12,22 @@ $args = wpas_get_view_data();
  <?php  wp_head(); ?>
 </head>
 <body>
- <nav class="navbar navbar-dark mx-auto contact-navbar"  >
+ <nav class="navbar navbar-dark mx-auto contact-navbar navbar-expand"  >
     <div class="container">
-        <ul class="nav nav-tabs text-uppercase navbar-nav mr-auto">
+        <ul class="nav nav-tabs text-uppercase navbar-nav mr-auto d-none d-sm-block">
           <li class="nav-item p-0">
             <a class="nav-link" href="/">Home</a>
           </li>
         </ul>          
         <ul class="nav nav-tabs text-uppercase ml-auto navbar-nav">
           <li class="nav-item p-0">
-            <a id="phone-icon" class="nav-link text-right" href="#home">+1 305.6624742</a>
+            <a class="nav-link text-right" href="#">Contact us:</a>
+          </li>
+          <li class="nav-item p-0">
+            <a class="nav-link text-right" href="<?php echo get_permalink( get_page_by_path('contact-us' ) ); ?>">Email</a>
+          </li>
+          <li class="nav-item p-0">
+            <a id="phone-icon" class="nav-link text-right" href="tel:+13056624742">+1 305.6624742</a>
           </li>
         </ul>          
     </div>

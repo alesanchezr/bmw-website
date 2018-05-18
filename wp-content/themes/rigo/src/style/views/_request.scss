@@ -1,19 +1,38 @@
-.body-request{
+#quote-modal{
+  display: none;
+  &.show{
+    display: block;
+  }
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: $color-footer-dark;
   color: $color-text-light;
-  margin-top: 60px;
   font-size: 12px;
   &.contact{
     background-color: $color-footer-dark;
     margin: 0px !important;
     padding: 10px;
   }
+  .modal-header{
+    border-bottom: none;    
+    .close{
+      padding: 0; margin: 0;
+    }
+  }
+  .modal-content{
+    border-bottom: none;  
+  }
   input {
     font-size:10px;
   }
   textarea {
-height: 255px;
+    height: 255px;
     font-size: 10px;
     resize:none;
     border-radius: 0 !important;

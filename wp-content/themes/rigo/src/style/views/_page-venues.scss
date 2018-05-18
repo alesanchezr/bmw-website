@@ -1,8 +1,18 @@
+.card-deck{
+  .row.venue-row{
+  	@media (max-width: $size-sm) {
+  	  height: 110px;
+  	} 
+  }
+}
 .card-img-top.venue-thumb{
     width: 100%;
     height: 300px;
-  	@media (max-width: 767px) {
+  	@media (max-width: $size-md) {
   	  height: 200px;
+  	} 
+  	@media (max-width: $size-sm) {
+  	  height: 100px;
   	} 
     background-position: center;
     background-size:cover;

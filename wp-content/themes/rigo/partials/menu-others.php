@@ -21,7 +21,7 @@ $args = wpas_get_view_data();
      <ul class="nav nav-tabs container text-uppercase large navbar-nav  " id="myTab" role="tablist">
 
       <li class="nav-item p-2 ">
-        <a class="nav-link"  href="<?php echo get_permalink( get_page_by_path('home' ) ); ?>">Home</a>
+        <a class="nav-link"  href="/">Home</a>
         <hr class="m-0">
       </li>
       <li class="nav-item p-2">

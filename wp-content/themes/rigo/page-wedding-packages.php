@@ -6,7 +6,7 @@ get_header();
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
-  <div class="parent p-3 p-sm-0">
+  <div class="parent p-sm-0">
       <div class="jumbotron text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['package']['packages-img-banner'],'full')[0] ?>');">
           <div class="card logo medium mx-auto d-none d-sm-block">
               <span class="card-img-top mx-auto" id="bmw-logo"></span>
@@ -14,17 +14,13 @@ get_header();
           <div class="jb-text d-none d-sm-block">
             <h1 class="my-0 pb-3">Wedding Miami Packages for Miami</h1>
             <p class="p-2 mb-0">Pick a packages and start customizing your own wedding</p>
-            <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
+            <a href="#quote-modal" class="request-quote"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
             <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
           </div>
       </div>
   </div>
-  <div class="container-fluid d-sm-none d-block">
-    <h1 class="my-0">Wedding Miami Packages for Miami</h1>
-    <a class='click-here color-dark' style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" >
-      <h5>Call now</h5>
-      <h4>305 662 7442</h4>
-    </a>
+  <div class="container-fluid d-sm-none d-block text-center">
+    <h1 class="my-0 p-3">Wedding Miami Packages for Miami</h1>
     <hr>
     <ul class="nav nav-tabs  large navbar-nav  ">
       <?php for( $i= 0; $i< count($args['new_array_package']); $i++){ ?>

@@ -6271,6 +6271,10 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #dee2e6 !important; } }
 
 /*
+	@media (min-width: 48em) {
+	}
+*/
+/*
 *   Modules dependencies
 */
 body {
@@ -6607,14 +6611,14 @@ li {
 
 #phone-icon {
   position: relative;
-  padding: 0px 18px; }
+  padding: 7px 18px; }
   #phone-icon:before {
     content: url(/wp-content/themes/rigo/public/b522cc6c1188c98c9baa2bef0d59c2d2.svg);
     font-size: 80%;
     width: 10px !important;
     filter: invert(100%);
     position: absolute;
-    top: 3px;
+    top: 10px;
     right: 0; }
 
 #bacardi {
@@ -6693,7 +6697,8 @@ li {
 
 #menu-award2 {
   content: url(/wp-content/themes/rigo/public/436697deeca43335f1c0ccf8ca6042c5.svg);
-  max-width: 120px !important; }
+  max-width: 120px !important;
+  margin-bottom: 7px; }
 
 #menu-award3 {
   content: url(/wp-content/themes/rigo/public/0416ff83d9c0175cb1414a01e9ce73a5.svg);
@@ -6841,74 +6846,64 @@ li {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in; }
 
-.modalDialog {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 99999;
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none; }
+.gform_body .gform_fields {
+  padding: 0px; }
 
-.modalDialog:target {
-  opacity: 1;
-  pointer-events: auto; }
-
-.modalDialog > div {
+.gform_body .gfield_label {
   width: 100%;
-  height: 100%;
-  position: relative;
-  margin: auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in; }
+  margin-top: 10px; }
 
-.close {
-  font-family: 'Glyphicons Halflings';
-  color: #FFFFFF;
-  line-height: 25px;
-  position: absolute;
-  right: 20px;
-  text-align: center;
-  top: 10px;
-  width: 24px;
-  text-decoration: none; }
-  .close:hover {
-    color: #F1DBEA; }
+.gform_body .hidden_label label {
+  display: none; }
 
-.modalDialog {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 99999;
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none; }
+.gform_body .ginput_container {
+  width: 100%; }
+  .gform_body .ginput_container input, .gform_body .ginput_container textarea {
+    width: 100%;
+    padding: 5px; }
 
-.modalDialog:target {
-  opacity: 1;
-  pointer-events: auto; }
+.gform_footer input[type=submit] {
+  color: #ffffff !important;
+  background-color: #993399;
+  border-radius: 22.5px 22.5px !important;
+  letter-spacing: 0.7px;
+  border: 0px;
+  font-family: "Rufina", serif;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 7px 55px;
+  font-size: 12px;
+  width: 100%; }
 
-.modalDialog div {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in; }
+.gform_inline .gform_body {
+  display: inline-block; }
+
+.gform_inline .gform_footer {
+  display: inline-block; }
+
+.ui-datepicker {
+  font-size: inherit;
+  background: inherit;
+  padding: 10px; }
+  .ui-datepicker select {
+    width: 50%; }
+  .ui-datepicker .ui-datepicker-prev {
+    cursor: pointer;
+    text-decoration: underline; }
+  .ui-datepicker .ui-datepicker-next {
+    float: right;
+    cursor: pointer;
+    text-decoration: underline; }
+  .ui-datepicker .ui-datepicker-calendar a {
+    color: #58595b; }
+
+.validation_error {
+  background: #ffb8b8;
+  padding: 6px;
+  text-align: center; }
+
+.validation_message {
+  color: #ffb8b8; }
 
 .btn-close {
   position: fixed;
@@ -7000,36 +6995,46 @@ li {
   background-position: center center; }
   .home .card .img .venue-thumb {
     height: 450px; }
-    @media (max-width: 767px) {
-      .home .card .img .venue-thumb {
-        height: 200px; } }
-    @media (max-width: 1024px) {
-      .home .card .img .venue-thumb {
-        height: 350px; } }
 
 .home .card-middle-button {
   margin-top: -95px;
   position: relative;
   color: #ffffff; }
 
-.body-request {
+#quote-modal {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #58595b;
   color: #ffffff;
-  margin-top: 60px;
   font-size: 12px; }
-  .body-request.contact {
+  #quote-modal.show {
+    display: block; }
+  #quote-modal.contact {
     background-color: #58595b;
     margin: 0px !important;
     padding: 10px; }
-  .body-request input {
+  #quote-modal .modal-header {
+    border-bottom: none; }
+    #quote-modal .modal-header .close {
+      padding: 0;
+      margin: 0; }
+  #quote-modal .modal-content {
+    border-bottom: none; }
+  #quote-modal input {
     font-size: 10px; }
-  .body-request textarea {
+  #quote-modal textarea {
     height: 255px;
     font-size: 10px;
     resize: none;
     border-radius: 0 !important; }
-  .body-request .info {
+  #quote-modal .info {
     padding-top: 6rem !important; }
 
 .venue-layout img {
@@ -7062,14 +7067,21 @@ li {
     background: #fce6f7;
     color: #58595b !important; }
 
+@media (max-width: 576px) {
+  .card-deck .row.venue-row {
+    height: 110px; } }
+
 .card-img-top.venue-thumb {
   width: 100%;
   height: 300px;
   background-position: center;
   background-size: cover; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .card-img-top.venue-thumb {
       height: 200px; } }
+  @media (max-width: 576px) {
+    .card-img-top.venue-thumb {
+      height: 100px; } }
 
 .mazonri-gallery .hover-effect {
   height: 300px; }
@@ -7108,6 +7120,10 @@ input {
   .call-now a.phone-numer {
     font-size: 18px;
     text-decoration: none; }
+
+.bg-dark {
+  background: #58595b;
+  color: white; }
 
 @media (min-width: 34em) {
   .card-columns {
@@ -7149,20 +7165,22 @@ input {
     padding-top: 11px; }
     .social-media-bar .footer-socialmedia a {
       margin-right: 10px; }
-  .social-media-bar input {
-    width: 350px !important;
-    height: 30px;
-    font-size: 12px;
-    border-radius: 0;
-    border: none; }
-
-.submit {
-  font-size: 12px;
-  padding-left: 150px; }
-  .submit input {
-    height: 30px;
-    font-size: 10px;
-    border-radius: 0; }
+  @media (min-width: 992px) {
+    .social-media-bar .gfield {
+      width: 200px; } }
+  @media (min-width: 1200px) {
+    .social-media-bar .gfield {
+      width: 300px; } }
+  .social-media-bar .gfield_description.validation_message {
+    display: none; }
+  .social-media-bar .gform_footer input[type=submit] {
+    padding: 7px 20px !important; }
+    @media (min-width: 768px) {
+      .social-media-bar .gform_footer input[type=submit] {
+        padding: 7px 40px !important; } }
+    @media (min-width: 992px) {
+      .social-media-bar .gform_footer input[type=submit] {
+        padding: 7px 55px !important; } }
 
 .card {
   border: none;
@@ -7203,6 +7221,10 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+@media (max-width: 576px) {
+  .wedding-packages-list .image-div {
+    height: 100px; } }
 
 .img-center {
   margin: 0;
@@ -7247,6 +7269,7 @@ input {
 .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0;
   background-position: center;
   color: #ffffff;
   padding-top: 50px;
@@ -7258,6 +7281,7 @@ input {
   .jumbotron.jb-large {
     background-repeat: no-repeat;
     background-position-y: 15%;
+    background-radius: 0;
     background-size: cover;
     padding: 0;
     margin: 0; }
@@ -7505,6 +7529,9 @@ input {
     @media (max-width: 767px) {
       .hover-effect a.img-slide, .hover-effect .venue-thumb, .hover-effect a.img-mazonri {
         min-height: 200px; } }
+    @media (max-width: 400px) {
+      .hover-effect a.img-slide, .hover-effect .venue-thumb, .hover-effect a.img-mazonri {
+        min-height: 100px; } }
 
 .hover-effect a.img-slide:hover, .hover-effect .venue-thumb:hover, a.img-mazonri:hover {
   -moz-transform: scale(1.1, 1.1);
@@ -7519,4 +7546,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.1fd9431003aee0f9df6c.css.map*/
+/*# sourceMappingURL=index.068acdf5a84e441ce2e0.css.map*/

@@ -21,13 +21,13 @@ get_header();
     <div class="row sub-menu d-none d-sm-block venue-menu" >
     <div class="container">
       <ul class="container text-uppercase large text-center mx-auto"  role="tablist">
-        <a href="<?php echo get_permalink( get_page_by_path( get_the_title($_GET['postId']) ) ); ?>#generalInfo" >General Info</a>
+        <a href="<?php echo get_permalink( $args['venue']['ID'] ); ?>#generalInfo" >General Info</a>
         <a href="#venuesAreas">Venues areas</a>
         <?php if($args['venue']['venue-google-360-field'] != null) {?>
           <a id="a-360-tour" href="#animatedModal">360 tour</a>
         <?php } ?>
-        <a href="https://bmw-website-caenavgu.c9users.io/gallery/?postId=<?php $_GET['postId']; ?>&is_event=false">Gallery</a>
-        <a href="#location">Location</a>
+        <a href="<?php echo get_permalink( get_page_by_path('gallery' ) ); ?>?postId=<?php $_GET['postId']; ?>&is_event=false">Gallery</a>
+        <a href="<?php echo get_permalink( $args['venue']['ID'] ); ?>#location">Location</a>
         <?php /*if($args['venue']['venue-wedding']  != null) {*/?>
           <a href="<?php /*echo $args['venue']['venue-wedding'] */?>">Weddings</a>
         <?php /*}*/ ?>
