@@ -12,7 +12,7 @@
       </div>
       <div class="jb-button py-5">
         <!--<button class="btn btw-l align-text-bottom d-block mx-auto mb-4" role="button" data-toggle="modal" data-target="#openModal">Request a quote</button>-->
-        <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button type="button" class="btn btw-m">Request a quote</button></a>
+        <a href="#quote-modal" class="request-quote"><button type="button" class="btn btw-m">Request a quote</button></a>
 
       </div>
         <a class="d-none d-sm-block pb-1" href="#services"><span class="logo xsmall" id="arrow-down"></span></a>

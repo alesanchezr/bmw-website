@@ -9,13 +9,13 @@ $args = wpas_get_view_data();
 
 
 <div id="generalInfo">
-  <div class="parent d-none d-sm-block">
+  <div class="parent">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
       <div class="card logo medium mx-auto" id="bmw-logo">
       </div>
       <div class="jb-text d-block">
         <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
-        <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
+        <a href="#quote-modal" class="request-quote"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
         <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
       </div>
     </div>
@@ -43,20 +43,11 @@ $args = wpas_get_view_data();
       <div class="row container mx-auto my-5">
         <div class="col-md-7 px-4 p-sm-5 l">
           <div class="p-0 p-sm-3 max-h text-sm-right text-center pt-4">
-            <h1 class="d-sm-none d-block pb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
-            <div class="d-sm-none d-block text-left">
-              <a  class='click-here color-dark' style="text-decoration: none !important;"href="tel:+3056624742">
-                <p class="px-3">Call now</p>
-                <h2 class="d-sm-none d-block px-3">305 662 7442</h2>
-              </a>
-              <hr>
-            </div>
-
             <p class="card-text"><?php echo $args["venue"]["venue-description"]; ?></p>
           </div>
 
         </div>
-        <div class="col-12 col-md-5" id="watermark-awards">
+        <div class="col-12 col-md-5">
           <div class="p-0 p-sm-3 max-h text-left text-sm-center p-0 p-sm-3 d-none d-sm-block">
             <p>&nbsp;</p>
             <p class="card-text "><?php echo $args["venue"]["venue-capacity"]; ?></p>
@@ -121,7 +112,7 @@ $args = wpas_get_view_data();
           <!--</div>-->
           <!--MOVIL-->
           <div class="col-12 px-0 d-block d-sm-none" style="background-color: white;">
-            <div class="py-0 px-2 text-center">
+            <div class="pt-3 pb-2 px-2 text-center">
               <p class="h8 card-title"><?php echo $args["venue"]["post_title"]; ?></p>
               <h5> <strong></strong> </h5>
               <p><?php echo $args["venue"]["venue-address"]; ?></p>

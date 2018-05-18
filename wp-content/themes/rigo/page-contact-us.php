@@ -13,14 +13,14 @@ get_header();
         </div>
         <div class="jb-text d-block">
           <div class="container mx-auto">
-            <h1 class="my-0 px-5 mx-5 mb-3">Responsiveness is one of our main values,<br/> we guarantee you a response in less than 10min</h1>
+            <h1 class="my-0 px-5 mx-sm-5 mb-sm-3 mt-4 mt-sm-0">Responsiveness is one of our main values,<br/> we guarantee you a response in less than 10min</h1>
           </div>
         </div>
       </div>
     </div>
     <!-- END JUMBOTROM -->
-    <div class="container-fluid px-0">
-      <div class="row body-request contact m-5 p-5">
+    <div class="container-fluid bg-dark px-0">
+      <div class="row body-request contact p-5">
         <div class="col-lg-3 col-md-5 text-center align-top ml-auto">
           <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+3056624742">
             <h5 class="h8" >Call now! </h5>
@@ -28,7 +28,7 @@ get_header();
           </a>
         </div>
         <!-- FORM -->
-        <div class="col-lg-5 col-md-7 pr-5 body-request mt-1 mr-auto">
+        <div class="col-lg-5 col-md-7 pr-sm-5 body-request mt-1 mr-auto">
           <?php gravity_form( 
                   $id_or_title = 3, 
                   $display_title = false, 

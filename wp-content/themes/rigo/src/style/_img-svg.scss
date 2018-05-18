@@ -25,11 +25,11 @@
 #youtube{ content: url("../img/social-logo/youtube.svg"); }
 #phone-icon{
     position: relative;
-    padding: 0px 18px;
+    padding: 7px 18px;
     &:before{ 
         content: url("../img/social-logo/phone.svg"); 
         font-size: 80%; width: 10px !important; filter: invert(100%);
-        position: absolute; top: 3px;
+        position: absolute; top: 10px;
         right: 0;
     }
 }
@@ -61,7 +61,10 @@
     max-width: 120px !important; 
     margin-bottom: 10px;
 }
-#menu-award2{ content: url("../img/awards/award3.svg"); max-width: 120px !important; }
+#menu-award2{ 
+    content: url("../img/awards/award3.svg"); max-width: 120px !important; 
+    margin-bottom: 7px;
+}
 #menu-award3{ content: url("../img/awards/award4.svg"); max-width: 120px !important; }
 // SOME PARTNERS
 //

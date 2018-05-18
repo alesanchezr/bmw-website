@@ -13,7 +13,7 @@ get_header();
     </div>
     <div class="">
       <h1 class="mb-5">Miami Wedding Venues</h1>
-      <a class="request-quote" href="#quote-modal"><button class="btn btw-l align-text-bottom" href="./page.html" role="button">Request a quote</button></a><br>
+      <a class="request-quote" href="#quote-modal"><button class="btn btw-l align-text-bottom" role="button">Request a quote</button></a><br>
       <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
     </div>
   </div>
@@ -25,13 +25,13 @@ get_header();
   </div>
 </div>
 
-<div class="d-sm-none d-block text-center">
-  <h1>Wedding Venues</h1>
+<div class="p-4 p-sm-0 d-sm-none d-block text-center">
+  <h1>Miami Wedding Venues</h1>
 </div>
 <!-- CARD -->
   <div class="card-deck text-sm-center"> 
     <?php for ($x=0; $x< count($args['new_array_venue']); $x++){ ?>
-      <div class="row col-md-4  mx-auto p-1">
+      <div class="row venue-row col-md-4  mx-auto p-1">
         <div class="col-md-12 col-4 p-0 m-0 center-vertical-div hover-effect">
           <a href="<?php echo get_permalink( $args['new_array_venue'][$x]["id"] )?>">
             <div class="card-img-top venue-thumb" style="background-image: url(<?php echo $args['new_array_venue'][$x]['thumbnail'] ?>);"></div>

@@ -6,7 +6,7 @@ $args = wpas_get_view_data();
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
-  <div class="parent p-3 p-sm-0">
+  <div class="parent p-sm-0">
       <div class="jumbotron text-sm-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['package']['package-img-banner'],'full')[0] ?>')">
           <div class="card logo medium mx-auto d-none d-sm-block">
               <span class="card-img-top mx-auto" id="bmw-logo"></span>
@@ -19,10 +19,10 @@ $args = wpas_get_view_data();
   </div>
 <!-- CONTACT -->
   <!-- FORM -->
-  <div class="container-fluid body-request contact my-2 py-5">
+  <div class="container-fluid body-request contact my-2 py-5 d-none d-sm-block">
     <div class="row container mx-auto">
-      <div class="col-md-5 ml-5">
-        <div class="text-center ml-5 pl-5 pr-4">
+      <div class="col-sm-12 col-md-5 ml-md-5">
+        <div class="text-center ml-md-5 pl-md-5 pr-md-4">
           <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+3056624742">
             <h5 class="h8" >Call now! </h5>
             <h5 class="h7">  305-662-4742</h5>
@@ -31,7 +31,7 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <!--  -->
-      <div class=" col-md-6 pl-1">
+      <div class="col-sm-12 col-md-6 pl-1">
         <form class="ml-5">
           <div class="form-inline-block">
             <label class="mb-0" for="fullName">Full Name</label>
@@ -53,8 +53,8 @@ $args = wpas_get_view_data();
     </div>
   </div>
 <!-- END CONTACT -->
-<div class="d-sm-none d-block px-3">
-  <h1><?php echo $args["package"]["post_title"]; ?></h1>
+<div class="d-sm-none d-block p-3 text-center">
+  <h1><?php echo $args["package"]["post_title"]; ?> Wedding Package</h1>
       <p>maintaining the great Best Miami Award Winning Quiality. Sit back, relax, and enjoy the ride</p>
   <hr>
   <h1>Catering Experience</h1>
@@ -65,51 +65,51 @@ $args = wpas_get_view_data();
   </div>
 </div>
 <!-- HORIZONTAL CARD -->
-<section>
+<section class='wedding-packages-list'>
   <div class="card bg-1">
     <div class="row ">
-      <div class="col-md-6 px-3 py-sm-5 l">
+      <div class="col-md-6 px-3 py-sm-5 l order-2 order-md-1">
         <div class="card-block px-3 text-sm-center">
           <?php echo $args["package"]["package-card-1"]; ?>
         </div>
       </div>
-      <div class="col-md-6 image-div d-none d-sm-block" style="background-image:url('<?php echo wp_get_attachment_image_src( $args['package']['package-img-card-1'],'full')[0] ?>')">
+      <div class="col-md-6 image-div order-1 order-md-2" style="background-image:url('<?php echo wp_get_attachment_image_src( $args['package']['package-img-card-1'],'full')[0] ?>')">
       </div>
     </div>
   </div>
   <!--  -->
 <div class="card bg-2">
   <div class="row ">
-    <div class="col-md-6 px-3 p-sm-5 l">
+    <div class="col-md-6 px-3 p-sm-5 l order-2 order-md-1">
       <div class="card-block px-3  text-sm-center">
       <?php echo $args["package"]["package-card-2"]; ?>
       </div>
     </div>
-    <div class="col-md-6 image-div d-none d-sm-block px-3" style="background-image:url('<?php echo wp_get_attachment_image_src( $args['package']['package-img-card-2'],'full')[0] ?>')">
+    <div class="col-md-6 image-div px-3 order-1 order-md-2" style="background-image:url('<?php echo wp_get_attachment_image_src( $args['package']['package-img-card-2'],'full')[0] ?>')">
     </div>
   </div>
 </div>
   <!--  -->
 <div class="card bg-1">
   <div class="row ">
-    <div class="col-md-6 px-3 p-sm-5 l">
-      <div class="card-block px-3 text-sm-center d-none d-sm-block ">
+    <div class="col-md-6 px-3 p-sm-5 l order-2 order-md-1">
+      <div class="card-block px-3 text-sm-center">
         <?php echo $args["package"]["package-card-3"]; ?>
       </div>
     </div>
-    <div class="col-md-6 image-div d-none d-sm-block " style="background-image:url('<?php echo wp_get_attachment_image_src( $args['package']['package-img-card-3'],'full')[0] ?>')">
+    <div class="col-md-6 image-div order-1 order-md-2" style="background-image:url('<?php echo wp_get_attachment_image_src( $args['package']['package-img-card-3'],'full')[0] ?>')">
     </div>
   </div>
 </div>
   <!--  -->
   <div class="card bg-2">
     <div class="row ">
-      <div class="col-md-6 px-3 p-sm-5 l">
+      <div class="col-md-6 px-3 p-sm-5 l order-2 order-md-1">
         <div class="card-block px-3 pb-4 text-sm-center">
           <?php echo $args["package"]["package-card-4"]; ?>
         </div>
       </div>
-      <div class="col-md-6 image-div" style="background-image:url('<?php echo wp_get_attachment_image_src( $args['package']['package-img-card-4'],'full')[0] ?>')">
+      <div class="col-md-6 image-div order-1 order-md-2" style="background-image:url('<?php echo wp_get_attachment_image_src( $args['package']['package-img-card-4'],'full')[0] ?>')">
       </div>
     </div>
   </div>

@@ -14,7 +14,7 @@ get_header();
           <div class="jb-text d-none d-sm-block">
             <h1 class="my-0 pb-3">Top Miami Wedding Planners</h1>
             <p class="p-2 mb-0">Planner that we trust and recomend.</p>
-            <a href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>"><button class="btn btw-l align-text-bottom" role="button">Schedule a call with a planner</button></a><br>
+            <a href="#quote-modal" class="request-quote"><button class="btn btw-l align-text-bottom" role="button">Schedule a call with a planner</button></a><br>
             <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
           </div>
       </div>

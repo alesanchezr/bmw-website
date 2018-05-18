@@ -13,7 +13,7 @@ get_header();
     </div>
     <div class="">
       <h1 class="mb-5">Miami Wedding Churches</h1>
-      <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Request a quote</button><br>
+      <a class="btn btw-l align-text-bottom" href="#quote-modal" class="request-quote">Request a quote</a><br>
       <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
     </div>
   </div>

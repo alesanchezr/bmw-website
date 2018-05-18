@@ -3,6 +3,8 @@
     .gfield_label{
         width: 100%;
         margin-top: 10px;
+    }.hidden_label label{
+        display: none;
     }
     .ginput_container{ 
         width: 100%; 
@@ -22,9 +24,17 @@
         font-family: "Rufina", serif;
         font-weight: bold;
         vertical-align: middle;
-        padding: 13px 55px;
-        font-size: 15px;
+        padding: 7px 55px;
+        font-size: 12px;
         width: 100%;
+    }
+}
+.gform_inline{
+    .gform_body{
+        display: inline-block;
+    }
+    .gform_footer{
+        display: inline-block;
     }
 }
 .ui-datepicker{
@@ -35,4 +45,12 @@
     .ui-datepicker-prev{ cursor: pointer; text-decoration: underline;}
     .ui-datepicker-next{ float: right; cursor: pointer; text-decoration: underline;}
     .ui-datepicker-calendar a{color: $color-footer-dark;}
+}
+.validation_error{
+    background: $formValidationColor;
+    padding: 6px;
+    text-align: center;
+}
+.validation_message{
+    color: $formValidationColor;
 }

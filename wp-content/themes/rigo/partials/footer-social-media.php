@@ -14,17 +14,25 @@
         <a href="https://www.pinterest.com/bestmiaweddings/" class="p-1 click-here color-dark"><span class="logo social" id="pinterest"></span></a>
       </div>
       <div class="col-md-6">
-       <form class="form-inline">
-          <div class="col-md-12">
-            <p class="m-0" style="padding: 6px 12px;"> Sign Up to our newsletter</p>
+        <div class="row">
+          <div class="col-12"> 
+            Sign Up to our newsletter
           </div>
-          <div class="form-group col-md-9 mb-2">
-            <input type="password" class="form-control"  placeholder="Type your Email">
+        </div>
+        <div class="row">
+          <div class="col-12"> 
+          <?php gravity_form( 
+                  $id_or_title = 14, 
+                  $display_title = false, 
+                  $display_description = false,
+                  $display_inactive = false, 
+                  $field_values = null, 
+                  $ajax = false, 
+                  $tabindex = 1, 
+                  $echo = true 
+                ); ?>
           </div>
-          <div class="form-group col-md-3 mb-2 p-0">
-            <button type="submit" class="btn btw-s">Suscribe!</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>

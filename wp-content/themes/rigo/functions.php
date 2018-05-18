@@ -85,9 +85,9 @@ function updateVenueCPT( $args, $post_type ) {
 		return $args;
 	}
 	// Add additional Products CPT options.
-	$venueArgs = array(
+	$venueArgs = [
 		'taxonomies' => array( 'category' )
-	);
+	];
 	
 	
 	$args = array_merge( $args, $venueArgs );
@@ -112,6 +112,8 @@ $gfManager = new WPAS\GravityForm\WPASGravityForm([
     'submit-button-class' => true, 
     
     //if true it will prepare the inputs for boptstrap
-    'bootstrap4-styles' => true
+    'bootstrap4-styles' => true,
+    
+    'hide-labels' => true
     
 ]);

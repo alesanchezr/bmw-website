@@ -5,27 +5,27 @@ get_header();
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
-<div class="parent d-none d-sm-block">
+<div class="parent">
   <div class="jumbotron text-center my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>');">
     <div class="card logo medium mx-auto">
       <span class="card-img-top mx-auto" id="bmw-logo"></span>
     </div>
     <div class="">
       <h1 class="mb-5"><?php echo $args['wp_query']['name'];  ?></h1>
-      <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('request-quote' ) ); ?>">Request a quote</a><br>
+      <a class="btn btw-l align-text-bottom" href="#quote-modal" class="request-quote">Request a quote</a><br>
       <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
     </div>
   </div>
 </div>
 <!-- END JUMBOTROM -->
-<div class="row subtitle-bar light ">
-  <div class="col-md-12 text-center py-5 d-none d-sm-block">
+<div class="row subtitle-bar light d-sm-block d-none">
+  <div class="col-md-12 text-center py-5">
     <h2><?php echo $args['wp_query']['description'];  ?></h2>
   </div>
 </div>
 
 <div class="d-sm-none d-block text-center">
-  <h1>Wedding Venues</h1>
+  <p class="p-4"><?php echo $args['wp_query']['description'];  ?></p>
 </div>
 <!-- CARD -->
   <div class="card-deck text-sm-center"> 

@@ -24,7 +24,7 @@ $args = wpas_get_view_data();
         <hr class="m-0">
       </li>
       <li class="nav-item p-2">
-        <a class="nav-link" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>">Miami Wedding Venue </a>
+        <a class="nav-link" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>">Miami Wedding Venues </a>
 
         <hr class="m-0">
 
