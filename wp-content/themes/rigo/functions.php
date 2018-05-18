@@ -117,3 +117,5 @@ $gfManager = new WPAS\GravityForm\WPASGravityForm([
     'hide-labels' => true
     
 ]);
+
+WPAS\Messaging\WPASAdminNotifier::loadTransientMessages();
