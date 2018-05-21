@@ -23,9 +23,9 @@ $args = wpas_get_view_data();
     <div class="row container mx-auto">
       <div class="col-sm-12 col-md-5 ml-md-5">
         <div class="text-center ml-md-5 pl-md-5 pr-md-4">
-          <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+3056624742">
+          <a  class='click-here' style="text-decoration: none !important;"href="tel:+3056624742">
             <h5 class="h8" >Call now! </h5>
-            <h5 class="h7">  305-662-4742</h5>
+            <h5 class="h7">305-662-4742</h5>
           </a>
           <p>to request more information and pricing or fill the follow form: </p>
         </div>

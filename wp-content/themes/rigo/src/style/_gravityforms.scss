@@ -42,9 +42,25 @@
     background: inherit;
     padding: 10px;
     select{ width: 50%; }
-    .ui-datepicker-prev{ cursor: pointer; text-decoration: underline;}
-    .ui-datepicker-next{ float: right; cursor: pointer; text-decoration: underline;}
+    .ui-datepicker-prev, .ui-datepicker-next{ 
+        font-size: 75%;
+        margin-bottom: 10px;    
+        cursor: pointer; text-decoration: underline;
+        position: absolute; top: 3px;
+    }
+    .ui-datepicker-prev{  left: 10px; }
+    .ui-datepicker-next{  right: 10px; }
+    .ui-datepicker-title{ margin-top: 15px; }
     .ui-datepicker-calendar a{color: $color-footer-dark;}
+    .ui-datepicker-calendar td{
+        background: #fff2fc;
+        border: 3px solid $color-background-light;
+        text-align: center;
+        font-size: 80%;
+    }
+    .ui-datepicker-calendar td:hover{
+        background: white;
+    }
 }
 .validation_error{
     background: $formValidationColor;

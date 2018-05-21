@@ -106,6 +106,17 @@ function my_acf_google_map_api( $api ){
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
+function form_tag( $form_tag, $form ) {
+    //echo '<div class="alert alter-danger">hello</div>'; die();
+    if ( $form['id'] != 3 ) {
+        //not the form whose tag you want to change, return the unchanged tag
+        return $form_tag;
+    }
+    $form_tag = preg_replace( "|action='(.*?)'|", 'action="$1#quote-modal"', $form_tag );
+    return $form_tag;
+}
+add_filter( 'gform_form_tag', 'form_tag', 10, 2 );
+
 $gfManager = new WPAS\GravityForm\WPASGravityForm([
     
     // if true you can add CSS classes to the submit form

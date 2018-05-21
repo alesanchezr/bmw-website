@@ -57,11 +57,11 @@ get_header();
               <p class=" "><?php echo $args['new_array_planner'][$j]["experience"]; ?> years in the industry</p>
             </div>
           <!--</div>-->
-            <div class="tab-content p-3">
+            <div class="p-3">
               <p class="card-text text-center p-3 align-top"><?php echo $args['new_array_planner'][$j]["description"]; ?></p>
             </div>
           </div>
-            <div class="tab-content text-center pb-3 pt-0">
+            <div class="text-center pb-3 pt-0">
               <a href="<?php echo get_permalink( $args['new_array_planner'][$j]["id"] )?>"><small class="click-here">Read more</small></a>
             </div>
         </div>
@@ -94,8 +94,8 @@ get_header();
       </div>
     </div>
     <div class='row px-5' >
-      <div class='col-md-2 px-0'>
-        <img class="" src="<?php echo wp_get_attachment_image_src($args['planners']['planners-logo'],'full')[0] ?>" alt="First slide"> </img>
+      <div class='col-12 px-0'>
+        <img class="logo" style="max-width: 100px;" src="<?php echo wp_get_attachment_image_src($args['planners']['planners-logo'],'full')[0] ?>" alt="First slide"> </img>
       </div>
       <div class='col-md-10 px-5'>
         <?php echo $args['planners']['planners-benefits'] ?>

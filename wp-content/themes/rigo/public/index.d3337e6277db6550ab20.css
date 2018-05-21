@@ -6887,15 +6887,28 @@ li {
   padding: 10px; }
   .ui-datepicker select {
     width: 50%; }
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    font-size: 75%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    position: absolute;
+    top: 3px; }
   .ui-datepicker .ui-datepicker-prev {
-    cursor: pointer;
-    text-decoration: underline; }
+    left: 10px; }
   .ui-datepicker .ui-datepicker-next {
-    float: right;
-    cursor: pointer;
-    text-decoration: underline; }
+    right: 10px; }
+  .ui-datepicker .ui-datepicker-title {
+    margin-top: 15px; }
   .ui-datepicker .ui-datepicker-calendar a {
     color: #58595b; }
+  .ui-datepicker .ui-datepicker-calendar td {
+    background: #fff2fc;
+    border: 3px solid #fce6f7;
+    text-align: center;
+    font-size: 80%; }
+  .ui-datepicker .ui-datepicker-calendar td:hover {
+    background: white; }
 
 .validation_error {
   background: #ffb8b8;
@@ -7101,10 +7114,8 @@ li {
   background-color: #e8daeb !important;
   border-radius: 30px; }
 
-.planners .card .card-body {
-  background: #F1DBEA; }
-  .planners .card .card-body .subtitle-bar p {
-    font-size: 80%; }
+.planners .card .card-body .subtitle-bar p {
+  font-size: 80%; }
 
 body {
   background-color: #fce6f7; }
@@ -7546,4 +7557,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.068acdf5a84e441ce2e0.css.map*/
+/*# sourceMappingURL=index.d3337e6277db6550ab20.css.map*/
