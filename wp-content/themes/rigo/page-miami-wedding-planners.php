@@ -88,8 +88,8 @@ get_header();
     <!-- JUMBOTROM -->
 <div class="jumbotron text-dark jb-medium my-0 p-5 d-none d-md-block" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['planners']['planners-img-banner-2'],'full')[0] ?>');">
   <div class="container text-center px-5 py-0">
-    <div class='row p-5 mx-5 mb-2'>
-      <div class='col-md-12 text-center px-5 mx-5 '>
+    <div class='row px-5 mb-2'>
+      <div class='col-md-12 text-center'>
         <?php echo $args['planners']['planners-description'] ?>
       </div>
     </div>

@@ -30,7 +30,7 @@ get_header();
         <!-- FORM -->
         <div class="col-lg-5 col-md-7 pr-sm-5 body-request mt-1 mr-auto">
           <?php gravity_form( 
-                  $id_or_title = 3, 
+                  $id_or_title = get_option('contactus_form_id'), 
                   $display_title = false, 
                   $display_description = false,
                   $display_inactive = false, 

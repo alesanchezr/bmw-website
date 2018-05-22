@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col-12"> 
           <?php gravity_form( 
-                  $id_or_title = 13, 
+                  $id_or_title = get_option('newsletter_signup_form'), 
                   $display_title = false, 
                   $display_description = false,
                   $display_inactive = false, 

@@ -6,13 +6,13 @@ get_header();
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
 <div class="parent">
-  <div class="jumbotron text-center my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>');">
+  <div class="jumbotron text-center my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['background-banner'],'full')[0] ?>');">
     <div class="card logo medium mx-auto">
       <span class="card-img-top mx-auto" id="bmw-logo"></span>
     </div>
     <div class="">
       <h1 class="mb-5"><?php echo $args['wp_query']['name'];  ?></h1>
-      <a class="btn btw-l align-text-bottom" href="#quote-modal" class="request-quote">Request a quote</a><br>
+      <a class="btn btw-l align-text-bottom request-quote" href="#quote-modal">Request a quote</a><br>
       <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
     </div>
   </div>

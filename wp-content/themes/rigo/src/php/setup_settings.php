@@ -1,0 +1,65 @@
+<?php
+
+	$apiFields = [
+    	[ // In this example we have a select field to enable/disable mantainance mode
+		    'type' => 'text', 
+		    'label' => 'Google Maps',
+		    'name' => 'google_maps_api_key',
+			'description' => 'Generate your google maps key'
+		]
+	];
+	$gravityForms = getGravityForms();
+	$formFields = [
+    	[ // In this example we have a select field to enable/disable mantainance mode
+		    'type' => 'select', 
+		    'label' => 'Request Quote form',
+		    'name' => 'request_quote_form_id',
+			'options' => $gravityForms,
+		],
+    	[ // In this example we have a select field to enable/disable mantainance mode
+		    'type' => 'select', 
+		    'label' => 'Contact Us form',
+		    'name' => 'contactus_form_id',
+			'options' => $gravityForms,
+		],
+    	[ // In this example we have a select field to enable/disable mantainance mode
+		    'type' => 'select', 
+		    'label' => 'Single Package Form',
+		    'name' => 'single_package_form_id',
+			'options' => $gravityForms,
+		],
+    	[ // In this example we have a select field to enable/disable mantainance mode
+		    'type' => 'select', 
+		    'label' => 'Single Planners form',
+		    'name' => 'single_planners_form_id',
+			'options' => $gravityForms,
+		],
+    	[ // In this example we have a select field to enable/disable mantainance mode
+		    'type' => 'select', 
+		    'label' => 'Newsletter',
+		    'name' => 'newsletter_signup_form',
+			'options' => $gravityForms,
+		]
+	];
+
+    $settings = new \WPAS\Settings\WPASThemeSettingsBuilder([
+        'general' => [
+			'description' => 'Best Miami Weddings Options',
+			'menu_slug' => 'ps_theme_options',
+			'menu_title' => 'Theme Settings'
+        ],
+		'settingsID' => 'wp_theme_settings',
+		'settingFields' => array('wp_theme_settings_title'), 
+		'tabs' => [
+			'apis' => ['text' => 'APIs', 'dashicon' => 'dashicons-admin-page', 'tabFields' => $apiFields],
+			'forms' => ['text' => 'Forms', 'dashicon' => 'dashicons-feedback', 'tabFields' => $formFields],
+		]
+    ]);
+    
+    
+    function getGravityForms(){
+        $forms = GFAPI::get_forms();
+        $options = [];
+        foreach($forms as $f) $options[$f['id']] = $f['title'];
+        return $options;
+    }

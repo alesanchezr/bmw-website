@@ -129,15 +129,15 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <div class="card bg-1">
-        <div class="row tab-content d-none d-sm-flex">
-          <div class="col-md-4 p-5  text-center tab-content">
+        <div class="row d-none d-sm-flex">
+          <div class="col-md-4 p-5  text-center">
             <h5> <strong>Acommodations</strong> </h5>
             <br>
             <ul class="p-0">
               <?php echo $args["venue"]["venue-acommodations"]; ?>
             </ul>
           </div>
-          <div class="col-md-4 p-5 l text-center tab-content">
+          <div class="col-md-4 p-5 l text-center">
             <h5> <strong>Parking</strong> </h5>
             <br>
             <p><?php echo $args["venue"]["venue-parking"]; ?></p>
@@ -237,17 +237,17 @@ $args = wpas_get_view_data();
 
         <div class="card bg-2 d-none d-sm-block">
           <div class="row">
-            <div class="col-md-4 p-5 text-center tab-content">
+            <div class="col-md-4 p-5 text-center">
               <h5> <strong>The Pro's</strong> </h5>
               <br>
               <p></p><?php echo $args["venue"]["venue-pros"]; ?></p>
             </div>
-            <div class="col-md-4 p-5 text-center tab-content">
+            <div class="col-md-4 p-5 text-center">
               <h5> <strong>The Con's</strong> </h5>
               <br>
               <p></p><?php echo $args["venue"]["venue-cons"]; ?></p>
             </div>
-            <div class="col-md-4 p-5 text-center tab-content">
+            <div class="col-md-4 p-5 text-center">
               <h5> <strong>The Bottom Half</strong> </h5>
               <br>
               <p></p><?php echo $args["venue"]["venue-bottom-half"]; ?></p>

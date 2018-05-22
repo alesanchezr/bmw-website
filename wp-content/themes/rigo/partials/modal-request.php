@@ -34,7 +34,7 @@
         <!-- FORM -->
         <div class="col-md-6 mb-4">
             <?php gravity_form( 
-                    $id_or_title = 3, 
+                    $id_or_title = get_option('request_quote_form_id'), 
                     $display_title = false, 
                     $display_description = false,
                     $display_inactive = false, 

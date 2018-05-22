@@ -38,23 +38,16 @@ $args = wpas_get_view_data();
       </div>
       <!--  -->
       <div class=" col-md-6 pl-1">
-        <form class="ml-5">
-          <div class="form-inline-block">
-            <label class="mb-0" for="fullName">Full Name</label>
-            <input type="fullName" class="form-control mt-0 mb-2" id="" placeholder="Full Name">
-          </div>
-          <div class="form-inline-block">
-            <label class=" mb-0" for="phoneNumber">Phone Number</label>
-            <input type="phoneNumber" class="form-control mt-0 mb-2" id="" placeholder="Phone number">
-          </div>
-          <div class="form-inline-block">
-            <label class=" mb-0" for="email">Email</label>
-            <input type="email" class="form-control mt-0 mb-1" id="" placeholder="Email">
-          </div>
-          <div class="form-inline-block pt-5">
-            <button  class="btn form-control light-background" type="button" name="button">Request Callback</button>
-          </div>
-        </form>
+        <?php gravity_form( 
+          $id_or_title = get_option('single_planners_form_id'), 
+          $display_title = false, 
+          $display_description = false,
+          $display_inactive = false, 
+          $field_values = null, 
+          $ajax = false, 
+          $tabindex = 1, 
+          $echo = true 
+        ); ?>
       </div>
     </div>
   </div>

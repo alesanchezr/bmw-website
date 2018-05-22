@@ -20,6 +20,8 @@ require('src/php/setup_api.php');
 //including any monolitic tempaltes
 require('src/php/setup_templates.php');
 
+require('src/php/setup_settings.php');
+
 //
 require('src/php/ThemeConfig.php');
 $config = new ThemeConfig();
@@ -50,7 +52,8 @@ $asyncLoader = new WPASAsyncLoader([
     ],
     'scripts' => [
             "page" => [ "all" => ['main.js'] ],
-            "custom-post" => [ "all" => ['main.js'] ]
+            "custom-post" => [ "all" => ['main.js'] ],
+            "category" => [ "all" => ['main.js'] ]
         ]
     ]);
      
@@ -98,7 +101,7 @@ add_filter( 'register_post_type_args', 'updateVenueCPT', 10, 2 );
 
 function my_acf_google_map_api( $api ){
 	
-	$api['key'] = GOOGLE_MAPS_KEY;
+	$api['key'] = get_option('google_maps_api_key');
 	
 	return $api;
 	

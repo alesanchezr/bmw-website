@@ -32,6 +32,7 @@ class CategoryController{
     
     
     $args['menu-venues'] = Venue::getVenuesMenu();
+    $args['background-banner'] = get_field('category_background_banner', $args['wp_query']['taxonomy'].'_'.$args['wp_query']['term_id']);
     return $args;
   }
   
