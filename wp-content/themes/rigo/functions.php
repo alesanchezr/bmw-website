@@ -38,6 +38,7 @@ $asyncLoader = new WPASAsyncLoader([
     'force-jquery' => true,
     'minify-html' => false,
     'styles' => [
+        "404" => ['all' => 'main.css'],
         "category" => [ 
           "all" => 'main.css'
         ],
@@ -52,6 +53,7 @@ $asyncLoader = new WPASAsyncLoader([
     ],
     'scripts' => [
             "page" => [ "all" => ['main.js'] ],
+            "404" => [ "all" => ['main.js'] ],
             "custom-post" => [ "all" => ['main.js'] ],
             "category" => [ "all" => ['main.js'] ]
         ]

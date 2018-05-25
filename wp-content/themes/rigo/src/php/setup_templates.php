@@ -20,6 +20,8 @@ $controller->route([ 'slug' => 'Page:request-quote', 'controller' => 'RequestQuo
 $controller->route([ 'slug' => 'Page:wedding-catering-menu', 'controller' => 'CateringController:getSingleCateringState' ]);
 $controller->route([ 'slug' => 'Page:miami-wedding-planners', 'controller' => 'PlannerController:renderPagePlanner' ]);  
 $controller->route([ 'slug' => 'Page:gallery', 'controller' => 'GalleryController:getSingleGalleryState' ]);  
+$controller->route([ 'slug' => 'Page:all', 'controller' => 'GeneralController:renderGeneral' ]);  
+$controller->route([ 'slug' => '404:all', 'controller' => 'GeneralController:renderGeneral' ]);  
 
 $controller->route([ 'slug' => 'Single:venue', 'controller' => 'VenueController:getSingleVenueState' ]);  
 $controller->route([ 'slug' => 'Single:about-us', 'controller' => 'AboutUsController:getSingleAboutUsState' ]);  
