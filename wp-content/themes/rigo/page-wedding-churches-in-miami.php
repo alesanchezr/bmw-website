@@ -14,7 +14,7 @@ get_header();
     <div class="">
       <h1 class="mb-5">Miami Wedding Churches</h1>
       <a class="btn btw-l align-text-bottom request-quote" href="#quote-modal">Request a quote</a><br>
-      <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
+      <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1<?php echo get_option('phone_number'); ?>"><?php echo get_option('phone_number'); ?></a></p>
     </div>
   </div>
 </div>

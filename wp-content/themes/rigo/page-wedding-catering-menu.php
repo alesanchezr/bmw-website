@@ -15,7 +15,7 @@ get_header();
             <h1 class="my-0">Wedding Miami Packages for Miami</h1>
             <p class="p-2 mb-0">Pick a packages and start customizing your own wedding</p>
             <a href="#quote-modal" class="request-quote"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>
-            <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
+            <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1<?php echo get_option('phone_number'); ?>"><?php echo get_option('phone_number'); ?></a></p>
           </div>
       </div>
   </div>

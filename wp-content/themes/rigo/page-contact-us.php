@@ -22,9 +22,9 @@ get_header();
     <div class="container-fluid bg-dark px-0">
       <div class="row body-request contact p-5">
         <div class="col-lg-3 col-md-5 text-center align-top ml-auto">
-          <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+3056624742">
+          <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+1<?php echo get_option('phone_number'); ?>">
             <h5 class="h8" >Call now! </h5>
-            <h5 class="h7"> 305-662-4742</h5>
+            <h5 class="h7"><?php echo get_option('phone_number'); ?></h5>
           </a>
         </div>
         <!-- FORM -->

@@ -15,16 +15,16 @@ get_header();
             <h1 class="my-0 pb-3">Top Miami Wedding Planners</h1>
             <p class="p-2 mb-0">Planner that we trust and recomend.</p>
             <a href="#quote-modal" class="request-quote"><button class="btn btw-l align-text-bottom" role="button">Schedule a call with a planner</button></a><br>
-            <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1305 662 7442">305 662 7442</a></p>
+            <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1<?php echo get_option('phone_number'); ?>"><?php echo get_option('phone_number'); ?></a></p>
           </div>
       </div>
   </div>
   <!--MOBILE-->
   <div class="container-fluid d-sm-none d-block">
     <h1 class="my-0">Top Miami Wedding Planners</h1>
-    <a class='click-here color-dark' style="color:#993399; text-decoration: none !important;" href="tel:+1305 662 7442" >
+    <a class='click-here color-dark' style="color:#993399; text-decoration: none !important;" href="tel:+1<?php echo get_option('phone_number'); ?>" >
       <h5>Call now</h5>
-      <h4>305 662 7442</h4>
+      <h4><?php echo get_option('phone_number'); ?></h4>
     </a>
     <hr>
     <ul class="nav nav-tabs  large navbar-nav  ">

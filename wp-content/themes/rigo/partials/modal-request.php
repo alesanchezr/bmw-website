@@ -15,17 +15,17 @@
           </div>
           <div class="d-sm-none d-block text-center">
              <br>
-                <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+3056624742">
+                <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+<?php echo get_option('phone_number'); ?>">
                   <p class='h2'>Call now! </p>
-                  <p class='h2'>305-662-4742</p>
+                  <p class='h2'><?php echo get_option('phone_number'); ?></p>
                 </a>
                 <h5> to request more information and pricing</h5>
                 <h5>or fill the following form: </h5>
           </div>
           <div class="text-center info d-none d-sm-block">
-            <a style="text-decoration: none !important;"href="tel:+3056624742">
+            <a style="text-decoration: none !important;"href="tel:+<?php echo get_option('phone_number'); ?>">
             <h5>Call now! </h5>
-            <h5>305-662-4742</h5>
+            <h5><?php echo get_option('phone_number'); ?></h5>
             </a>
             <h5> to request more information and pricing</h5>
             <h5>or fill the following form: </h5>

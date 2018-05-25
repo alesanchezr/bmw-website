@@ -1,5 +1,13 @@
 <?php
 
+	$contactFields = [
+    	[ // In this example we have a select field to enable/disable mantainance mode
+		    'type' => 'text', 
+		    'label' => 'Phone Number',
+		    'name' => 'phone_number',
+			'description' => 'Company official phone number'
+		]
+	];
 	$apiFields = [
     	[ // In this example we have a select field to enable/disable mantainance mode
 		    'type' => 'text', 
@@ -53,6 +61,7 @@
 		'tabs' => [
 			'apis' => ['text' => 'APIs', 'dashicon' => 'dashicons-admin-page', 'tabFields' => $apiFields],
 			'forms' => ['text' => 'Forms', 'dashicon' => 'dashicons-feedback', 'tabFields' => $formFields],
+			'contact' => ['text' => 'Contact Info', 'dashicon' => 'dashicons-feedback', 'tabFields' => $contactFields],
 		]
     ]);
     

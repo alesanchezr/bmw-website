@@ -29,7 +29,7 @@ $args = wpas_get_view_data();
             <a class="nav-link text-right" href="<?php echo get_permalink( get_page_by_path('contact-us' ) ); ?>">Email</a>
           </li>
           <li class="nav-item p-0">
-            <a id="phone-icon" class="nav-link text-right" href="tel:+13056624742">+1 305.6624742</a>
+            <a id="phone-icon" class="nav-link text-right" href="tel:+1<?php echo get_option('phone_number'); ?>">+1<?php echo get_option('phone_number'); ?></a>
           </li>
         </ul>          
     </div>
