@@ -18,6 +18,7 @@ class ChurchController{
     $args['church']['church-layout-description'] = get_field('church-layout-description', $args['church']['ID']);
     $args['church']['church-bottom-half'] = get_field('church-bottom-half', $args['church']['ID']);
     $args['church']['church-google-maps'] = get_field('church-google-maps', $args['church']['ID']);
+    $args['church']['church-360-tour'] = get_field('church-360-tour', $args['church']['ID']);
     
     $args['menu-venues'] = Venue::getVenuesMenu();
 // IMAGES
@@ -42,8 +43,8 @@ class ChurchController{
       return [
       'id' => $church -> ID,
       'post_title' => $church -> post_title,
-      'thumbnail' =>  wp_get_attachment_image_src( get_field('church-img-banner', $church -> ID),'medium_large')[0], 
-      'address' =>  get_field('church-address', $church -> ID),
+      'thumbnail' =>  wp_get_attachment_image_src( get_field('church-thumbnail', $church -> ID),'medium_large')[0], 
+      'address' =>  get_field('church-small-address', $church -> ID),
       ];
     }, $args['church_list']);
     
