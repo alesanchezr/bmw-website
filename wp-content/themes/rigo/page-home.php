@@ -77,7 +77,7 @@
   <!--  -->
   <div class="row subtitle-bar py-sm-3">
     <div class="col-md-12 text-center padding-all">
-      <h2>Client's Testimonials</h2>
+      <h2>Client Testimonials</h2>
       <br class="d-sm-none d-block">
     </div>
   </div>

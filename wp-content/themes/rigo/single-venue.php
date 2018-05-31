@@ -131,7 +131,7 @@ $args = wpas_get_view_data();
       <div class="card bg-1">
         <div class="row d-none d-sm-flex">
           <div class="col-md-4 p-5  text-center">
-            <h5> <strong>Acommodations</strong> </h5>
+            <h5> <strong>Near by Acommodations</strong> </h5>
             <br>
             <ul class="p-0">
               <?php echo $args["venue"]["venue-acommodations"]; ?>

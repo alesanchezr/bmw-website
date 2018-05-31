@@ -19,6 +19,7 @@ class ChurchController{
     $args['church']['church-bottom-half'] = get_field('church-bottom-half', $args['church']['ID']);
     $args['church']['church-google-maps'] = get_field('church-google-maps', $args['church']['ID']);
     $args['church']['church-360-tour'] = get_field('church-360-tour', $args['church']['ID']);
+    $args['church']['church-wedding'] = get_field('church-wedding', $args['church']['ID']);
     
     $args['menu-venues'] = Venue::getVenuesMenu();
 // IMAGES

@@ -65,7 +65,7 @@ get_header();
   <!---->
     <div class="row subtitle-bar py-3 d-none d-md-block">
       <div class="col-md-12 text-center padding-all">
-        <h2>Client's Testimonials</h2>
+        <h2>Client Testimonials</h2>
       </div>
     </div>
   </div>

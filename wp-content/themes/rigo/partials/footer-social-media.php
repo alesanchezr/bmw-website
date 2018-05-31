@@ -16,7 +16,7 @@
       <div class="col-md-6">
         <div class="row">
           <div class="col-12"> 
-            Sign Up to our newsletter
+            Sign up to our newsletter
           </div>
         </div>
         <div class="row">

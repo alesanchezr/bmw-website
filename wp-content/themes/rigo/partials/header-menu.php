@@ -75,7 +75,7 @@ $args = wpas_get_view_data();
           <span id="menu-award2" class="logo d-inline-block ml-2"></span>
         </div>
         <div class="col-sm-7">
-          <h5><strong>Wedding CateringGive only World-class to your guests, your weddinf will make you shine</strong> </h5>
+          <h5><strong>Give only World-class to your guests, your wedding will make you shine</strong> </h5>
         </div>
       </div>
       <div class="row">
@@ -89,7 +89,7 @@ $args = wpas_get_view_data();
         </div>
         <div class="col-md-12">
           <div class="p-5">
-            <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</a><br>
+            <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-packages' ) ); ?>" role="button">View all packages</a><br>
           </div>
         </div>
       </div>
@@ -136,7 +136,7 @@ $args = wpas_get_view_data();
           
           <div class="col-md-12">
             <div class="p-5">
-              <a class="btn btw-l align-text-bottom" href="<?php echo get_permalink( get_page_by_path('wedding-venues-locations' ) ); ?>" role="button">View all venues</a><br>
+              <a class="btn btw-l align-text-bottom" href="https://blog.bestmiamiweddings.com" role="button">Read our blog</a><br>
             </div>
           </div>
         </div>

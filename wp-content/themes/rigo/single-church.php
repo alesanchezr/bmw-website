@@ -5,20 +5,6 @@ $args = wpas_get_view_data();
 <?php get_header(); ?>
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
-<!-- MENU VENUE-->
-  <div class="row sub-menu d-none d-sm-block" >
-    <div class="container">
-      <ul class="p-2 container text-uppercase large text-center m-auto"  role="tablist">
-        <a class=" p-2" href="" >General Info</a>
-        <a class=" p-2" href="">Venues areas</a>
-        <a class=" p-2" href="">360 tour</a>
-        <a class=" p-2" href="">Gallery</a>
-        <a class=" p-2" href="">Location</a>
-        <a class=" p-2" href="">weddings</a>
-      </ul>
-    </div>
-  <!-- JUMBOTROM -->
-  </div>
   <div class="parent d-none d-sm-block">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['church']['church-img-banner'],'full')[0] ?>')">
       <div class="card logo medium mx-auto">
@@ -33,6 +19,21 @@ $args = wpas_get_view_data();
     </div>
   </div>
   <!-- HORIZONTAL CARD -->
+  <div class="row sub-menu d-none d-sm-block venue-menu" >
+    <div class="container">
+      <ul class="container text-uppercase large text-center mx-auto"  role="tablist">
+        <a href="#generalInfo" >General Info</a>
+        <?php if($args['church']['church-360-tour'] != null) {?>
+          <a id="a-360-tour" href="#animatedModal">360 tour</a>
+        <?php } ?>
+        <a href="/gallery/?postId=<?php echo $args['church']['ID'] ?>">Gallery</a>
+        <a href="#location">Location</a>
+        <?php if($args['church']['church-wedding']  != null) {?>
+          <a href="<?php echo $args['church']['church-wedding'] ?>">Weddings</a>
+        <?php } ?>
+      </ul>
+    </div>
+  </div>
   <section>
     <div class="card bg-1">
       <div class="row ">
@@ -81,7 +82,6 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <!--  -->
-      <!--  -->
       <div class="card bg-2">
         <div class="row ">
           <div class="col-md-6 px-4 p-sm-5 l p-0 p-sm-3 d-none d-sm-block">
@@ -107,7 +107,7 @@ $args = wpas_get_view_data();
       <div class="card bg-1">
         <div class="row tab-content d-none d-sm-flex ">
           <div class="col-md-4 p-5  text-center tab-content">
-            <h5> <strong>Acommodations</strong> </h5>
+            <h5> <strong>Near by Acommodations</strong> </h5>
             <br>
             <ul>
               <?php echo $args["church"]["church-acommodations"]; ?>

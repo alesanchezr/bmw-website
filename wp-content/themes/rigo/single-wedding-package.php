@@ -116,7 +116,7 @@ $args = wpas_get_view_data();
   </div>
   <div class="row subtitle-bar py-3 ">
     <div class="col-md-12 text-sm-center p-sm-5">
-      <h2>Client's Testimonials</h2>
+      <h2>Client Testimonials</h2>
     </div>
   </div>
   <!-- CLIENT TESTIMONIALS -->

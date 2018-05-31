@@ -21,13 +21,13 @@
       </div>
       <div class="col-md-3 p-0 text-center">
         <span class="card-img-top mx-auto d-none d-md-block" id="bmw-logo"></span>
-        <p class="my-2 py-0">Work with the best,<br /> our reputation precede us</p>
+        <p class="my-2 py-0">Work with the best,<br /> our reputation precedes us</p>
           <span class="svg-inline--fa fa-star" id="star"></span>
           <span class="svg-inline--fa fa-star" id="star"></span>
           <span class="svg-inline--fa fa-star" id="star"></span>
           <span class="svg-inline--fa fa-star" id="star"></span>
           <span class="svg-inline--fa fa-star" id="star-half"></span>
-        <p class="my-2 py-0 mini-text">Average 4.8 rating within all avaiavle review systems, <a class="click-here color-light mini-text"href="">Learn more</a> </p>
+        <p class="my-2 py-0 mini-text">Average 4.8 rating within all avaiavle review systems, <a class="click-here color-light mini-text" href="<?php echo get_permalink( get_page_by_path('testimonials' ) ); ?>">Learn more</a> </p>
       </div>
     </div>
   </div>
