@@ -1,36 +1,7 @@
 li {
 	list-style-type: none;
 }
-// CLASS
-.menu-color{
-	background-color: $color-background-menu;
-	& a{
-		color: black ;
-	}
-}
 //
-.nav-tabs{
-	& .nav-link{
-		border: 0px solid transparent;
-		color: rgba(0, 0, 0, 1)!important;
-		&.active{
-			background-color: $color-menu-princial;
-
-		}
-	}
-}
-//
-.menu-aditional{
-
-}
-//
-.sub-menu{
-	background-color: $color-footer-dark;
-	&a{
-		color:blue;
-	}
-	a:hover { color: #fff !important; }
-}
 //
 .tab-content{
 	background-color:  $color-menu-princial

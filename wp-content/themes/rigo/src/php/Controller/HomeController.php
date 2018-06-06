@@ -16,6 +16,16 @@ class HomeController{
     $args['home']['home-description-packages'] = get_field('home-description-packages', $args['home']['ID']);
     $args['home']['home-img-banner-2'] = get_field('home-img-banner-2', $args['home']['ID']);
     $args['home']['home-description-banner-2'] = get_field('home-description-packages', $args['home']['ID']);
+    $sliderIds = get_field('background_slider_image_ids', $args['home']['ID']);
+    $slideObjects = array_map(function($img){ return trim($img); },explode(';', $sliderIds));
+    $args['home']['slideshow-images'] = [];
+    foreach($slideObjects as $obj){
+      $slideParts = array_map(function($img){ return trim($img); },explode(',', $obj));
+      $args['home']['slideshow-images'][] = [
+        'url' => $slideParts[0],
+        'color' => $slideParts[1]
+      ];
+    }
     
     $args['menu-venues'] = Venue::getVenuesMenu();
     

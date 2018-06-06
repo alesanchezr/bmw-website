@@ -59,6 +59,37 @@ $(document).ready(function(){
 	$(".request-quote, #quote-modal .close").click(function(){
 		$("#quote-modal").toggleClass("show");
  	});
+ 	
+ 	const slider = document.querySelector('.home-image-slider');
+ 	if(typeof slider != 'undefined' || slider){
+ 		slider.classList.add('fade');
+ 		const LIs = document.querySelectorAll('.home-image-slider li');
+ 		let images = [];
+ 		LIs.forEach(function(li){
+ 			images.push({
+ 				url: li.getAttribute('slide-url'),
+ 				color: li.getAttribute('slide-color')
+ 			});
+ 		});
+ 		
+ 		let slideNumber = 0;
+ 		let parentElement = $(slider.getAttribute('data-for'));
+ 		let animationDuration = 1000;
+		parentElement.css("background-image", "url("+images[slideNumber].url+")");
+		parentElement.css("background-color", "#"+images[slideNumber].color);
+		slideNumber++;
+		setInterval(function(){
+			parentElement.animate({opacity: "0"}, animationDuration/2);
+			setTimeout(function(){
+				parentElement.css("background-image", "url("+images[slideNumber].url+")");
+				parentElement.css("background-color", "#"+images[slideNumber].color);
+				parentElement.animate({opacity: "1"}, animationDuration/2);
+				if(slideNumber>=images.length-1) slideNumber = 0;
+				else slideNumber++;
+			},animationDuration/2);
+		}, 7000);
+ 	}
+ 	
 	if(window.location.hash) {
 		var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
 		if(hash === 'quote-modal'){

@@ -1,0 +1,16 @@
+.home-image-slider{
+    display: none;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    opacity: 1;
+}
+
+#home-slider{
+    background: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+	@media (min-width: $size-md) {
+        background-size: contain;
+        max-height: 600px;
+	}
+}

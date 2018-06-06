@@ -8,12 +8,12 @@ get_header();
 <?php get_template_part('partials/menu','others'); ?>
   <div class="parent">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['gallery']['gallery-img-banner'],'full')[0] ?>')">
-      <div class="card logo medium mx-auto">
-        <span class="card-img-top mx-auto" id="bmw-logo"></span>
-      </div>
+      <!--<div class="card logo medium mx-auto">-->
+      <!--  <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>-->
+      <!--</div>-->
       <div class="jb-text d-block">
         <h1 class="my-0"><?php echo get_the_title($_GET['postId']) ?></h1>
-        <h1>Photos</h1>
+        <h2>Pictures and Photos</h2>
       </div>
     </div>
   </div>

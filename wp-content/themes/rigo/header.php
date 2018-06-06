@@ -14,24 +14,4 @@ $args = wpas_get_view_data();
 </head>
 <body>
     <?php get_template_part('partials/script','tagmanager-body'); ?>
- <nav class="navbar navbar-dark mx-auto contact-navbar navbar-expand"  >
-    <div class="container">
-        <ul class="nav nav-tabs text-uppercase navbar-nav mr-auto d-none d-sm-block">
-          <li class="nav-item p-0">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-        </ul>          
-        <ul class="nav nav-tabs text-uppercase ml-auto navbar-nav">
-          <li class="nav-item p-0">
-            <a class="nav-link text-right" href="#">Contact us:</a>
-          </li>
-          <li class="nav-item p-0">
-            <a class="nav-link text-right" href="<?php echo get_permalink( get_page_by_path('contact-us' ) ); ?>">Email</a>
-          </li>
-          <li class="nav-item p-0">
-            <a id="phone-icon" class="nav-link text-right" href="tel:+1<?php echo get_option('phone_number'); ?>">+1<?php echo get_option('phone_number'); ?></a>
-          </li>
-        </ul>          
-    </div>
-</nav>
- <?php get_template_part('partials/header','menu'); ?>
+    <?php get_template_part('partials/header','menu'); ?>

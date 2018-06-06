@@ -8,11 +8,11 @@ get_header();
   <!-- JUMBOTROM -->
   <div class="parent">
     <div class="jumbotron text-center my-0 " style="background-image: url('<?php echo wp_get_attachment_image_src( $args['about_us']['about_us-img-banner'],'full')[0] ?>');">
-      <div class="card logo medium mx-auto">
-        <span class="card-img-top mx-auto" id="bmw-logo"></span>
-      </div>
+      <!--<div class="card logo medium mx-auto">-->
+      <!--  <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>-->
+      <!--</div>-->
       <div class="jb-text d-block">
-        <div class="container px-5 mx-auto">
+        <div class="container mx-auto">
           <h1 class="my-0 text-center">It takes a great team to plan a memorable wedding.</h1>
         </div>
       </div>

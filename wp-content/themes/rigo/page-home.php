@@ -6,16 +6,21 @@
  <body>
   <!-- JUMBOTROM -->
   <div class="parent">
-    <div class="jumbotron jb-large text-center" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['home']['home-img-banner'],'full')[0] ?>');">
-      <div class="card logo medium mx-auto pb-5 pt-2">
-        <span class="card-img-top mx-auto" id="bmw-logo"></span>
+    <div id="home-slider" class="jumbotron jb-large text-center">
+      <ul class='home-image-slider' data-for="#home-slider">
+        <?php foreach($args['home']['slideshow-images'] as $img){ ?>
+        <li slide-url='<?php echo wp_get_attachment_image_src( $img['url'],'full')[0] ?>' slide-color='<?php echo $img['color']; ?>'></li>
+        <?php } ?>
+      </ul>
+      <div class="card logo medium mx-auto pb-5">
+        <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>
       </div>
-      <div class="jb-button py-5">
+      <div class="jb-button">
         <!--<button class="btn btw-l align-text-bottom d-block mx-auto mb-4" role="button" data-toggle="modal" data-target="#openModal">Request a quote</button>-->
         <a href="#quote-modal" class="request-quote"><button type="button" class="btn btw-m">Request a quote</button></a>
 
       </div>
-        <a class="d-none d-sm-block pb-1" href="#services"><span class="logo xsmall" id="arrow-down"></span></a>
+        <a class="d-none d-sm-block pb-1 mt-2" href="#services"><span class="logo xsmall" id="arrow-down"></span></a>
       </div>
     </div>
   </div>

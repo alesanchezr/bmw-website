@@ -8,9 +8,9 @@ get_header();
 <!-- JUMBOTROM -->
   <div class="parent p-sm-0">
       <div class="jumbotron text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['package']['packages-img-banner'],'full')[0] ?>');">
-          <div class="card logo medium mx-auto d-none d-sm-block">
-              <span class="card-img-top mx-auto" id="bmw-logo"></span>
-          </div>
+          <!--<div class="card logo medium mx-auto d-none d-sm-block">-->
+          <!--    <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>-->
+          <!--</div>-->
           <div class="jb-text d-none d-sm-block">
             <h1 class="my-0 pb-3">Wedding Miami Packages for Miami</h1>
             <p class="p-2 mb-0">Pick a packages and start customizing your own wedding</p>

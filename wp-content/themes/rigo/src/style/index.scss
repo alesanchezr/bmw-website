@@ -16,6 +16,8 @@
 @import "gravityforms";
 @import "custom-modal";
 @import "google_maps";
+@import "img_slider";
+@import "jumbo";
 @import "views/home";
 @import "views/request";
 @import "views/single-venue";
@@ -230,51 +232,6 @@ input{
 	width: 100%;
 }
 //
-.jumbotron{
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 0;
-	background-position: center;
-	color: $color-text-light;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	&.jb-xlarge{
-		background-repeat: no-repeat;
-		// background-position-y: 15%;
-		background-size: cover;
-		height: 500px;
-	}
-	&.jb-large{
-		background-repeat: no-repeat;
-		background-position-y: 15%;
-		background-radius: 0;
-		background-size: cover;
-		padding: 0;
-		margin: 0;
-	}
-	&.jb-medium{
-		background-repeat: no-repeat;
-		background-position-y: 45%;
-		background-size: cover;
-	}
-	.jb-button{
-		margin-top: 14em;
-	}
-	&.jb-award{
-		color: $color-text-dark;
-		padding: 0;
-		p{
-			font-size: 15px;
-		}
-	}
-	span{
-		outline-color: invert;
-	}
-	.m{
-		width: 70% !important;
-	}
-}
-//
 .floating-half{
 	width: 50%;
 	float: left;
@@ -482,7 +439,7 @@ input{
 	}
 	.jumbotron{
 		.jb-button{
-			margin-top: 9em;
+			padding-top: 8em;
 		}
 	}
 	.home{

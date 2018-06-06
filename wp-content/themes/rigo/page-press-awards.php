@@ -8,9 +8,9 @@ get_header();
 <!-- JUMBOTROM -->
   <div class="parent">
     <div class="jumbotron jb-xlarge text-center pt-4 pb-3 my-0 " style="background-image: url('<?php echo wp_get_attachment_image_src($args['press_award']['press_award-img-banner'],'full')[0] ?>');">
-      <div class="card logo medium mx-auto">
-        <span class="card-img-top mx-auto" id="bmw-logo"></span>
-      </div>
+      <!--<div class="card logo medium mx-auto">-->
+      <!--  <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>-->
+      <!--</div>-->
       <div class="jb-text d-block">
         <h1 class="my-0">Press & Awards</h1>
       </div>

@@ -8,13 +8,13 @@ get_header();
 <!-- JUMBOTROM -->
 <div class="parent d-none d-sm-block">
   <div class="jumbotron text-center my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>');">
-    <div class="card logo medium mx-auto">
-      <span class="card-img-top mx-auto" id="bmw-logo"></span>
-    </div>
-    <div class="">
+    <!--<div class="card logo medium mx-auto">-->
+    <!--  <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>-->
+    <!--</div>-->
+    <div class="jb-text">
       <h1 class="mb-5">Miami Wedding Venues</h1>
       <a class="request-quote" href="#quote-modal"><button class="btn btw-l align-text-bottom" role="button">Request a quote</button></a><br>
-      <p class="py-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1<?php echo get_option('phone_number'); ?>"><?php echo get_option('phone_number'); ?></a></p>
+      <p class="pt-3 h2 call-now" >or call now! <a class="phone-number" href="tel:+1<?php echo get_option('phone_number'); ?>"><?php echo get_option('phone_number'); ?></a></p>
     </div>
   </div>
 </div>
