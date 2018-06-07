@@ -16,11 +16,11 @@
     background-color: $color-button;
   }
   &:active{
-    background-color: $color-background-light;
+    background-color: $color-grey-super-light;
   }
   &.form-control{
       &:hover{
-        background-color: $color-background-light;
+        background-color: $color-grey-super-light;
         color: Black;
       }
       &.light-background{
@@ -54,18 +54,18 @@
 }
 .btn-navbar{
   color: $color-text-dark;
-  background-color: $color-navbar;
+  background-color: $color-grey-light;
   border: 0px;
   &:hover{
-    background-color:  $color-navbar;
+    background-color:  $color-grey-light;
     border: 0px;
   }
   &:focus{
-    background-color:  $color-navbar ;
+    background-color:  $color-grey-light ;
     border: 0px;
   }
   &:active{
-    background-color:  $color-navbar;
+    background-color:  $color-grey-light;
     border: 0px;
   }
 }

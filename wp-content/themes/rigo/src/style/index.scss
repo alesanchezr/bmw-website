@@ -28,7 +28,7 @@
 
 // TAGS
 body {
-	background-color: $color-background-light;
+	background-color: $color-grey-super-light;
 }
 a{
 	color: $color-text-light;
@@ -84,7 +84,7 @@ input{
 }
 //
 .social-media-bar{
-	background-color: $color-navbar;
+	background-color: $color-grey-light;
 	// height: 100px;
 	font-size:12px;
 	.social-media-logos{
@@ -130,10 +130,10 @@ input{
 		flex: none;
 	}
 	&.bg-1{
-		background-color: $color-background-light;
+		background-color: $color-grey-super-light;
 	}
 	&.bg-2{
-		background-color: $color-navbar;
+		background-color: $color-grey-light;
 	}
 	.card-img-top{
 		background-size: cover;
@@ -148,12 +148,12 @@ input{
 		}
 	}
 	.card-body{
-		background-color: $color-background-light;
+		background-color: $color-grey-super-light;
 		font-size: 15px;
 
 	}
 	.card-footer{
-		background-color: $color-background-light !important;
+		background-color: $color-grey-super-light !important;
 		border: none !important;
 	}
 }
@@ -247,14 +247,14 @@ input{
 }
 //
 .subtitle-bar{
-	background-color: $color-navbar;
+	background-color: $color-grey-light;
 	color: $color-text-dark;
 	&.dark{
 		background-color: $color-footer-dark;
 		color: $color-text-light;
 	}
 	&.light{
-		background-color: $color-background-light;
+		background-color: $color-grey-super-light;
 		color: $color-text-dark;
 	}
 	p{
@@ -449,7 +449,7 @@ input{
 	    }
 	}
 	.subtitle-bar{
-		background-color: $color-background-light;
+		background-color: $color-grey-super-light;
 	}
 	.footer-mobile{
 		background-color:$color-button;
@@ -459,11 +459,11 @@ input{
 	}
 	.card{
 		&.bg-2{
-			background-color: $color-background-light;
+			background-color: $color-grey-super-light;
 		}
 	}
 	.tab-content{
-	background-color:$color-background-light;
+	background-color:$color-grey-super-light;
 	}
 
 	.center-vertical-div {
@@ -513,7 +513,7 @@ input{
 	}
 }
 .tab-content-dark{
-	background-color:$color-navbar;
+	background-color:$color-grey-light;
 }
 .popoverText{font-size:16px};
 
