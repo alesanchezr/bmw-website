@@ -11,8 +11,8 @@ $args = wpas_get_view_data();
 <div id="generalInfo">
   <div class="parent">
     <div class="jumbotron  text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['venue']['venue-img-banner'],'full')[0] ?>')">
-      <div class="card logo medium mx-auto" id="bmw-logo">
-      </div>
+      <!--<div class="card logo medium mx-auto" id="bmw-logo">-->
+      <!--</div>-->
       <div class="jb-text d-block">
         <h1 class="mt-0 mb-4"><?php echo $args["venue"]["post_title"]; ?></h1>
         <a href="#quote-modal" class="request-quote"><button class="btn btw-l align-text-bottom" role="button">Get a fast a quote</button></a><br>

@@ -4,7 +4,10 @@
 }
 .navbar{
     font-size: 90%;
-	background-color: $color-grey-light;
+    background-color: $color-background-dark;
+    @media (min-width: $size-sm) {
+	    background-color: $color-grey-light;
+	}
     .navbar-brand{
         position: absolute;
         width: 160px;
@@ -27,7 +30,9 @@
 			background-color: $color-menu-princial;
 		}
         &:first-child{
-            margin-left: 160px;
+            @media (min-width: $size-sm) {
+                margin-left: 160px;
+    		}
         }
     }
     #contact-tab, #about-tab,#home-tab, #profile-tab{

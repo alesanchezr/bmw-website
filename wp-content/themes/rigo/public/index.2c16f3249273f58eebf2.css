@@ -6467,7 +6467,10 @@ li {
 
 .navbar {
   font-size: 90%;
-  background-color: #e0e1e2; }
+  background-color: #F1DBEA; }
+  @media (min-width: 576px) {
+    .navbar {
+      background-color: #e0e1e2; } }
   .navbar .navbar-brand {
     position: absolute;
     width: 160px;
@@ -6485,8 +6488,9 @@ li {
     color: #e0e1e2 !important; }
     .navbar .nav-item.active {
       background-color: #fce6f7; }
-    .navbar .nav-item:first-child {
-      margin-left: 160px; }
+    @media (min-width: 576px) {
+      .navbar .nav-item:first-child {
+        margin-left: 160px; } }
   .navbar #contact-tab, .navbar #about-tab, .navbar #home-tab, .navbar #profile-tab {
     margin-top: -8px;
     border-radius: 0px;
@@ -7566,4 +7570,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.a3248653f70c3714c294.css.map*/
+/*# sourceMappingURL=index.2c16f3249273f58eebf2.css.map*/
