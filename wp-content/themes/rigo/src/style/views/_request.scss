@@ -1,5 +1,6 @@
 #quote-modal{
   display: none;
+  z-index: 4;
   &.show{
     display: block;
   }
