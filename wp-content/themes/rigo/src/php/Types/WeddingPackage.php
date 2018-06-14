@@ -16,6 +16,15 @@ class WeddingPackage extends BasePostType{
         return $query;
     } 
     
+    public static function serialize($package){
+        return [
+            'id' => $package -> ID,
+            'post_title' => $package -> post_title,
+            'thumbnail' =>  wp_get_attachment_image_src( get_field('package-thumbnail', $package -> ID),'medium')[0], 
+            'description' =>  get_field('package-description', $package -> ID),
+        ];
+    }
+    
 }
 
 ?>

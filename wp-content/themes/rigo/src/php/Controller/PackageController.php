@@ -58,12 +58,7 @@ class PackageController{
         $query = WeddingPackage::all();
         $args['weddingPackage_list'] = $query -> posts;
         $args['new_array_package'] = array_map( function($package){ 
-            return [
-            'id' => $package -> ID,
-            'post_title' => $package -> post_title,
-            'thumbnail' =>  wp_get_attachment_image_src( get_field('package-thumbnail', $package -> ID),'medium')[0], 
-            'description' =>  get_field('package-description', $package -> ID),
-            ];
+            return WeddingPackage::serialize($package);
         }, $args['weddingPackage_list']);
         return $args;
     }

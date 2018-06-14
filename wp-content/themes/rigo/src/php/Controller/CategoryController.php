@@ -4,6 +4,7 @@ use Rigo\Types\Course;
 use Rigo\Types\AboutUs;
 use Rigo\Types\Testimonial;
 use Rigo\Types\Venue;
+use Rigo\Types\WeddingPackage;
 use WP_Query;
 
 class CategoryController{
@@ -22,12 +23,12 @@ class CategoryController{
         return Venue::serialize($post, 'small');
       }
       else if($post->post_type == 'church'){
-        return $post;
+        return Church::serialize($church);
       }
       else if($post->post_type == 'wedding-package'){
-        return $post;
+        return WeddingPackage::serialize($post);
       }
-      else return $post;
+      else return (array) $post;
     }, $query->posts);
     
     
