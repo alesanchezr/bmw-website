@@ -15,7 +15,7 @@ class CategoryController{
     $post_type = get_field('related_post_type', $args['wp_query']['taxonomy'].'_'.$args['wp_query']['term_id']);
     $query = new WP_Query([
       'post_type' => $post_type,
-      'cat' => 4
+      'cat' => $args['wp_query']['term_id']
     ]);
     $args['items'] = array_map(function($post){
       if($post->post_type == 'venue'){
