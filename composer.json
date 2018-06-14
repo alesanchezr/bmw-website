@@ -17,7 +17,9 @@
         "wpackagist-plugin/tiny-compress-images": "*",
         "wpackagist-plugin/enhanced-media-library": "*",
         "wpackagist-plugin/redirection": "*",
-        "wpackagist-plugin/unlist-posts": "^1.0"
+        "wpackagist-plugin/unlist-posts": "^1.0",
+        "zendframework/zenddiagnostics": "^1.0",
+        "guzzlehttp/guzzle": "^6.3"
     },
     "autoload": {
         "psr-4": {
