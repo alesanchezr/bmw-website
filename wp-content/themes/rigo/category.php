@@ -7,9 +7,9 @@ get_header();
 <!-- JUMBOTROM -->
 <div class="parent">
   <div class="jumbotron text-center my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['background-banner'],'full')[0] ?>');">
-    <div class="card logo medium mx-auto">
-      <span class="card-img-top mx-auto" id="bmw-logo"></span>
-    </div>
+    <!--<div class="card logo medium mx-auto">-->
+    <!--  <span class="card-img-top mx-auto" id="bmw-logo"></span>-->
+    <!--</div>-->
     <div class="">
       <h1 class="mb-5"><?php echo $args['wp_query']['name'];  ?></h1>
       <a class="btn btw-l align-text-bottom request-quote" href="#quote-modal">Request a quote</a><br>
@@ -32,7 +32,7 @@ get_header();
     <?php for ($x=0; $x< count($args['items']); $x++){ ?>
       <div class="row col-md-4  mx-auto p-1">
         <div class="col-md-12 col-4 p-0 m-0 center-vertical-div">
-          <a href="<?php echo get_permalink( $args['items'][$x]["id"] )?>">
+          <!--<a href="<?php echo get_permalink( $args['items'][$x]["id"] )?>">-->
             <div class="card-img-top venue-thumb" style="background-image: url(<?php echo $args['items'][$x]['thumbnail'] ?>);"></div>
           </a>
         </div>
