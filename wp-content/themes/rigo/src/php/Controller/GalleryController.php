@@ -7,11 +7,16 @@ class GalleryController{
   public function getSingleGalleryState(){
     
     $args = [];
+    $postId = null;
+    if(isset($_GET['postId'])) $postId = $_GET['postId'];
+    else if(isset($_GET['post_id'])) $postId = $_GET['post_id'];
+    
+    
     $args['gallery'] = (array) get_queried_object();
     $args['gallery']['gallery-img-banner'] = get_field('gallery-img-banner', $args['gallery']['ID']);
-    $args['gallery']['gallery-page-gallery'] = $this -> getPostGalley($_GET['postId']);
+    $args['gallery']['gallery-page-gallery'] = $this -> getPostGalley($postId);
     
-    $args['venue'] = (array) Venue::get($_GET['postId']);
+    $args['venue'] = (array) Venue::get($postId);
     $args['venue']['venue-google-360-field'] = get_field('venue-google-360-field', $args['venue']['ID']);
     
     $args['menu-venues'] = Venue::getVenuesMenu();

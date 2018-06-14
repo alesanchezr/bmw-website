@@ -12,7 +12,7 @@ get_header();
       <!--  <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>-->
       <!--</div>-->
       <div class="jb-text d-block">
-        <h1 class="my-0"><?php echo get_the_title($_GET['postId']) ?></h1>
+        <h1 class="my-0"><?php echo get_the_title($args['venue']['ID']) ?></h1>
         <h2>Pictures and Photos</h2>
       </div>
     </div>
@@ -26,7 +26,7 @@ get_header();
         <?php if($args['venue']['venue-google-360-field'] != null) {?>
           <a id="a-360-tour" href="#animatedModal">360 tour</a>
         <?php } ?>
-        <a href="<?php echo get_permalink( get_page_by_path('gallery' ) ); ?>?postId=<?php $_GET['postId']; ?>&is_event=false">Gallery</a>
+        <a href="<?php echo get_permalink( get_page_by_path('gallery' ) ); ?>?postId=<?php $args['venue']['ID']; ?>&is_event=false">Gallery</a>
         <a href="<?php echo get_permalink( $args['venue']['ID'] ); ?>#location">Location</a>
         <?php /*if($args['venue']['venue-wedding']  != null) {*/?>
           <a href="<?php /*echo $args['venue']['venue-wedding'] */?>">Weddings</a>
