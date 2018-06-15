@@ -33,4 +33,4 @@ $controller->route([ 'slug' => 'Single:planner', 'controller' => 'PlannerControl
 $controller->route([ 'slug' => 'Category:all', 'controller' => 'CategoryController:renderCategory' ]);  
 
 $controller->route([ 'slug' => 'Page:home', 'controller' => 'HomeController:getSingleHomeState' ]);  
-$controller->route([ 'slug' => 'home', 'controller' => 'HomeController:getSingleHomeState' ]);  
+$controller->route([ 'slug' => 'home', 'controller' => 'HomeController:genericRender' ]);  

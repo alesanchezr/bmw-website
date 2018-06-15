@@ -37,5 +37,11 @@ class HomeController{
             $args['testimonials'] );
     return $args;
   }
+  
+  public function genericRender(){
+    
+    $args = [];
+    return (array) get_queried_object();
+  }
    
 }?>
