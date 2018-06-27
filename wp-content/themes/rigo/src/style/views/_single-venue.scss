@@ -10,15 +10,27 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 300px;
+        border-radius: 0 !important;
         @media (max-width: 767px) {
             height: 200px;
         }
-        border-radius: 0;
         img{
             visibility: hidden;
         }
     }
+    // CLASS
+    @media (max-width: $size-sm) {
+        .card-columns {
+            height: inherit;
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            column-gap: 0;
+        }
+    }
+    
 }
+
 .venue-menu{
     ul{
         background: $color-footer-dark;

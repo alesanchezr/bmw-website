@@ -1,6 +1,6 @@
 <?php 
-$args = wpas_get_view_data();
-get_header(); 
+  $args = wpas_get_view_data();
+  get_header(); 
 ?>
 <!--MENU MOBILE-->
 <?php get_template_part('partials/menu','others'); ?>
@@ -13,7 +13,7 @@ get_header();
         <div class="jb-text d-block">
           <div class="container mx-auto">
             <h2 class="my-0 px-5 mx-sm-5 mb-sm-3 mt-4 mt-sm-0">Please forgive us, the website you are looking for is missing, continue to our website to enjoy all of our content. 
-		</h2>
+		        </h2>
           </div>
         </div>
       </div>
