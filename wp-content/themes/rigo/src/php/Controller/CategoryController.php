@@ -33,6 +33,9 @@ class CategoryController{
     
     
     $args['menu-venues'] = Venue::getVenuesMenu();
+    $args['wp_query']['category_h1'] = get_field('category_h1', $args['wp_query']['taxonomy'].'_'.$args['wp_query']['term_id']);
+    $args['wp_query']['category_h2'] = get_field('category_h2', $args['wp_query']['taxonomy'].'_'.$args['wp_query']['term_id']);
+    $args['wp_query']['category-template'] = get_field('category-template', $args['wp_query']['taxonomy'].'_'.$args['wp_query']['term_id']);
     $args['background-banner'] = get_field('category_background_banner', $args['wp_query']['taxonomy'].'_'.$args['wp_query']['term_id']);
     return $args;
   }

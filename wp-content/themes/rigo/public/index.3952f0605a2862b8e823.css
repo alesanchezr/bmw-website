@@ -6871,8 +6871,9 @@ li {
   font-family: "Rufina", serif;
   font-weight: bold;
   vertical-align: middle;
-  padding: 7px 55px;
+  padding: 10px 55px;
   font-size: 12px;
+  margin-top: 15px;
   width: 100%; }
 
 .gform_inline .gform_body {
@@ -7177,6 +7178,34 @@ li {
 
 .planners .card .card-body .subtitle-bar p {
   font-size: 80%; }
+
+.category-landing {
+  background: white; }
+  .category-landing .jumbo {
+    background-size: cover; }
+    .category-landing .jumbo .brand {
+      margin-top: 50px;
+      display: inline-block; }
+  .category-landing.category-landing-a a {
+    color: black; }
+  .category-landing.category-landing-a .jumbo .form-content {
+    background: rgba(84, 83, 64, 0.6);
+    padding: 30px; }
+  .category-landing.category-landing-b .right-side {
+    padding: 0px 30px;
+    color: white;
+    background: rgba(84, 83, 64, 0.6); }
+  .category-landing h1 {
+    font-size: 50px;
+    margin-top: 50px; }
+  .category-landing h2 {
+    font-size: 35px;
+    font-style: underline; }
+  .category-landing .call-now p {
+    font-size: 25px;
+    font-weight: 900; }
+  .category-landing .section-venues {
+    background: #efedee; }
 
 body {
   background-color: #efedee; }
@@ -7583,4 +7612,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.7c390eaa0eebc5608668.css.map*/
+/*# sourceMappingURL=index.3952f0605a2862b8e823.css.map*/

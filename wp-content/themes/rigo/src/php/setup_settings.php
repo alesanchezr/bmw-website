@@ -22,30 +22,35 @@
 		    'type' => 'select', 
 		    'label' => 'Request Quote form',
 		    'name' => 'request_quote_form_id',
+		    'description' => 'Use: request_quote_form_id',
 			'options' => $gravityForms,
 		],
     	[ // In this example we have a select field to enable/disable mantainance mode
 		    'type' => 'select', 
 		    'label' => 'Contact Us form',
 		    'name' => 'contactus_form_id',
+		    'description' => 'Use: contactus_form_id',
 			'options' => $gravityForms,
 		],
     	[ // In this example we have a select field to enable/disable mantainance mode
 		    'type' => 'select', 
 		    'label' => 'Single Package Form',
 		    'name' => 'single_package_form_id',
+		    'description' => 'Use: single_package_form_id',
 			'options' => $gravityForms,
 		],
     	[ // In this example we have a select field to enable/disable mantainance mode
 		    'type' => 'select', 
 		    'label' => 'Single Planners form',
 		    'name' => 'single_planners_form_id',
+		    'description' => 'Use: single_planners_form_id',
 			'options' => $gravityForms,
 		],
     	[ // In this example we have a select field to enable/disable mantainance mode
 		    'type' => 'select', 
 		    'label' => 'Newsletter',
 		    'name' => 'newsletter_signup_form',
+		    'description' => 'Use: newsletter_signup_form',
 			'options' => $gravityForms,
 		]
 	];
