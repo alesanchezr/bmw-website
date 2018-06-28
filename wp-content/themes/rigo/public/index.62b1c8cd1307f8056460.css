@@ -7183,10 +7183,16 @@ li {
   background: white; }
   .category-landing .jumbo {
     background-size: cover; }
+    .category-landing .jumbo h1 {
+      font-size: 50px;
+      margin-top: 50px; }
+    .category-landing .jumbo h2 {
+      font-size: 35px;
+      font-style: underline; }
     .category-landing .jumbo .brand {
       margin-top: 50px;
       display: inline-block; }
-  .category-landing.category-landing-a a {
+  .category-landing.category-landing-a .jumbo a {
     color: black; }
   .category-landing.category-landing-a .jumbo .form-content {
     background: rgba(84, 83, 64, 0.6);
@@ -7195,12 +7201,6 @@ li {
     padding: 0px 30px;
     color: white;
     background: rgba(84, 83, 64, 0.6); }
-  .category-landing h1 {
-    font-size: 50px;
-    margin-top: 50px; }
-  .category-landing h2 {
-    font-size: 35px;
-    font-style: underline; }
   .category-landing .call-now p {
     font-size: 25px;
     font-weight: 900; }
@@ -7612,4 +7612,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.3952f0605a2862b8e823.css.map*/
+/*# sourceMappingURL=index.62b1c8cd1307f8056460.css.map*/

@@ -2,14 +2,16 @@
     background: white;
     .jumbo{
         background-size: cover;
+        h1{ font-size: 50px; margin-top: 50px;}
+        h2{ font-size: 35px; font-style: underline;}
         .brand{
             margin-top: 50px;
             display: inline-block;
         }
     }
     &.category-landing-a{
-        a{color: black;}
         .jumbo{ 
+            a{color: black;}
             .form-content{
                 background: rgba(84,83,64,0.6); 
                 padding: 30px;
@@ -23,8 +25,6 @@
             background: rgba(84,83,64,0.6); 
         }
     }
-    h1{ font-size: 50px; margin-top: 50px;}
-    h2{ font-size: 35px; font-style: underline;}
     .call-now{
         p{
             font-size: 25px;
