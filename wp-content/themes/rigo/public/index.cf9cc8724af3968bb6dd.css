@@ -7010,11 +7010,19 @@ li {
 #home-slider {
   background: white;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  margin-top: 0px; }
   @media (min-width: 768px) {
     #home-slider {
-      background-size: contain;
-      max-height: 600px; } }
+      background-size: cover;
+      height: 720px; }
+      #home-slider .jb-button {
+        margin-top: 130px; } }
+  @media (min-width: 1200px) {
+    #home-slider {
+      height: 800px; }
+      #home-slider .jb-button {
+        margin-top: 100px; } }
 
 .jumbotron {
   background-repeat: no-repeat;
@@ -7518,7 +7526,7 @@ input {
   .media-body {
     text-align: left; }
   .jumbotron .jb-button {
-    padding-top: 8em; }
+    padding-top: 9em; }
   .home .card-middle-button {
     margin-top: 0px;
     color: #000000; }
@@ -7612,4 +7620,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.62b1c8cd1307f8056460.css.map*/
+/*# sourceMappingURL=index.cf9cc8724af3968bb6dd.css.map*/

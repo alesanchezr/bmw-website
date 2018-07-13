@@ -7010,14 +7010,19 @@ li {
 #home-slider {
   background: white;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  margin-top: 0px; }
   @media (min-width: 768px) {
     #home-slider {
       background-size: cover;
-      height: 720px; } }
+      height: 720px; }
+      #home-slider .jb-button {
+        margin-top: 50px; } }
   @media (min-width: 1200px) {
     #home-slider {
-      height: 800px; } }
+      height: 800px; }
+      #home-slider .jb-button {
+        margin-top: 100px; } }
 
 .jumbotron {
   background-repeat: no-repeat;
@@ -7615,4 +7620,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.1c2864842dfb1508209d.css.map*/
+/*# sourceMappingURL=index.aee98000d73482308892.css.map*/

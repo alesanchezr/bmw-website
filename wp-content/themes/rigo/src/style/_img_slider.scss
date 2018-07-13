@@ -9,11 +9,18 @@
     background: white;
     background-repeat: no-repeat;
     background-position: center center;
+	margin-top: 0px;
 	@media (min-width: $size-md) {
         background-size: cover;
         height: 720px;
+	    .jb-button{
+	        margin-top: 130px;
+	    }
 	}
 	@media (min-width: $size-xl) {
         height: 800px;
+	    .jb-button{
+	        margin-top: 100px;
+	    }
 	}
 }
