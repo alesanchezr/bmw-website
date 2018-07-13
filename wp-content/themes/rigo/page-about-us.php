@@ -11,7 +11,7 @@ get_header();
       <!--<div class="card logo medium mx-auto">-->
       <!--  <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>-->
       <!--</div>-->
-      <div class="jb-text d-block">
+      <div class="jb-text d-block ">
         <div class="container mx-auto">
           <h1 class="my-0 text-center">It takes a great team to plan a memorable wedding.</h1>
         </div>

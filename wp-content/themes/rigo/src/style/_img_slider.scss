@@ -10,7 +10,10 @@
     background-repeat: no-repeat;
     background-position: center center;
 	@media (min-width: $size-md) {
-        background-size: contain;
-        max-height: 600px;
+        background-size: cover;
+        height: 720px;
+	}
+	@media (min-width: $size-xl) {
+        height: 800px;
 	}
 }
