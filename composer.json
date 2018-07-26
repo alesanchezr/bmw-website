@@ -19,7 +19,8 @@
         "wpackagist-plugin/redirection": "*",
         "wpackagist-plugin/unlist-posts": "^1.0",
         "zendframework/zenddiagnostics": "^1.0",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "^2.1"
     },
     "autoload": {
         "psr-4": {

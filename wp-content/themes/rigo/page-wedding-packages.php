@@ -37,7 +37,7 @@ get_header();
     <div class="container-fluid">
       <div class="row text-center px-auto py-5">
         <div class="col-md-12 col-sm-12">
-          <p class="h8 my-0"> <?php echo $args["package"]["packages-description"]; ?>.</p>
+          <p class="h8 my-0"> <?php echo $args["package"]["packages-description"]; ?></p>
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@ get_header();
               </a>
             <div class="card-body max-h text-center pt-4">
               <p class=" h8 card-title"><b><?php echo $args['new_array_package'][$j]["post_title"]; ?></b></p>
-              <p class="card-text"><?php echo $args['new_array_package'][$j]["description"]; ?>.</p>
+              <p class="card-text"><?php echo $args['new_array_package'][$j]["description"]; ?></p>
             </div>
               <div class="card-footer text-center pb-3 pt-0">
                 <a href="<?php echo get_permalink( $args['new_array_package'][$j]["id"] )?>"><small class=" click-here">Read more</small></a>
