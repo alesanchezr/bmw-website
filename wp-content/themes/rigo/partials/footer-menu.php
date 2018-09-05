@@ -41,7 +41,7 @@
           Call Now
         </a>
       </p>
-      <span class="phone-number"><?php echo get_option('phone_number'); ?></span>
+      <span class="phone-number text-dark"><?php echo get_option('phone_number'); ?></span>
     </div>
     <div class="col-6">
       <a id="#quote-modal" class="btn btn-primary request-quote">Request a Quote</a>

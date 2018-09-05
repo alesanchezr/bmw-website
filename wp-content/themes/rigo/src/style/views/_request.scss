@@ -30,16 +30,14 @@
     border-bottom: none;  
   }
   input {
-    font-size:10px;
+    font-size: 16px;
   }
   textarea {
-    textarea{
-        height: 130px;
-        @media (min-width: $size-sm) {
-            height: 255px;
-    	}
-    }
-    font-size: 10px;
+    height: 80px;
+    @media (min-width: $size-sm) {
+          height: 255px;
+  	}
+    font-size: 16px;
     resize:none;
     border-radius: 0 !important;
   }

@@ -7,7 +7,7 @@ get_header();
 <?php get_template_part('partials/menu','others'); ?>
 <!-- JUMBOTROM -->
   <div class="parent p-sm-0">
-      <div class="jumbotron text-center pt-4 pb-3 my-0" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['package']['packages-img-banner'],'full')[0] ?>');">
+      <div class="jumbotron text-center pt-4 pb-3 my-0 d-none d-sm-block" style="background-image: url('<?php echo wp_get_attachment_image_src( $args['package']['packages-img-banner'],'full')[0] ?>');">
           <!--<div class="card logo medium mx-auto d-none d-sm-block">-->
           <!--    <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>-->
           <!--</div>-->
@@ -25,7 +25,7 @@ get_header();
     <ul class="nav nav-tabs  large navbar-nav  ">
       <?php for( $i= 0; $i< count($args['new_array_package']); $i++){ ?>
         <li class="nav-item p-2 ">
-          <a class="nav-link" href="<?php echo get_permalink( $args['new_array_package'][$i]["id"] )?>"><h4 ><?php echo $args['new_array_package'][$i]["post_title"]; ?></h4></a>
+          <a class="nav-link" href="<?php echo get_permalink( $args['new_array_package'][$i]["id"] )?>"><h4 class="text-dark"><?php echo $args['new_array_package'][$i]["post_title"]; ?></h4></a>
           <hr class="m-0">
         </li>
       <?php } ?>

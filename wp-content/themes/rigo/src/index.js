@@ -58,6 +58,19 @@ $(document).ready(function(){
  	});
 	$(".request-quote, #quote-modal .close").click(function(){
 		$("#quote-modal").toggleClass("show");
+		if($("#quote-modal").hasClass('show')){
+			document.body.style.overflow = 'hidden';
+			document.body.style.height = '100%';
+			document.body.style.width = '100%';
+			var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+			if (iOS) document.body.style.position = 'fixed';
+		}
+		else{
+			document.body.style.overflow = 'inherit';
+			document.body.style.position = 'inherit';
+			document.body.style.height = 'inherit';
+			document.body.style.width = 'inherit';
+		}
  	});
  	
  	const slider = document.querySelector('.home-image-slider');
