@@ -13,7 +13,7 @@ $args = wpas_get_view_data();
       <div class="jb-text d-block">
         <h1 class="mt-0 mb-4"><?php echo $args["church"]["post_title"]; ?></h1>
         <button class="btn btw-l align-text-bottom" href="./page.html" role="button">Get a fast a quote</button><br>
-        <h2 class="p-2" style="color:#993399;">or call now! <?php echo get_option('phone_number'); ?></h2>
+        <h2 class="p-2" style="color:#993399;">or call now! <span class="phone-number"><?php echo get_option('phone_number'); ?></span></h2>
       </div>
 
     </div>
@@ -42,7 +42,7 @@ $args = wpas_get_view_data();
             <h1 class="d-sm-none d-block pb-4"><?php echo $args["church"]["post_title"]; ?></h1>
             <div class="d-sm-none d-block text-left">
               <p class="px-3">Call now</p>
-              <h2 class="d-sm-none d-block px-3"><?php echo get_option('phone_number'); ?></h2>
+              <h2 class="d-sm-none d-block px-3 phone-number"><?php echo get_option('phone_number'); ?></h2>
               <hr>
             </div>
 

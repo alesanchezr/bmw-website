@@ -32,3 +32,19 @@
     </div>
   </div>
 </div>
+
+<div class="sticky sticky-bar text-center d-sm-none">
+  <div class="row">
+    <div class="col-6 phone">
+      <p class="m-0">
+        <a class='click-here color-dark' style="text-decoration: none !important;"href="tel:+<?php echo get_option('phone_number'); ?>">
+          Call Now
+        </a>
+      </p>
+      <span class="phone-number"><?php echo get_option('phone_number'); ?></span>
+    </div>
+    <div class="col-6">
+      <button class="btn btn-primary">Request a Quote</button>
+    </div>
+  </div>
+</div>

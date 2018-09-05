@@ -24,7 +24,7 @@ get_header();
     <h1 class="my-0">Top Miami Wedding Planners</h1>
     <a class='click-here color-dark' style="color:#993399; text-decoration: none !important;" href="tel:+1<?php echo get_option('phone_number'); ?>" >
       <h5>Call now</h5>
-      <h4><?php echo get_option('phone_number'); ?></h4>
+      <h4 class="phone-number"><?php echo get_option('phone_number'); ?></h4>
     </a>
     <hr>
     <ul class="nav nav-tabs  large navbar-nav  ">

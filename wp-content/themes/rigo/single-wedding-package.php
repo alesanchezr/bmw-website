@@ -25,7 +25,7 @@ $args = wpas_get_view_data();
         <div class="text-center ml-md-5 pl-md-5 pr-md-4">
           <a  class='click-here' style="text-decoration: none !important;"href="tel:+1<?php echo get_option('phone_number'); ?>">
             <h5 class="h8" >Call now! </h5>
-            <h5 class="h7"><?php echo get_option('phone_number'); ?></h5>
+            <h5 class="h7 phone-number"><?php echo get_option('phone_number'); ?></h5>
           </a>
           <p>to request more information and pricing or fill the follow form: </p>
         </div>

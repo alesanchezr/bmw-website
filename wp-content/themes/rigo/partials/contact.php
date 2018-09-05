@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-md-6 text-center center-vertical-div">
         <h5>Call now! </h5>
-        <h5><?php echo get_option('phone_number'); ?></h5>
+        <h5 class="phone-number"><?php echo get_option('phone_number'); ?></h5>
         <h5> to request more information and pricing</h5>
         <h5>or fill the following form: </h5>
     </div>

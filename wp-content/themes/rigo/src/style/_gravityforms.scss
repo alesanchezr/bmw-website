@@ -8,6 +8,11 @@
     }
     .ginput_container{ 
         width: 100%; 
+        margin-bottom: 5px;
+        .ui-datepicker-trigger{ display: none; }
+        @media (min-width: $size-sm) {
+            margin-bottom: 10px;
+    	}
         input, textarea{
             width: 100%; 
             padding: 5px;
@@ -53,11 +58,15 @@
     .ui-datepicker-next{  right: 10px; }
     .ui-datepicker-title{ margin-top: 15px; }
     .ui-datepicker-calendar a{color: $color-footer-dark;}
+    .ui-datepicker-month, .ui-datepicker-year{
+        background: #fff2fc;
+    }
     .ui-datepicker-calendar td{
         background: #fff2fc;
         border: 3px solid $color-grey-super-light;
         text-align: center;
         font-size: 80%;
+        padding: 6px;
     }
     .ui-datepicker-calendar td:hover{
         background: white;

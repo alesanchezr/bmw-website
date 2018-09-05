@@ -30,9 +30,9 @@ $args = wpas_get_view_data();
         <div class="text-center ml-5 pl-5 pr-4">
           <a class='click-here color-dark' style="text-decoration: none !important;"href="tel:+1<?php echo get_option('phone_number'); ?>">
             <h5 class="h8" >Call now! </h5>
-            <h5 class="h7">  <?php echo get_option('phone_number'); ?></h5>
+            <h5 class="h7 phone-number"><?php echo get_option('phone_number'); ?></h5>
           </a>
-          <p>Call now! <?php echo get_option('phone_number'); ?> to schedule an appointment with <?php echo $args["planner"]["post_title"]; ?>,
+          <p>Call now! <span class="phone-number"><?php echo get_option('phone_number'); ?></span> to schedule an appointment with <?php echo $args["planner"]["post_title"]; ?>,
             or fill the following form and we will email you with availability:</p>
         </div>
       </div>

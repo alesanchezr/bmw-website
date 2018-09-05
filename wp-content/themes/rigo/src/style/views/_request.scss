@@ -33,7 +33,12 @@
     font-size:10px;
   }
   textarea {
-    height: 255px;
+    textarea{
+        height: 130px;
+        @media (min-width: $size-sm) {
+            height: 255px;
+    	}
+    }
     font-size: 10px;
     resize:none;
     border-radius: 0 !important;

@@ -24,7 +24,7 @@ get_header();
         <div class="col-lg-3 col-md-5 text-center align-top ml-auto">
           <a  class='click-here color-light' style="text-decoration: none !important;"href="tel:+1<?php echo get_option('phone_number'); ?>">
             <h5 class="h8" >Call now! </h5>
-            <h5 class="h7"><?php echo get_option('phone_number'); ?></h5>
+            <h5 class="h7 phone-number"><?php echo get_option('phone_number'); ?></h5>
           </a>
         </div>
         <!-- FORM -->
