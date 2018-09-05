@@ -13,14 +13,8 @@
 	@media (min-width: $size-md) {
         background-size: cover;
         height: 720px;
-	    .jb-button{
-	        margin-top: 130px;
-	    }
 	}
 	@media (min-width: $size-xl) {
         height: 800px;
-	    .jb-button{
-	        margin-top: 100px;
-	    }
 	}
 }

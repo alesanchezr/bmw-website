@@ -22,6 +22,17 @@
     		color: black ;
     	}
     }
+    &.secondary-navbar{
+        .btn-success{
+            padding: 4px 15px;
+            font-size: 10px;
+            margin-left: 19px;
+            text-transform: capitalize;
+        }
+        .nav-link:hover{
+            border: inherit;
+        }
+    }
     .nav-item{
         padding: 0px 30px;
 		border: 0px solid transparent;

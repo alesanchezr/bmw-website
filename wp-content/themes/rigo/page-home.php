@@ -12,8 +12,9 @@
         <li slide-url='<?php echo wp_get_attachment_image_src( $img['url'],'full')[0] ?>' slide-color='<?php echo $img['color']; ?>'></li>
         <?php } ?>
       </ul>
-      <div class="card logo medium mx-auto pb-5">
-        <span class="card-img-top mx-auto" id="bmw-logo" style="visibility: hidden;"></span>
+      <div class="tagline">
+        <h1>Stunning Miami Weding Venues</h1>
+        <h2>and delectable cusine</h2>
       </div>
       <div class="jb-button">
         <!--<button class="btn btw-l align-text-bottom d-block mx-auto mb-4" role="button" data-toggle="modal" data-target="#openModal">Request a quote</button>-->

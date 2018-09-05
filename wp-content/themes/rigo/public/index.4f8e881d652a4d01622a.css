@@ -6482,6 +6482,13 @@ li {
     letter-spacing: 1.6px; }
     .navbar .nav-link a {
       color: black; }
+  .navbar.secondary-navbar .btn-success {
+    padding: 4px 15px;
+    font-size: 10px;
+    margin-left: 19px;
+    text-transform: capitalize; }
+  .navbar.secondary-navbar .nav-link:hover {
+    border: inherit; }
   .navbar .nav-item {
     padding: 0px 30px;
     border: 0px solid transparent;
@@ -6942,7 +6949,7 @@ li {
 .modal-menu {
   position: fixed;
   display: none;
-  z-index: 999;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.3);
   height: 58px;
   text-align: center; }
@@ -6962,7 +6969,7 @@ li {
 * Contact modal
 */
 .modal-contact-menu {
-  z-index: 999;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.3);
   height: 58px; }
 
@@ -7024,14 +7031,10 @@ li {
   @media (min-width: 768px) {
     #home-slider {
       background-size: cover;
-      height: 720px; }
-      #home-slider .jb-button {
-        margin-top: 130px; } }
+      height: 720px; } }
   @media (min-width: 1200px) {
     #home-slider {
-      height: 800px; }
-      #home-slider .jb-button {
-        margin-top: 100px; } }
+      height: 800px; } }
 
 .jumbotron {
   background-repeat: no-repeat;
@@ -7039,8 +7042,19 @@ li {
   border-radius: 0;
   background-position: center;
   color: #ffffff;
+  text-shadow: 0px 1px 2px black;
   padding-top: 50px;
   padding-bottom: 50px; }
+  .jumbotron .tagline {
+    padding-top: 100px;
+    margin-bottom: 30px; }
+    @media (min-width: 576px) {
+      .jumbotron .tagline {
+        padding-top: 230px; } }
+    .jumbotron .tagline h1 {
+      font-size: 35px; }
+    .jumbotron .tagline h2 {
+      font-size: 25px; }
   .jumbotron.jb-xlarge {
     background-repeat: no-repeat;
     background-size: cover;
@@ -7056,8 +7070,6 @@ li {
     background-repeat: no-repeat;
     background-position-y: 45%;
     background-size: cover; }
-  .jumbotron .jb-button {
-    padding-top: 8em; }
   .jumbotron.jb-award {
     color: #000000;
     padding: 0; }
@@ -7070,15 +7082,6 @@ li {
   .jumbotron .jb-text {
     padding: 130px 10px 80px 10px; }
 
-.home .card .img {
-  padding: 0px !important;
-  margin: 0px !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  .home .card .img .venue-thumb {
-    height: 450px; }
-
 .home .card-middle-button {
   margin-top: -95px;
   position: relative;
@@ -7086,7 +7089,7 @@ li {
 
 #quote-modal {
   display: none;
-  z-index: 4;
+  z-index: 1031;
   position: fixed;
   overflow-y: auto;
   top: 0;
@@ -7557,8 +7560,6 @@ input {
     float: left; }
   .media-body {
     text-align: left; }
-  .jumbotron .jb-button {
-    padding-top: 9em; }
   .home .card-middle-button {
     margin-top: 0px;
     color: #000000; }
@@ -7652,4 +7653,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.675a16cdfc87de8a58e7.css.map*/
+/*# sourceMappingURL=index.4f8e881d652a4d01622a.css.map*/

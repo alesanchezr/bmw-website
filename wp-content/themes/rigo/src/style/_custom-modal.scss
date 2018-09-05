@@ -13,7 +13,7 @@
 .modal-menu {
     position: fixed;
     display: none;
-    z-index: 999;
+    z-index: 9999;
     background-color: rgba(0,0,0,0.3);
     height: 58px;
     text-align: center;
@@ -36,7 +36,7 @@
 * Contact modal
 */
 .modal-contact-menu {    
-    z-index: 999;
+    z-index: 9999;
     background-color: rgba(0,0,0,0.3);
     height: 58px;
 }

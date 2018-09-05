@@ -2,7 +2,7 @@
 $args = wpas_get_view_data();
 // debug($args);
 ?>
-<div class="men d-none d-sm-block">
+<div class="men d-none d-sm-block fixed-top">
   <nav class="navbar navbar-expand-lg navbar-light mx-auto p-0 top-nav">
     <div class="container">
       <a class="navbar-brand d-none d-sm-inline-block" href="/">
@@ -33,11 +33,14 @@ $args = wpas_get_view_data();
       </div>
     </div>
   </nav>
-  <nav class="navbar navbar-dark mx-auto contact-navbar navbar-expand"  >
+  <nav class="navbar navbar-dark mx-auto contact-navbar navbar-expand secondary-navbar"  >
     <div class="container">
         <ul class="nav nav-tabs text-uppercase navbar-nav ml-auto d-none d-sm-block mr-3">
-          <li class="nav-item p-0">
+          <li class="nav-item p-0 d-inline-block">
             <a id="phone-icon" class="nav-link text-right" href="tel:+1<?php echo get_option('phone_number'); ?>">+1<?php echo get_option('phone_number'); ?></a>
+          </li>
+          <li class="nav-item p-0 d-inline-block">
+            <a href="#quote-modal" class="btn btn-success request-quote">Request a quote</a>
           </li>
         </ul>          
     </div>

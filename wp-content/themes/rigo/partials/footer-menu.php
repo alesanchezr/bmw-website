@@ -44,7 +44,7 @@
       <span class="phone-number"><?php echo get_option('phone_number'); ?></span>
     </div>
     <div class="col-6">
-      <button class="btn btn-primary">Request a Quote</button>
+      <a id="#quote-modal" class="btn btn-primary request-quote">Request a Quote</a>
     </div>
   </div>
 </div>
