@@ -30,7 +30,7 @@
           </div>
         </div>
         <!-- FORM -->
-        <div class="col-md-6 mb-4">
+        <div class="col-md-6 mb-4 mt-sm-5">
             <?php gravity_form( 
                     $id_or_title = get_option('request_quote_form_id'), 
                     $display_title = false, 
