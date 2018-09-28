@@ -13,8 +13,8 @@
         <?php } ?>
       </ul>
       <div class="tagline">
-        <h1>Stunning Miami Weding Venues</h1>
-        <h2>and delectable cusine</h2>
+        <h1>Exquisite Miami Wedding Venues</h1>
+        <h2>and Delectable Cusine</h2>
       </div>
       <div class="jb-button">
         <!--<button class="btn btw-l align-text-bottom d-block mx-auto mb-4" role="button" data-toggle="modal" data-target="#openModal">Request a quote</button>-->

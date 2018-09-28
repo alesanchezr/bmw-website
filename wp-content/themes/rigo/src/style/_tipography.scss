@@ -13,10 +13,10 @@ h1,h2,h3,h4,h5,h6{
     font-family: $font-text;
 }
 h1{ 
-    font-size: 26px; 
+    font-size: 35px; 
     letter-spacing: 0.7px;
     @media (max-width: 1324px) {
-        font-size: 20px; 
+        font-size: 35px; 
     }
 }
 h2{ font-size: 22px; margin-bottom: 0; line-height: 30px;}

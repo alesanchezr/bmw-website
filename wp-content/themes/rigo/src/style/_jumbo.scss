@@ -10,11 +10,13 @@
     .tagline{
     	padding-top: 100px;
     	margin-bottom: 30px;
-		@media (min-width: $size-sm) {
-    		padding-top: 230px;
-		}
     	h1{ font-size: 35px; }
     	h2{ font-size: 25px; }
+		@media (min-width: $size-sm) {
+			h1{ font-size: 50px; }
+			h2{ font-size: 35px; }
+    		padding-top: 230px;
+		}
     }
 	&.jb-xlarge{
 		background-repeat: no-repeat;

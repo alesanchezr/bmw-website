@@ -6287,11 +6287,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Rufina", serif; }
 
 h1 {
-  font-size: 26px;
+  font-size: 35px;
   letter-spacing: 0.7px; }
   @media (max-width: 1324px) {
     h1 {
-      font-size: 20px; } }
+      font-size: 35px; } }
 
 h2 {
   font-size: 22px;
@@ -7048,13 +7048,17 @@ li {
   .jumbotron .tagline {
     padding-top: 100px;
     margin-bottom: 30px; }
-    @media (min-width: 576px) {
-      .jumbotron .tagline {
-        padding-top: 230px; } }
     .jumbotron .tagline h1 {
       font-size: 35px; }
     .jumbotron .tagline h2 {
       font-size: 25px; }
+    @media (min-width: 576px) {
+      .jumbotron .tagline {
+        padding-top: 230px; }
+        .jumbotron .tagline h1 {
+          font-size: 50px; }
+        .jumbotron .tagline h2 {
+          font-size: 35px; } }
   .jumbotron.jb-xlarge {
     background-repeat: no-repeat;
     background-size: cover;
@@ -7652,4 +7656,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.b0c40d60cf1fb37f144e.css.map*/
+/*# sourceMappingURL=index.b5e57c8d738fdf3791dd.css.map*/
