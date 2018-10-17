@@ -16,11 +16,9 @@ class Church extends BasePostType{
     
      public static function all($args = [], $hook = NULL){
         $args = [ 
-    	'post_type' => 'church',
+    	    'post_type' => 'church',
     	];
-    
         $query = new WP_Query( $args );
-        
         return $query;
     } 
     
@@ -34,6 +32,7 @@ class Church extends BasePostType{
         if($size=='big'){
             $response['church-post-gallery'] = self::getPostGalley($church->ID);
         }
+        return $response;
     }
     
     public static function getChurchesMenu(){

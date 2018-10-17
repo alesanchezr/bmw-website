@@ -2,7 +2,7 @@
 namespace Rigo\Types;
     
 use WPAS\Types\BasePostType;
-
+use WP_Query;
 class Venue extends BasePostType{
     
     public static function getByCategory($categoryId){
@@ -14,6 +14,14 @@ class Venue extends BasePostType{
         
         return $query->posts;
     }
+    
+     public static function all($args = [], $hook = NULL){
+        $args = [ 
+    	    'post_type' => 'venue',
+    	];
+        $query = new WP_Query( $args );
+        return $query;
+    } 
     
     public static function getVenuesMenu(){
         return [

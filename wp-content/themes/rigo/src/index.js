@@ -74,7 +74,7 @@ $(document).ready(function(){
  	});
  	
  	const slider = document.querySelector('.home-image-slider');
- 	if(typeof slider != 'undefined' || slider){
+ 	if(typeof slider != 'undefined' && slider){
  		slider.classList.add('fade');
  		const LIs = document.querySelectorAll('.home-image-slider li');
  		let images = [];
