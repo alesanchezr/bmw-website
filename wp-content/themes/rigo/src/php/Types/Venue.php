@@ -16,9 +16,7 @@ class Venue extends BasePostType{
     }
     
      public static function all($args = [], $hook = NULL){
-        $args = [ 
-    	    'post_type' => 'venue',
-    	];
+        $args['post_type'] = 'venue';
         $query = new WP_Query( $args );
         return $query;
     } 

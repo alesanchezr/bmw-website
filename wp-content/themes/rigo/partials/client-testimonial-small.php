@@ -27,7 +27,7 @@ $args = wpas_get_view_data();
   </div>
   <div class="row  d-none d-sm-block">
       <div class="col-md-12 text-center">
-        <p class="foot-client">Read more testimonial by <a class="click-here color-dark" href=" https://bmw-website-caenavgu.c9users.io/testimonials/"> click here </a></p>
+        <p class="foot-client">Read more testimonial by <a class="click-here color-dark" href="<?php echo get_permalink( get_page_by_path('testimonials' ) ); ?>"> click here </a></p>
       </div>
     </div>
 </div>
