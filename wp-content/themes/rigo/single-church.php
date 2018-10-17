@@ -82,6 +82,18 @@ $args = wpas_get_view_data();
         </div>
       </div>
       <!--  -->
+      <div class="bg-1 d-none d-sm-block horizontal-gallery">
+          <div class="card-deck">
+          <?php for ($i=0; $i< count($args['church']['church-post-gallery']); $i++){  ?>
+            <div class="card p-0 m-0 hover-effect<?php if($i>2){ echo " d-none"; if($i<5) echo " d-xl-flex"; } ?>">
+              <a class="img-slide" href="<?php echo $args['church']['church-post-gallery'][$i]['default'];  ?>"
+                style="background-image: url(<?php echo $args['church']['church-post-gallery'][$i]['thumbnail']; ?>)">
+                  <img class=" galleryImg d-none w-100 px-0" src="<?php echo $args['church']['church-post-gallery'][$i]['thumbnail'];  ?>" alt="<?php echo $args['church']['church-post-gallery'][$i]['alt'];  ?>">
+              </a>
+            </div>
+          <?php  } ?>
+        </div>
+      </div>
       <div class="card bg-2">
         <div class="row ">
           <div class="col-md-6 px-4 p-sm-5 l p-0 p-sm-3 d-none d-sm-block">

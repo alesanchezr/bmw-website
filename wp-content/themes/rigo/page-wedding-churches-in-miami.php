@@ -33,9 +33,11 @@ get_header();
     <?php for ($x=0; $x< count($args['new_array_church']); $x++){ ?>
       <div class="row col-md-4  mx-auto ">
         <div class="col-md-12 col-4 p-0 p-sm-2 center-vertical-div">
-          <img class="card-img-top" src="<?php echo $args['new_array_church'][$x]['thumbnail'] ?>" alt="Card image cap">
+          <a href="<?php echo get_permalink( $args['new_array_church'][$x]["id"] )?>">
+            <div class="card-img-top venue-thumb" style="background-image: url(<?php echo $args['new_array_church'][$x]['thumbnail'] ?>);"></div>
+          </a>
         </div>
-        <a class="color-dark" href="">
+        <a class="color-dark" href="<?php echo get_permalink( $args['new_array_church'][$x]["id"] )?>">
           <div class="col-md-12 col-8">
             <div class="card text-sm-center">
               <div class="card-body px-0 px-sm-2 ">
