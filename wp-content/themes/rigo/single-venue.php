@@ -237,7 +237,7 @@ $args = wpas_get_view_data();
                   $printStar = $args["venue"]["printStars"];
                   echo $printStar($args["venue"]["venue-score-point"]); 
                 ?>
-                <p><?php echo $args["venue"]["venue-score-description"]; ?>, <a  href="" class="click-here color-dark">contact us</a>!</p>
+                <p><?php echo $args["venue"]["venue-score-description"]; ?>, <a  href="<?php echo get_permalink( get_page_by_path('contact-us' ) ); ?>" class="click-here color-dark">contact us</a>!</p>
               </div>
             </div>
             <div class="col-md-6 image-div p-0" >

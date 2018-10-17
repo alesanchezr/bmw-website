@@ -18,6 +18,7 @@ class GalleryController{
     
     $args['venue'] = (array) Venue::get($postId);
     $args['venue']['venue-google-360-field'] = get_field('venue-google-360-field', $args['venue']['ID']);
+    $args['venue']['venue-description'] = get_field('venue-description', $args['venue']['ID']);
     
     $args['menu-venues'] = Venue::getVenuesMenu();
     

@@ -24,7 +24,7 @@ get_header();
               for ( $x= 0; $x< count($args['new_array_press_award']); $x++ ){ 
                 if( $args['new_array_press_award'][$x]['thumbnail'] != '' ){?>
                   <div class=" col-md-6 card text-center awards-recognition page py-4">
-                    <img class="card-img-top mx-auto logo awards large px-1" src="<?php echo $args['new_array_press_award'][$x]['thumbnail'] ?>"></img>
+                    <img class="card-img-top mx-auto logo awards large px-1" src="<?php echo $args['new_array_press_award'][$x]['thumbnail'] ?>" atl="best miami weddings award <?php echo $args['new_array_press_award'][$x]["post_title"]; ?>"></img>
                     <div class="card-body">
                       <h5 class="card-title"><?php echo $args['new_array_press_award'][$x]["post_title"]; ?></h5>
                       <p class="card-text"><?php echo $args['new_array_press_award'][$x]["description"]; ?>.</p>

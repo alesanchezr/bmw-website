@@ -121,7 +121,7 @@ $args = wpas_get_view_data();
         <div class="container sub-menu-wp">
           <ul class="nav container text-uppercase large"  role="tablist">
             <li class="inactiveLink nav-item d-none d-md-inline-block pr-0  ml-auto">
-              <a class="" href="" style='letter-spacing: 2.6px;'>From our weddings...</a>
+              <a href="#" style='letter-spacing: 2.6px;'>From our weddings...</a>
             </li>
             <?php wp_nav_menu( array('theme_location' => 'submenu_inspired', 'menu_class'=> 'nav submenu-nav',) ); ?>
         </div>

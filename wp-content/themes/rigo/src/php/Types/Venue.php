@@ -21,6 +21,10 @@ class Venue extends BasePostType{
         return $query;
     } 
     
+    public static function get($id){
+        return get_post($id);
+    } 
+    
     public static function getVenuesMenu(){
         return [
             'garden' => self::getByCategory(4),
