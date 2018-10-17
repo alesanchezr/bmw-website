@@ -86,7 +86,7 @@ $asyncLoader = new WPASAsyncLoader([
 
 function updateVenueCPT( $args, $post_type ) {
 	// If not Products CPT, bail.
-	if ( 'venue' !== $post_type && 'wedding-package' !== $post_type ) {
+	if ( 'venue' !== $post_type && 'wedding-package' !== $post_type && 'planner' !== $post_type && 'church' !== $post_type ) {
 		return $args;
 	}
 	// Add additional Products CPT options.
