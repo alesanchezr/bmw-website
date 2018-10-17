@@ -4,6 +4,7 @@ use Rigo\Types\Course;
 use Rigo\Types\AboutUs;
 use Rigo\Types\Testimonial;
 use Rigo\Types\Venue;
+use Rigo\Types\Planner;
 use Rigo\Types\WeddingPackage;
 use WP_Query;
 
@@ -27,6 +28,9 @@ class CategoryController{
       }
       else if($post->post_type == 'wedding-package'){
         return WeddingPackage::serialize($post);
+      }
+      else if($post->post_type == 'planner'){
+        return Planner::serialize($post);
       }
       else return (array) $post;
     }, $query->posts);
