@@ -150,7 +150,7 @@ $args = wpas_get_view_data();
           <div class="col-md-4 mt-3">
             <h5><strong> After the wedding</strong></h5>
             <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/top-10-honeymoon-destinations/"> <li>Top 10 Honeymoon Destination</li></a>
-            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/wp-content/uploads/sites/2/2016/05/Madten.jpg"> <li>Party planninf: Flip Cup After-Party</li></a>
+            <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/wedding-war-flip-cup-after-party/"> <li>Party planning: Flip Cup After-Party</li></a>
             <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/wedding-checklist-after-your-wedding-day/"> <li>Wedding Checklist: After Your Wedding Day</li></a>
             <a class="click-here color-dark menu-hover" href="https://blog.bestmiamiweddings.com/after-the-wedding/the-best-honeymoon-destinations-for-the-next-year-on-a-budget/"> <li>Honewmoon Destinations on a Budget</li></a>
           </div>
