@@ -8,7 +8,8 @@ class Venue extends BasePostType{
     public static function getByCategory($categoryId){
         
         $query = Venue::all([
-            'cat' => $categoryId
+            'cat' => $categoryId,
+            'lang' => 'en'
         ]);
         
         
