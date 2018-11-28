@@ -65,7 +65,7 @@ Thumbs.db
 *.log
 *.sql
 *.sqlite
-
+php_errorlog
 # ignore compiled files
 *.com
 *.class
