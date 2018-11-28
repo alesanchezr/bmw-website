@@ -18,9 +18,11 @@
 @import "google_maps";
 @import "img_slider";
 @import "jumbo";
+@import "rating";
 @import "views/home";
 @import "views/request";
 @import "views/single-venue";
+@import "views/single-land";
 @import "views/page-venues";
 @import "views/page-gallery";
 @import "views/page-testimonials";
@@ -30,6 +32,9 @@
 // TAGS
 body {
 	background-color: $color-grey-super-light;
+	@media (max-width: 34em) {
+		padding-bottom: 30px;
+	}
 }
 a{
 	color: $color-text-light;
@@ -421,7 +426,7 @@ input{
 		padding-top: 3rem;
 	}
 	.jumbotron{
-		height: 350px;
+		height: 400px;
 		background-repeat: no-repeat;
 		&.jumbotron-standard{
 			background-size: 150% ;

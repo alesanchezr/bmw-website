@@ -15,3 +15,4 @@ $typeManager->newType(['type' => 'testimonial', 'class' => 'Testimonial'])->regi
 $typeManager->newType(['type' => 'about-us', 'class' => 'AboutUs'])->register();
 $typeManager->newType(['type' => 'church', 'class' => 'Church'])->register();
 $typeManager->newType(['type' => 'planner', 'class' => 'Planner'])->register();
+$typeManager->newType(['type' => 'land', 'class' => 'Landing'])->register();

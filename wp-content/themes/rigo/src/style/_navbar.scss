@@ -116,6 +116,29 @@
         }
     }
 }
+
+.landing-navbar{
+    background: transparent;
+    .navbar{
+        background: transparent;
+        .btn-success{
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        #phone-icon{
+            padding-top: 10px;
+            padding-right: 22px;
+            font-size: 18px;
+            &:before{
+                font-size: 20px;
+                width: 15px !important;
+            }
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
 // 
 #about .submenu-nav{
     justify-content: flex-end;

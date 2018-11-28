@@ -14,6 +14,6 @@ $args = wpas_get_view_data();
  <?php get_template_part('partials/meta','tags'); ?>
  <?php  wp_head(); ?>
 </head>
-<body>
+<body <?php echo body_class([str_replace('.php','',get_page_template_slug())]); ?>>
     <?php get_template_part('partials/script','tagmanager-body'); ?>
     <?php get_template_part('partials/header','menu'); ?>

@@ -6274,6 +6274,9 @@ a.text-dark:hover, a.text-dark:focus {
 	@media (min-width: 48em) {
 	}
 */
+.bg-grey {
+  background: #e0e1e2; }
+
 /*
 *   Modules dependencies
 */
@@ -6550,6 +6553,23 @@ li {
     @media (max-width: 1224px) {
       .sub-menu .nav-link:not(:first-child), .sub-menu .submenu-nav li:not(:first-child) {
         letter-spacing: 1.3px; } }
+
+.landing-navbar {
+  background: transparent; }
+  .landing-navbar .navbar {
+    background: transparent; }
+    .landing-navbar .navbar .btn-success {
+      font-size: 16px;
+      padding: 10px 15px; }
+    .landing-navbar .navbar #phone-icon {
+      padding-top: 10px;
+      padding-right: 22px;
+      font-size: 18px; }
+      .landing-navbar .navbar #phone-icon:before {
+        font-size: 20px;
+        width: 15px !important; }
+      .landing-navbar .navbar #phone-icon:hover {
+        color: white; }
 
 #about .submenu-nav {
   justify-content: flex-end;
@@ -7084,7 +7104,29 @@ li {
   .jumbotron .m {
     width: 70% !important; }
   .jumbotron .jb-text {
-    padding: 130px 10px 80px 10px; }
+    padding: 80px 10px; }
+    @media (min-width: 576px) {
+      .jumbotron .jb-text {
+        padding: 130px 10px 80px 10px; } }
+
+.rating-part .score {
+  font-size: 20px; }
+
+.rating-part .source {
+  font-size: 13px;
+  font-weight: 900; }
+
+.rating-part .reviews {
+  font-size: 10px; }
+
+@media (min-width: 768px) {
+  .rating-part .score {
+    font-size: 45px; }
+  .rating-part .source {
+    font-size: 25px;
+    font-weight: 900; }
+  .rating-part .reviews {
+    font-size: 14px; } }
 
 .home .card-middle-button {
   margin-top: -95px;
@@ -7169,6 +7211,10 @@ li {
     background: #efedee;
     color: #58595b !important; }
 
+.single-land .section-venues {
+  overflow: hidden;
+  padding: 10px 0; }
+
 @media (max-width: 576px) {
   .card-deck .row.venue-row {
     height: 110px; } }
@@ -7236,6 +7282,9 @@ li {
 
 body {
   background-color: #efedee; }
+  @media (max-width: 34em) {
+    body {
+      padding-bottom: 30px; } }
 
 a {
   color: #ffffff; }
@@ -7540,7 +7589,7 @@ input {
   .jumbobot {
     padding-top: 3rem; }
   .jumbotron {
-    height: 350px;
+    height: 400px;
     background-repeat: no-repeat; }
     .jumbotron.jumbotron-standard {
       background-size: 150%;
@@ -7656,4 +7705,4 @@ input {
     left: 0;
     background: rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=index.5bdc041774b4518abbed.css.map*/
+/*# sourceMappingURL=index.1ed47506c8ecf7a6411e.css.map*/
