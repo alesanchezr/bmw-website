@@ -23,6 +23,7 @@ $controller->route([ 'slug' => 'Page:gallery', 'controller' => 'GalleryControlle
 $controller->route([ 'slug' => 'Page:all', 'controller' => 'GeneralController:renderGeneral' ]);  
 $controller->route([ 'slug' => '404:all', 'controller' => 'GeneralController:renderGeneral' ]);  
 
+$controller->route([ 'slug' => 'Single:land', 'controller' => 'LandController:getLandingContent' ]);  
 $controller->route([ 'slug' => 'Single:venue', 'controller' => 'VenueController:getSingleVenueState' ]);  
 $controller->route([ 'slug' => 'Single:about-us', 'controller' => 'AboutUsController:getSingleAboutUsState' ]);  
 $controller->route([ 'slug' => 'Single:wedding-package', 'controller' => 'PackageController:getSinglePackageState' ]);  

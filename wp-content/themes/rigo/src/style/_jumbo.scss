@@ -51,6 +51,9 @@
 		width: 70% !important;
 	}
     .jb-text{
-        padding: 130px 10px 80px 10px;
+        padding: 80px 10px;
+        @media (min-width: $size-sm) {
+        	padding: 130px 10px 80px 10px;
+        }
     }
 }
