@@ -57,7 +57,7 @@ $min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG || isset( $_GET['gform_debug'] 
 		}
 	?>
 
-	<?php /* quick bit of script to toggle the helper classes that show the form structure */ ?>
+	
 	<script>
 	jQuery( document ).ready(function() {
 
@@ -84,7 +84,7 @@ $min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG || isset( $_GET['gform_debug'] 
 	});
 	</script>
 
-	<?php /* dismiss the alerts and set a cookie so they're not annoying */ ?>
+	
 
 	<script>
 
@@ -125,7 +125,7 @@ $min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG || isset( $_GET['gform_debug'] 
 
 	</script>
 
-	<?php /* now display the current viewport size */ ?>
+	
 
 	<script type="text/javascript">
 

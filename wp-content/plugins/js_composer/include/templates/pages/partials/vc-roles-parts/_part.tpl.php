@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 ?>
-<?php /** @var $controller Vc_Role_Access_Controller */ ?>
+
 	<tr>
 		<th scope="row"><?php echo esc_html( $main_label ) ?></th>
 		<td>

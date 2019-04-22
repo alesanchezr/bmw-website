@@ -30,7 +30,7 @@ get_header();
         <a href="<?php echo get_permalink( $args['venue']['ID'] ); ?>#location">Location</a>
         <?php /*if($args['venue']['venue-wedding']  != null) {*/?>
           <a href="<?php /*echo $args['venue']['venue-wedding'] */?>">Weddings</a>
-        <?php /*}*/ ?>
+        
       </ul>
     </div>
   </div>
