@@ -110,7 +110,7 @@ node_modules/
 
 # include gitpodfiles
 
-.gitpod.yml
-.gitpod.dockerfile
-apache.env
-apache.conf
+!.gitpod.yml
+!.gitpod.dockerfile
+!apache.env
+!apache.conf
