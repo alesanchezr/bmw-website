@@ -4,8 +4,6 @@ ports:
   - port: 8080
   - port: 3306
     onOpen: ignore
-checkoutLocation: "bmw-website"
-workspaceLocation: "."
 tasks:
   - name: MySQL
     init: wp core download --path=$GITPOD_REPO_ROOT;

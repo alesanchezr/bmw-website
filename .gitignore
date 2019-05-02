@@ -113,3 +113,4 @@ node_modules/
 !.gitpod.yml
 !.gitpod.dockerfile
 !gitpod_config/
+!.htaccess
