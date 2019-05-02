@@ -112,5 +112,5 @@ node_modules/
 
 !.gitpod.yml
 !.gitpod.dockerfile
-!apache.env
+!apache.env.sh
 !apache.conf
